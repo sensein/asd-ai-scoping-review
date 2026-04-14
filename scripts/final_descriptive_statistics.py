@@ -122,13 +122,13 @@ other_sample_raw = df_subset.iloc[:, 24]
 def is_invalid(x):
     if pd.isna(x):
         return True
-    return str(x).strip() in invalid_values
+    return str(x).strip().lower() in invalid_values
 
 # Count missing sample sizes ONLY among valid papers
 
 # ASD
 asd_missing = asd_sample_raw[~empty_rows_Total_Paper].apply(is_invalid).sum() # counts the number of rows that are empty excluding the rows which are invalid for given subset 
-asd_total_valid = (~empty_rows_ASD).sum()
+asd_total_valid = (~empty_rows_Total_Paper).sum()
 
 # Neurotypicals
 neur_missing = neur_sample_raw[~empty_rows_Neur].apply(is_invalid).sum()
@@ -156,11 +156,6 @@ print("Total valid papers:", other_total_valid)
 print("Proportion missing:", other_missing / other_total_valid if other_total_valid else 0)
 
 #----------------AGE RANGES-----------------#
-
-import pandas as pd
-import re
-import numpy as np
-
 # ---------------- INVALID VALUES ---------------- #
 invalid_values = [
     "", "-", "not specified", "not applicable", "n/a", "na", "n.a"
@@ -470,11 +465,6 @@ asd_counts, asd_parser_usage, asd_debug_examples, asd_unparsed = compute_age_ran
 )
 
 #-------------------------------AGE RANGE: NEUROTYPICALS--------------------------#
-
-import pandas as pd
-import re
-import numpy as np
-
 # ---------------- INVALID VALUES ---------------- #
 invalid_values = [
     "", "-", "not specified", "not applicable", "n/a", "na", "n.a"
@@ -1418,7 +1408,7 @@ def compute_diagnosis_methods(col, valid_mask, label):
     pattern_icd = (
         r"\bicd\b"
         r"|\bicd-\w+\b"
-        r"|international\s*classification\s*of\s*disorders"
+        r"|international\s*classification\s*of\s*diseases"
     )
 
     # ===================== MATCHES ===================== #
@@ -1440,7 +1430,7 @@ def compute_diagnosis_methods(col, valid_mask, label):
 
     print("\nICD")
     print("Count:", icd_count)
-    print("Percentage:", (not_given / total_valid) * 100 if total_valid else 0)
+    print("Percentage:", (icd_count / total_valid) * 100 if total_valid else 0)
 
     print("\nADOS:")
     print("Count:", ados_count)
