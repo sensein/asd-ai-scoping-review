@@ -1,0 +1,125 @@
+{
+  "review_name": "Example PRISMA review",
+  "date_range": {
+    "start_year": 2000,
+    "end_year": 2030
+  },
+  "screening_options": {
+    "require_data_source_for_abstract": true,
+    "exclude_preprints": true,
+    "min_full_text_chars": 3000
+  },
+  "term_groups": {
+    "population": {
+      "label": "Target population",
+      "terms": [
+        "example population term"
+      ],
+      "missing_reason": "Target population not detected"
+    },
+    "method": {
+      "label": "Target method",
+      "terms": [
+        "example method term"
+      ],
+      "missing_reason": "Target method not detected"
+    },
+    "data_source": {
+      "label": "Eligible data source",
+      "terms": [
+        "example data source term"
+      ],
+      "missing_reason": "Eligible data source not detected"
+    },
+    "outcome": {
+      "label": "Eligible outcome",
+      "terms": [
+        "example outcome term"
+      ],
+      "missing_reason": "Eligible outcome not detected"
+    },
+    "human": {
+      "label": "Human participants",
+      "terms": [
+        "participant",
+        "participants",
+        "patient",
+        "patients",
+        "subjects",
+        "individuals",
+        "cohort",
+        "sample"
+      ]
+    },
+    "empirical": {
+      "label": "Primary empirical evidence",
+      "terms": [
+        "dataset",
+        "data set",
+        "sample",
+        "methods",
+        "results",
+        "experiment",
+        "analysis",
+        "validation"
+      ],
+      "missing_reason": "Primary empirical evidence unclear"
+    },
+    "secondary_research": {
+      "label": "Secondary research",
+      "terms": [
+        "systematic review",
+        "scoping review",
+        "literature review",
+        "meta-analysis",
+        "meta analysis",
+        "bibliometric",
+        "protocol"
+      ],
+      "reason": "Secondary research"
+    },
+    "non_human": {
+      "label": "Non-human evidence",
+      "terms": [
+        "mouse",
+        "mice",
+        "rat",
+        "rats",
+        "zebrafish",
+        "animal model",
+        "non-human"
+      ],
+      "reason": "Non-human subjects"
+    },
+    "intervention": {
+      "label": "Intervention-only focus",
+      "terms": [
+        "intervention",
+        "therapy",
+        "treatment",
+        "training"
+      ],
+      "reason": "Intervention-only focus without eligible outcome"
+    },
+    "abstract_only": {
+      "label": "Insufficient publication type",
+      "terms": [
+        "conference abstract",
+        "abstract only",
+        "extended abstract",
+        "poster abstract"
+      ],
+      "reason": "Abstract-only or insufficient full text"
+    },
+    "preprint_or_non_peer_review": {
+      "label": "Non-peer-reviewed publication type",
+      "terms": [
+        "preprint",
+        "thesis",
+        "dissertation",
+        "technical report"
+      ],
+      "reason": "Lack of peer review or non-peer-reviewed publication type"
+    }
+  }
+}
