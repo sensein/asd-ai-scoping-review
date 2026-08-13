@@ -29,3 +29,4 @@ API credentials are read from environment variables and must never be hardcoded:
 
 - `NCBI_API_KEY`, `NCBI_EMAIL` — Entrez lookups in `pubmed_id_download.ipynb`
 - `AZURE_OPENAI_API_KEY` — `mic.ipynb`
+- `OPENAI_API_KEY` — `screening.ipynb`
