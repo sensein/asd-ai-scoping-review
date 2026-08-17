@@ -4,48 +4,22 @@
 from __future__ import annotations
 
 import argparse
-import difflib
-import re
 from pathlib import Path
 
 import pandas as pd
-from openpyxl import load_workbook
-from openpyxl.styles import Alignment, Font, PatternFill
-from openpyxl.utils import get_column_letter
+
+from prisma_common import (
+    OUTPUT_ROOT,
+    normalize_doi,
+    normalize_link,
+    normalize_title,
+    title_similarity,
+    write_workbook as write_shared_workbook,
+)
 
 
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT = ROOT / "output" / "metadata_enrichment" / "enriched_records.csv"
-DEFAULT_OUTPUT = ROOT / "output" / "deduplication" / "deduplicated_records.xlsx"
-
-
-def temporary_output_path(output: Path) -> Path:
-    if output.suffix:
-        return output.with_name(f"{output.stem}.tmp{output.suffix}")
-    return output.with_name(f"{output.name}.tmp")
-
-
-def clean(value: object) -> str:
-    return "" if pd.isna(value) else str(value).strip()
-
-
-def normalize_doi(value: object) -> str:
-    doi = clean(value).lower()
-    doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi)
-    doi = re.sub(r"^doi:\s*", "", doi)
-    return doi.strip()
-
-
-def normalize_link(value: object) -> str:
-    link = clean(value).lower()
-    link = re.sub(r"^https?://", "", link)
-    return link.rstrip("/")
-
-
-def normalize_title(value: object) -> str:
-    title = clean(value).lower()
-    title = re.sub(r"[\W_]+", " ", title)
-    return re.sub(r"\s+", " ", title).strip()
+DEFAULT_INPUT = OUTPUT_ROOT / "metadata_enrichment" / "enriched_records.csv"
+DEFAULT_OUTPUT = OUTPUT_ROOT / "deduplication" / "deduplicated_records.xlsx"
 
 
 def read_records(path: Path, sheet: str | None) -> pd.DataFrame:
@@ -67,7 +41,7 @@ def find_near_title_match(title_key: str, retained: list[dict], threshold: float
         candidate_key = candidate.get("_title_key", "")
         if not candidate_key or abs(len(candidate_key) - len(title_key)) > 35:
             continue
-        score = difflib.SequenceMatcher(None, title_key, candidate_key).ratio()
+        score = title_similarity(title_key, candidate_key)
         if score > best_score:
             best = candidate
             best_score = score
@@ -157,27 +131,6 @@ def deduplicate(df: pd.DataFrame, near_title_threshold: float, use_near_title: b
     return retained_df, all_df, log_df
 
 
-def style_workbook(path: Path) -> None:
-    wb = load_workbook(path)
-    fill = PatternFill("solid", fgColor="22577A")
-    font = Font(color="FFFFFF", bold=True)
-    for ws in wb.worksheets:
-        ws.freeze_panes = "A2"
-        for cell in ws[1]:
-            cell.fill = fill
-            cell.font = font
-            cell.alignment = Alignment(wrap_text=True, vertical="top")
-        for row in ws.iter_rows(min_row=2):
-            for cell in row:
-                cell.alignment = Alignment(wrap_text=True, vertical="top")
-        for column_cells in ws.columns:
-            letter = get_column_letter(column_cells[0].column)
-            max_len = max(len(str(cell.value or "")[:100]) for cell in column_cells)
-            ws.column_dimensions[letter].width = max(12, min(max_len + 2, 55))
-        ws.auto_filter.ref = ws.dimensions
-    wb.save(path)
-
-
 def write_workbook(output: Path, retained_df: pd.DataFrame, all_df: pd.DataFrame, log_df: pd.DataFrame) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     summary = pd.DataFrame(
@@ -191,14 +144,15 @@ def write_workbook(output: Path, retained_df: pd.DataFrame, all_df: pd.DataFrame
             {"metric": "Duplicate near-title matches", "value": int((log_df.get("duplicate_match_type", pd.Series(dtype=str)) == "Near-identical title").sum())},
         ]
     )
-    temp_output = temporary_output_path(output)
-    with pd.ExcelWriter(temp_output, engine="openpyxl") as writer:
-        summary.to_excel(writer, sheet_name="Summary", index=False)
-        retained_df.to_excel(writer, sheet_name="Deduplicated_Retained", index=False)
-        all_df.to_excel(writer, sheet_name="All_With_Duplicate_Status", index=False)
-        log_df.to_excel(writer, sheet_name="Duplicate_Log", index=False)
-    style_workbook(temp_output)
-    temp_output.replace(output)
+    write_shared_workbook(
+        output,
+        {
+            "Summary": summary,
+            "Deduplicated_Retained": retained_df,
+            "All_With_Duplicate_Status": all_df,
+            "Duplicate_Log": log_df,
+        },
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Find missing abstracts for title Include/Maybe PRISMA records.
+"""Find missing abstracts for title-Include PRISMA records.
 
 The script starts from title_include_maybe_metadata.xlsx, preserves any abstracts
 already present, then tries public scholarly metadata APIs for rows that are
@@ -11,12 +11,10 @@ records that still need manual abstract lookup.
 from __future__ import annotations
 
 import argparse
-import difflib
 import html
 import json
 import re
 import sys
-import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -25,16 +23,23 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from prisma_common import (
+    OUTPUT_ROOT,
+    load_json_cache,
+    normalize_doi as shared_normalize_doi,
+    normalize_title as shared_normalize_title,
+    request_text_cached,
+    save_json_cache,
+    style_workbook as shared_style_workbook,
+    title_similarity as shared_title_similarity,
+)
+
 import pandas as pd
-from openpyxl import load_workbook
-from openpyxl.styles import Alignment, Font, PatternFill
-from openpyxl.utils import get_column_letter
 
 
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT = ROOT / "output" / "abstract_screening" / "title_include_maybe_metadata.xlsx"
-DEFAULT_OUTPUT = ROOT / "output" / "abstract_finding" / "title_include_maybe_with_abstracts.xlsx"
-DEFAULT_CACHE = ROOT / "output" / "abstract_finding" / "abstract_api_cache.json"
+DEFAULT_INPUT = OUTPUT_ROOT / "abstract_screening" / "title_include_metadata.xlsx"
+DEFAULT_OUTPUT = OUTPUT_ROOT / "abstract_finding" / "title_include_with_abstracts.xlsx"
+DEFAULT_CACHE = OUTPUT_ROOT / "abstract_finding" / "abstract_api_cache.json"
 
 
 def temporary_output_path(output: Path) -> Path:
@@ -80,17 +85,11 @@ def normalize_header(value: str) -> str:
 
 
 def normalize_title(value: Any) -> str:
-    text = html.unescape(str(value or "")).lower()
-    text = re.sub(r"<[^>]+>", " ", text)
-    text = re.sub(r"[\W_]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+    return shared_normalize_title(value)
 
 
 def normalize_doi(value: Any) -> str:
-    doi = str(value or "").strip()
-    doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
-    doi = re.sub(r"^doi:\s*", "", doi, flags=re.IGNORECASE)
-    return doi.strip().rstrip(".")
+    return shared_normalize_doi(value)
 
 
 def doi_from_link(value: Any) -> str:
@@ -100,13 +99,7 @@ def doi_from_link(value: Any) -> str:
 
 
 def title_similarity(left: Any, right: Any) -> float:
-    left_norm = normalize_title(left)
-    right_norm = normalize_title(right)
-    if not left_norm or not right_norm:
-        return 0.0
-    if left_norm == right_norm:
-        return 1.0
-    return difflib.SequenceMatcher(None, left_norm, right_norm).ratio()
+    return shared_title_similarity(left, right)
 
 
 def journal_bonus(input_journal: Any, candidate_journal: Any) -> float:
@@ -149,19 +142,11 @@ def inverted_abstract_to_text(index: Any) -> str:
 
 
 def load_cache(path: Path) -> dict[str, Any]:
-    if not path.exists():
-        return {}
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError:
-        return {}
+    return load_json_cache(path)
 
 
 def save_cache(path: Path, cache: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temp_path = temporary_output_path(path)
-    temp_path.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
-    temp_path.replace(path)
+    save_json_cache(path, cache)
 
 
 def request_text(
@@ -174,32 +159,10 @@ def request_text(
     retries: int,
     accept: str = "application/json",
 ) -> str | None:
-    cache_key = f"TEXT::{url}"
-    if cache_key in cache:
-        return cache[cache_key]
-
-    for attempt in range(retries + 1):
-        if delay_seconds:
-            time.sleep(delay_seconds)
-        request = urllib.request.Request(url, headers={"User-Agent": user_agent, "Accept": accept})
-        try:
-            with urllib.request.urlopen(request, timeout=timeout) as response:
-                text = response.read().decode("utf-8", errors="replace")
-                cache[cache_key] = text
-                return text
-        except urllib.error.HTTPError as exc:
-            if exc.code in {429, 500, 502, 503, 504} and attempt < retries:
-                time.sleep(min(8, 2 ** attempt))
-                continue
-            cache[cache_key] = {"error": f"HTTP {exc.code}"}
-            return None
-        except (urllib.error.URLError, TimeoutError):
-            if attempt < retries:
-                time.sleep(min(8, 2 ** attempt))
-                continue
-            return None
-    return None
-
+    return request_text_cached(
+        url, cache, user_agent=user_agent, delay_seconds=delay_seconds,
+        timeout=timeout, retries=retries, accept=accept
+    )
 
 def request_json(
     url: str,
@@ -606,7 +569,8 @@ def read_input(path: Path, sheet: str | None) -> pd.DataFrame:
         if sheet:
             return pd.read_excel(path, sheet_name=sheet, dtype=str).fillna("")
         workbook = pd.ExcelFile(path)
-        sheet_name = "Title_Include_Maybe_Metadata" if "Title_Include_Maybe_Metadata" in workbook.sheet_names else workbook.sheet_names[0]
+        preferred = ["Title_Include_Metadata", "Title_Include_Maybe_Metadata"]
+        sheet_name = next((name for name in preferred if name in workbook.sheet_names), workbook.sheet_names[0])
         return pd.read_excel(path, sheet_name=sheet_name, dtype=str).fillna("")
     return pd.read_csv(path, dtype=str).fillna("")
 
@@ -690,42 +654,7 @@ def enrich_abstracts(df: pd.DataFrame, cache: dict[str, Any], args: argparse.Nam
 
 
 def style_workbook(path: Path) -> None:
-    wb = load_workbook(path)
-    fill = PatternFill("solid", fgColor="31572C")
-    font = Font(color="FFFFFF", bold=True)
-    for ws in wb.worksheets:
-        ws.freeze_panes = "A2"
-        if ws.max_row and ws.max_column:
-            ws.auto_filter.ref = ws.dimensions
-        for cell in ws[1]:
-            cell.fill = fill
-            cell.font = font
-            cell.alignment = Alignment(wrap_text=True, vertical="top")
-        for row in ws.iter_rows(min_row=2):
-            for cell in row:
-                cell.alignment = Alignment(wrap_text=True, vertical="top")
-        for column_cells in ws.columns:
-            letter = get_column_letter(column_cells[0].column)
-            max_len = max(len(str(cell.value or "")[:100]) for cell in column_cells)
-            ws.column_dimensions[letter].width = max(12, min(max_len + 2, 55))
-
-    for sheet_name in ["Records_With_Abstracts", "Still_Missing_Abstracts"]:
-        if sheet_name not in wb.sheetnames:
-            continue
-        ws = wb[sheet_name]
-        headers = {cell.value: cell.column for cell in ws[1]}
-        for name, width in {
-            "title": 58,
-            "authors": 42,
-            "abstract": 90,
-            "abstract_lookup_notes": 55,
-            "link": 45,
-            "doi": 28,
-        }.items():
-            if name in headers:
-                ws.column_dimensions[get_column_letter(headers[name])].width = width
-    wb.save(path)
-
+    shared_style_workbook(path)
 
 def write_output(path: Path, df: pd.DataFrame) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -755,9 +684,9 @@ def write_output(path: Path, df: pd.DataFrame) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Find missing abstracts for title Include/Maybe records.")
+    parser = argparse.ArgumentParser(description="Find missing abstracts for title-Include records.")
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT, help="Input xlsx/csv file.")
-    parser.add_argument("--sheet", default=None, help="Input sheet name. Defaults to Title_Include_Maybe_Metadata when present.")
+    parser.add_argument("--sheet", default=None, help="Input sheet name. Defaults to Title_Include_Metadata when present.")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Output xlsx file.")
     parser.add_argument("--cache", type=Path, default=DEFAULT_CACHE, help="JSON API cache path.")
     parser.add_argument(
