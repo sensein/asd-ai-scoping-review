@@ -8,12 +8,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from prisma_common import OUTPUT_ROOT, clean, count_frame, read_table, write_workbook
+from prisma_common import ROOT, clean, count_frame, read_table, write_workbook
 
 
-DEFAULT_MANIFEST = OUTPUT_ROOT / "pdf_retrieval" / "pdf_retrieval_manifest.xlsx"
-DEFAULT_SCREENING = OUTPUT_ROOT / "full_text_screening" / "full_text_screening_results_pdfs_found.xlsx"
-DEFAULT_OUTPUT = OUTPUT_ROOT / "full_text_screening" / "final_full_text_decisions.xlsx"
+DEFAULT_MANIFEST = ROOT / "output" / "pdf_retrieval" / "pdf_retrieval_manifest.xlsx"
+DEFAULT_SCREENING = ROOT / "output" / "full_text_screening" / "full_text_screening_results_pdfs_found.xlsx"
+DEFAULT_OUTPUT = ROOT / "output" / "full_text_screening" / "final_full_text_decisions.xlsx"
 
 
 def combine_decisions(manifest: pd.DataFrame, screening: pd.DataFrame) -> pd.DataFrame:

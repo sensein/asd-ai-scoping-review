@@ -34,8 +34,6 @@ from typing import Any
 import numpy as np
 import openpyxl
 import pandas as pd
-
-from reliability import krippendorff_alpha as shared_krippendorff_alpha
 from openpyxl.utils import get_column_letter
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics.pairwise import cosine_similarity
@@ -73,7 +71,7 @@ else:
     SENTENCE_TRANSFORMER_IMPORT_ERROR = ""
 
 
-RANDOM_SEED = 20260707
+RANDOM_SEED = 20260709
 DEFAULT_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 PRIMARY_DISTANCE_THRESHOLD = 0.35
 SENSITIVITY_THRESHOLDS = [0.25, 0.45]
@@ -427,16 +425,44 @@ def read_workbook_model(workbook_path: Path) -> tuple[list[dict[str, Any]], list
 
 
 def krippendorff_nominal_alpha(unit_to_values: dict[str, list[Any]]) -> tuple[float | None, str, float | None]:
-    paired = [
-        [value for value in values if value is not None and not (isinstance(value, float) and math.isnan(value))]
-        for values in unit_to_values.values()
-    ]
-    exact = [values[0] == values[1] for values in paired if len(values) >= 2]
-    exact_agreement = float(np.mean(exact)) if exact else None
-    alpha, reason = shared_krippendorff_alpha(paired, level="nominal")
-    if pd.isna(alpha):
-        return None, reason, exact_agreement
-    return float(alpha), "valid", exact_agreement
+    observed_pairs = 0
+    observed_disagreements = 0
+    all_values: list[Any] = []
+    exact_agreements = 0
+    exact_total = 0
+
+    for values in unit_to_values.values():
+        clean = [v for v in values if v is not None and not (isinstance(v, float) and math.isnan(v))]
+        all_values.extend(clean)
+        if len(clean) >= 2:
+            exact_total += 1
+            exact_agreements += int(clean[0] == clean[1])
+        for i in range(len(clean)):
+            for j in range(i + 1, len(clean)):
+                observed_pairs += 1
+                observed_disagreements += int(clean[i] != clean[j])
+
+    if observed_pairs == 0:
+        return None, "too_few_paired_observations", None
+    if len(all_values) < 2:
+        return None, "too_few_values", exact_agreements / exact_total if exact_total else None
+
+    total_pairs = 0
+    expected_disagreements = 0
+    for i in range(len(all_values)):
+        for j in range(i + 1, len(all_values)):
+            total_pairs += 1
+            expected_disagreements += int(all_values[i] != all_values[j])
+
+    exact_agreement = exact_agreements / exact_total if exact_total else None
+    if total_pairs == 0 or expected_disagreements == 0:
+        return None, "no_variation", exact_agreement
+
+    do = observed_disagreements / observed_pairs
+    de = expected_disagreements / total_pairs
+    if de == 0:
+        return None, "no_variation", exact_agreement
+    return 1.0 - (do / de), "valid", exact_agreement
 
 
 def medoid_response(texts: list[str], embeddings: np.ndarray) -> str:
@@ -721,6 +747,7 @@ def run_analysis(input_workbook: Path, output_dir: Path, model_name: str = DEFAU
 
     variable_rows: list[dict[str, Any]] = []
     all_assignment_rows: list[dict[str, Any]] = []
+    coder_label_map: dict[str, str] = {}
     coder_label_map: dict[str, str] = {}
     all_category_rows: list[dict[str, Any]] = []
     excluded_rows: list[dict[str, Any]] = []

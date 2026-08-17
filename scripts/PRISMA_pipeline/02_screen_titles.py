@@ -8,11 +8,11 @@ from pathlib import Path
 
 import pandas as pd
 
-from prisma_common import OUTPUT_ROOT, count_frame, load_criteria, read_table, screen_eligibility, write_workbook
+from prisma_common import ROOT, count_frame, load_criteria, read_table, screen_eligibility, write_workbook
 
 
-DEFAULT_INPUT = OUTPUT_ROOT / "deduplication" / "deduplicated_records.xlsx"
-DEFAULT_OUTPUT = OUTPUT_ROOT / "title_screening" / "title_screening_suggestions.xlsx"
+DEFAULT_INPUT = ROOT / "output" / "deduplication" / "deduplicated_records.xlsx"
+DEFAULT_OUTPUT = ROOT / "output" / "title_screening" / "title_screening_suggestions.xlsx"
 
 
 def add_suggestions(df: pd.DataFrame, criteria: dict) -> pd.DataFrame:

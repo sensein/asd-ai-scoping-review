@@ -10,16 +10,21 @@ manual screen. It writes a new workbook with updated counts and audit sheets.
 from __future__ import annotations
 
 import argparse
+import difflib
+import html
+import re
 from pathlib import Path
 from typing import Any
 
-from prisma_common import OUTPUT_ROOT, normalize_title as shared_normalize_title, style_workbook as shared_style_workbook, title_similarity_components
-
 import pandas as pd
+from openpyxl import load_workbook
+from openpyxl.styles import Alignment, Font, PatternFill
+from openpyxl.utils import get_column_letter
 
-DEFAULT_INPUT = OUTPUT_ROOT / "abstract_screening" / "title_include_abstract_screening_suggestions.xlsx"
-DEFAULT_PDF_DIR = OUTPUT_ROOT / "pdfs"
-DEFAULT_OUTPUT = OUTPUT_ROOT / "abstract_screening" / "title_include_abstract_screening_manual_pdf_updated.xlsx"
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_INPUT = ROOT / "output" / "abstract_screening" / "title_include_abstract_screening_suggestions.xlsx"
+DEFAULT_PDF_DIR = ROOT / "output" / "pdfs"
+DEFAULT_OUTPUT = ROOT / "output" / "abstract_screening" / "title_include_abstract_screening_manual_pdf_updated.xlsx"
 
 
 def temporary_output_path(output: Path) -> Path:
@@ -29,7 +34,11 @@ def temporary_output_path(output: Path) -> Path:
 
 
 def normalize_title(value: Any) -> str:
-    return shared_normalize_title(value)
+    text = html.unescape(str(value or "")).lower()
+    text = re.sub(r"\.pdf$", "", text)
+    text = re.sub(r"[_\-/]+", " ", text)
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def token_jaccard(left: str, right: str) -> float:
@@ -41,7 +50,11 @@ def token_jaccard(left: str, right: str) -> float:
 
 
 def match_score(pdf_name: str, title: str) -> tuple[float, float, float]:
-    return title_similarity_components(Path(pdf_name).stem, title)
+    pdf_norm = normalize_title(Path(pdf_name).stem)
+    title_norm = normalize_title(title)
+    seq = difflib.SequenceMatcher(None, pdf_norm, title_norm).ratio() if pdf_norm and title_norm else 0.0
+    jac = token_jaccard(pdf_norm, title_norm)
+    return max(seq, jac), seq, jac
 
 
 def read_sheet(path: Path, sheet: str) -> pd.DataFrame:
@@ -153,7 +166,38 @@ def apply_manual_update(screened: pd.DataFrame, manual: pd.DataFrame, matches: d
 
 
 def style_workbook(path: Path) -> None:
-    shared_style_workbook(path)
+    wb = load_workbook(path)
+    fill = PatternFill("solid", fgColor="283618")
+    font = Font(color="FFFFFF", bold=True)
+    for ws in wb.worksheets:
+        ws.freeze_panes = "A2"
+        if ws.max_row and ws.max_column:
+            ws.auto_filter.ref = ws.dimensions
+        for cell in ws[1]:
+            cell.fill = fill
+            cell.font = font
+            cell.alignment = Alignment(wrap_text=True, vertical="top")
+        for row in ws.iter_rows(min_row=2):
+            for cell in row:
+                cell.alignment = Alignment(wrap_text=True, vertical="top")
+        for col_cells in ws.columns:
+            letter = get_column_letter(col_cells[0].column)
+            max_len = max(len(str(cell.value or "")[:90]) for cell in col_cells)
+            ws.column_dimensions[letter].width = max(12, min(max_len + 2, 55))
+        headers = {cell.value: cell.column for cell in ws[1]}
+        for name, width in {
+            "title": 58,
+            "abstract": 90,
+            "authors": 42,
+            "manual_pdf_path": 60,
+            "manual_update_notes": 58,
+            "final_abstract_notes": 58,
+            "pdf_filename": 55,
+        }.items():
+            if name in headers:
+                ws.column_dimensions[get_column_letter(headers[name])].width = width
+    wb.save(path)
+
 
 def write_output(output: Path, screened: pd.DataFrame, manual_updated: pd.DataFrame, match_audit: pd.DataFrame, unmatched_pdfs: pd.DataFrame, source_name: str, pdf_dir: Path) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)

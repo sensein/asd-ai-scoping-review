@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create the abstract-screening queue from title-Include records."""
+"""Create the abstract-screening queue from title Include/Maybe records."""
 
 from __future__ import annotations
 
@@ -8,12 +8,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from prisma_common import OUTPUT_ROOT, count_frame, load_criteria, parse_decisions, read_table, screen_eligibility, write_workbook
+from prisma_common import ROOT, count_frame, load_criteria, read_table, screen_eligibility, write_workbook
 
 
-DEFAULT_INPUT = OUTPUT_ROOT / "title_screening" / "title_screening_suggestions.xlsx"
-DEFAULT_TITLE_OUTPUT = OUTPUT_ROOT / "abstract_screening" / "title_include_metadata.xlsx"
-DEFAULT_ABSTRACT_OUTPUT = OUTPUT_ROOT / "abstract_screening" / "abstract_screening_suggestions.xlsx"
+DEFAULT_INPUT = ROOT / "output" / "title_screening" / "title_screening_suggestions.xlsx"
+DEFAULT_TITLE_OUTPUT = ROOT / "output" / "abstract_screening" / "title_include_maybe_metadata.xlsx"
+DEFAULT_ABSTRACT_OUTPUT = ROOT / "output" / "abstract_screening" / "abstract_screening_suggestions.xlsx"
 
 
 def filter_title_decisions(df: pd.DataFrame, decisions: set[str]) -> pd.DataFrame:
@@ -47,26 +47,22 @@ def add_abstract_suggestions(df: pd.DataFrame, criteria: dict) -> pd.DataFrame:
     return df
 
 
-def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Extract title-Include records and add abstract-screening suggestions.")
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Extract title Include/Maybe records and add abstract-screening suggestions.")
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--title-output", type=Path, default=DEFAULT_TITLE_OUTPUT)
     parser.add_argument("--abstract-output", type=Path, default=DEFAULT_ABSTRACT_OUTPUT)
     parser.add_argument("--sheet", default=None)
     parser.add_argument("--criteria", type=Path, default=None)
-    parser.add_argument(
-        "--title-decisions",
-        default="Include",
-        help="Title decisions advanced to abstract screening. Current protocol advances Include only.",
-    )
-    return parser.parse_args(argv)
+    parser.add_argument("--title-decisions", default="Include,Maybe")
+    return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     if not args.input.exists():
         raise SystemExit(f"Input file not found: {args.input}")
-    decisions = parse_decisions(args.title_decisions)
+    decisions = {item.strip() for item in args.title_decisions.split(",") if item.strip()}
     criteria = load_criteria(args.criteria)
     df = read_table(args.input, args.sheet, preferred_sheet="Title_Suggestions")
     title_subset = filter_title_decisions(df, decisions)
@@ -75,17 +71,12 @@ def main() -> int:
 
     title_summary = pd.DataFrame(
         [
-            {"metric": "Title decisions advanced", "value": ",".join(sorted(decisions))},
             {"metric": "Title records selected", "value": len(title_subset)},
-            {
-                "metric": "Title Maybe records not advanced",
-                "value": int(df["suggested_title_screening_decision"].eq("Maybe").sum()) if "Maybe" not in decisions else 0,
-            },
             {"metric": "Records with abstracts", "value": int(title_subset.get("abstract", pd.Series([""] * len(title_subset))).astype(str).str.strip().ne("").sum())},
             {"metric": "Records missing abstracts", "value": int(title_subset.get("abstract", pd.Series([""] * len(title_subset))).astype(str).str.strip().eq("").sum())},
         ]
     )
-    write_workbook(args.title_output, {"Summary": title_summary, "Title_Include_Metadata": title_subset})
+    write_workbook(args.title_output, {"Summary": title_summary, "Title_Include_Maybe_Metadata": title_subset})
 
     abstract_summary = pd.DataFrame(
         [

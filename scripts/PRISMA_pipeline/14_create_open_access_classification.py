@@ -8,12 +8,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from prisma_common import DATA_ROOT, OUTPUT_ROOT, count_frame, normalize_header, read_table, write_workbook
+from prisma_common import ROOT, count_frame, normalize_header, read_table, write_workbook
 
 
-DEFAULT_FINAL = OUTPUT_ROOT / "final_included_studies" / "final_full_text_decisions_after_manual_removal.xlsx"
-DEFAULT_SOURCE = DATA_ROOT / "manual" / "open_access_classification_source.xlsx"
-DEFAULT_OUTPUT = OUTPUT_ROOT / "final_included_studies" / "final_open_access_classification.xlsx"
+DEFAULT_FINAL = ROOT / "output" / "final_included_studies" / "final_full_text_decisions_after_manual_removal.xlsx"
+DEFAULT_SOURCE = ROOT / "data" / "manual" / "open_access_classification_source.xlsx"
+DEFAULT_OUTPUT = ROOT / "output" / "final_included_studies" / "final_open_access_classification.xlsx"
 
 
 def parse_args() -> argparse.Namespace:

@@ -4,13 +4,8 @@
 from __future__ import annotations
 
 import html
-import difflib
 import json
-import os
 import re
-import time
-import urllib.error
-import urllib.request
 from pathlib import Path
 from typing import Any
 
@@ -21,22 +16,8 @@ from openpyxl.utils import get_column_letter
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DATA_ROOT = Path(os.environ.get("ASD_REVIEW_DATA_ROOT", ROOT / "data")).expanduser()
-OUTPUT_ROOT = Path(os.environ.get("ASD_REVIEW_OUTPUT_ROOT", ROOT / "output")).expanduser()
-if not DATA_ROOT.is_absolute():
-    DATA_ROOT = ROOT / DATA_ROOT
-if not OUTPUT_ROOT.is_absolute():
-    OUTPUT_ROOT = ROOT / OUTPUT_ROOT
 DEFAULT_CRITERIA = ROOT / "config" / "review_criteria.json"
 EXAMPLE_CRITERIA = Path(__file__).resolve().parent / "review_criteria.example.json"
-
-INCLUDE = "Include"
-MAYBE = "Maybe"
-EXCLUDE = "Exclude"
-DECISION_LABELS = (INCLUDE, MAYBE, EXCLUDE)
-MISSING_IDENTIFIER_TOKENS = {
-    "", "-", "--", "?", "??", "n/a", "na", "none", "null", "not available", "not found", "unknown",
-}
 
 
 def temporary_output_path(output: Path) -> Path:
@@ -70,92 +51,9 @@ def normalize_title(value: Any) -> str:
 
 def normalize_doi(value: Any) -> str:
     doi = str(value or "").strip()
-    if doi.lower() in MISSING_IDENTIFIER_TOKENS:
-        return ""
     doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
     doi = re.sub(r"^doi:\s*", "", doi, flags=re.IGNORECASE)
-    embedded = re.search(r"10\.\d{4,9}/[^\s\"<>]+", doi, flags=re.IGNORECASE)
-    if embedded:
-        doi = embedded.group(0)
-    doi = doi.strip().rstrip(".,; ").lower()
-    return "" if doi in MISSING_IDENTIFIER_TOKENS else doi
-
-
-def normalize_link(value: Any) -> str:
-    link = clean(value).lower()
-    if link in MISSING_IDENTIFIER_TOKENS:
-        return ""
-    link = re.sub(r"^https?://", "", link)
-    link = link.rstrip("/")
-    return "" if link in MISSING_IDENTIFIER_TOKENS else link
-
-
-def find_duplicate_keys(
-    df: pd.DataFrame,
-    *,
-    doi_col: str = "doi",
-    title_col: str = "title",
-    link_col: str = "link",
-) -> pd.DataFrame:
-    """Return a non-destructive audit of exact duplicate DOI, title, and link keys."""
-    normalizers = {
-        "DOI": (doi_col, normalize_doi),
-        "Exact title": (title_col, normalize_title),
-        "Link": (link_col, normalize_link),
-    }
-    rows: list[dict[str, Any]] = []
-    for match_type, (column, normalizer) in normalizers.items():
-        if column not in df.columns:
-            continue
-        normalized = df[column].map(normalizer)
-        counts = normalized[normalized.ne("")].value_counts()
-        duplicate_values = counts[counts.gt(1)]
-        for normalized_value, record_count in duplicate_values.items():
-            for row_index in df.index[normalized.eq(normalized_value)]:
-                row = df.loc[row_index]
-                rows.append(
-                    {
-                        "duplicate_match_type": match_type,
-                        "normalized_value": normalized_value,
-                        "record_count": int(record_count),
-                        "row_index": row_index,
-                        "record_id": row.get("record_id", ""),
-                        "title": row.get(title_col, ""),
-                        "doi": row.get(doi_col, ""),
-                        "link": row.get(link_col, ""),
-                    }
-                )
-    columns = [
-        "duplicate_match_type", "normalized_value", "record_count", "row_index", "record_id", "title", "doi", "link",
-    ]
-    return pd.DataFrame(rows, columns=columns)
-
-
-def title_similarity(left: Any, right: Any, include_token_jaccard: bool = False) -> float:
-    maximum, sequence_score, _ = title_similarity_components(left, right)
-    return maximum if include_token_jaccard else sequence_score
-
-
-def title_similarity_components(left: Any, right: Any) -> tuple[float, float, float]:
-    left_norm = normalize_title(left)
-    right_norm = normalize_title(right)
-    if not left_norm or not right_norm:
-        return 0.0, 0.0, 0.0
-    if left_norm == right_norm:
-        return 1.0, 1.0, 1.0
-    sequence_score = difflib.SequenceMatcher(None, left_norm, right_norm).ratio()
-    left_tokens = set(left_norm.split())
-    right_tokens = set(right_norm.split())
-    jaccard = len(left_tokens & right_tokens) / len(left_tokens | right_tokens) if left_tokens and right_tokens else 0.0
-    return max(sequence_score, jaccard), sequence_score, jaccard
-
-
-def parse_decisions(value: str) -> set[str]:
-    requested = {item.strip().title() for item in str(value).split(",") if item.strip()}
-    unknown = requested - set(DECISION_LABELS)
-    if unknown:
-        raise ValueError(f"Unknown decision label(s): {sorted(unknown)}; use {DECISION_LABELS}")
-    return requested
+    return doi.strip().rstrip(".").lower()
 
 
 def read_table(path: Path, sheet: str | int | None = None, preferred_sheet: str | None = None) -> pd.DataFrame:
@@ -221,91 +119,10 @@ def count_frame(series: pd.Series, name: str, blank_label: str = "Blank") -> pd.
 def load_criteria(path: Path | str | None = None) -> dict[str, Any]:
     criteria_path = Path(path) if path else DEFAULT_CRITERIA
     if not criteria_path.exists():
-        raise FileNotFoundError(
-            "PRISMA review criteria are required and were not found at "
-            f"{criteria_path}. Copy {EXAMPLE_CRITERIA} to {DEFAULT_CRITERIA}, "
-            "replace every placeholder, and rerun (or pass --criteria explicitly)."
-        )
-    criteria = json.loads(criteria_path.read_text(encoding="utf-8"))
-    required_groups = ("population", "method", "data_source", "outcome")
-    missing_groups = [group for group in required_groups if not terms(criteria, group)]
-    placeholder_terms = [
-        term
-        for group in required_groups
-        for term in terms(criteria, group)
-        if "example " in term.lower() or "placeholder" in term.lower()
-    ]
-    if missing_groups or placeholder_terms:
-        details = []
-        if missing_groups:
-            details.append(f"missing required term groups: {missing_groups}")
-        if placeholder_terms:
-            details.append(f"placeholder terms remain: {placeholder_terms}")
-        raise ValueError(f"Unsafe PRISMA criteria file {criteria_path}: " + "; ".join(details))
-    criteria["_criteria_path"] = str(criteria_path.resolve())
-    return criteria
-
-
-def load_json_cache(path: Path) -> dict[str, Any]:
-    if not path.exists():
+        criteria_path = EXAMPLE_CRITERIA
+    if not criteria_path.exists():
         return {}
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        raise ValueError(f"Invalid JSON cache {path}: {exc}") from exc
-
-
-def save_json_cache(path: Path, cache: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = temporary_output_path(path)
-    temporary.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
-    temporary.replace(path)
-
-
-def request_text_cached(
-    url: str,
-    cache: dict[str, Any],
-    *,
-    user_agent: str,
-    delay_seconds: float,
-    timeout: int,
-    retries: int,
-    accept: str = "application/json",
-) -> str | None:
-    """Fetch a URL with the pipeline's shared retry and in-memory cache policy."""
-    cached = cache.get(url)
-    if isinstance(cached, dict) and "_response_text" in cached:
-        return cached["_response_text"]
-    if isinstance(cached, str):
-        return cached
-    for attempt in range(retries + 1):
-        if delay_seconds:
-            time.sleep(delay_seconds)
-        request = urllib.request.Request(url, headers={"User-Agent": user_agent, "Accept": accept})
-        try:
-            with urllib.request.urlopen(request, timeout=timeout) as response:
-                text = response.read().decode("utf-8", errors="replace")
-            cache[url] = {"_response_text": text}
-            return text
-        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
-            if attempt >= retries:
-                return None
-            time.sleep(min(2**attempt, 8))
-    return None
-
-
-def request_json_cached(
-    url: str,
-    cache: dict[str, Any],
-    **kwargs: Any,
-) -> dict[str, Any] | None:
-    text = request_text_cached(url, cache, **kwargs)
-    if not text:
-        return None
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        return None
+    return json.loads(criteria_path.read_text(encoding="utf-8"))
 
 
 def apply_year_overrides(criteria: dict[str, Any], start_year: int | None, end_year: int | None) -> dict[str, Any]:

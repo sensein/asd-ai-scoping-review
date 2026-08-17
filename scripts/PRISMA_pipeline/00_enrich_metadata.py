@@ -10,9 +10,12 @@ from __future__ import annotations
 
 import argparse
 import csv
+import difflib
 import html
+import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -20,21 +23,12 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from prisma_common import (
-    DATA_ROOT,
-    OUTPUT_ROOT,
-    load_json_cache,
-    normalize_doi as shared_normalize_doi,
-    normalize_title as shared_normalize_title,
-    request_json_cached,
-    save_json_cache,
-    title_similarity as shared_title_similarity,
-)
 
-DEFAULT_INPUT = DATA_ROOT / "raw" / "records.xlsx"
-DEFAULT_OUTPUT = OUTPUT_ROOT / "metadata_enrichment" / "enriched_records.csv"
-DEFAULT_CACHE = OUTPUT_ROOT / "metadata_enrichment" / "api_cache.json"
-DEFAULT_REVIEW = OUTPUT_ROOT / "metadata_enrichment" / "metadata_review_queue.csv"
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_INPUT = ROOT / "data" / "raw" / "records.xlsx"
+DEFAULT_OUTPUT = ROOT / "output" / "metadata_enrichment" / "enriched_records.csv"
+DEFAULT_CACHE = ROOT / "output" / "metadata_enrichment" / "api_cache.json"
+DEFAULT_REVIEW = ROOT / "output" / "metadata_enrichment" / "metadata_review_queue.csv"
 
 
 def temporary_output_path(output: Path) -> Path:
@@ -120,11 +114,17 @@ def normalize_header(value: str) -> str:
 
 
 def normalize_title(value: str) -> str:
-    return shared_normalize_title(value)
+    value = html.unescape(str(value or "")).lower()
+    value = re.sub(r"<[^>]+>", " ", value)
+    value = re.sub(r"[\W_]+", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
 
 
 def normalize_doi(value: str) -> str:
-    return shared_normalize_doi(value)
+    doi = str(value or "").strip()
+    doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
+    doi = re.sub(r"^doi:\s*", "", doi, flags=re.IGNORECASE)
+    return doi.strip()
 
 
 def clean_text(value: Any) -> str:
@@ -141,7 +141,13 @@ def first(value: Any) -> str:
 
 
 def title_similarity(left: str, right: str) -> float:
-    return shared_title_similarity(left, right)
+    left_norm = normalize_title(left)
+    right_norm = normalize_title(right)
+    if not left_norm or not right_norm:
+        return 0.0
+    if left_norm == right_norm:
+        return 1.0
+    return difflib.SequenceMatcher(None, left_norm, right_norm).ratio()
 
 
 def journal_bonus(input_journal: str, candidate_journal: str) -> float:
@@ -183,11 +189,19 @@ def reconstruct_openalex_abstract(index: Any) -> str:
 
 
 def load_cache(path: Path) -> dict[str, Any]:
-    return load_json_cache(path)
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
 
 
 def save_cache(path: Path, cache: dict[str, Any]) -> None:
-    save_json_cache(path, cache)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = temporary_output_path(path)
+    temp_path.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+    temp_path.replace(path)
 
 
 def request_json(
@@ -199,14 +213,31 @@ def request_json(
     timeout: int,
     retries: int,
 ) -> dict[str, Any] | None:
-    return request_json_cached(
-        url,
-        cache,
-        user_agent=user_agent,
-        delay_seconds=delay_seconds,
-        timeout=timeout,
-        retries=retries,
-    )
+    if url in cache:
+        return cache[url]
+
+    for attempt in range(retries + 1):
+        if delay_seconds:
+            time.sleep(delay_seconds)
+        request = urllib.request.Request(url, headers={"User-Agent": user_agent, "Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+                cache[url] = payload
+                return payload
+        except urllib.error.HTTPError as exc:
+            if exc.code in {429, 500, 502, 503, 504} and attempt < retries:
+                retry_after = exc.headers.get("Retry-After")
+                sleep_for = float(retry_after) if retry_after and retry_after.isdigit() else 2 ** (attempt + 1)
+                time.sleep(sleep_for)
+                continue
+            return None
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+            if attempt < retries:
+                time.sleep(2 ** (attempt + 1))
+                continue
+            return None
+    return None
 
 
 def build_url(base: str, params: dict[str, Any]) -> str:

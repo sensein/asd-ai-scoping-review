@@ -1,8 +1,10 @@
 """Build the ICR reliability dataset and Krippendorff alpha outputs.
 
-The pipeline imports the same shared codebook and parsing helpers used by the
-Results scripts. Source-script labels are preserved in the output codebook and
-run log for traceability.
+This script is intentionally self-contained. The finalized Results scripts
+(`setup_data_`, `helper_functions_`, and `rq_1_` through `rq_5_`) are
+standalone execution scripts, so the reusable categorization rules needed for
+ICR are refactored here with source-script labels preserved in the output
+codebook and run log.
 """
 
 from __future__ import annotations
@@ -14,33 +16,16 @@ import platform
 import random
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 import numpy as np
 import openpyxl
 import pandas as pd
 from openpyxl.utils import get_column_letter
-
-from codebook import (
-    ALGORITHM_FAMILY_PATTERNS,
-    HYBRID_MODEL_PATTERN,
-    LEARNING_TYPE_PATTERNS,
-    NOT_GIVEN_TASK_PATTERN,
-    TASK_TYPE_PATTERNS,
-)
-from helper_functions_ import (
-    evaluation_metric_categories as shared_evaluation_metric_categories,
-    extract_accuracy_percent as shared_extract_accuracy_percent,
-    is_invalid as shared_is_invalid,
-    normalize_text as shared_normalize_text,
-    parse_numeric_age_value,
-    yes_no_nominal as shared_yes_no_nominal,
-)
-from reliability import is_missing, krippendorff_alpha
 
 
 RANDOM_SEED = 20260707
@@ -75,13 +60,11 @@ SOURCE_SCRIPT_MANIFEST = [
         "helper_functions_.py",
         SOURCE_SCRIPT_DIR / "helper_functions_.py",
     ),
-    ("rq1_.py", SOURCE_SCRIPT_DIR / "rq1_.py"),
-    ("rq2_.py", SOURCE_SCRIPT_DIR / "rq2_.py"),
-    ("rq3_.py", SOURCE_SCRIPT_DIR / "rq3_.py"),
-    ("rq4_.py", SOURCE_SCRIPT_DIR / "rq4_.py"),
-    ("rq5_.py", SOURCE_SCRIPT_DIR / "rq5_.py"),
-    ("codebook.py", SOURCE_SCRIPT_DIR / "codebook.py"),
-    ("reliability.py", SOURCE_SCRIPT_DIR / "reliability.py"),
+    ("rq_1_.py", SOURCE_SCRIPT_DIR / "rq1_.py"),
+    ("rq_2_.py", SOURCE_SCRIPT_DIR / "rq2_.py"),
+    ("rq_3_.py", SOURCE_SCRIPT_DIR / "rq3_.py"),
+    ("rq_4_.py", SOURCE_SCRIPT_DIR / "rq4_.py"),
+    ("rq_5_.py", SOURCE_SCRIPT_DIR / "rq5_.py"),
 ]
 
 SOURCE_SCRIPTS = [
@@ -167,11 +150,44 @@ AGE_CATEGORIES = {
 }
 
 
-PATTERN_CLASSICAL_ML = ALGORITHM_FAMILY_PATTERNS["classical_machine_learning_models"]
-PATTERN_ENSEMBLE = ALGORITHM_FAMILY_PATTERNS["ensemble_models"]
-PATTERN_NEURAL = ALGORITHM_FAMILY_PATTERNS["neural_network_models"]
-PATTERN_STATISTICAL_SPECIALISED = ALGORITHM_FAMILY_PATTERNS["statistical_and_other_specialised_models"]
-PATTERN_HYBRID_MODEL = HYBRID_MODEL_PATTERN
+PATTERN_CLASSICAL_ML = (
+    r"linear regres+sion|logistic regression|linear discriminant analysis|\blda\b|quadratic classifier"
+    r"|support vector machine|\bsvm\b|\bknn\b|k[- ]?nearest neighbors?|naive[- ]?bayes|naive bayes|naïve[- ]?bayes|\bnb\b"
+    r"|decision tree|random forest|extra trees|regulari[sz]ed greedy forest|\bcart\b|\bridge\b|elastic net"
+)
+
+PATTERN_ENSEMBLE = (
+    r"gradient boost|gradient boosting|\bgb\b|gbm|gbdt|adaboost|ada boost"
+    r"|xgboost|extreme gradient boosting|lightgbm|light gbm|lgbm|catboost|cat boost"
+    r"|ensemble\w*|voting|bagging|boosting|stacking|stacked ensemble"
+)
+
+PATTERN_NEURAL = (
+    r"\bann\b|artificial neural network|multi[- ]?layer perceptron|multilayer perceptron|\bmlp\b|\bfnn\b|feed[- ]?forward"
+    r"|fcdnn|\bdnn\b|deep neural network|\bcnn\b|convolutional neural network|resnet|resnet[- ]?50|densenet"
+    r"|googlenet|inception|inceptionv3|vgg|vgg[- ]?16|vgg[- ]?19|mobilenet|efficientnet|xception|convnext"
+    r"|yolo|yolov8|neural network|\brnn\b|recurrent neural network|\blstm\b|bi[- ]?lstm|\bblstm\b|\bgru\b"
+    r"|cnn[-+ ]?gru|cnn[-+ ]?lstm|attention|relu|dropout|fully connected|softmax"
+    r"|graph convolutional network|\bgcn\b|graph neural network|\bgnn\b|msg3d|st[- ]?gcn|ksnet"
+    r"|generative adversarial network|\bgan\b|\bvae\b|sdae|stacked denoising autoencoder|autoencoder"
+    r"|binary classifier|pnn|transformer|bert|wav2vec|fine[- ]?tuning"
+)
+
+PATTERN_STATISTICAL_SPECIALISED = (
+    r"\blasso\b|kernel extreme learning machine|kernel extreme machine learning|\bkelm\b|extreme learning machine|\belm\b|fvelm"
+    r"|markov model|\bpomdp\b|\bhmm\b|hidden markov|bayesian|gaussian process|gami[- ]?net"
+    r"|giza pyramids construction|\bgpc\b|metaheuristic|genetic algorithm|particle swarm|\bpso\b"
+    r"|needleman"
+)
+
+PATTERN_HYBRID_MODEL = (
+    r"\b(?:cnn|lstm|dnn|ann|rnn|gru|blstm|mlp|svm|pnn|autoencoder|ae|vgg|resnet|googlenet|inception|"
+    r"gcn|gnn|gan|vae|bert|transformer|xgboost|random forest|decision tree|dt|knn|naive bayes|nb|kelm|elm)"
+    r"\b\s*(?:\+|&|and|with|/|-)\s*\b(?:cnn|lstm|dnn|ann|rnn|gru|blstm|mlp|svm|pnn|autoencoder|ae|vgg|"
+    r"resnet|googlenet|inception|gcn|gnn|gan|vae|bert|transformer|xgboost|random forest|decision tree|dt|knn|naive bayes|nb|kelm|elm)\b"
+    r"|hybrid model|hybrid framework|hybrid architecture|hybrid approach|\bhybrid\b|dual[- ]?stream|multi[- ]?stream"
+    r"|two[- ]?stream|ensemble of|combination of models|combined model|combined models"
+)
 
 
 @dataclass(frozen=True)
@@ -197,7 +213,18 @@ class VariablePair:
 
 
 def normalize_text(value: Any) -> str:
-    return shared_normalize_text(value)
+    if value is None:
+        return ""
+    if isinstance(value, float) and math.isnan(value):
+        return ""
+    text = str(value).lower().strip()
+    text = (
+        text.replace("\u2013", "-")
+        .replace("\u2014", "-")
+        .replace("\u2212", "-")
+        .replace("\xa0", " ")
+    )
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def display_raw(value: Any) -> str:
@@ -211,7 +238,7 @@ def display_raw(value: Any) -> str:
 
 
 def is_invalid(value: Any) -> bool:
-    return shared_is_invalid(value)
+    return normalize_text(value) in INVALID_TEXT_VALUES
 
 
 def is_negative_marker(value: Any) -> bool:
@@ -330,7 +357,16 @@ def quality_issue_indicator(value: Any) -> tuple[int, str]:
 
 
 def yes_no_nominal(value: Any, blank_as_no: bool = False) -> str:
-    return shared_yes_no_nominal(value, blank_as_no=blank_as_no)
+    text = normalize_text(value)
+    if blank_as_no and (text in INVALID_TEXT_VALUES or text == ""):
+        return "no"
+    if re.search(r"^\s*yes\b|^\s*y\b|^\s*true\b|^\s*1\b|^\s*present\b|^\s*included\b|^\s*reported\b", text):
+        return "yes"
+    if re.search(r"^\s*no\b|^\s*n\b|^\s*false\b|^\s*0\b|^\s*absent\b|^\s*not used\b|^\s*not included\b", text):
+        return "no"
+    if text in INVALID_TEXT_VALUES:
+        return "not_reported"
+    return "unclear"
 
 
 def binary_from_nominal(category: str) -> dict[str, int]:
@@ -572,9 +608,24 @@ def study_setting_nominal(value: Any) -> str:
 
 def task_type_categories(value: Any) -> dict[str, int]:
     text = normalize_text(value)
-    cats = regex_categories(text, TASK_TYPE_PATTERNS)
+    patterns = {
+        "gaze_visual_attention_task": (
+            r"\bjoint[- ]?attention\b|\bgaze\b|\beye[- ]?tracking\b|\bsaccade\w*\b|\bscan[- ]?path\w*\b|"
+            r"\bwatch\w*\b|\bvideo\w*\b|\bmovie\w*\b|\bpicture\w*\b|\bscene\w*\b|\blook\w*\b|\bview\w*\b|"
+            r"\bobserve\w*\b|\bface viewing\b|\bvisual attention\b"
+        ),
+        "motor_movement_task": r"\bplay\w*\b|\btoy\w*\b|\bwalk\w*\b|\bgait\b|\bmove\w*\b|\bmovement\w*\b|\bstand\w*\b|\breach\w*\b|\bgrasp\w*\b|\bpose\w*\b|\bgesture\w*\b|\bimitation\b|\bmotor\b|\btouch\b",
+        "language_speech_audio_task": r"\bspeak\w*\b|\bspoke\b|\blisten\w*\b|\bconversation\w*\b|\baudio\w*\b|\bsound\w*\b|\bspeech\b|\bdialog\w*\b|\bread\w*\b|\binterview\w*\b|\bvocal\w*\b|\bvoice\b",
+        "questionnaire_survey_task": r"questionnaire|survey|self[- ]?report|parent[- ]?report|caregiver[- ]?report|rating scale|q[- ]?chat|ehr",
+        "facial_emotion_expression_task": r"facial emotion|facial expression|emotion recognition|emotion identification|face recognition|facial image|facial affect",
+        "social_interaction_task": r"\binteract\w*\b|\bsocial\b|\brelation\w*\b|\brobot\w*\b|\bvirtual reality\b|\bvr\b|joint activity|tweets",
+        "decision_making_cognitive_task": r"decision[- ]?making|choice task|cognitive task|risk task|reward task|reaction time",
+        "clinical_observation_assessment_task": r"\bados\b|clinical observation|diagnostic observation|assessment task|structured assessment",
+        "neuroimaging_physiology_task": r"\beeg\b|\bmri\b|\bfmri\b|\bpet\b|\bemg\b|physiological",
+    }
+    cats = regex_categories(text, patterns)
     matched = sum(cats.values())
-    cats["not_given"] = int(bool(re.search(NOT_GIVEN_TASK_PATTERN, text)))
+    cats["not_given"] = int(is_invalid(value) or text == "no")
     cats["multiple_task_types"] = int(matched >= 2)
     cats["unclear"] = int(not cats["not_given"] and matched == 0)
     return cats
@@ -588,13 +639,13 @@ def other_behavioral_categories(value: Any) -> dict[str, int]:
     text = normalize_text(value)
     patterns = {
         "facial_expression_emotion_recognition": r"\bface\b|\bfaces\b|\bfacial\b|\bfacial expression(?:s)?\b|\bemotion(?:s)?\b|\bemotion recognition\b",
-        "nonverbal_other_speech_language": r"\btranscript\b|\btext\b|\btweet\b|questionnaire|echolalia|audio-visual|audiovisual",
+        "nonverbal_other_speech_language": r"transcript|text|tweet|questionnaire|echolalia|audio-visual|audiovisual",
         "social_interaction": r"interaction|interact|gesture|social|vocali[sz]ation",
         "joint_attention": r"joint attention|jointattention",
         "video_analysis_data": r"video|video frame|audio-visual|audiovisual",
         "decision_making": r"decision making|decision-making",
         "sensor_data": r"sensor|inertial sensor|wearable",
-        "other_movement_data": r"inertial|kinematic|grasp|\bpose\b|angle|fine[- ]motor|motor abnormalities|gait|posture",
+        "other_movement_data": r"inertial|kinematic|grasp|pose|angle|fine[- ]motor|motor abnormalities|gait|posture",
         "other_gaze_data": r"eye[- ]gaze|scan[- ]?path|saccade|fixation|eye[- ]tracking|gaze pattern",
         "eeg": r"\beeg\b|electroencephalograph",
     }
@@ -631,9 +682,15 @@ def feature_fusion_categories(value: Any) -> dict[str, int]:
 
 def learning_type_categories(value: Any) -> dict[str, int]:
     text = normalize_text(value)
-    cats = regex_categories(text, LEARNING_TYPE_PATTERNS)
+    patterns = {
+        "supervised_learning": r"\bsupervised\b|\bsl\b|\bclassification\b|\bclassifier\b|\bregression\b",
+        "unsupervised_learning": r"\bunsupervised\b|\bclustering\b|\bk[- ]?means\b|\bpca\b|\bautoencoder\b|\bvae\b",
+        "reinforcement_learning": r"\breinforcement\b|\brl\b|\bq[- ]?learning\b|\bpomdp\b|\bmarkov decision\b",
+        "semi_self_or_transfer_learning": r"semi[- ]?supervised|self[- ]?supervised|transfer learning|fine[- ]?tuning|pretrained|pre-trained",
+    }
+    cats = regex_categories(text, patterns)
     cats["not_reported"] = int(is_invalid(value))
-    cats["unclear"] = int(not cats["not_reported"] and not any(cats[k] for k in LEARNING_TYPE_PATTERNS))
+    cats["unclear"] = int(not cats["not_reported"] and not any(cats[k] for k in patterns))
     return cats
 
 
@@ -642,9 +699,9 @@ def features_broad_categories(value: Any) -> dict[str, int]:
     patterns = {
         "gaze_eye_tracking_features": r"\baoi\b|\broi\b|area of interest|region of interest|fixation|saccade|blink|eye[- ]?movement|eye[- ]?tracking|scanpath|scan[- ]?path|gaze|visual attention|visit count|revisit|heatmap|saliency",
         "facial_expression_face_features": r"facial landmark|face landmark|openface|facial expression|\bface\b|facial|action unit|\bau\d+\b|smile|mouth|eyes|eyebrow|lip|emotion recognition|facial dynamics",
-        "motor_pose_kinematic_features": r"speed|acceleration|velocity|duration|movement|motion|amplitude|deceleration|distance|displacement|openpose|head pose|head movement|rotation|joint movement|skeleton|keypoint|\bpose\b|grip force|sway|jerk|kinematic|gait|stride|walking|gesture|tablet|touch|wheel rotation|rmse",
+        "motor_pose_kinematic_features": r"speed|acceleration|velocity|duration|movement|motion|amplitude|deceleration|distance|displacement|openpose|head pose|head movement|rotation|joint movement|skeleton|keypoint|pose|grip force|sway|jerk|kinematic|gait|stride|walking|gesture|tablet|touch|wheel rotation|rmse",
         "social_interaction_behavioral_features": r"reaction|latency|response latency|eye contact|social engagement|human behavior coding|observation coding|imitation|social influence|response bias|correctness of response|turn[- ]?taking|joint attention|interaction",
-        "language_speech_acoustic_features": r"\bword\b|word count|tf[- ]?idf|word2vec|wav2vec|bert|transformer|nlp|natural language|sentence embedding|\btext embedding\b|tweet|questionnaire|q[- ]?chat|audio|raw audio|spectrogram|prosody|pitch|voice|vocalization|vocalisation|mfcc|speech rhythm|acoustic",
+        "language_speech_acoustic_features": r"\bword\b|word count|tf[- ]?idf|word2vec|wav2vec|bert|transformer|nlp|natural language|sentence embedding|text embedding|tweet|questionnaire|q[- ]?chat|audio|raw audio|spectrogram|prosody|pitch|voice|vocalization|vocalisation|mfcc|speech rhythm|acoustic",
         "vector_or_embedding_features": r"presence vector|weighted presence vector|feature vector|behavioral vector|behavioural vector|embedding|embeddings|latent representation|latent vector|vector\b|vectors\b",
         "image_video_visual_features": r"raw video|\bvideo\b|\bvideos\b|\bimage\b|\bimages\b|frame|frames|rgb|optical flow|visual features|video analysis|image analysis|heatmap|scanpath image|facial image",
         "demographic_developmental_background_features": r"\bage\b|\bsex\b|\bgender\b|developmental history|age of walking|age of first words|pregnancy|delivery|premature|family history|parental|vaccination|sensory|adaptive behavior|iq\b",
@@ -729,11 +786,40 @@ def exact_model_name(value: Any) -> str:
 
 
 def evaluation_metric_categories(value: Any) -> dict[str, int]:
-    return shared_evaluation_metric_categories(value)
+    text = normalize_text(value)
+    patterns = {
+        "accuracy": r"accuracy|balanced accuracy|classification accuracy",
+        "specificity": r"specificity|\btnr\b|true negative rate",
+        "sensitivity_recall": r"sensitivity|\btpr\b|true positive rate|\brecall\b",
+        "precision_ppv": r"\bprecision\b|positive predictive value|\bppv\b",
+        "f1_score": r"f[- ]?1|f1 score|f[- ]?measure|f measure",
+        "auc_roc": r"\bauc\b|\broc\b|auc[- ]?roc|au[- ]?roc|auroc|area under the curve|receiver operating characteristic",
+        "other_evaluation_reporting_metrics": r"confusion matrix|classification report|error matrix|error rate|mae|mse|rmse|loss|cross[- ]?entropy|matthews|\bmcc\b|\bnpv\b|\buar\b|kappa|g[- ]?mean|balanced error|diagnostic validity",
+    }
+    cats = regex_categories(text, patterns)
+    cats["not_reported"] = int(is_invalid(value))
+    cats["other_uncategorized_metric"] = int(not cats["not_reported"] and not any(cats[k] for k in patterns))
+    return cats
 
 
-def extract_accuracy_percent(value: Any, evaluation_metrics_value: Any = None) -> float:
-    return shared_extract_accuracy_percent(value, evaluation_metrics_value)
+def extract_accuracy_percent(value: Any) -> float:
+    text = normalize_text(value)
+    if text in INVALID_TEXT_VALUES:
+        return np.nan
+    preferred = [
+        r"(?:balanced\s+accuracy|classification\s+accuracy|accuracy|\bacc\b)[^0-9]{0,80}(\d+(?:\.\d+)?)\s*%",
+        r"(?:balanced\s+accuracy|classification\s+accuracy|accuracy|\bacc\b)[^0-9]{0,80}(0?\.\d+)",
+        r"(?:balanced\s+accuracy|classification\s+accuracy|accuracy|\bacc\b)[^0-9]{0,80}(\d+(?:\.\d+)?)",
+        r"(\d+(?:\.\d+)?)\s*%\s*(?:balanced\s+accuracy|classification\s+accuracy|accuracy|\bacc\b)",
+    ]
+    for pattern in preferred:
+        match = re.search(pattern, text)
+        if match:
+            return parse_numeric_value(match.group(1), percent=True)
+    nums = re.findall(r"\d+(?:\.\d+)?", text)
+    if nums:
+        return parse_numeric_value(nums[0], percent=True)
+    return np.nan
 
 
 def feature_importance_method_categories(value: Any) -> dict[str, int]:
@@ -759,7 +845,7 @@ def feature_importance_result_categories(value: Any) -> dict[str, int]:
     patterns = {
         "motor_and_kinematic_features": r"speed|velocity|acceleration|movement|motion|kinematic|gait|stride|walking|grip|force|gesture|grasp|head rotation|yaw|roll|amplitude|tablet|touch",
         "gaze_and_visual_attention_features": r"gaze|fixation|saccade|eye movement|eye tracking|scanpath|visual focus|attention|\baoi\b|mouth|eye contact|heatmap|saliency",
-        "speech_and_acoustic_features": r"speech|acoustic|voice|vocal|prosody|pitch|\bf0\b|mfcc|rhythm|sentiment|emotional|\btext feature\b|\bword\b|embedding",
+        "speech_and_acoustic_features": r"speech|acoustic|voice|vocal|prosody|pitch|\bf0\b|mfcc|rhythm|sentiment|emotional|text feature|word|embedding",
         "facial_and_social_features": r"\bau\d+\b|facial|smiling|social|interaction|presence of face|emotion",
         "multimodal_combination_features": r"fusion|fused|combined|combining|concatenat|integrat|multimodal|all features|feature combination|dual[- ]?stream",
         "other_behavioral_features": r"entropy|visual focus|steerable|rgb|color|colour|intensity|orientation|biological movement|questionnaire|score",
@@ -895,7 +981,7 @@ def data_description_categories(value: Any) -> dict[str, int]:
         "image_data": r"\bimage\b|\bimages\b|facial image|thermal image|mri scan|scan path images",
         "eye_tracking_data": r"eye[- ]?tracking|gaze|scanpath|fixation|aoi|x-y eye positions|eye movements",
         "audio_or_speech_data": r"audio|speech|voice|transcript|language|acoustic|samples",
-        "movement_or_pose_data": r"motor|movement|motion|\bpose\b|kinematic|force plate|center of pressure|accelerat|wheel rotation|gait",
+        "movement_or_pose_data": r"motor|movement|motion|pose|kinematic|force plate|center of pressure|accelerat|wheel rotation|gait",
         "questionnaire_data": r"questionnaire|survey|scale|q-chat|features",
         "physiological_data": r"\beeg\b|physiological|thermal",
         "neuroimaging_data": r"\bmri\b|fmri|neuroimaging|scans",
@@ -921,7 +1007,7 @@ RECOMMENDATION_PATTERNS = {
     "multimodal_or_additional_modalities": r"multimodal|additional modalit|more modalit|combine.*(voice|eye|movement|physiological|video|audio)|add modalities|eye tracking.*movement",
     "feature_engineering_or_additional_features": r"feature|features|feature engineering|additional motion|image features|kinematic|demographic information|object present",
     "advanced_models_or_model_expansion": r"advanced (?:deep learning|model)|different ml models|more models|ensemble models|attention mechanism|sophisticated|improve vgg|test.*models|model expansion",
-    "data_augmentation_or_synthetic_data": r"augmentation|synthetic|gan|\bpose variation\b|occlusion",
+    "data_augmentation_or_synthetic_data": r"augmentation|synthetic|gan|pose variation|occlusion",
     "model_evaluation_and_comparison": r"model evaluation|evaluation|compare|comparison|baseline|cross[- ]?validation|performance metrics|greater eval",
     "interpretability_explainability": r"interpret|explain|shap|lime|transparency|trust|feature importance|layer-wise",
     "task_or_stimulus_adaptation": r"task|stimuli|stimulus|adapt|suitable|object|design choices|video as stimuli",
@@ -1091,85 +1177,85 @@ def classify_variable_pair(domain: str, subgroup: str, variable_label: str) -> t
     if domain == "quality":
         return "quality_issue", "binary", "nominal", "ICR exception rule", "ICR pipeline PDF sections 3.1-3.2", True, False
     if label == "range age":
-        return "age_range", "multi_label", "nominal", "parse_age_range_cell/categories_for_age_ranges", "helper_functions_.py/rq1_.py plus ICR PDF section 4.1", True, False
+        return "age_range", "multi_label", "nominal", "parse_age_range_cell/categories_for_age_ranges", "helper_functions_.py/rq_1_.py plus ICR PDF section 4.1", True, False
     if label in {"mean age", "std age"}:
-        return "numeric_age", "numeric", "interval", "parse_numeric_age_value", "helper_functions_.py/rq1_.py plus ICR PDF section 4.2", True, False
+        return "numeric_age", "numeric", "interval", "parse_numeric_age_value", "helper_functions_.py/rq_1_.py plus ICR PDF section 4.2", True, False
     if label.startswith("#") or label in {"# male participants"}:
-        return "numeric_count", "numeric", "interval", "parse_subgroup_count_sum/parse_numeric", "rq1_.py", False, False
+        return "numeric_count", "numeric", "interval", "parse_subgroup_count_sum/parse_numeric", "rq_1_.py", False, False
     if label == "label":
-        return "terminology", "multi_label", "nominal", "categorize_terminology", "rq1_.py", False, False
+        return "terminology", "multi_label", "nominal", "categorize_terminology", "rq_1_.py", False, False
     if "assessment method" in label or "assesment method" in label:
-        return "diagnostic_method", "multi_label", "nominal", "compute_diagnosis_methods", "rq1_.py", False, False
+        return "diagnostic_method", "multi_label", "nominal", "compute_diagnosis_methods", "rq_1_.py", False, False
     if "other assessment" in label:
-        return "assessment_presence", "binary", "nominal", "count_nonmissing_rows", "rq1_.py", False, False
+        return "assessment_presence", "binary", "nominal", "count_nonmissing_rows", "rq_1_.py", False, False
     if label == "comorbidities":
-        return "presence_binary", "binary", "nominal", "count_comorbidities", "rq1_.py", False, False
+        return "presence_binary", "binary", "nominal", "count_comorbidities", "rq_1_.py", False, False
     if label.startswith("match in"):
-        return "yes_no_nominal", "nominal", "nominal", "count_yes_rows", "rq1_.py", False, False
+        return "yes_no_nominal", "nominal", "nominal", "count_yes_rows", "rq_1_.py", False, False
     if domain == "behaviors" and label in {"gaze", "speech", "motor"}:
-        return "modality_yes_no", "nominal", "nominal", "yes_no_modality_summary", "helper_functions_.py/rq3_.py", False, False
+        return "modality_yes_no", "nominal", "nominal", "yes_no_modality_summary", "helper_functions_.py/rq_3_.py", False, False
     if domain == "behaviors" and label in {"other behavioural", "other type of data"}:
-        return "other_behavioral", "multi_label", "nominal", "compute_other_behavioral_keywords", "helper_functions_.py/rq3_.py", False, False
+        return "other_behavioral", "multi_label", "nominal", "compute_other_behavioral_keywords", "helper_functions_.py/rq_3_.py", False, False
     if domain == "behaviors" and "fusion" in label:
-        return "feature_fusion", "multi_label", "nominal", "feature_fusion_summary", "rq3_.py", False, False
+        return "feature_fusion", "multi_label", "nominal", "feature_fusion_summary", "rq_3_.py", False, False
     if domain == "ai" and label == "algorithms used":
-        return "algorithms", "multi_label", "nominal", "algorithms_broad/detect_algorithm_families", "rq4_.py", False, False
+        return "algorithms", "multi_label", "nominal", "algorithms_broad/detect_algorithm_families", "rq_4_.py", False, False
     if domain == "ai" and label == "features (or e2e)":
-        return "features", "multi_label", "nominal", "features_broad", "rq4_.py", False, False
+        return "features", "multi_label", "nominal", "features_broad", "rq_4_.py", False, False
     if domain == "ai" and "learning type" in label:
-        return "learning_type", "multi_label", "nominal", "machine_learning_paradigm", "rq4_.py", False, False
+        return "learning_type", "multi_label", "nominal", "machine_learning_paradigm", "rq_4_.py", False, False
     if domain == "ai" and label == "evaluation metrics":
-        return "evaluation_metrics", "multi_label", "nominal", "evaluation_metrics", "rq4_.py", False, False
+        return "evaluation_metrics", "multi_label", "nominal", "evaluation_metrics", "rq_4_.py", False, False
     if domain == "ai" and label == "best performing model":
-        return "best_model", "mixed", "nominal", "detect_algorithm_families/exact_model_name", "rq4_.py plus ICR PDF section 5.4", False, True
+        return "best_model", "mixed", "nominal", "detect_algorithm_families/exact_model_name", "rq_4_.py plus ICR PDF section 5.4", False, True
     if domain == "ai" and label == "best performance":
-        return "best_performance", "numeric", "interval", "extract_accuracy_from_row", "rq4_.py", False, False
+        return "best_performance", "numeric", "interval", "extract_accuracy_from_row", "rq_4_.py", False, False
     if domain == "ai" and label == "features importance technique":
-        return "feature_importance_method", "multi_label", "nominal", "compute_interpretation_methods", "rq4_.py", False, False
+        return "feature_importance_method", "multi_label", "nominal", "compute_interpretation_methods", "rq_4_.py", False, False
     if domain == "ai" and label == "features importance result":
-        return "feature_importance_result", "multi_label", "nominal", "compute_feature_importance_result", "rq4_.py", False, False
+        return "feature_importance_result", "multi_label", "nominal", "compute_feature_importance_result", "rq_4_.py", False, False
     if domain == "ai" and "balancing" in label:
-        return "bias_mitigation", "multi_label", "nominal", "compute_bias_mitigation", "rq4_.py", False, False
+        return "bias_mitigation", "multi_label", "nominal", "compute_bias_mitigation", "rq_4_.py", False, False
     if domain == "ai" and label == "cross corpus validation":
-        return "cross_dataset_validation", "multi_label", "nominal", "compute_cross_dataset_validation", "rq4_.py", False, False
+        return "cross_dataset_validation", "multi_label", "nominal", "compute_cross_dataset_validation", "rq_4_.py", False, False
     if domain == "ai" and label == "x-fold cross-validation":
-        return "cross_validation", "mixed", "nominal", "compute_cross_validation", "rq4_.py", False, False
+        return "cross_validation", "mixed", "nominal", "compute_cross_validation", "rq_4_.py", False, False
     if domain == "ai" and label == "loxo":
-        return "loxo", "multi_label", "nominal", "compute_LOXO", "rq4_.py", False, False
+        return "loxo", "multi_label", "nominal", "compute_LOXO", "rq_4_.py", False, False
     if domain == "ai" and "real time" in label:
-        return "real_time", "multi_label", "nominal", "compute_real_time_analysis", "rq4_.py", False, False
+        return "real_time", "multi_label", "nominal", "compute_real_time_analysis", "rq_4_.py", False, False
     if domain == "study" and label == "study setting":
-        return "study_setting", "nominal", "nominal", "compute_study_setting", "helper_functions_.py/rq2_.py", False, False
+        return "study_setting", "nominal", "nominal", "compute_study_setting", "helper_functions_.py/rq_2_.py", False, False
     if domain == "study" and label == "study goal":
-        return "study_goal", "multi_label", "nominal", "compute_study_goals", "rq2_.py", False, False
+        return "study_goal", "multi_label", "nominal", "compute_study_goals", "rq_2_.py", False, False
     if domain == "study" and label == "data collection?":
-        return "dataset_type", "nominal", "nominal", "compute_dataset_type", "rq2_.py", False, False
+        return "dataset_type", "nominal", "nominal", "compute_dataset_type", "rq_2_.py", False, False
     if domain == "study" and label == "dataset name":
         return "dataset_name", "multi_label", "nominal", "dataset alias dictionary", "ICR pipeline PDF section 5.1", False, True
     if domain == "study" and label == "is the data open source?":
-        return "open_source_access", "nominal", "nominal", "open_source_access_summary", "rq2_.py", False, False
+        return "open_source_access", "nominal", "nominal", "open_source_access_summary", "rq_2_.py", False, False
     if domain == "study" and label == "data description":
         return "data_description", "multi_label", "nominal", "ICR data description codebook", "ICR pipeline PDF section 5.2", False, True
     if domain == "study" and label == "longitudinally (how long)":
-        return "time_frame", "mixed", "nominal", "compute_time_frame/extract_duration_to_days", "rq2_.py", False, False
+        return "time_frame", "mixed", "nominal", "compute_time_frame/extract_duration_to_days", "rq_2_.py", False, False
     if domain == "study" and label == "data collection tool":
-        return "data_collection_tool", "multi_label", "nominal", "data_collection_tool_summary", "rq2_.py", False, False
+        return "data_collection_tool", "multi_label", "nominal", "data_collection_tool_summary", "rq_2_.py", False, False
     if domain == "study" and label == "task for the participants":
-        return "task_type", "multi_label", "nominal", "compute_task_type", "helper_functions_.py/rq2_.py", False, False
+        return "task_type", "multi_label", "nominal", "compute_task_type", "helper_functions_.py/rq_2_.py", False, False
     if domain == "study" and label == "open source code":
-        return "open_source_access", "nominal", "nominal", "open_source_access_summary", "rq2_.py", False, False
+        return "open_source_access", "nominal", "nominal", "open_source_access_summary", "rq_2_.py", False, False
     if domain == "study" and label == "study limitations":
-        return "limitations", "multi_label", "nominal", "rq_limitation_categories", "rq2_.py", False, False
+        return "limitations", "multi_label", "nominal", "rq_limitation_categories", "rq_2_.py", False, False
     if domain == "study" and "reccomendations" in label:
         return "recommendations", "multi_label", "nominal", "recommendation regex framework", "ICR pipeline PDF section 5.3", False, True
     if domain == "study" and label == "main findings":
-        return "main_findings", "multi_label", "nominal", "goal_finding_hybrid_summary", "rq2_.py", False, False
+        return "main_findings", "multi_label", "nominal", "goal_finding_hybrid_summary", "rq_2_.py", False, False
     if domain == "novelty_and_sensitivity" and label == "future research pipelines":
-        return "future_goals", "multi_label", "nominal", "compute_future_goals_categories", "rq2_.py", False, False
+        return "future_goals", "multi_label", "nominal", "compute_future_goals_categories", "rq_2_.py", False, False
     if domain == "novelty_and_sensitivity" and label == "measures taken to protect sensitive data":
-        return "sensitive_data_protection", "multi_label", "nominal", "sensitive_data_protection_summary", "rq2_.py", False, False
+        return "sensitive_data_protection", "multi_label", "nominal", "sensitive_data_protection_summary", "rq_2_.py", False, False
     if domain == "novelty_and_sensitivity":
-        return "novelty_yes_no", "multi_label", "nominal", "compute_yes_no_text_count", "rq2_.py", False, False
+        return "novelty_yes_no", "multi_label", "nominal", "compute_yes_no_text_count", "rq_2_.py", False, False
     return "normalized_text_nominal", "nominal", "nominal", "normalize_text", "ICR fallback", False, False
 
 
@@ -1308,15 +1394,7 @@ def build_workbook_model(workbook_path: Path) -> tuple[list[dict[str, Any]], lis
     return rows, columns, variable_pairs, special_cols, mapping_issues
 
 
-def process_value(
-    pair: VariablePair,
-    raw: Any,
-    paper_id: str,
-    rating_role: str,
-    coder_id: str,
-    unmatched: list[dict[str, Any]],
-    evaluation_metrics_value: Any = None,
-) -> dict[str, Any]:
+def process_value(pair: VariablePair, raw: Any, paper_id: str, rating_role: str, coder_id: str, unmatched: list[dict[str, Any]]) -> dict[str, Any]:
     processor = pair.processor
     text_norm = normalize_text(date_as_age_range(raw) if processor == "age_range" else raw)
     result = {
@@ -1331,7 +1409,7 @@ def process_value(
         binary, nominal = quality_issue_indicator(raw)
         result.update({"normalized_value": nominal, "nominal_value": str(binary), "categories": {"quality_issue_recorded": binary}})
     elif processor in {"numeric_age", "numeric_count"}:
-        num = parse_numeric_age_value(raw) if processor == "numeric_age" else parse_count_value(raw)
+        num = parse_numeric_value(raw) if processor == "numeric_age" else parse_count_value(raw)
         result.update({"normalized_value": "" if pd.isna(num) else str(num), "numeric_value": num})
     elif processor == "age_range":
         cats, norm, parser = age_range_categories(raw)
@@ -1382,7 +1460,7 @@ def process_value(
         result.update({"normalized_value": exact, "nominal_value": algorithm_group_nominal(raw), "categories": combined})
         add_unmatched_if_needed(unmatched, paper_id, pair.variable_name, rating_role, coder_id, raw, exact, "best_model", cats)
     elif processor == "best_performance":
-        num = extract_accuracy_percent(raw, evaluation_metrics_value)
+        num = extract_accuracy_percent(raw)
         result.update({"normalized_value": "" if pd.isna(num) else str(num), "numeric_value": num})
     elif processor == "feature_importance_method":
         cats = feature_importance_method_categories(raw)
@@ -1466,11 +1544,53 @@ def process_value(
 
 
 def krippendorff_alpha_from_unit_values(unit_values: list[list[Any]], level: str) -> tuple[float, str]:
-    return krippendorff_alpha(unit_values, level=level)
+    groups = [[v for v in vals if not missing_value(v)] for vals in unit_values]
+    groups = [vals for vals in groups if len(vals) >= 2]
+    if len(groups) < 2:
+        return np.nan, "too_few_paired_observations"
+
+    all_vals = [v for vals in groups for v in vals]
+    if len(set(map(str, all_vals))) <= 1:
+        return np.nan, "no_variation"
+
+    def dist(a: Any, b: Any) -> float:
+        if level == "interval":
+            return float(a - b) ** 2
+        return 0.0 if str(a) == str(b) else 1.0
+
+    observed_dist = 0.0
+    observed_pairs = 0
+    for vals in groups:
+        for i in range(len(vals)):
+            for j in range(i + 1, len(vals)):
+                observed_dist += dist(vals[i], vals[j])
+                observed_pairs += 1
+    if observed_pairs == 0:
+        return np.nan, "too_few_paired_observations"
+    do = observed_dist / observed_pairs
+
+    expected_dist = 0.0
+    expected_pairs = 0
+    for i in range(len(all_vals)):
+        for j in range(i + 1, len(all_vals)):
+            expected_dist += dist(all_vals[i], all_vals[j])
+            expected_pairs += 1
+    if expected_pairs == 0:
+        return np.nan, "too_few_values"
+    de = expected_dist / expected_pairs
+    if de == 0:
+        return np.nan, "no_variation"
+    return 1.0 - (do / de), ""
 
 
 def missing_value(value: Any) -> bool:
-    return is_missing(value)
+    if value is None:
+        return True
+    if isinstance(value, float) and math.isnan(value):
+        return True
+    if isinstance(value, str) and value == "":
+        return True
+    return False
 
 
 def alpha_records(records: list[dict[str, Any]], level: str, value_key: str) -> dict[str, Any]:
@@ -1569,6 +1689,7 @@ def build_outputs(workbook_path: Path, output_dir: Path) -> dict[str, Any]:
     numeric_records: list[dict[str, Any]] = []
     long_records: list[dict[str, Any]] = []
     coder_label_map: dict[str, str] = {}
+    coder_label_map: dict[str, str] = {}
 
     required_special = {"paper_id", "review_coder", "final_coder", "notes"}
     missing_special = required_special - set(special_cols)
@@ -1576,12 +1697,6 @@ def build_outputs(workbook_path: Path, output_dir: Path) -> dict[str, Any]:
         raise ValueError(f"Missing required special columns: {sorted(missing_special)}")
 
     novelty_final_override_coder_raw = ""
-    evaluation_metric_columns: dict[tuple[str, str], int] = {}
-    for candidate in pairs:
-        if candidate.processor == "evaluation_metrics":
-            evaluation_metric_columns[("reviewer", candidate.reviewer_block)] = candidate.reviewer_col_idx
-            evaluation_metric_columns[("final_annotation", candidate.final_block)] = candidate.final_col_idx
-
     for row in rows:
         note = display_raw(row.get(col_letter_by_idx[special_cols["notes"]]))
         novelty_final_override_coder_raw = extract_coder_override_from_note(note)
@@ -1625,18 +1740,7 @@ def build_outputs(workbook_path: Path, output_dir: Path) -> dict[str, Any]:
                         assignment_note = f"Final annotation coder overridden from {coder_id} to {override_coder} for Novelty/Sensitivity per Notes exception."
                     actual_coder = override_coder
                 raw = row.get(col_letter_by_idx[col_idx])
-                block = pair.reviewer_block if rating_role == "reviewer" else pair.final_block
-                metric_col_idx = evaluation_metric_columns.get((rating_role, block))
-                metric_raw = row.get(col_letter_by_idx[metric_col_idx]) if metric_col_idx is not None else None
-                processed = process_value(
-                    pair,
-                    raw,
-                    paper_id,
-                    rating_role,
-                    actual_coder,
-                    unmatched,
-                    evaluation_metrics_value=metric_raw,
-                )
+                processed = process_value(pair, raw, paper_id, rating_role, actual_coder, unmatched)
                 unit_id = f"{paper_id}::{pair.variable_name}"
                 base_category = ""
                 if pair.measurement_level == "nominal" and missing_value(processed["numeric_value"]):
@@ -2018,7 +2122,7 @@ def write_run_log(path: Path, workbook_path: Path, pairs: list[VariablePair], wa
             lines.append(f"- Mapping issue: {issue}")
     lines.append("- Dataset aliases and recommendation regexes are frozen in run_icr_pipeline.py.")
     lines.append("- Standalone Results scripts were not imported because they execute analyses at import time; needed logic was refactored with source-script labels preserved.")
-    lines.append("- The rq5_.py script is hashed and logged for the manuscript Results set; no ICR worksheet variable maps uniquely to an RQ5-only output.")
+    lines.append("- The rq_5_.py script is hashed and logged for the manuscript Results set; no ICR worksheet variable maps uniquely to an RQ5-only output.")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -2073,3 +2177,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

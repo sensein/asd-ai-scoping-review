@@ -13,11 +13,13 @@ public PDF URL is exposed by the queried metadata sources.
 from __future__ import annotations
 
 import argparse
+import difflib
 import hashlib
 import html
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -25,24 +27,17 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from prisma_common import (
-    OUTPUT_ROOT,
-    load_json_cache,
-    normalize_doi as shared_normalize_doi,
-    normalize_title as shared_normalize_title,
-    request_text_cached,
-    save_json_cache,
-    style_workbook as shared_style_workbook,
-    title_similarity as shared_title_similarity,
-)
-
 import pandas as pd
+from openpyxl import load_workbook
+from openpyxl.styles import Alignment, Font, PatternFill
+from openpyxl.utils import get_column_letter
 
 
-DEFAULT_INPUT = OUTPUT_ROOT / "abstract_screening" / "title_include_abstract_screening_manual_pdf_updated.xlsx"
-DEFAULT_PDF_DIR = OUTPUT_ROOT / "pdfs"
-DEFAULT_OUTPUT = OUTPUT_ROOT / "pdf_retrieval" / "pdf_retrieval_manifest.xlsx"
-DEFAULT_CACHE = OUTPUT_ROOT / "pdf_retrieval" / "pdf_api_cache.json"
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_INPUT = ROOT / "output" / "abstract_screening" / "title_include_abstract_screening_manual_pdf_updated.xlsx"
+DEFAULT_PDF_DIR = ROOT / "output" / "pdfs"
+DEFAULT_OUTPUT = ROOT / "output" / "pdf_retrieval" / "pdf_retrieval_manifest.xlsx"
+DEFAULT_CACHE = ROOT / "output" / "pdf_retrieval" / "pdf_api_cache.json"
 
 
 def temporary_output_path(output: Path) -> Path:
@@ -69,15 +64,33 @@ def clean(value: Any) -> str:
 
 
 def normalize_title(value: Any) -> str:
-    return shared_normalize_title(value)
+    text = html.unescape(str(value or "")).lower()
+    text = re.sub(r"\.pdf$", "", text)
+    text = re.sub(r"[_\-/]+", " ", text)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def normalize_doi(value: Any) -> str:
-    return shared_normalize_doi(value)
+    doi = str(value or "").strip()
+    doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
+    doi = re.sub(r"^doi:\s*", "", doi, flags=re.IGNORECASE)
+    return doi.strip().rstrip(".").lower()
 
 
 def title_similarity(left: Any, right: Any) -> float:
-    return shared_title_similarity(left, right, include_token_jaccard=True)
+    left_norm = normalize_title(left)
+    right_norm = normalize_title(right)
+    if not left_norm or not right_norm:
+        return 0.0
+    if left_norm == right_norm:
+        return 1.0
+    seq = difflib.SequenceMatcher(None, left_norm, right_norm).ratio()
+    left_tokens = set(left_norm.split())
+    right_tokens = set(right_norm.split())
+    jac = len(left_tokens & right_tokens) / len(left_tokens | right_tokens) if left_tokens and right_tokens else 0.0
+    return max(seq, jac)
 
 
 def safe_filename(record_id: str, title: str) -> str:
@@ -88,18 +101,51 @@ def safe_filename(record_id: str, title: str) -> str:
 
 
 def load_cache(path: Path) -> dict[str, Any]:
-    return load_json_cache(path)
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
 
 
 def save_cache(path: Path, cache: dict[str, Any]) -> None:
-    save_json_cache(path, cache)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = temporary_output_path(path)
+    temp_path.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+    temp_path.replace(path)
 
 
 def request_text(url: str, cache: dict[str, Any], args: argparse.Namespace, accept: str = "application/json") -> str | None:
-    return request_text_cached(
-        url, cache, user_agent=args.user_agent, delay_seconds=args.delay,
-        timeout=args.timeout, retries=args.retries, accept=accept
-    )
+    key = f"TEXT::{url}"
+    if key in cache:
+        value = cache[key]
+        return value if isinstance(value, str) else None
+    for attempt in range(args.retries + 1):
+        if args.delay:
+            time.sleep(args.delay)
+        request = urllib.request.Request(url, headers={"User-Agent": args.user_agent, "Accept": accept})
+        try:
+            with urllib.request.urlopen(request, timeout=args.timeout) as response:
+                text = response.read().decode("utf-8", errors="replace")
+                cache[key] = text
+                return text
+        except urllib.error.HTTPError as exc:
+            if exc.code in {403, 404}:
+                cache[key] = {"error": f"HTTP {exc.code}"}
+                return None
+            if exc.code in {429, 500, 502, 503, 504} and attempt < args.retries:
+                time.sleep(min(8, 2 ** attempt))
+                continue
+            cache[key] = {"error": f"HTTP {exc.code}"}
+            return None
+        except (urllib.error.URLError, TimeoutError):
+            if attempt < args.retries:
+                time.sleep(min(8, 2 ** attempt))
+                continue
+            return None
+    return None
+
 
 def request_json(url: str, cache: dict[str, Any], args: argparse.Namespace) -> dict[str, Any] | None:
     key = f"JSON::{url}"
@@ -380,7 +426,26 @@ def read_targets(path: Path, sheet: str, limit: int, decisions: str, skip_manife
 
 
 def style_workbook(path: Path) -> None:
-    shared_style_workbook(path)
+    wb = load_workbook(path)
+    fill = PatternFill("solid", fgColor="3A5A40")
+    font = Font(color="FFFFFF", bold=True)
+    for ws in wb.worksheets:
+        ws.freeze_panes = "A2"
+        if ws.max_row and ws.max_column:
+            ws.auto_filter.ref = ws.dimensions
+        for cell in ws[1]:
+            cell.fill = fill
+            cell.font = font
+            cell.alignment = Alignment(wrap_text=True, vertical="top")
+        for row in ws.iter_rows(min_row=2):
+            for cell in row:
+                cell.alignment = Alignment(wrap_text=True, vertical="top")
+        for column_cells in ws.columns:
+            letter = get_column_letter(column_cells[0].column)
+            max_len = max(len(str(cell.value or "")[:90]) for cell in column_cells)
+            ws.column_dimensions[letter].width = max(12, min(max_len + 2, 55))
+    wb.save(path)
+
 
 def write_manifest(output: Path, manifest: pd.DataFrame, target_count: int, pdf_dir: Path) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)

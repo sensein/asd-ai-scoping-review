@@ -8,33 +8,11 @@ import pandas as pd
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_RELATIVE_PATH = "data/final_annotation_sheet_.xlsx"
 DATA_ROOT = Path(os.environ.get("ASD_REVIEW_DATA_ROOT", PROJECT_ROOT / "data")).expanduser()
 if not DATA_ROOT.is_absolute():
     DATA_ROOT = PROJECT_ROOT / DATA_ROOT
-
-
-def locate_final_annotation_sheet(data_root: Path = DATA_ROOT) -> Path:
-    """Locate the final annotation workbook without treating a name variant as missing."""
-    preferred = data_root / "final_annotation_sheet_.xlsx"
-    if preferred.is_file():
-        return preferred
-    candidates = sorted(
-        path
-        for path in data_root.glob("final_annotation_sheet*.xlsx")
-        if not path.name.startswith("~$")
-    )
-    if len(candidates) == 1:
-        return candidates[0]
-    if not candidates:
-        raise FileNotFoundError(f"No final_annotation_sheet*.xlsx workbook found under {data_root}")
-    raise RuntimeError(f"Multiple final annotation workbooks found; specify one unambiguously: {candidates}")
-
-
-# Backward-compatible default path constants. Existence is checked lazily by
-# load_annotation_data(), so importing shared helpers works in a clean clone
-# where review data are intentionally not committed.
 EXCEL_PATH = DATA_ROOT / "final_annotation_sheet_.xlsx"
-DATA_RELATIVE_PATH = str(EXCEL_PATH.relative_to(PROJECT_ROOT)) if EXCEL_PATH.is_relative_to(PROJECT_ROOT) else str(EXCEL_PATH)
 DATA_SHEET = "final_data"
 
 # Excel rows:
@@ -133,12 +111,11 @@ def clean_invalid_values(df_part, invalid_values=INVALID_VALUES_SET):
 # Main annotation loader
 # ============================================================
 
-def read_a_to_by_with_two_header_rows(excel_path: Path | None = None):
-    source_path = excel_path or locate_final_annotation_sheet()
+def read_a_to_by_with_two_header_rows():
     # pandas cannot combine usecols with a multi-index header directly,
     # so read only A:BY first and then rebuild the same two-row header.
     raw = pd.read_excel(
-        source_path,
+        EXCEL_PATH,
         sheet_name=DATA_SHEET,
         header=None,
         usecols="A:BY",
@@ -160,14 +137,8 @@ def read_a_to_by_with_two_header_rows(excel_path: Path | None = None):
 
 
 def load_annotation_data():
-    excel_path = locate_final_annotation_sheet()
-    data_relative_path = (
-        str(excel_path.relative_to(PROJECT_ROOT))
-        if excel_path.is_relative_to(PROJECT_ROOT)
-        else str(excel_path)
-    )
     # Read only Excel columns A:BY with the workbook's two header rows.
-    df = read_a_to_by_with_two_header_rows(excel_path)
+    df = read_a_to_by_with_two_header_rows()
 
     # Flatten two-row headers.
     df.columns = flatten_columns(df.columns)
@@ -252,8 +223,8 @@ def load_annotation_data():
         "valid_papers_Neur": valid_papers_Neur,
         "valid_papers_Other": valid_papers_Other,
         "invalid_values": INVALID_VALUES,
-        "input_file": data_relative_path,
-        "excel_path": excel_path,
+        "input_file": DATA_RELATIVE_PATH,
+        "excel_path": EXCEL_PATH,
         "data_sheet": DATA_SHEET,
     }
 
@@ -261,8 +232,7 @@ def load_annotation_data():
 
 
 if __name__ == "__main__":
-    excel_path = locate_final_annotation_sheet()
-    xls = pd.ExcelFile(excel_path)
+    xls = pd.ExcelFile(EXCEL_PATH)
 
     print("Available sheet names:")
     print(xls.sheet_names)
@@ -270,12 +240,7 @@ if __name__ == "__main__":
     if DATA_SHEET in xls.sheet_names:
         setup = load_annotation_data()
         print("\nLoaded annotation data.")
-        print(
-            "Input file:",
-            str(excel_path.relative_to(PROJECT_ROOT))
-            if excel_path.is_relative_to(PROJECT_ROOT)
-            else str(excel_path),
-        )
+        print("Input file:", DATA_RELATIVE_PATH)
         print("Total valid papers based on column A:", setup["valid_papers_Total"])
         print("Valid ASD rows:", setup["valid_papers_ASD"])
         print("Valid neurotypical rows:", setup["valid_papers_Neur"])
