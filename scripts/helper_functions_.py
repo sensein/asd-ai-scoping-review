@@ -12,11 +12,19 @@ from __future__ import annotations
 
 import os
 import re
-from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
 
+from analysis_common import YEAR_GROUP_ORDER, classify_year_group, extract_publication_year
+from codebook import (
+    EVALUATION_METRIC_PATTERNS,
+    NOT_GIVEN_TASK_PATTERN,
+    OTHER_ACCURACY_METRIC_PATTERN,
+    TASK_TYPE_COLS,
+    TASK_TYPE_PATTERNS,
+)
 from setup_data_ import INVALID_VALUES
 
 OUTPUT_NAME_PREFIX = ""
@@ -102,6 +110,85 @@ def is_no(value) -> bool:
     if text in {"no", "n", "false", "0", "not used", "absent", "not included"}:
         return True
     return bool(re.search(r"^(no|n|false|0)\b", text))
+
+
+def yes_no_nominal(value, blank_as_no: bool = False) -> str:
+    """Return the Results-compatible yes/no/unclear label used by ICR."""
+    if blank_as_no and is_invalid(value):
+        return "no"
+    if is_yes(value):
+        return "yes"
+    if is_no(value):
+        return "no"
+    return "not_reported" if is_invalid(value) else "unclear"
+
+
+def regex_categories(value, patterns: Dict[str, str]) -> Dict[str, int]:
+    text = normalize_text(value)
+    return {name: int(bool(re.search(pattern, text, flags=re.IGNORECASE))) for name, pattern in patterns.items()}
+
+
+def evaluation_metric_categories(value) -> Dict[str, int]:
+    """Apply the shared Results evaluation-metric codebook."""
+    categories = regex_categories(value, EVALUATION_METRIC_PATTERNS)
+    categories["not_reported"] = int(is_invalid(value))
+    categories["other_uncategorized_metric"] = int(
+        not categories["not_reported"]
+        and not any(categories[name] for name in EVALUATION_METRIC_PATTERNS)
+    )
+    return categories
+
+
+def normalize_accuracy_number(value) -> float:
+    """Normalize an accuracy proportion/percentage and reject values outside 0-100."""
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return np.nan
+    if 0 <= number <= 1:
+        number *= 100
+    return number if 0 <= number <= 100 else np.nan
+
+
+def extract_accuracy_percent(performance_value, evaluation_metrics_value=None) -> float:
+    """Extract a value explicitly identified as accuracy.
+
+    A number is not used merely because the evaluation-metrics cell mentions
+    accuracy: the performance text must either label the number as accuracy or
+    contain a single bare value while excluding other metric labels. This avoids
+    treating F1/AUC values and unrelated numbers as accuracy.
+    """
+    performance = normalize_text(performance_value)
+    metrics = normalize_text(evaluation_metrics_value)
+    if is_invalid(performance):
+        return np.nan
+
+    label = r"(?:balanced\s+accuracy|classification\s+accuracy|\baccuracy\b|\baccurate\b|\bacc\b)"
+    patterns = (
+        rf"{label}[^0-9]{{0,40}}(\d+(?:\.\d+)?)\s*%",
+        rf"{label}[^0-9]{{0,40}}(0?\.\d+)",
+        rf"{label}[^0-9]{{0,40}}(\d+(?:\.\d+)?)",
+        rf"(\d+(?:\.\d+)?)\s*%\s*{label}",
+        rf"(0?\.\d+)\s*{label}",
+        rf"(\d+(?:\.\d+)?)\s*{label}",
+    )
+    for pattern in patterns:
+        match = re.search(pattern, performance)
+        if match:
+            return normalize_accuracy_number(match.group(1))
+
+    # Results workbooks sometimes put only the score in the performance cell.
+    # Accept that narrow case only when the metrics cell includes accuracy, the
+    # performance cell has exactly one number, and no competing metric is named.
+    if (
+        re.search(EVALUATION_METRIC_PATTERNS["accuracy"], metrics)
+        and not re.search(OTHER_ACCURACY_METRIC_PATTERN, metrics)
+        and not re.search(OTHER_ACCURACY_METRIC_PATTERN, performance)
+    ):
+        numbers = re.findall(r"\d+(?:\.\d+)?", performance)
+        if len(numbers) == 1:
+            return normalize_accuracy_number(numbers[0])
+    return np.nan
 
 
 def safe_pct(count: int | float, total: int | float) -> float:
@@ -226,6 +313,76 @@ def summarize_accuracy_by_group(
         save_df_optional(summary_df, f"{save_prefix}.csv", output_dir=output_dir, index=False)
 
     return summary_df
+
+
+def compute_behavioral_modality_by_year(
+    data_df: pd.DataFrame,
+    data_valid_mask,
+    year_col: int,
+    gaze_col: int,
+    motor_col: int,
+    speech_col: int,
+    other_behavior_cols: Sequence[int],
+    output_dir: Optional[str] = None,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Compute the RQ5 modality-by-publication-period trend tables."""
+    valid_mask = ensure_series_mask(data_valid_mask, data_df.index)
+    years = data_df.iloc[:, year_col].apply(extract_publication_year)
+    year_groups = years.apply(classify_year_group)
+    combined_other_text = (
+        data_df.iloc[:, list(other_behavior_cols)]
+        .fillna("")
+        .astype(str)
+        .agg(" ".join, axis=1)
+        .apply(normalize_text)
+    )
+    modality_table = pd.DataFrame(index=data_df.index)
+    modality_table["year"] = years
+    modality_table["year_group"] = year_groups
+    modality_table["valid_annotation"] = valid_mask
+    modality_table["included_in_modality_analysis"] = valid_mask
+    modality_table["gaze"] = data_df.iloc[:, gaze_col].apply(is_yes)
+    modality_table["motor"] = data_df.iloc[:, motor_col].apply(is_yes)
+    modality_table["speech"] = data_df.iloc[:, speech_col].apply(is_yes)
+    for category, pattern in OTHER_BEHAVIORAL_CATEGORY_PATTERNS.items():
+        modality_table[category] = combined_other_text.str.contains(pattern, regex=True, na=False)
+
+    modality_columns = ["gaze", "motor", "speech", *OTHER_BEHAVIORAL_CATEGORY_PATTERNS]
+    summary_rows = []
+    for year_group in YEAR_GROUP_ORDER:
+        group_mask = (modality_table["year_group"] == year_group) & valid_mask
+        denominator = int(group_mask.sum())
+        if not denominator:
+            continue
+        for modality in modality_columns:
+            count = int(modality_table.loc[group_mask, modality].sum())
+            summary_rows.append(
+                {
+                    "Year Group": year_group,
+                    "Behavioral Modality": modality,
+                    "Count": count,
+                    "Total Papers in Year Group": denominator,
+                    "Percentage": safe_pct(count, denominator),
+                }
+            )
+    summary = pd.DataFrame(summary_rows)
+    coverage = (
+        modality_table.loc[valid_mask]
+        .groupby("year_group")
+        .size()
+        .reindex(YEAR_GROUP_ORDER, fill_value=0)
+        .rename("Valid Papers")
+        .reset_index()
+    )
+    coverage = coverage[coverage["Valid Papers"] > 0]
+    save_df_optional(coverage, "valid_papers_by_year_group.csv", output_dir=output_dir)
+    save_df_optional(summary, "behavioral_modality_by_year_summary.csv", output_dir=output_dir)
+    save_df_optional(
+        modality_table.reset_index().rename(columns={"index": "row_index"}),
+        "behavioral_modality_by_year_match_table.csv",
+        output_dir=output_dir,
+    )
+    return summary, coverage, modality_table
 
 
 # ============================================================
@@ -586,168 +743,7 @@ def compute_study_setting(col, valid_mask, output_dir: Optional[str] = None):
 # 3. TASK TYPE / TASK DESIGN
 # ============================================================
 
-TASK_TYPE_PATTERNS = {
-    "gaze_visual_attention_task": (
-        r"\bjoint[- ]?attention\b"
-        r"|\bjointattention\b"
-        r"|\bgaze\b"
-        r"|\beye[- ]?tracking\b"
-        r"|\bsaccade\w*\b"
-        r"|\bscan[- ]?path\w*\b"
-        r"|\bscanpath\w*\b"
-        r"|\bwatch\w*\b"
-        r"|\bvideo\w*\b"
-        r"|\bmovie\w*\b"
-        r"|\bmovie clip\w*\b"
-        r"|\bpicture\w*\b"
-        r"|\bscene\w*\b"
-        r"|\blook\w*\b"
-        r"|\bview\w*\b"
-        r"|\bobserve\w*\b"
-        r"|\bbrows\w*\b"
-        r"|\bweb[- ]?search\w*\b"
-        r"|\bwebsite\w*\b"
-        r"|\bface viewing\b"
-        r"|\bvisual attention\b"
-        r"|\bvisual exploration\b"
-        r"|\bobserving images\b"
-        r"|\bimage classification\b"
-    ),
-    "motor_movement_task": (
-        r"\bplay\w*\b"
-        r"|\btoy\w*\b"
-        r"|\bwalk\w*\b"
-        r"|\bgait\b"
-        r"|\bmove\w*\b"
-        r"|\bmovement\w*\b"
-        r"|\bstand\w*\b"
-        r"|\bstood\b"
-        r"|\breach\w*\b"
-        r"|\bgrasp\w*\b"
-        r"|\bpose\w*\b"
-        r"|\bgesture\w*\b"
-        r"|\bimitation\b"
-        r"|\bimitat\w*\b"
-        r"|\bmotor\b"
-        r"|\bdrag\b"
-    ),
-    "language_speech_audio_task": (
-        r"\brepl\w*\b"
-        r"|\bspeak\w*\b"
-        r"|\bspoke\b"
-        r"|\blisten\w*\b"
-        r"|\bdiscuss\w*\b"
-        r"|\bconversation\w*\b"
-        r"|\baudio\w*\b"
-        r"|\bsound\w*\b"
-        r"|\bspeech\b"
-        r"|\bdialog\w*\b"
-        r"|\bread\w*\b"
-        r"|\binterview\w*\b"
-        r"|\bvocal\w*\b"
-        r"|\bvoice\b"
-    ),
-    "questionnaire_survey_task": (
-        r"\bquestionnaire\w*\b"
-        r"|\bquestionnare\w*\b"
-        r"|\bquesstionnaire\w*\b"
-        r"|\bquesstionaire\w*\b"
-        r"|\bques\w*"
-        r"|\bsurvey\w*\b"
-        r"|\bself[- ]?report\b"
-        r"|\bparent[- ]?report\b"
-        r"|\bcaregiver[- ]?report\b"
-        r"|\brating scale\w*\b"
-        r"|\bq-chat-10\b"
-        r"|\bq-chat\b"
-        r"|\behr\b"
-    ),
-    "facial_emotion_expression_task": (
-        r"\bfacial emotion\w*\b"
-        r"|\bfacial expression\w*\b"
-        r"|\bemotion recognition\b"
-        r"|\bemotion identification\b"
-        r"|\bidentify\w* emotion\w*\b"
-        r"|\bidentifying emotion\w*\b"
-        r"|\brecogniz\w* emotion\w*\b"
-        r"|\bemotions? from facial image\w*\b"
-        r"|\bfacial image\w*\b"
-        r"|\bface recognition\b"
-        r"|\bfaze recognition\b"
-        r"|\bfacial affect\b"
-        r"|\bimages of participants\b"
-        r"|\bface\b"
-    ),
-    "social_interaction_task": (
-        r"\binteract\w*\b"
-        r"|\bsocial\b"
-        r"|\brelation\w*\b"
-        r"|\brobot\w*\b"
-        r"|\bvirtual reality\b"
-        r"|\bvirtualreality\b"
-        r"|\bvr\b"
-        r"|\bsocial interaction\b"
-        r"|\bjoint activity\b"
-        r"|\btweets\b"
-        r"|\bcommunication\b"
-        r"|\bresponse to name\b"
-    ),
-    "decision_making_cognitive_task": (
-        r"\bdecision[- ]?making\b"
-        r"|\bdecision making\b"
-        r"|\bchoice task\b"
-        r"|\bcognitive task\b"
-        r"|\brisk task\b"
-        r"|\breward task\b"
-        r"|\breaction time\b"
-    ),
-    "clinical_observation_assessment_task": (
-        r"\bados\b"
-        r"|\bados[- ]?2\b"
-        r"|\bclinical observation\b"
-        r"|\bdiagnostic observation\b"
-        r"|\bassessment task\b"
-        r"|\bstructured assessment\b"
-    ),
-    "neurophysiology_neuroimaging_task": (
-        r"\beeg\b"
-        r"|\berp\b"
-        r"|\bmri\b"
-        r"|\bfmri\b"
-        r"|\bpet\b"
-        r"|\bemg\b"
-        r"|\becg\b"
-        r"|\bbrain activity\b"
-        r"|\bbrain imaging\b"
-        r"|\bneuroimaging\b"
-        r"|\bphysiolog\w*\b"
-        r"|\bbiosignal\w*\b"
-        r"|\bresting[- ]?state\b"
-        r"|\btask[- ]?state\b"
-        r"|\belectrode\w*\b"
-    ),
-}
-
-TASK_TYPE_COLS = list(TASK_TYPE_PATTERNS.keys())
-
-NOT_GIVEN_TASK_PATTERN = (
-    r"^\s*$"
-    r"|^\s*-$"
-    r"|^\s*--$"
-    r"|^\s*not given\s*$"
-    r"|^\s*not reported\s*$"
-    r"|^\s*not specified\s*$"
-    r"|^\s*none\s*$"
-    r"|^\s*no\s*$"
-    r"|^\s*na\s*$"
-    r"|^\s*n/a\s*$"
-    r"|^\s*n\.a\s*$"
-    r"|^\s*nd\s*$"
-    r"|^\s*n/d\s*$"
-    r"|^\s*n\.d\s*$"
-    r"|^\s*nan\s*$"
-)
-
+# Task categories are defined in codebook.py and imported above.
 
 def build_task_type_match_table(col: pd.Series, valid_mask) -> pd.DataFrame:
     valid_mask = ensure_series_mask(valid_mask, col.index)
