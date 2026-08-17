@@ -20,6 +20,17 @@ mkdir -p config
 cp scripts/PRISMA_pipeline/review_criteria.example.json config/review_criteria.json
 ```
 
+The pipeline deliberately fails if this file is missing, a required term group
+is empty, or example/placeholder terms remain. It never silently substitutes
+the example file.
+
+For isolated or external storage, every stage honors:
+
+```bash
+export ASD_REVIEW_DATA_ROOT=/path/to/review-data
+export ASD_REVIEW_OUTPUT_ROOT=/path/to/review-output
+```
+
 ## Expected Inputs
 
 - `data/raw/records.xlsx` or `data/raw/records.csv`: bibliographic records with at least a `title` column. Recommended optional columns are `doi`, `journal`, `year_published`, `authors`, `abstract`, `link`, `language`, `document_type`, `keywords`, and `source_database`.
@@ -48,13 +59,13 @@ python3 scripts/PRISMA_pipeline/13_create_final_metadata.py
 python3 scripts/PRISMA_pipeline/14_create_open_access_classification.py
 ```
 
-`10_screen_full_texts.py` calls `09_extract_pdf_texts_pdfjs.mjs` internally. Use `--skip-extraction` only when `output/full_text_screening/pdf_text_extraction_manifest.jsonl` already exists.
+`10_screen_full_texts.py` calls `09_extract_pdf_texts_pdfjs.mjs` internally. Use `--skip-extraction` only when `output/full_text_screening/pdf_text_extraction_manifest.jsonl` already exists. Under the current review protocol, stage 03 and stage 06 both advance title-stage `Include` records only; title-stage `Maybe` records do not advance. Use `--title-decisions Include,Maybe` only for an explicitly documented future protocol.
 
 ## Configuration
 
 The example criteria file is a template, not ASD-specific configuration. Replace every placeholder term group before running a real review. Core decision labels are `Include`, `Maybe`, and `Exclude`; uncertain decisions remain reviewable as `Maybe`.
 
-Networked metadata and PDF discovery stages query public scholarly APIs, use configurable retry/delay settings, and write JSON caches under `output/` for rerun auditing. If API access is unavailable, supply equivalent metadata or PDFs through the documented input files and skip the network lookup stages.
+Networked metadata and PDF discovery stages query public scholarly APIs, use the shared retry/cache behavior in `prisma_common.py`, and write JSON caches under `output/` for rerun auditing. If API access is unavailable, supply equivalent metadata or PDFs through the documented input files and skip the network lookup stages.
 
 ## Outputs And PRISMA Counts
 
