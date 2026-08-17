@@ -6,14 +6,13 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-import pandas as pd
 
-from prisma_common import ROOT, read_table, write_workbook
+from prisma_common import OUTPUT_ROOT, read_table, write_workbook
 
 
-DEFAULT_DECISIONS = ROOT / "output" / "final_included_studies" / "final_full_text_decisions_after_manual_removal.xlsx"
-DEFAULT_METADATA = ROOT / "output" / "abstract_screening" / "title_include_abstract_screening_manual_pdf_updated.xlsx"
-DEFAULT_OUTPUT = ROOT / "output" / "final_included_studies" / "final_included_studies_metadata.xlsx"
+DEFAULT_DECISIONS = OUTPUT_ROOT / "final_included_studies" / "final_full_text_decisions_after_manual_removal.xlsx"
+DEFAULT_METADATA = OUTPUT_ROOT / "abstract_screening" / "title_include_abstract_screening_manual_pdf_updated.xlsx"
+DEFAULT_OUTPUT = OUTPUT_ROOT / "final_included_studies" / "final_included_studies_metadata.xlsx"
 
 
 def parse_args() -> argparse.Namespace:

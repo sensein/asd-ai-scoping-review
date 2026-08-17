@@ -4,17 +4,16 @@
 from __future__ import annotations
 
 import argparse
-import difflib
 from pathlib import Path
 
 import pandas as pd
 
-from prisma_common import ROOT, clean, count_frame, normalize_header, normalize_title, read_table, write_workbook
+from prisma_common import DATA_ROOT, OUTPUT_ROOT, clean, count_frame, normalize_header, normalize_title, read_table, title_similarity, write_workbook
 
 
-DEFAULT_INPUT = ROOT / "output" / "full_text_screening" / "final_full_text_decisions.xlsx"
-DEFAULT_MANUAL = ROOT / "data" / "manual" / "manual_final_removals.xlsx"
-DEFAULT_OUTPUT = ROOT / "output" / "final_included_studies" / "final_full_text_decisions_after_manual_removal.xlsx"
+DEFAULT_INPUT = OUTPUT_ROOT / "full_text_screening" / "final_full_text_decisions.xlsx"
+DEFAULT_MANUAL = DATA_ROOT / "manual" / "manual_final_removals.xlsx"
+DEFAULT_OUTPUT = OUTPUT_ROOT / "final_included_studies" / "final_full_text_decisions_after_manual_removal.xlsx"
 
 
 def best_column(columns: list[str], aliases: list[str]) -> str | None:
@@ -53,8 +52,8 @@ def apply_manual_removals(all_df: pd.DataFrame, manual: pd.DataFrame, min_score:
         title = normalize_title(row.get("title", ""))
         if not title or not manual_titles:
             continue
-        best = max(manual_titles, key=lambda item: difflib.SequenceMatcher(None, title, item).ratio())
-        score = difflib.SequenceMatcher(None, title, best).ratio()
+        best = max(manual_titles, key=lambda item: title_similarity(title, item))
+        score = title_similarity(title, best)
         if score >= min_score:
             all_df.at[idx, "manual_final_removal"] = "yes"
             all_df.at[idx, "manual_final_exclusion_reason"] = title_to_reason[best]
