@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import difflib
 import json
 import shutil
 import subprocess
@@ -14,37 +13,29 @@ from pathlib import Path
 import pandas as pd
 
 from prisma_common import (
-    ROOT,
+    OUTPUT_ROOT,
     apply_year_overrides,
     clean,
     count_frame,
     load_criteria,
-    normalize_title,
     read_table,
     screen_eligibility,
     temporary_output_path,
+    title_similarity as shared_title_similarity,
     write_workbook,
 )
 
 
-DEFAULT_MANIFEST = ROOT / "output" / "pdf_retrieval" / "pdf_retrieval_manifest.xlsx"
-DEFAULT_PDF_DIR = ROOT / "output" / "pdfs"
-DEFAULT_OUTPUT_DIR = ROOT / "output" / "full_text_screening"
+DEFAULT_MANIFEST = OUTPUT_ROOT / "pdf_retrieval" / "pdf_retrieval_manifest.xlsx"
+DEFAULT_PDF_DIR = OUTPUT_ROOT / "pdfs"
+DEFAULT_OUTPUT_DIR = OUTPUT_ROOT / "full_text_screening"
 DEFAULT_PDF_FOUND_OUTPUT = DEFAULT_OUTPUT_DIR / "pdfs_found_records_for_full_text_screening.xlsx"
 DEFAULT_SCREENING_OUTPUT = DEFAULT_OUTPUT_DIR / "full_text_screening_results_pdfs_found.xlsx"
 DEFAULT_EXTRACTOR = Path(__file__).resolve().parent / "09_extract_pdf_texts_pdfjs.mjs"
 
 
 def title_similarity(left: object, right: object) -> float:
-    left_norm = normalize_title(left)
-    right_norm = normalize_title(right)
-    if not left_norm or not right_norm:
-        return 0.0
-    seq = difflib.SequenceMatcher(None, left_norm, right_norm).ratio()
-    left_tokens = set(left_norm.split())
-    right_tokens = set(right_norm.split())
-    jac = len(left_tokens & right_tokens) / len(left_tokens | right_tokens) if left_tokens and right_tokens else 0.0
-    return max(seq, jac)
+    return shared_title_similarity(left, right, include_token_jaccard=True)
 
 
 def resolve_pdf_paths(records: pd.DataFrame, pdf_dir: Path, min_score: float) -> pd.DataFrame:
