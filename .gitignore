@@ -212,6 +212,8 @@ data/*.csv
 !data/.gitkeep
 output/**
 !output/.gitkeep
+!output/synthscholar/
+!output/synthscholar/**
 *.tmp
 
 # PRISMA pipeline local artifacts
