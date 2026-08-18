@@ -15,7 +15,7 @@ def main() -> None:
     if not DATA_ROOT.is_absolute():
         DATA_ROOT = PROJECT_ROOT / DATA_ROOT
     INPUT_FILE = DATA_ROOT / "final_annotation_sheet_.xlsx"
-    SHEET_NAME = 0
+    HEADER_ROW_COUNT = 2
 
     TITLE_COL_INDEX = 0   # Column A
     VENUE_COL_INDEX = 3   # Column D
@@ -37,9 +37,18 @@ def main() -> None:
     # LOAD FILE
     # ============================================================
 
-    df = pd.read_excel(INPUT_FILE, sheet_name=SHEET_NAME, usecols="A:BY")
-
-    df.columns = df.columns.astype(str).str.strip()
+    # The workbook's first two rows are header rows; study records start on row 3.
+    raw = pd.read_excel(INPUT_FILE, header=None, usecols="A:BY")
+    header_rows = raw.iloc[:HEADER_ROW_COUNT].ffill(axis=1)
+    df = raw.iloc[HEADER_ROW_COUNT:].copy().reset_index(drop=True)
+    df.columns = [
+        " | ".join(
+            str(value).strip()
+            for value in header_values
+            if pd.notna(value) and str(value).strip()
+        )
+        for header_values in zip(header_rows.iloc[0], header_rows.iloc[1])
+    ]
 
     TITLE_COL = df.columns[TITLE_COL_INDEX]
     VENUE_COL = df.columns[VENUE_COL_INDEX]
