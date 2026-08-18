@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge supplemental metadata into a PRISMA Include/Maybe abstract workbook.
+"""Merge supplemental metadata into a PRISMA title-Include abstract workbook.
 
 This script matches Supplemental rows to the Records_With_Abstracts sheet by DOI,
 article link, exact title, then near-title match. It fills missing abstracts and
@@ -9,21 +9,27 @@ blank metadata fields while preserving the original PRISMA screening columns.
 from __future__ import annotations
 
 import argparse
-import difflib
 import html
 import re
 from pathlib import Path
 from typing import Any
 
-import pandas as pd
-from openpyxl import load_workbook
-from openpyxl.styles import Alignment, Font, PatternFill
-from openpyxl.utils import get_column_letter
+from prisma_common import (
+    DATA_ROOT,
+    OUTPUT_ROOT,
+    find_duplicate_keys,
+    normalize_doi as shared_normalize_doi,
+    normalize_link as shared_normalize_link,
+    normalize_title as shared_normalize_title,
+    style_workbook as shared_style_workbook,
+    title_similarity,
+)
 
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_BASE = ROOT / "output" / "abstract_finding" / "title_include_maybe_with_abstracts.xlsx"
-DEFAULT_SUPPLEMENTAL = ROOT / "data" / "manual" / "supplemental_metadata.xlsx"
-DEFAULT_OUTPUT = ROOT / "output" / "abstract_finding" / "title_include_maybe_with_supplemental_metadata.xlsx"
+import pandas as pd
+
+DEFAULT_BASE = OUTPUT_ROOT / "abstract_finding" / "title_include_with_abstracts.xlsx"
+DEFAULT_SUPPLEMENTAL = DATA_ROOT / "manual" / "supplemental_metadata.xlsx"
+DEFAULT_OUTPUT = OUTPUT_ROOT / "abstract_finding" / "title_include_with_supplemental_metadata.xlsx"
 
 
 def temporary_output_path(output: Path) -> Path:
@@ -40,21 +46,15 @@ def clean(value: Any) -> str:
 
 
 def normalize_title(value: Any) -> str:
-    text = html.unescape(str(value or "")).lower()
-    text = re.sub(r"<[^>]+>", " ", text)
-    text = re.sub(r"[\W_]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+    return shared_normalize_title(value)
 
 
 def normalize_doi(value: Any) -> str:
-    doi = str(value or "").strip()
-    doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
-    doi = re.sub(r"^doi:\s*", "", doi, flags=re.IGNORECASE)
-    return doi.strip().rstrip(".").lower()
+    return shared_normalize_doi(value)
 
 
 def normalize_link(value: Any) -> str:
-    return str(value or "").strip().rstrip("/").lower()
+    return shared_normalize_link(value)
 
 
 def normalize_header(value: Any) -> str:
@@ -143,7 +143,7 @@ def match_row(row: pd.Series, book: pd.DataFrame, by_doi: dict[str, list[int]], 
     if title:
         near: list[tuple[str, float, int]] = []
         for book_title, indexes in by_title.items():
-            score = difflib.SequenceMatcher(None, title, book_title).ratio()
+            score = title_similarity(title, book_title)
             if score >= min_score:
                 near.extend(("near_title", score, idx) for idx in indexes)
         return choose_best(near, book)
@@ -235,32 +235,16 @@ def fill_metadata(base: pd.DataFrame, book: pd.DataFrame, min_score: float) -> t
 
 
 def style_workbook(path: Path) -> None:
-    wb = load_workbook(path)
-    fill = PatternFill("solid", fgColor="264653")
-    font = Font(color="FFFFFF", bold=True)
-    for ws in wb.worksheets:
-        ws.freeze_panes = "A2"
-        if ws.max_row and ws.max_column:
-            ws.auto_filter.ref = ws.dimensions
-        for cell in ws[1]:
-            cell.fill = fill
-            cell.font = font
-            cell.alignment = Alignment(wrap_text=True, vertical="top")
-        for row in ws.iter_rows(min_row=2):
-            for cell in row:
-                cell.alignment = Alignment(wrap_text=True, vertical="top")
-        for col_cells in ws.columns:
-            letter = get_column_letter(col_cells[0].column)
-            max_len = max(len(str(cell.value or "")[:90]) for cell in col_cells)
-            ws.column_dimensions[letter].width = max(12, min(max_len + 2, 55))
-        headers = {cell.value: cell.column for cell in ws[1]}
-        for name, width in {"title": 58, "base_title": 58, "supplemental_title": 58, "abstract": 90, "authors": 42, "link": 45, "abstract_lookup_notes": 55}.items():
-            if name in headers:
-                ws.column_dimensions[get_column_letter(headers[name])].width = width
-    wb.save(path)
+    shared_style_workbook(path)
 
-
-def write_workbook(output: Path, df: pd.DataFrame, audit: pd.DataFrame, input_name: str, supplemental_name: str) -> None:
+def write_workbook(
+    output: Path,
+    df: pd.DataFrame,
+    audit: pd.DataFrame,
+    duplicate_audit: pd.DataFrame,
+    input_name: str,
+    supplemental_name: str,
+) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     abstract_mask = df["abstract"].astype(str).str.strip().ne("")
     missing_mask = ~abstract_mask
@@ -275,6 +259,7 @@ def write_workbook(output: Path, df: pd.DataFrame, audit: pd.DataFrame, input_na
             {"metric": "Records still missing abstracts", "value": int(missing_mask.sum())},
             {"metric": "Rows matched to Supplemental with fields filled", "value": len(audit)},
             {"metric": "Missing abstracts filled from Supplemental", "value": int((audit.get("abstract_filled", pd.Series(dtype=str)) == "yes").sum()) if not audit.empty else 0},
+            {"metric": "Post-enrichment duplicate-key audit rows", "value": len(duplicate_audit)},
         ]
     )
     temp_output = temporary_output_path(output)
@@ -286,6 +271,7 @@ def write_workbook(output: Path, df: pd.DataFrame, audit: pd.DataFrame, input_na
         df.loc[abstract_mask].to_excel(writer, sheet_name="Papers_With_Abstracts", index=False)
         df.loc[missing_mask].to_excel(writer, sheet_name="Still_Missing_Abstracts", index=False)
         audit.to_excel(writer, sheet_name="Supplemental_Match_Audit", index=False)
+        duplicate_audit.to_excel(writer, sheet_name="Post_Merge_Duplicate_Audit", index=False)
     style_workbook(temp_output)
     temp_output.replace(output)
 
@@ -311,14 +297,23 @@ def main() -> int:
     book = read_supplemental(args.supplemental, args.supplemental_sheet)
     before = int(base["abstract"].astype(str).str.strip().ne("").sum()) if "abstract" in base.columns else 0
     merged, audit = fill_metadata(base, book, args.min_near_title_score)
+    duplicate_audit = find_duplicate_keys(merged)
     after = int(merged["abstract"].astype(str).str.strip().ne("").sum())
-    write_workbook(args.output, merged, audit, args.input.name, args.supplemental.name)
+    write_workbook(args.output, merged, audit, duplicate_audit, args.input.name, args.supplemental.name)
     print(f"Input records: {len(merged)}")
     print(f"Abstracts before Supplemental merge: {before}")
     print(f"Abstracts after Supplemental merge: {after}")
     print(f"New abstracts filled from Supplemental: {after - before}")
     print(f"Still missing abstracts: {len(merged) - after}")
     print(f"Rows with Supplemental fields filled: {len(audit)}")
+    if duplicate_audit.empty:
+        print("Post-enrichment duplicate-key audit: no exact DOI/title/link duplicates found")
+    else:
+        groups = duplicate_audit[["duplicate_match_type", "normalized_value"]].drop_duplicates()
+        print(
+            "WARNING: post-enrichment duplicate-key audit found "
+            f"{len(groups)} duplicate key group(s); inspect Post_Merge_Duplicate_Audit before screening."
+        )
     print(f"Wrote: {args.output}")
     return 0
 

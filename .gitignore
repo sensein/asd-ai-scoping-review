@@ -205,4 +205,42 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Project data and generated review artifacts
+data/*.xlsx
+data/*.xls
+data/*.csv
+!data/.gitkeep
+output/**
+!output/.gitkeep
+!output/synthscholar/
+!output/synthscholar/**
+*.tmp
+
+# PRISMA pipeline local artifacts
+node_modules/
+package-lock.json
+output/pdfs/
+output/**/*cache*.json
+output/**/*.jsonl
+output/**/*.txt
+
+# Local comparison references and editor settings
+.vscode/
+scripts/src/
+
+# Machine-local assistant/editor state and OS metadata
 .DS_Store
+**/.DS_Store
+.claude/
+
+# Review-specific configuration and credentials
+config/review_criteria.json
+config/*.local.json
+.env.*
+!.env.example
+
+# Generated temporary/interrupted files
+*.partial
+*.download
+*.tmp.*
+~$*.xlsx

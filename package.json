@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "check:pdf-extractor": "node --check scripts/PRISMA_pipeline/09_extract_pdf_texts_pdfjs.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "5.6.205"
+  },
+  "devDependencies": {}
+}
