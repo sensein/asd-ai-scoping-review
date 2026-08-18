@@ -703,29 +703,29 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 ## References
 
-1. Santos JF; Brosh N; Falk TH; Zwaigenbaum L; Bryson SE; Roberts W; Smith IM; Szatmari P; Brian JA (2013). Very early detection of Autism Spectrum Disorders based on acoustic analysis of pre-verbal vocalizations of 18-month old toddlers. **.
+1. Santos JF; Brosh N; Falk TH; Zwaigenbaum L; Bryson SE; Roberts W; Smith IM; Szatmari P; Brian JA (2013). Very early detection of Autism Spectrum Disorders based on acoustic analysis of pre-verbal vocalizations of 18-month old toddlers. **. https://doi.org/10.1109/icassp.2013.6639134
 
-2. Crippa A; Salvatore C; Perego P; Forti S; Nobile M; Molteni M; Castiglioni I (2015). Use of Machine Learning to Identify Children with Autism and Their Motor Abnormalities. *Journal of Autism and Develo*.
+2. Crippa A; Salvatore C; Perego P; Forti S; Nobile M; Molteni M; Castiglioni I (2015). Use of Machine Learning to Identify Children with Autism and Their Motor Abnormalities. *Journal of Autism and Develo*. https://doi.org/10.1007/s10803-015-2379-8
 
-3. Uluyagmur-Ozturk M; Arman AR; Yilmaz SS; Findik OTP; Genc HA; Carkaxhiu-Bulut G; Yazgan MY; Teker U; Cataltepe Z (2016). ADHD and ASD Classification Based on Emotion Recognition Data. *I*.
+3. Uluyagmur-Ozturk M; Arman AR; Yilmaz SS; Findik OTP; Genc HA; Carkaxhiu-Bulut G; Yazgan MY; Teker U; Cataltepe Z (2016). ADHD and ASD Classification Based on Emotion Recognition Data. *I*. https://doi.org/10.1109/icmla.2016.0145
 
-4. Liu W; Li M; Yi L (2016). Identifying children with autism spectrum disorder based on their face processing abnormality: A machine learning framework. *Autism Research, 9(8), 888-898*.
+4. Liu W; Li M; Yi L (2016). Identifying children with autism spectrum disorder based on their face processing abnormality: A machine learning framework. *Autism Research, 9(8), 888-898*. https://doi.org/10.1002/aur.1615
 
-5. Luo SX; Shinall JA; Peterson BS; Gerber AJ (2016). Semantic mapping reveals distinct patterns in descriptions of social relations in adults with autism spectrum disorder. *Autism Research, 9(8), 846-8*.
+5. Luo SX; Shinall JA; Peterson BS; Gerber AJ (2016). Semantic mapping reveals distinct patterns in descriptions of social relations in adults with autism spectrum disorder. *Autism Research, 9(8), 846-8*. https://doi.org/10.1002/aur.1581
 
 6. Anzulewicz A; Sobota K; Delafield-Butt JT (2016). Toward the Autism Motor Signature: Gesture patterns during smart tablet gameplay identify children with autism. *Scientific Reports, 6(1), Article 31107. http*. https://doi.org/10.1038/srep31107
 
-7. Li B; Sharma A; Meng J; Purushwalkam S; Gowen E (2017). Applying machine learning to identify autistic adults using imitation: An exploratory study. *PLOS ONE, 12(8), Article e0182652*.
+7. Li B; Sharma A; Meng J; Purushwalkam S; Gowen E (2017). Applying machine learning to identify autistic adults using imitation: An exploratory study. *PLOS ONE, 12(8), Article e0182652*. https://doi.org/10.1371/journal.pone.0182652
 
-8. Jaiswal S; Valstar MF; Gillott A; Daley D (2017). Automatic Detection of ADHD and ASD from Expressive Behaviour in RGBD Data. *2017 12th IEEE International Conference on Automatic Face & Gesture Recognit*.
+8. Jaiswal S; Valstar MF; Gillott A; Daley D (2017). Automatic Detection of ADHD and ASD from Expressive Behaviour in RGBD Data. *2017 12th IEEE International Conference on Automatic Face & Gesture Recognit*. https://doi.org/10.1109/fg.2017.95
 
 9. Pokorny FB; Schuller B; Marschik PB; Brueckner R; Nyström P; Cummins N; Bölte S; Einspieler C; Falck-Ytter T (2017). Earlier identification of children with autism. **. https://doi.org/10.21437/interspeech.2017-1007
 
 10. Deng J; Cummins N; Schmitt M; Qian K; Ringeval F; Schuller B (2017). Speech-based Diagnosis of Autism Spectrum Condition by Generative. *Proceedings of the 2017 Inte*. https://doi.org/10.1145/3079452.3079492
 
-11. Hasan CZC; Jailani R; Tahir NM (2018). ANN and SVM Classifiers in Identifying Autism Spectrum Disorder Gait Based on Three-Dimensional Ground Reaction Forces. *TENCON 2018 - 2018 IEEE Region 10 Confere*.
+11. Hasan CZC; Jailani R; Tahir NM (2018). ANN and SVM Classifiers in Identifying Autism Spectrum Disorder Gait Based on Three-Dimensional Ground Reaction Forces. *TENCON 2018 - 2018 IEEE Region 10 Confere*. https://doi.org/10.1109/tencon.2018.8650468
 
-12. Moghadas M; Moradi H (2018). Analyzing Human-Robot Interaction Using Machine Vision for Autism screening. *2018 6th RSI International Conference on Robotics and Mechatronics (IcRoM)*.
+12. Moghadas M; Moradi H (2018). Analyzing Human-Robot Interaction Using Machine Vision for Autism screening. *2018 6th RSI International Conference on Robotics and Mechatronics (IcRoM)*. https://doi.org/10.1109/icrom.2018.8657569
 
 13. Wan G; Kong X; Sun B; Yu S; Tu Y; Park J; Lang C; Koh M; Wei Z; Feng Z; Lin Y; Kong J (2018). Applying Eye Tracking to Identify Autism Spectrum Disorder in Children. *Journal of Autism and Dev*. https://doi.org/10.1007/s10803-018-3690-y
 
@@ -733,59 +733,59 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 15. Yaneva V; Ha LA; Eraslan S; Yesilada Y; Mitkov R (2018). Detecting Autism Based on Eye-Tracking Data from Web Searching. *Proceedings of the 15th International Web for All Conference*. https://doi.org/10.1145/3192714.3192819
 
-16. Zunino A; Morerio P; Cavallo A; Ansuini C; Podda J; Battaglia F; Veneselli E; Becchio C; Murino V (2018). Video Gesture Analysis for Autism Spectrum Disorder Detection. *2018 24th International C*.
+16. Zunino A; Morerio P; Cavallo A; Ansuini C; Podda J; Battaglia F; Veneselli E; Becchio C; Murino V (2018). Video Gesture Analysis for Autism Spectrum Disorder Detection. *2018 24th International C*. https://doi.org/10.1109/icpr.2018.8545095
 
-17. Król M; Król ME (2019). A Novel Eye Movement Data Transformation Technique that Preserves Temporal Information: A Demonstration in a Face Processing Task. *Sensors, 19(10), Article 2377*.
+17. Król M; Król ME (2019). A Novel Eye Movement Data Transformation Technique that Preserves Temporal Information: A Demonstration in a Face Processing Task. *Sensors, 19(10), Article 2377*. https://doi.org/10.3390/s19102377
 
-18. Zhao Z; Zhang X; Li W; Hu X; Qu X; Cao X; Liu Y; Lu J (2019). Applying Machine Learning to Identify Autism With Restricted Kinematic Features. *IEEE Access, 7, 157614-157622*.
+18. Zhao Z; Zhang X; Li W; Hu X; Qu X; Cao X; Liu Y; Lu J (2019). Applying Machine Learning to Identify Autism With Restricted Kinematic Features. *IEEE Access, 7, 157614-157622*. https://doi.org/10.1109/access.2019.2950030
 
-19. Cho S; Liberman M; Ryant N; Cola M; Schultz RT; Parish-Morris J (2019). Automatic Detection of Autism Spectrum Disorder in Children Using Acoustic and Text Features from Brief Natural Conversations. *In*.
+19. Cho S; Liberman M; Ryant N; Cola M; Schultz RT; Parish-Morris J (2019). Automatic Detection of Autism Spectrum Disorder in Children Using Acoustic and Text Features from Brief Natural Conversations. *In*. https://doi.org/10.21437/interspeech.2019-1452
 
-20. Jiang M; Francis SM; Srishyla D; Conelea C; Zhao Q; Jacob S (2019). Classifying Individuals with ASD Through Facial Emotion Recognition and Eye-Tracking. *2019 41st Annual International Conference of*.
+20. Jiang M; Francis SM; Srishyla D; Conelea C; Zhao Q; Jacob S (2019). Classifying Individuals with ASD Through Facial Emotion Recognition and Eye-Tracking. *2019 41st Annual International Conference of*. https://doi.org/10.1109/embc.2019.8857005
 
-21. Tariq Q; Fleming SL; Schwartz JN; Dunlap K; Corbin C; Washington P; Kalantarian H; Khan NZ; Darmstadt GL; Wall DP (2019). Detecting Developmental Delay and Autism Through Machine. **.
+21. Tariq Q; Fleming SL; Schwartz JN; Dunlap K; Corbin C; Washington P; Kalantarian H; Khan NZ; Darmstadt GL; Wall DP (2019). Detecting Developmental Delay and Autism Through Machine. **. https://doi.org/10.2196/13822
 
-22. Arru G; Mazumdar P; Battisti F (2019). Exploiting Visual Behaviour for Autism Spectrum Disorder Identification. *2019 IEEE International Conference on Multimedia & Expo Workshops (ICMEW)*.
+22. Arru G; Mazumdar P; Battisti F (2019). Exploiting Visual Behaviour for Autism Spectrum Disorder Identification. *2019 IEEE International Conference on Multimedia & Expo Workshops (ICMEW)*. https://doi.org/10.1109/icmew.2019.00123
 
-23. Petric F; Kovacic Z (2019). Hierarchical POMDP Framework for a Robot-Assisted ASD Diagnostic Protocol. *2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI). IEEE*.
+23. Petric F; Kovacic Z (2019). Hierarchical POMDP Framework for a Robot-Assisted ASD Diagnostic Protocol. *2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI). IEEE*. https://doi.org/10.1109/hri.2019.8673295
 
-24. Dris AB; Alsalman A; Al-Wabil A; Aldosari M (2019). Intelligent Gaze-Based Screening System for Autism. *2019 2nd International Conference on Computer Applications & Information Security (ICCAIS)*.
+24. Dris AB; Alsalman A; Al-Wabil A; Aldosari M (2019). Intelligent Gaze-Based Screening System for Autism. *2019 2nd International Conference on Computer Applications & Information Security (ICCAIS)*. https://doi.org/10.1109/cais.2019.8769452
 
-25. Vabalas A; Gowen E; Poliakoff E; Casson AJ (2019). Kinematic features of a simple and short movement task to predict autism diagnosis. *2019 41st Annual International Conference of the IEEE Engineering i*.
+25. Vabalas A; Gowen E; Poliakoff E; Casson AJ (2019). Kinematic features of a simple and short movement task to predict autism diagnosis. *2019 41st Annual International Conference of the IEEE Engineering i*. https://doi.org/10.1109/embc.2019.8857307
 
-26. Carette R; Elbattah M; Cilia F; Dequen G; Guérin JL; Bosche J (2019). Learning to Predict Autism Spectrum Disorder based on the Visual. *Proceedings of the 12th In*.
+26. Carette R; Elbattah M; Cilia F; Dequen G; Guérin JL; Bosche J (2019). Learning to Predict Autism Spectrum Disorder based on the Visual. *Proceedings of the 12th In*. https://doi.org/10.5220/0007402601030112
 
 27. Georgescu AL; Koehler JC; Weiske J; Vogeley K; Koutsouleris N; Falter-Wagner C (2019). Machine Learning to Study Social Interaction Difficulties in ASD. *Frontiers in Robotics and AI, 6, Article 132*. https://doi.org/10.3389/frobt.2019.00132
 
 28. Millar L; McConnachie A; Minnis H; Wilson P; Thompson L; Anzulewicz A; Sobota K; Rowe P; Gillberg C; Delafield-Butt J (2019). Phase 3 diagnostic evaluation of a smart. **. https://doi.org/10.1136/bmjopen-2018-026226
 
-29. Wu C; Liaqat S; Cheung SC; Chuah CN; Ozonoff S (2019). Predicting Autism Diagnosis using Image with Fixations and Synthetic Saccade Patterns. *2019 IEEE International Conference on Multimedia & Expo*.
+29. Wu C; Liaqat S; Cheung SC; Chuah CN; Ozonoff S (2019). Predicting Autism Diagnosis using Image with Fixations and Synthetic Saccade Patterns. *2019 IEEE International Conference on Multimedia & Expo*. https://doi.org/10.1109/icmew.2019.00125
 
-30. Vyas K; Ma R; Rezaei B; Liu S; Neubauer M; Ploetz T; Oberleitner R; Ostadabbas S (2019). Recognition Of Atypical Behavior In Autism Diagnosis From Video Using Pose Estimation Over Time. *2019 IEEE*.
+30. Vyas K; Ma R; Rezaei B; Liu S; Neubauer M; Ploetz T; Oberleitner R; Ostadabbas S (2019). Recognition Of Atypical Behavior In Autism Diagnosis From Video Using Pose Estimation Over Time. *2019 IEEE*. https://doi.org/10.1109/mlsp.2019.8918863
 
 31. Ramírez-Duque AA; Frizera-Neto A; Bastos TF (2019). Robot-Assisted Autism Spectrum Disorder Diagnostic Based on Artificial Reasoning. *Journal of Intelligent & Robotic Systems, 96(2), 267-281*. https://doi.org/10.1007/s10846-018-00975-y
 
-32. Tao Y; Shyu ML (2019). SP-ASDNet: CNN-LSTM Based ASD Classification Model using Observer ScanPaths. *2019 IEEE International Conference on Multimedia & Expo Workshops (ICMEW)*.
+32. Tao Y; Shyu ML (2019). SP-ASDNet: CNN-LSTM Based ASD Classification Model using Observer ScanPaths. *2019 IEEE International Conference on Multimedia & Expo Workshops (ICMEW)*. https://doi.org/10.1109/icmew.2019.00124
 
-33. Arent K; Kruk-Lasocka J; Niemiec T; Szczepanowski R (2019). Social robot in diagnosis of autism among preschool children. *2019 24th International Conference on Methods and Models in Automation and Robotic*.
+33. Arent K; Kruk-Lasocka J; Niemiec T; Szczepanowski R (2019). Social robot in diagnosis of autism among preschool children. *2019 24th International Conference on Methods and Models in Automation and Robotic*. https://doi.org/10.1109/mmar.2019.8864666
 
 34. Qiu N; Tang C; Zhai M; Huang W; Weng J; Li C; Xiao X; Fu J; Zhang L; Xiao T; Fang H; Ke X (2020). Application of the Still-Face Paradigm in Early Screening for High-Risk Autism Spectrum Disorder in Infants and Toddlers. **. https://doi.org/10.3389/fped.2020.00290
 
 35. Vabalas A; Gowen E; Poliakoff E; Casson AJ (2020). Applying Machine Learning to Kinematic and Eye Movement Features of a Movement Imitation Task to Predict Autism Diagnosis. *Scientific Reports, 10(1), Arti*. https://doi.org/10.1038/s41598-020-65384-4
 
-36. Zhao W (2020). Research and Design of Autism Smart Diagnosis Information System Based on Chinese Children's Facial Expression Data and Deep Convolution Neural Network. *Proceedings of the 53rd Hawaii International Conference on System Sciences*.
+36. Zhao W (2020). Research and Design of Autism Smart Diagnosis Information System Based on Chinese Children's Facial Expression Data and Deep Convolution Neural Network. *Proceedings of the 53rd Hawaii International Conference on System Sciences*. https://doi.org/10.24251/hicss.2020.406
 
-37. Li Y; Mache MA; Todd TA (2020). Automated identification of postural control for children with autism spectrum disorder using a machine learning approach. *Journal of Biomechanics, 113, 110073*.
+37. Li Y; Mache MA; Todd TA (2020). Automated identification of postural control for children with autism spectrum disorder using a machine learning approach. *Journal of Biomechanics, 113, 110073*. https://doi.org/10.1016/j.jbiomech.2020.110073
 
 38. Javed H; Park CH (2020). Behavior-based Risk Detection of Autism Spectrum Disorder Through. *Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (pp*. https://doi.org/10.1145/3371382.3378382
 
 39. Tunçgenç B; Pacheco C; Rochowiak R; Nicholas R; Rengarajan S; Zou E; Messenger B; Vidal R; Mostofsky SH (2020). Computerized Assessment of Motor Imitation as a Scalable Method for Distinguishing Children With Autism. **. https://doi.org/10.1016/j.bpsc.2020.09.001
 
-40. Lee JH; Lee GW; Bong G; Yoo HJ; Kim HK (2020). Deep-Learning-Based Detection of Infants with Autism Spectrum Disorder Using Auto-Encoder Feature Representation. *Sensors, 20(23), Article 6762. https*.
+40. Lee JH; Lee GW; Bong G; Yoo HJ; Kim HK (2020). Deep-Learning-Based Detection of Infants with Autism Spectrum Disorder Using Auto-Encoder Feature Representation. *Sensors, 20(23), Article 6762. https*. https://doi.org/10.3390/s20236762
 
-41. Henderson B; Yogarajah P; Gardiner B; McGinnity M; Forster K; Nicholas B; Wimpory D; Wanigasinghe J (2020). Effects of Intra-Subject Variation in Gait Analysis on ASD Classification Performance in Machine Learning Models. **.
+41. Henderson B; Yogarajah P; Gardiner B; McGinnity M; Forster K; Nicholas B; Wimpory D; Wanigasinghe J (2020). Effects of Intra-Subject Variation in Gait Analysis on ASD Classification Performance in Machine Learning Models. **. https://doi.org/10.1109/issc49989.2020.9180201
 
-42. Eni M; Dinstein I; Ilan M; Menashe I; Meiri G; Zigel Y (2020). Estimating Autism Severity in Young Children From Speech Signals Using a Deep Neural Network. *IEEE Access, 8, 139489-139500*.
+42. Eni M; Dinstein I; Ilan M; Menashe I; Meiri G; Zigel Y (2020). Estimating Autism Severity in Young Children From Speech Signals Using a Deep Neural Network. *IEEE Access, 8, 139489-139500*. https://doi.org/10.1109/access.2020.3012532
 
 43. Yaneva V; Ha LA; Eraslan S; Yesilada Y; Mitkov R (2020). Detecting High-Functioning Autism in Adults Using Eye Tracking and Machine Learning. *IEEE Transactions on Neural Systems and Rehabilitation Engineering, 28(6), 1254-1261*. https://doi.org/10.1109/TNSRE.2020.2991675
 
@@ -797,13 +797,13 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 47. Li B; Barney E; Hudac C; Nuechterlein N; Ventola P; Shapiro L; Shic F (2020). Selection of Eye-Tracking Stimuli for Prediction by Sparsely Grouped Input Variables for Neural Networks: towards Biomarker Refinement for Autism. *ETRA '20 Full Papers: ACM Symposium on Eye Tracking Research and Applications*. https://doi.org/10.1145/3379155.3391334
 
-48. Kang J; Han X; Song J; Niu Z; Li X (2020). The identification of children with autism spectrum disorder by SVM approach on EEG and eye-tracking data. *Computers in Biology and Medicine, 120, Article 103722*.
+48. Kang J; Han X; Song J; Niu Z; Li X (2020). The identification of children with autism spectrum disorder by SVM approach on EEG and eye-tracking data. *Computers in Biology and Medicine, 120, Article 103722*. https://doi.org/10.1016/j.compbiomed.2020.103722
 
 49. Nag A; Haber N; Voss C; Tamura S; Daniels J; Ma J; Chiang B; Ramachandran S; Schwartz J; Winograd T; Feinstein C; Wall DP (2020). Toward Continuous Social Phenotyping: Analyzing Gaze Patterns in an Emotion Recognition Task for Children With Autism Through Wearable Smart Glasses. *Journal of Medical Internet Research, 22(4), e13810*. https://doi.org/10.2196/13810
 
 50. Drimalla H; Scheffer T; Landwehr N; Baskow I; Roepke S; Behnia B; Dziobek I (2020). Towards the automatic detection of social biomarkers in autism spectrum disorder: introducing the simulated interaction task (SIT). **. https://doi.org/10.1038/s41746-020-0227-5
 
-51. Dinesh A (2020). Utilizing Artificial Intelligence to Diagnose Autism Spectrum Disorder Based on Eye Tracking Saccades. *2020 IEEE MIT Undergraduate Research Technology Conference (URTC)*.
+51. Dinesh A (2020). Utilizing Artificial Intelligence to Diagnose Autism Spectrum Disorder Based on Eye Tracking Saccades. *2020 IEEE MIT Undergraduate Research Technology Conference (URTC)*. https://doi.org/10.1109/urtc51696.2020.9668883
 
 52. Ali S; Mehmood F; Ayaz Y; Sajid M; Sadia H; Nawaz R (2021). An Experimental Trial: Multi-Robot Therapy for Categorization of Autism Level Using Hidden Markov Model. *Journal of Educational Computing Resea*. https://doi.org/10.1177/07356331211040405
 
@@ -811,9 +811,9 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 54. Lin Y; Gu Y; Xu Y; Hou S; Ding R; Ni S (2021). Autistic spectrum traits detection and early screening: A machine learning based eye movement study. *Journal of Child and Adolescent Psychiatric Nursing, 35*. https://doi.org/10.1111/jcap.12346
 
-55. He Q; Wang Q; Wu Y; Yi L; Wei K (2021). Automatic classification of children with autism spectrum disorder by using a computerized visual‐orienting task. *PsyCh Journal, 10(4), 550-565*.
+55. He Q; Wang Q; Wu Y; Yi L; Wei K (2021). Automatic classification of children with autism spectrum disorder by using a computerized visual‐orienting task. *PsyCh Journal, 10(4), 550-565*. https://doi.org/10.1002/pchj.447
 
-56. Fang H; Fan L; Hwang JN (2021). Auxiliary Diagnostic Method for Early Autism Spectrum Disorder Based on Eye Movement Data Analysis. *2021 IEEE 7th International Conference on Cloud Computing and Intelligen*.
+56. Fang H; Fan L; Hwang JN (2021). Auxiliary Diagnostic Method for Early Autism Spectrum Disorder Based on Eye Movement Data Analysis. *2021 IEEE 7th International Conference on Cloud Computing and Intelligen*. https://doi.org/10.1109/ccis53392.2021.9754665
 
 57. Zhang S; Chen D; Tang Y; Zhang L (2021). Children ASD Evaluation Through Joint Analysis of EEG and Eye-Tracking Recordings With Graph Convolution Network. *Frontiers in Human Neuroscience, 15, Article 651349*. https://doi.org/10.3389/fnhum.2021.651349
 
@@ -821,7 +821,7 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 59. Zhao Z; Tang H; Zhang X; Qu X; Hu X; Lu J (2021). Classification of Children With Autism and Typical Development Using Eye-Tracking Data From Face-to-Face Conversations: Machine Learning Model Development and Performance Evaluation. *Journal of Medical Internet Research, 23(8), e29328*. https://doi.org/10.2196/29328
 
-60. Jayasree T; Shia S (2021). Combined Signal Processing Based Techniques and Feed Forward Neural Networks for Pathological Voice Detection and Classification. *Sound&Vibration, 55(2), 141-161*.
+60. Jayasree T; Shia S (2021). Combined Signal Processing Based Techniques and Feed Forward Neural Networks for Pathological Voice Detection and Classification. *Sound&Vibration, 55(2), 141-161*. https://doi.org/10.32604/sv.2021.011734
 
 61. Cilia F; Carette R; Elbattah M; Dequen G; Guérin JL; Bosche J; Vandromme L; Le Driant B (2021). Computer-Aided Screening of Autism Spectrum Disorder: Eye-Tracking Study Using Data Visualization and Deep Learning. *JMIR Human Factors, 8(4), e27706*. https://doi.org/10.2196/27706
 
@@ -837,39 +837,39 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 67. Alnajjar F; Cappuccio M; Renawi A; Mubin O; Loo CK (2021). Personalized Robot Interventions for Autistic Children: An Automated Methodology for Attention Assessment. *International Journal of Social Robot*. https://doi.org/10.1007/s12369-020-00639-8
 
-68. Farooqi N; Bukhari F; Iqbal W (2021). Predictive Analysis of Autism Spectrum Disorder (ASD) using Machine Learning. *2021 International Conference on Frontiers of Information Technology (FIT)*.
+68. Farooqi N; Bukhari F; Iqbal W (2021). Predictive Analysis of Autism Spectrum Disorder (ASD) using Machine Learning. *2021 International Conference on Frontiers of Information Technology (FIT)*. https://doi.org/10.1109/fit53504.2021.00063
 
 69. Asgari M; Chen L; Fombonne E (2021). Quantifying Voice Characteristics for Detecting Autism. *Frontiers in Psychology, 12, Article 665096*. https://doi.org/10.3389/fpsyg.2021.665096
 
-70. Mazumdar P; Arru G; Battisti F (2021). Signal Processing: Image Communication 94 (2021) 116184. *Signal Processing: Image Communication, 94, Article 116184*.
+70. Mazumdar P; Arru G; Battisti F (2021). Early detection of children with Autism Spectrum Disorder based on visual exploration of images. *Signal Processing: Image Communication, 94, Article 116184*. https://doi.org/10.1016/j.image.2021.116184
 
-71. Liaqat S; Wu C; Duggirala PR; Cheung SCS; Chuah CN; Ozonoff S; Young G (2021). Signal Processing: Image Communication 94 (2021) 116198. *Signal Processing: Image Commun*.
+71. Liaqat S; Wu C; Duggirala PR; Cheung SCS; Chuah CN; Ozonoff S; Young G (2021). Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data. *Signal Processing: Image Communication, 94, Article 116198*. https://doi.org/10.1016/j.image.2021.116198
 
 72. Kojovic N; Natraj S; Mohanty SP; Maillart T; Schaer M (2021). Using 2D video-based pose estimation for automated prediction of autism spectrum disorders in young children. *Scientific Reports, 11(1), Arti*. https://doi.org/10.1038/s41598-021-94378-z
 
 73. Simeoli R; Milano N; Rega A; Marocco D (2021). Using Technology to Identify Children With Autism Through Motor Abnormalities. *Frontiers in Psychology, 12, Article 635696*. https://doi.org/10.3389/fpsyg.2021.635696
 
-74. Han J; Jiang G; Ouyang G; Li X (2022). A Multimodal Approach for Identifying Autism Spectrum Disorders in Children. *IEEE Transactions on Neural Systems and Rehabilitation Engineering, 30, 2003-2011*.
+74. Han J; Jiang G; Ouyang G; Li X (2022). A Multimodal Approach for Identifying Autism Spectrum Disorders in Children. *IEEE Transactions on Neural Systems and Rehabilitation Engineering, 30, 2003-2011*. https://doi.org/10.1109/tnsre.2022.3192431
 
-75. Chanyoung K; Soyeon K; Yu Rang P; Soon-Beom H; Mindong S; Lim J; Bongkyung J (2022). AI-assisted Initiation to Joint Attention Evaluation for Autism Spectrum Disorder Detection. *2022 IEEE 3rd Intern*.
+75. Chanyoung K; Soyeon K; Yu Rang P; Soon-Beom H; Mindong S; Lim J; Bongkyung J (2022). AI-assisted Initiation to Joint Attention Evaluation for Autism Spectrum Disorder Detection. *2022 IEEE 3rd Intern*. https://doi.org/10.1109/ichms56717.2022.9980778
 
-76. Liao M; Duan H; Wang G (2022). Application of Machine Learning Techniques to Detect the Children with Autism Spectrum Disorder. *Journal of Healthcare Engineering, 2022, 1-10*.
+76. Liao M; Duan H; Wang G (2022). Application of Machine Learning Techniques to Detect the Children with Autism Spectrum Disorder. *Journal of Healthcare Engineering, 2022, 1-10*. https://doi.org/10.1155/2022/9340027
 
-77. Gaspar A; Oliva D; Hinojosa S; Aranguren I; Zaldivar D (2022). Applied Soft Computing 120 (2022) 108654. *Applied Sof*.
+77. Gaspar A; Oliva D; Hinojosa S; Aranguren I; Zaldivar D (2022). An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images. *Applied Soft Computing, 120, Article 108654*. https://doi.org/10.1016/j.asoc.2022.108654
 
 78. Keles U; Kliemann D; Byrge L; Saarimäki H; Paul LK; Kennedy DP; Adolphs R (2022). Atypical gaze patterns in autistic adults are heterogeneous across but reliable within individuals. *Molecular Auti*. https://doi.org/10.1186/s13229-022-00517-2
 
-79. Chi NA; Washington P; Kline A; Husic A; Hou C; He C; Dunlap K; Wall DP (2022). Classifying Autism From Crowdsourced Semistructured Speech. *JMIR*.
+79. Chi NA; Washington P; Kline A; Husic A; Hou C; He C; Dunlap K; Wall DP (2022). Classifying Autism From Crowdsourced Semistructured Speech. *JMIR*. https://doi.org/10.2196/35406
 
 80. MacFarlane H; Salem AC; Chen L; Asgari M; Fombonne E (2022). Combining voice and language features improves automated autism detection. *Autism Research, 15(7), 1288-1300*. https://doi.org/10.1002/aur.2733
 
-81. Krishnappa Babu PR; Di Martino JM; Chang Z; Perochon S; Aiello R; Carpenter; K. L. .. H.; Compton S; Davis N; Franz L; Espinosa S; Flowers J; Dawson G; Sapiro G (2022). Complexity analysis of head movements in autistic toddlers. **.
+81. Krishnappa Babu PR; Di Martino JM; Chang Z; Perochon S; Aiello R; Carpenter; K. L. .. H.; Compton S; Davis N; Franz L; Espinosa S; Flowers J; Dawson G; Sapiro G (2022). Complexity analysis of head movements in autistic toddlers. **. https://doi.org/10.1111/jcpp.13681
 
-82. Lau JCY; Patel S; Kang X; Nayar K; Martin GE; Choy J; Wong PCM; Losh M (2022). Cross-linguistic patterns of speech prosodic differences in autism: A machine learning study. *PLOS ONE, 17(6)*.
+82. Lau JCY; Patel S; Kang X; Nayar K; Martin GE; Choy J; Wong PCM; Losh M (2022). Cross-linguistic patterns of speech prosodic differences in autism: A machine learning study. *PLOS ONE, 17(6)*. https://doi.org/10.1371/journal.pone.0269637
 
 83. Wawer A; Chojnicka I (2022). Detecting autism from picture book narratives using deep neural utterance embeddings. *International Journal of Language & Communication Disorders, 57(5), 948-962*. https://doi.org/10.1111/1460-6984.12731
 
-84. Ozdemir S; Akin-Bulbul I; Kok I; Ozdemir S (2022). Development of a visual attention based decision support system for autism spectrum disorder screening. *International Journal of Psychophysiology, 173, 69-8*.
+84. Ozdemir S; Akin-Bulbul I; Kok I; Ozdemir S (2022). Development of a visual attention based decision support system for autism spectrum disorder screening. *International Journal of Psychophysiology, 173, 69-8*. https://doi.org/10.1016/j.ijpsycho.2022.01.004
 
 85. Kong XJ; Wei Z; Sun B; Tu Y; Huang Y; Cheng M; Yu S; Wilson G; Park J; Feng Z; Vangel M; Kong J; Wan G (2022). Different Eye Tracking Patterns in Autism Spectrum Disorder in Toddler and Preschool Children. **. https://doi.org/10.3389/fpsyt.2022.899521
 
@@ -879,141 +879,141 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 88. Ahmed IA; Senan EM; Rassem TH; Ali MAH; Shatnawi HSA; Alwazer SM; Alshahrani M (2022). Eye Tracking-Based Diagnosis and Early Detection of Autism Spectrum Disorder Using Machine Learning and Deep Learning Techniques. **. https://doi.org/10.3390/electronics11040530
 
-89. Varma M; Washington P; Chrisman B; Kline A; Leblanc E; Paskov K; Stockham N; Jung JY; Sun MW; Wall DP (2022). Identification of Social Engagement Indicators Associated With. **.
+89. Varma M; Washington P; Chrisman B; Kline A; Leblanc E; Paskov K; Stockham N; Jung JY; Sun MW; Wall DP (2022). Identification of Social Engagement Indicators Associated With. **. https://doi.org/10.2196/31830
 
 90. Kanhirakadavath MR; Chandran MSM (2022). Investigation of Eye-Tracking Scan Path as a Biomarker for Autism Screening Using Machine Learning Algorithms. *Diagnostics, 12(2), 518*. https://doi.org/10.3390/diagnostics12020518
 
-91. Deveau N; Washington P; Leblanc E; Husic A; Dunlap K; Penev Y; Kline A; Mutlu OC; Wall DP (2022). Machine learning models using mobile game play accurately classify children with autism. *Intell*.
+91. Deveau N; Washington P; Leblanc E; Husic A; Dunlap K; Penev Y; Kline A; Mutlu OC; Wall DP (2022). Machine learning models using mobile game play accurately classify children with autism. *Intell*. https://doi.org/10.1016/j.ibmed.2022.100057
 
-92. Chen L; Zhang C; Gao X (2022). Speech Signal Analysis of Autistic Children Based on Time-Frequency Domain Distinguishing Feature Extraction. *2022 IEEE 34th International Conference on Tools with Artificial*.
+92. Chen L; Zhang C; Gao X (2022). Speech Signal Analysis of Autistic Children Based on Time-Frequency Domain Distinguishing Feature Extraction. *2022 IEEE 34th International Conference on Tools with Artificial*. https://doi.org/10.1109/ictai56018.2022.00164
 
-93. Eni M; Gorodetski A; Dinstein I; Zigel Y (2022). The Impact of Speaker Diarization on DNN-based Autism Severity Estimation. *2022 44th Annual International Conference of the IEEE Engineering in Medicine &*.
+93. Eni M; Gorodetski A; Dinstein I; Zigel Y (2022). The Impact of Speaker Diarization on DNN-based Autism Severity Estimation. *2022 44th Annual International Conference of the IEEE Engineering in Medicine &*. https://doi.org/10.1109/embc48229.2022.9871523
 
-94. Arent K; Brown DJ; Kruk-Lasocka J; Niemiec TL; Pasieczna AH; Standen PJ; Szczepanowski R (2022). The Use of Social Robots in the Diagnosis of Autism in Preschool Children. *Applied Sciences, 12(*.
+94. Arent K; Brown DJ; Kruk-Lasocka J; Niemiec TL; Pasieczna AH; Standen PJ; Szczepanowski R (2022). The Use of Social Robots in the Diagnosis of Autism in Preschool Children. *Applied Sciences, 12(*. https://doi.org/10.3390/app12178399
 
 95. Zhao Z; Wei J; Xing J; Zhang X; Qu X; Hu X; Lu J (2022). Use of Oculomotor Behavior to Classify Children with Autism and Typical Development: A Novel Implementation of the Machine Learning Approach. *Jo*. https://doi.org/10.1007/s10803-022-05685-x
 
 96. Mehralizadeh B; Baradaran B; Nikkhoo S; Soleiman P; Moradi H (2023). A Sensorized Toy Car for Autism Screening Using Multi-Modal Features. *Sustainability, 15(10), Article 7790*. https://doi.org/10.3390/su15107790
 
-97. Milano N; Simeoli R; Rega A; Marocco D (2023). A deep learning latent variable model to identify children with autism through motor abnormalities. *Frontiers in Psychology, 14, Article 1194760*.
+97. Milano N; Simeoli R; Rega A; Marocco D (2023). A deep learning latent variable model to identify children with autism through motor abnormalities. *Frontiers in Psychology, 14, Article 1194760*. https://doi.org/10.3389/fpsyg.2023.1194760
 
-98. Song C; Wang S; Chen M; Li H; Jia F; Zhao Y (2023). A multimodal discrimination method for the response to name behavior of autistic children based on human pose tracking and head pose estimation. *Displa*.
+98. Song C; Wang S; Chen M; Li H; Jia F; Zhao Y (2023). A multimodal discrimination method for the response to name behavior of autistic children based on human pose tracking and head pose estimation. *Displa*. https://doi.org/10.1016/j.displa.2022.102360
 
 99. Aminoleslami S; Maghooli K; Sammaknejad N; Haghipour S; Sadeghi-Firoozabadi V (2023). Classification of autistic and normal children using analysis of eye-tracking data from computer games. *Signal, Image a*. https://doi.org/10.1007/s11760-023-02668-y
 
 100. Sariyanidi E; Zampella CJ; DeJardin E; Herrington JD; Schultz RT; Tunc B (2023). Comparison of Human Experts and AI in Predicting Autism from Facial Behavior. *Joint Proceedings of the ACM IUI 20*.
 
-101. Xia C; Zhang D; Li K; Li H; Chen J; Min W; Han J (2023). Dynamic Viewing Pattern Analysis: Towards Large-Scale Screening of Children With ASD in Remote Areas. *IEEE Transactions on Biomedical Engineerin*.
+101. Xia C; Zhang D; Li K; Li H; Chen J; Min W; Han J (2023). Dynamic Viewing Pattern Analysis: Towards Large-Scale Screening of Children With ASD in Remote Areas. *IEEE Transactions on Biomedical Engineerin*. https://doi.org/10.1109/tbme.2022.3223736
 
-102. Rubio-Martín S; García-Ordás MT; Bayón-Gutiérrez M; Prieto-Fernández N; Benítez-Andrades JA (2023). Early Detection of Autism Spectrum Disorder through AI-Powered Analysis of Social Media Texts. **.
+102. Rubio-Martín S; García-Ordás MT; Bayón-Gutiérrez M; Prieto-Fernández N; Benítez-Andrades JA (2023). Early Detection of Autism Spectrum Disorder through AI-Powered Analysis of Social Media Texts. **. https://doi.org/10.1109/cbms58004.2023.00223
 
-103. Babu PRK; Di Martino JM; Chang Z; Perochon S; Carpenter KLH; Compton S; Espinosa S; Dawson G; Sapiro G (2023). Exploring Complexity of Facial Dynamics in Autism Spectrum Disorder. *IEEE Tr*.
+103. Babu PRK; Di Martino JM; Chang Z; Perochon S; Carpenter KLH; Compton S; Espinosa S; Dawson G; Sapiro G (2023). Exploring Complexity of Facial Dynamics in Autism Spectrum Disorder. *IEEE Tr*. https://doi.org/10.1109/taffc.2021.3113876
 
 104. Iwauchi K; Tanaka H; Okazaki K; Matsuda Y; Uratani M; Morimoto T; Nakamura S (2023). Eye-movement analysis on facial expression for identifying children and adults with neurodevelopmental disorders. *Fr*. https://doi.org/10.3389/fdgth.2023.952433
 
-105. Atyabi A; Boccanfuso L; Snider; J. .. C.; Kim M; Barney E; Ahn YA; Li B; Dommer KJ; Shic F (2023). Large-scale Investigations of AAC Usage Patterns: Trends, Autism, and Stacked Autoencoders. *2*.
+105. Atyabi A; Boccanfuso L; Snider; J. .. C.; Kim M; Barney E; Ahn YA; Li B; Dommer KJ; Shic F (2023). Large-scale Investigations of AAC Usage Patterns: Trends, Autism, and Stacked Autoencoders. *2*. https://doi.org/10.1109/ccwc57344.2023.10099096
 
-106. Ko C; Lim JH; Hong J; Hong SB; Park YR (2023). Original Investigation | Psychiatry. *JA*.
+106. Ko C; Lim JH; Hong J; Hong SB; Park YR (2023). Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder. *JAMA Network Open, 6(5), Article e2315174*. https://doi.org/10.1001/jamanetworkopen.2023.15174
 
-107. Kannan RM; Sasikala R (2023). Predicting autism in children at an early stage using eye tracking. *2023 2nd International Conference on Vision Towards Emerging Trends in Communication and Networking Technolo*.
+107. Kannan RM; Sasikala R (2023). Predicting autism in children at an early stage using eye tracking. *2023 2nd International Conference on Vision Towards Emerging Trends in Communication and Networking Technolo*. https://doi.org/10.1109/vitecon58111.2023.10157663
 
-108. Narayan V; Shukla J (2023). SPASHT: Semantic and Pragmatic Speech Features for Automatic Assessment of Autism. *ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processin*.
+108. Narayan V; Shukla J (2023). SPASHT: Semantic and Pragmatic Speech Features for Automatic Assessment of Autism. *ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processin*. https://doi.org/10.1109/icassp49357.2023.10095135
 
 109. Atyabi A; Shic F; Jiang J; Foster CE; Barney E; Kim M; Li B; Ventola P; Chen CH (2023). Stratification of Children with Autism Spectrum Disorder Through Fusion of Temporal Information in Eye-gaze Scan-Paths. **. https://doi.org/10.1145/3539226
 
 110. Alsaidi M; Obeid N; Al-Madi N; Hiary H; Aljarah I (2024). A Convolutional Deep Neural Network Approach to Predict Autism Spectrum Disorder Based on Eye-Tracking Scan Paths. *Information, 15(3), 133*. https://doi.org/10.3390/info15030133
 
-111. Ben-Sasson A; Guedalia J; Nativ L; Ilan K; Shaham M; Gabis LV (2024). A Prediction Model of Autism Spectrum Diagnosis from Well-Baby Electronic Data Using Machine Learning. *Children, 11(4), 429*.
+111. Ben-Sasson A; Guedalia J; Nativ L; Ilan K; Shaham M; Gabis LV (2024). A Prediction Model of Autism Spectrum Diagnosis from Well-Baby Electronic Data Using Machine Learning. *Children, 11(4), 429*. https://doi.org/10.3390/children11040429
 
-112. ElMahalawy J; ElSwaify YA; Elliboudy D; Abbas OM; Moustafa N; Wael N (2024). AI-Powered Human-Computer Interaction Assisting Early Identification of Emotional and Facial Symptoms of Autism Spectrum Disorder in Children: &#x201C;A Deep Learning-Based Enhanced Facial Feature Recognition System&#x201D;. **.
+112. ElMahalawy J; ElSwaify YA; Elliboudy D; Abbas OM; Moustafa N; Wael N (2024). AI-Powered Human-Computer Interaction Assisting Early Identification of Emotional and Facial Symptoms of Autism Spectrum Disorder in Children: &#x201C;A Deep Learning-Based Enhanced Facial Feature Recognition System&#x201D;. **. https://doi.org/10.1109/icmisi61517.2024.10580320
 
 113. Malik W; Fahiem MA; Farhat T; Alghazo R; Mahmood A; Alhajlah M (2024). An Explainable Deep Learning Framework for Multimodal Autism Diagnosis Using XAI GAMI-Net and Hypernetworks. *Diagnostics, 15(17)*. https://doi.org/10.3390/diagnostics15172232
 
-114. Zhao Z; Zhang X; Zhang X; Qu X; Hu X; Lu J (2024). Contents lists available at ScienceDirect. **.
+114. Zhao Z; Zhang X; Zhang X; Qu X; Hu X; Lu J (2024). Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development. *IRBM, 45(5), Article 100838*. https://doi.org/10.1016/j.irbm.2024.100838
 
-115. Kato S; Hanawa K; Saito M; Nakamura K (2024). Creating a diagnostic assessment model for autism spectrum disorder by differentiating lexicogrammatical choices through machine learning. *PLOS ONE, 19(9), Artic*.
+115. Kato S; Hanawa K; Saito M; Nakamura K (2024). Creating a diagnostic assessment model for autism spectrum disorder by differentiating lexicogrammatical choices through machine learning. *PLOS ONE, 19(9), Artic*. https://doi.org/10.1371/journal.pone.0311209
 
-116. Sarwani IS; Bhaskari DL; Bhamidipati S (2024). Emotion-based Autism Spectrum Disorder Detection by Leveraging Transfer Learning and Machine Learning Algorithms. *International Journal of Advanced Computer S*.
+116. Sarwani IS; Bhaskari DL; Bhamidipati S (2024). Emotion-based Autism Spectrum Disorder Detection by Leveraging Transfer Learning and Machine Learning Algorithms. *International Journal of Advanced Computer S*. https://doi.org/10.14569/ijacsa.2024.0150556
 
 117. Devaraj VS; Periyathambi E (2024). Enhanced Autism Spectrum Disorder Facial Expression Recognition Using Hybrid Weighed. **. https://doi.org/10.18280/ts.410628
 
-118. Luongo M; Simeoli R; Marocco D; Milano N; Ponticorvo M (2024). Enhancing early autism diagnosis through machine learning: Exploring raw motion data for classification. *PLOS ONE, 19(4), Article e0302238. ht*.
+118. Luongo M; Simeoli R; Marocco D; Milano N; Ponticorvo M (2024). Enhancing early autism diagnosis through machine learning: Exploring raw motion data for classification. *PLOS ONE, 19(4), Article e0302238. ht*. https://doi.org/10.1371/journal.pone.0302238
 
 119. Dedgaonkar S; Sachdeo R (2024). Hybrid weight optimized deep learning for autism and visual sensory processing disorder detection: A heuristic strategy on medical domain. *Intelligent Decision Technologies, 18(1)*. https://doi.org/10.3233/IDT-220215
 
-120. Omotehinwa TO; Lawrence MO; Oyewola DO; Dada EG (2024). Journal of Computational Mathematics and Data Science 13 (2024) 100105. *Journal of C*.
+120. Omotehinwa TO; Lawrence MO; Oyewola DO; Dada EG (2024). Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder. *Journal of Computational Mathematics and Data Science, 13, Article 100105*. https://doi.org/10.1016/j.jcmds.2024.100105
 
-121. Ohmoto Y; Terada K; Shimizu H; Kawahara H; Iwanaga R; Kumazaki H (2024). Machine learning’s effectiveness. *Frontiers*.
+121. Ohmoto Y; Terada K; Shimizu H; Kawahara H; Iwanaga R; Kumazaki H (2024). Machine learning’s effectiveness. *Frontiers*. https://doi.org/10.3389/fpsyt.2024.1464285
 
-122. Ismail WN; Ali MAS (2024). Multiscale attention-based network to enhance detection and classification of autism spectrum disorders using convolutional neural network. *PeerJ Computer Science, 11, Article e3*.
+122. Ismail WN; Ali MAS (2024). Multiscale attention-based network to enhance detection and classification of autism spectrum disorders using convolutional neural network. *PeerJ Computer Science, 11, Article e3*. https://doi.org/10.7717/peerj-cs.3134
 
 123. Hasan et al. (2024). Performance Evaluation of Neural Network Models for Autism Detection Using EEG Data [REC04023]. **. https://doi.org/10.46604/aiti.2024.13951
 
 124. Liu Q; Ma Z; Jin Y; He R; Su X; Chen J; Yin T; Cheng J; Guo Y; Li X; Liu J (2024). Prediction for children with autism spectrum disorder based on digital behavioral features during free play. *B*. https://doi.org/10.1186/s12888-024-06129-9
 
-125. Nakamura D; Hanawa Y; Seki S; Yamauchi M; Iwami Y; Nagatsuka Y; Suzuki H; Aoyagi K; Hayashi W; Otowa T; Iwanami A (2024). Predictive model using autism. **.
+125. Nakamura D; Hanawa Y; Seki S; Yamauchi M; Iwami Y; Nagatsuka Y; Suzuki H; Aoyagi K; Hayashi W; Otowa T; Iwanami A (2024). Predictive model using autism. **. https://doi.org/10.3389/fpsyt.2024.1493158
 
 126. Al Futaisi ND; Schuller BW; Ringeval F; Pantic M (2024). The Noor Project: fair transformer transfer learning for autism spectrum disorder recognition from speech. *Frontiers in Digital Health, 7, Article*. https://doi.org/10.3389/fdgth.2025.1274675
 
-127. Jaiswal A; Washington P (2024). Using #ActuallyAutistic on Twitter for Precision Diagnosis of Autism. *JMIR Formative Research, 8, Article e52660*.
+127. Jaiswal A; Washington P (2024). Using #ActuallyAutistic on Twitter for Precision Diagnosis of Autism. *JMIR Formative Research, 8, Article e52660*. https://doi.org/10.2196/52660
 
-128. Natraj S; Kojovic N; Maillart T; Schaer M (2024). Video-audio neural network ensemble for comprehensive screening of autism spectrum disorder in young children. *PLOS ONE, 19(10), Article e0308388*.
+128. Natraj S; Kojovic N; Maillart T; Schaer M (2024). Video-audio neural network ensemble for comprehensive screening of autism spectrum disorder in young children. *PLOS ONE, 19(10), Article e0308388*. https://doi.org/10.1371/journal.pone.0308388
 
-129. Dia M; Khodabandelou G; Sabri AQM; Othmani A (2024). Video-based continuous affect recognition of children with Autism Spectrum Disorder using deep learning. *Biomedical Signal Processing and Control, 89*.
+129. Dia M; Khodabandelou G; Sabri AQM; Othmani A (2024). Video-based continuous affect recognition of children with Autism Spectrum Disorder using deep learning. *Biomedical Signal Processing and Control, 89*. https://doi.org/10.1016/j.bspc.2023.105712
 
-130. Muniraja Manjunath K; Veeramani V (2025). A novel thermal imaging-based framework for continuous ASD classification and behavior analysis using facial mood and skin temperature features. *Biomedical Signal Proces*.
+130. Muniraja Manjunath K; Veeramani V (2025). A novel thermal imaging-based framework for continuous ASD classification and behavior analysis using facial mood and skin temperature features. *Biomedical Signal Proces*. https://doi.org/10.1016/j.bspc.2024.107009
 
 131. Al-Nefaie AH; Aldhyani THH; Ahmad S; Alzahrani EM (2025). Application of artificial intelligence in modern healthcare for diagnosis of autism spectrum disorder. *Frontiers in Medicine, 12, Article 156*. https://doi.org/10.3389/fmed.2025.1569464
 
-132. Li J (2025). Artificial Intelligence-Based Detection of Autism Spectrum Disorder Using Linguistic Features. *2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI)*.
+132. Li J (2025). Artificial Intelligence-Based Detection of Autism Spectrum Disorder Using Linguistic Features. *2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI)*. https://doi.org/10.1109/icmi60790.2024.10585946
 
-133. Shin J; Miah ASM; Kakizaki M; Hassan N; Tomioka Y (2025). Autism Spectrum Disorder Detection Using Skeleton-Based Body Movement Analysis via Dual-Stream Deep Learning. *Electronics, 14(11), Article 2231*.
+133. Shin J; Miah ASM; Kakizaki M; Hassan N; Tomioka Y (2025). Autism Spectrum Disorder Detection Using Skeleton-Based Body Movement Analysis via Dual-Stream Deep Learning. *Electronics, 14(11), Article 2231*. https://doi.org/10.3390/electronics14112231
 
 134. Laguna et al. (2025). Automatic Cry Analysis Deep Learning for Screening of Autism Spectrum Disorder in Early Childhood [REC01905]. **. https://doi.org/10.1007/s10803-025-06811-1
 
-135. Babu T; Nair RR; Mahapatra S (2025). Available online at www.sciencedirect.com. *Procedia Computer Science, 258, 1576-1585*. https://doi.org/10.1016/j.procs.2025.04.389
+135. Babu T; Nair RR; Mahapatra S (2025). Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm. *Procedia Computer Science, 258, 1576-1585*. https://doi.org/10.1016/j.procs.2025.04.389
 
 136. Amirbay A; Baigabylov N; Mukhanova A; Mukhambetova K; Zaitov E; Burganova R; Khusanova K; Akhmedova F (2025). Bulletin of Electrical Engineering and Informatics. *Bulletin of Elec*. https://doi.org/10.11591/eei.v14i5.10319
 
-137. Eldawansy M; El Bakry H; M Shohieb S (2025). Data Mining–Based Model for Computer-Aided Diagnosis of. *JMIR Formative Research, 9, Article e72115*.
+137. Eldawansy M; El Bakry H; M Shohieb S (2025). Data Mining–Based Model for Computer-Aided Diagnosis of. *JMIR Formative Research, 9, Article e72115*. https://doi.org/10.2196/72115
 
 138. Anjum J; Hia NA; Waziha A; Kalpoma KA (2025). Deep Learning-Based Feature Extraction from Children's Facial Images for Autism Spectrum Disorder Detection. *Proceedings of the Cognitive Models and Artif*. https://doi.org/10.1145/3660853.3660888
 
-139. Akalya T; Ramyachitra D; Shabarna M; Legha C (2025). Deep learning-based detection of autism spectrum disorder and emotion recognition in children. *Pattern Recognition, 173, Article 112906*.
+139. Akalya T; Ramyachitra D; Shabarna M; Legha C (2025). Deep learning-based detection of autism spectrum disorder and emotion recognition in children. *Pattern Recognition, 173, Article 112906*. https://doi.org/10.1016/j.patcog.2025.112906
 
-140. Nugroho AK; Priyanto JE; Vinski DSP (2025). Detection of Autism Spectrum Disorder (ASD) Using Lightweight Ensemble CNN Based on Facial Images for Improved Diagnostic Accuracy. *International Journal of*.
+140. Nugroho AK; Priyanto JE; Vinski DSP (2025). Detection of Autism Spectrum Disorder (ASD) Using Lightweight Ensemble CNN Based on Facial Images for Improved Diagnostic Accuracy. *International Journal of*. https://doi.org/10.14569/ijacsa.2025.0160724
 
-141. Al-Adhaileh MH; Alsubari SNM; Al-Nefaie AH; Ahmad S; Alhamadi AA (2025). Diagnosing autism spectrum disorder based on eye tracking technology using deep learning models. *Frontiers in Medicine, 12*.
+141. Al-Adhaileh MH; Alsubari SNM; Al-Nefaie AH; Ahmad S; Alhamadi AA (2025). Diagnosing autism spectrum disorder based on eye tracking technology using deep learning models. *Frontiers in Medicine, 12*. https://doi.org/10.3389/fmed.2025.1690177
 
 142. Ehsan K; Sultan K; Fatima A; Sheraz M; Chuah TC (2025). Early Detection of Autism Spectrum Disorder Through Automated Machine Learning. *Diagnostics, 15(15), Article 1859*. https://doi.org/10.3390/diagnostics15151859
 
-143. Attar N; Paygude S (2025). Enhanced ASD detection using 3D facial landmark localization with convolutional shape appearance model and graph-randomized XGBoost. *Sādhanā, 51(1), Article 30*.
+143. Attar N; Paygude S (2025). Enhanced ASD detection using 3D facial landmark localization with convolutional shape appearance model and graph-randomized XGBoost. *Sādhanā, 51(1), Article 30*. https://doi.org/10.1007/s12046-025-03024-1
 
-144. Cheekaty S; Muneeswari G (2025). Enhanced multilevel autism classification for children using eye-tracking and hybrid CNN-RNN deep learning models. *Neural Computing and Applications, 37(33), 27631-27654*.
+144. Cheekaty S; Muneeswari G (2025). Enhanced multilevel autism classification for children using eye-tracking and hybrid CNN-RNN deep learning models. *Neural Computing and Applications, 37(33), 27631-27654*. https://doi.org/10.1007/s00521-024-10633-0
 
 145. Balasubramani J; Rajendran S; Zakariah M; Alnuaim A (2025). Ensemble of Deep Learning with Crested Porcupine Optimizer Based Autism. *Computers, Materials & Con*. https://doi.org/10.32604/cmc.2025.062266
 
 146. Almadhor A; Alasiry A; Alsubai S; Al Hejaili A; Kovac U; Abbas S (2025). Explainable and secure framework for autism prediction using multimodal eye tracking and kinematic data. *Complex & Intelligent Sys*. https://doi.org/10.1007/s40747-025-01790-3
 
-147. Zainal Z; Melinda M; Away Y; Mawarpury M (2025). Facial Images Dataset for Early Screening of Autism Children Using Convolutional Neural Network. *2025 10th International Conference on Computer and Communi*.
+147. Zainal Z; Melinda M; Away Y; Mawarpury M (2025). Facial Images Dataset for Early Screening of Autism Children Using Convolutional Neural Network. *2025 10th International Conference on Computer and Communi*. https://doi.org/10.1109/iccce66530.2025.11474117
 
-148. Abu-Errub A (2025). Microsoft Word - ETASR_V15_N5_pp-27954-27959. *Engineering, Technology & Applied Science Research, 15(5), 27954-27959*. https://doi.org/10.48084/etasr.12999
+148. Abu-Errub A (2025). Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI. *Engineering, Technology & Applied Science Research, 15(5), 27954-27959*. https://doi.org/10.48084/etasr.12999
 
-149. Hajjej F; Ayouni S; Alohali MA; Maddeh M (2025). Novel Framework for Autism Spectrum Disorder Identification and Tailored Education With Effective Data Mining and Ensemble Learning Techniques. *IEEE Access*. https://doi.org/10.1109/ACCESS.2017.DOI
+149. Hajjej F; Ayouni S; Alohali MA; Maddeh M (2025). Novel Framework for Autism Spectrum Disorder Identification and Tailored Education With Effective Data Mining and Ensemble Learning Techniques. *IEEE Access*. https://doi.org/10.1109/access.2024.3349988
 
 150. Sankari M S (2025). Predicting autism traits using Q-CHAT behavioral features: a machine learning approach. *Engineering Research Express, 7(2), Article 025269*. https://doi.org/10.1088/2631-8695/addb0b
 
-151. Conde-Pumpido Zubizarreta S; Tubío-Fungueiriño M; Pozo-Rodríguez M; Carracedo A; Cernadas E; Fernández-Delgado M; Fernández-Prieto M (2025). Predicting autistic traits, anxiety and depression symptoms using camouflaging autistic traits questionnaire (CAT-Q-ES): A machine learning study. **.
+151. Conde-Pumpido Zubizarreta S; Tubío-Fungueiriño M; Pozo-Rodríguez M; Carracedo A; Cernadas E; Fernández-Delgado M; Fernández-Prieto M (2025). Predicting autistic traits, anxiety and depression symptoms using camouflaging autistic traits questionnaire (CAT-Q-ES): A machine learning study. **. https://doi.org/10.1016/j.reia.2025.202712
 
-152. Ibadi H; Lakizadeh A (2025). Received: January 17, 2025. Revised: February 4, 2025. 312. *International Journal of Intelligent Engineering and Systems, 18(3)*. https://doi.org/10.22266/ijies2025.0430.21
+152. Ibadi H; Lakizadeh A (2025). A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach. *International Journal of Intelligent Engineering and Systems, 18(3), 312-321*. https://doi.org/10.22266/ijies2025.0430.21
 
-153. Vijayan N; Vanitha DV (2025). Received: October 26, 2024. Revised: March 1, 2025. 1. *International Journal of Intelligent Engineering and Systems, 18(4*. https://doi.org/10.22266/ijies2025.0531.01
+153. Vijayan N; Vanitha DV (2025). Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network. *International Journal of Intelligent Engineering and Systems, 18(4), 1-11*. https://doi.org/10.22266/ijies2025.0531.01
 
-154. Jeon I; Kim M; So D; Kim EY; Nam Y; Kim S; Shim S; Kim J; Moon J (2025). Reliable Autism Spectrum Disorder Diagnosis for Pediatrics Using Machine Learning and Explainable AI. *Diagnostics, 14(22)*.
+154. Jeon I; Kim M; So D; Kim EY; Nam Y; Kim S; Shim S; Kim J; Moon J (2025). Reliable Autism Spectrum Disorder Diagnosis for Pediatrics Using Machine Learning and Explainable AI. *Diagnostics, 14(22)*. https://doi.org/10.3390/diagnostics14222504
 
 155. Antolí A; Rodriguez-Lozano FJ; Juan Cañas J; Vacas J; Cuadrado F; Sánchez-Raya A; Pérez-Dueñas C; Gámez-Granados JC (2025). Using explainable machine learning and eye-tracking for diagnosing autism spectrum and developmental language disorders in social attention tasks. **. https://doi.org/10.3389/fnins.2025.1558621
 
-156. Alsharif N; Al-Adhaileh MH; Al-Yaari M; Farhah N; Khan ZI (2025). Utilizing deep learning models in an intelligent eye-tracking system for autism spectrum disorder diagnosis. *Frontiers in Medicine, 11*.
+156. Alsharif N; Al-Adhaileh MH; Al-Yaari M; Farhah N; Khan ZI (2025). Utilizing deep learning models in an intelligent eye-tracking system for autism spectrum disorder diagnosis. *Frontiers in Medicine, 11*. https://doi.org/10.3389/fmed.2024.1436646
 
 157. Rai S (2026). A novel hybrid deep learning model using MEResNext for autism spectrum disorder detection. *Computational Biology and Chemistry, 120, Article 108619*. https://doi.org/10.1016/j.compbiolchem.2025.108619
 
@@ -1021,7 +1021,7 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 159. Rathod VN; Goudar RH; Sangani S (2026). An explainable deep learning framework for screening level autism severity using behavioural data. *Discover Applied Sciences, 8(4), Article 363*. https://doi.org/10.1007/s42452-026-08352-3
 
-160. Lakhan A; Mohammed MA; Hamouda H; Thaljaoui A; Baslem A; Al-Andoli MN (2026). An explainable machine unlearning algorithm framework for early detection of autism spectrum disorder and brain disabilities in newborns. **.
+160. Lakhan A; Mohammed MA; Hamouda H; Thaljaoui A; Baslem A; Al-Andoli MN (2026). An explainable machine unlearning algorithm framework for early detection of autism spectrum disorder and brain disabilities in newborns. **. https://doi.org/10.1016/j.aej.2026.04.002
 
 161. Jabbar U; Waseem Iqbal M; Nechifor A; Abaker M; Khairalseed MA; Antohi VM; Fortea C; Stefanescu CA (2026). Deep learning based approach for Behavior classification in diagnoses of Autism Spectrum Disorder using naturalistic videos. *Frontiers in Computational Neuroscience*. https://doi.org/10.3389/fncom.2026.1626315
 
@@ -1031,17 +1031,17 @@ Fifth, the modality grouping used in the per-group analysis is an approximate as
 
 164. Van der Burg E; Jertberg RM; Geurts HM; Chakrabarti B; Begeer S (2026). Finding the forest in the trees: Using machine learning and online cognitive and perceptual measures to predict adult autism diagnosis. **. https://doi.org/10.1038/s41398-026-03823-y
 
-165. Alagha N; Elkhodiry AA; Copiaco A; Himeur Y; Mansoor W; Ritz C; Eapen V; Albanna A; Beheshti A (2026). Hybrid ensemble learning for Autism Spectrum Disorder screening using eye-tracking scanpath. **. https://doi.org/10.5281/zenodo.2
+165. Alagha N; Elkhodiry AA; Copiaco A; Himeur Y; Mansoor W; Ritz C; Eapen V; Albanna A; Beheshti A (2026). Hybrid ensemble learning for Autism Spectrum Disorder screening using eye-tracking scanpath. **. https://doi.org/10.1016/j.array.2026.100753
 
-166. Vasundhara; D. .. N.; Lakshmi Prasanna P; Moorthy C; Venkata Sailaja N (2026). Microsoft Word - JPMS205729 - Composed. *Journal of Pioneeri*. https://doi.org/10.47310/jpms2026150119
+166. Vasundhara; D. .. N.; Lakshmi Prasanna P; Moorthy C; Venkata Sailaja N (2026). Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models. *Journal of Pioneering Medical Sciences, 15(01), 137-145*. https://doi.org/10.47310/jpms2026150119
 
-167. Shaik J; Shekhar R; Shelke CJ (2026). Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026. *Multimedia Tools and Applications, 85*. https://doi.org/10.1007/s11042-026-21473-6
+167. Shaik J; Shekhar R; Shelke CJ (2026). Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images. *Multimedia Tools and Applications, 85(4), Article 300*. https://doi.org/10.1007/s11042-026-21473-6
 
 168. Fırat Y (2026). SHAP-based explainable AI framework for autism severity classification using 3D motor biomarkers. *Frontiers in Psychiatry, 17, Article 1751654*. https://doi.org/10.3389/fpsyt.2026.1751654
 
-169. Assaf R; Shehabeddine Z; Ramesh V (2026). Screening autism spectrum. *Scientific Reports, 15(1), Article 34134*.
+169. Assaf R; Shehabeddine Z; Ramesh V (2026). Screening autism spectrum. *Scientific Reports, 15(1), Article 34134*. https://doi.org/10.1038/s41598-025-01500-6
 
-170. Martins SRAL; Souza FAD; Teixeira LC; Leal BRA; Silva DMPF; Silva CMRD (2026). Towards screening of children students with autism spectrum disorder based on executive functions with serious game and machine learning approaches. **.
+170. Martins SRAL; Souza FAD; Teixeira LC; Leal BRA; Silva DMPF; Silva CMRD (2026). Towards screening of children students with autism spectrum disorder based on executive functions with serious game and machine learning approaches. **. https://doi.org/10.1016/j.eswa.2025.128884
 
 
 ---
@@ -2915,11 +2915,11 @@ Two groups of 100 children each: 100 autistic children recruited from the Child 
 
 Two groups from a single neuroimaging cohort: 104 autistic participants recruited of whom 90 were analysed, and 28 typically developing. All 14 exclusions for poor recording quality came from the autistic group, a differential attrition of 13.5% against 0% that is reported but not discussed - and one that plausibly removes the participants whose speech was hardest to capture, potentially the most severely affected. No other-diagnosis comparison group. The 90:28 imbalance is addressed analytically by repeated undersampling rather than left uncorrected.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Two groups from the Saliency4ASD benchmark: 14 autistic children and 14 typically developing children, a balanced 28 in total. Both group sizes are reported, but nothing else about either group is. No other-diagnosis or subthreshold comparison group. The autistic and typically developing children are the same in the training and test partitions - the split is over the 400 images (300 train, 100 test), not over participants.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Two groups from the Saliency4ASD benchmark: 14 autistic and 14 typically developing children, 28 in total. Every one of the 300 training and validation images was viewed by all 28 children, and the 100 test images likewise, so the three partitions are cuts through the same 28 people - 5542 training scanpaths, 1411 validation scanpaths and 2868 test scanpaths all originate from the same fourteen autistic and fourteen typically developing children. This is stated plainly by the authors and is the fact on which their own closing hypothesis turns. No other-diagnosis or subthreshold group.
 
@@ -2943,7 +2943,7 @@ Two groups, both explicitly sized and accounted for: 50 typically developing chi
 
 Two groups of 40, recruited from special education schools and from regular kindergartens respectively. Both are explicitly sized and their sex composition is identical (33 boys, 7 girls each). No other-diagnosis or developmental-delay comparison group. The recruitment asymmetry is the structural weakness: children attending special education schools and children attending regular kindergartens differ in developmental level, in daily environment, and in familiarity with being assessed, and none of these is measured. With no cognitive or language measure taken, group membership in this study is inseparable from educational placement, and a classifier that separates the two groups at 87.5% cannot be shown to be separating them on autism rather than on the correlates of placement.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Not answerable from this paper. Groups are described only as image classes - 328 non-ASD images and 219 ASD images, 547 in total - and the number of children contributing them is never stated. The paper's entire treatment of participants is one sentence directing the reader elsewhere: 'For more information about participants diagnosed with ASD and non-ASD, see [44]'. This is the only study in the corpus that reports no participant count at all, in either group. Because the source is the same gaze-path collection Cilia and colleagues assembled - 547 images with roughly nine images per child - the underlying sample is a few dozen children, but nothing in this paper permits that inference, and no participant identifier is available to group images by child.
 
@@ -3059,7 +3059,7 @@ Two independent datasets and three diagnostic groups. Adults: 15 with autism (9 
 
 A very large uncontrolled user population with a very small labelled subset. FreeSpeech attracted 6,033 users between January 2012 and May 2014, of whom 5,372 generated enough events to be usable (761 excluded), collectively producing over 2.5 million button presses. Of these, 214 users voluntarily completed an online survey and 180 disclosed a diagnosis - 81 autistic and 99 non-autistic, which is 3.4% of the usable user base. The non-autistic group is itself clinically diverse: Table III lists 32 users reporting no diagnosis, 49 'other', 12 stroke, 4 ALS, 4 dementia, 4 brain injury and 3 ADHD alongside 88 with autism. Two internal inconsistencies should be recorded: Table III sums to 196 and Table II (age bands) to 235, against stated totals of 180 disclosing a diagnosis and 214 completing the survey, and Table III's 88 autistic users does not match the 81 stated in the text. The modelled unit is neither the user nor the session but the window - a fixed-length run of 10 to 100 consecutive key presses - so a heavy user contributes far more pseudo-samples than a light one, and the effective sample size for the classification experiments is never stated. Critically, the headline result is obtained after k-means clustering has assigned pseudo-labels to the roughly 5,192 users who never disclosed anything, so most of the data underlying the 82% figure carry machine-generated labels.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 One hundred and ten children aged 24 to 72 months were screened between 5 August 2021 and 18 July 2022, of whom 95 (86.4%) completed study measures and formed the analytical population: 45 autistic and 50 typically developing. Enrolment criteria were age 24-72 months, ability to sit, and no history of visual or auditory deficits. Recruitment was asymmetric by design - autistic children came from a single national referral centre, the Seoul National University Hospital Child Psychiatry Outpatient Clinic, while comparison children came from day care centres across South Korea, with participants distributed across Seoul (25%), other metropolitan cities (25%) and provinces (50%). The paper states openly that 'conservative inclusion criteria' were applied on both sides 'to select individuals belonging to clinically distinct groups to ensure development of an accurate and precise ASD vs TD classification model' - so the extremity of the contrast is a deliberate design choice, disclosed rather than concealed, and is the single most important fact for interpreting the near-perfect detection results. Each child contributed up to ten IJA clips and five clips per RJA task from a single 10-minute session, and the cross-validation groups by individual so those clips never straddle folds.
 
@@ -3091,7 +3091,7 @@ There are no participants in the ordinary sense - the study analyses 2,836 photo
 
 One thousand one hundred and twelve subjects from the Autism Brain Imaging Data Exchange I - 539 autistic and 573 controls - contributed by 17 international sites, each with its own scanner, acquisition protocol and recruitment practice. This is by a wide margin the largest sample in the review apart from the Israeli health-records cohort and the Twitter corpus, and it is the only one that comes with a full clinical phenotype: ADOS totals and subscales, ADOS-Gotham severity, ADI-R social and verbal domain totals, SRS raw totals, and full-scale, verbal and performance IQ. The paper reports none of these as sample characteristics - no age distribution, no sex ratio, no IQ means, no group comparison on anything - because it uses them as model inputs instead. Approximately 65 to 70 phenotype fields enter the classifier. The result is the review's sharpest inversion: the study with the richest clinical characterisation available describes its participants less than almost any other, having redirected that information into the feature vector.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Forty-three children were recruited - 20 autistic and 23 typically developing - and 41 analysed after data from two typically developing children were lost to technical problems, giving 20 autistic and 21 comparison participants aged 6-13 with at least average non-verbal intelligence. This is the same cohort and the same recordings already charted in this review under a different analysis (Zhao et al., oculomotor gaze entropy), where 19 autistic and 20 typically developing children were retained after four were dropped for eye-tracking failure. The two papers therefore analyse overlapping subsets of one conversation dataset with two different sensors on the same videos - eye tracking in one, whole-body movement extracted from the video in the other - which makes them unusually comparable and means they should not be treated as independent evidence in the synthesis. The unit of analysis here is the participant: each child contributes one 23-dimensional coherence vector, computed from their dyad with the interviewer. A further 21 surrogate dyads were constructed for the chance-level control by pairing children and adults from different videos.
 
@@ -3115,7 +3115,7 @@ Twenty children aged 3-6, recruited between 13 February and 21 March 2023: 10 au
 
 Not reported. The paper states only that 'different data utilized for the analysis are collected manually, including physical and facial expression data' and that measurements 'are collected from various subjects'. No total sample size, no group sizes, no recruitment route, no eligibility criteria and no setting appear anywhere in the paper. Table 2 displays five individuals as illustrative samples, of whom three are labelled 'Detected' and two 'Not detected', but these are presented as examples of the data format rather than as the study population. A reader cannot determine whether the reported 96.44886% accuracy was computed on tens or thousands of individuals. This is the only included study in the review that reports no sample size at all.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Two thousand one hundred and fifty-four respondents across four public screening datasets, modelled separately by age band: toddlers aged 18-36 months (1,054 instances, 728 above and 326 below the screening cut-off), children aged 4-11 (292; 141 and 151), adolescents aged 12-16 (104; 63 and 41), and adults aged 17 and over (704; 189 and 515). The datasets originate from autism screening applications and are aggregated on the UCI Machine Learning Repository and Kaggle. Reporting the class distribution for every band, and discussing whether oversampling was warranted, is better practice than much of this corpus - and the counts also make plain what the 'positive' class is: respondents whose summed responses to ten screening items exceeded the instrument's published cut-off. No participant is known to have received any clinical assessment, no age or sex distribution is reported although both fields are present, and no ethnicity, socioeconomic or comorbidity distribution is given although jaundice at birth and family history of autism are among the tabulated fields.
 
@@ -3175,7 +3175,7 @@ Two public corpora used in parallel. The Gait Fullbody Dataset, created by Al-Ju
 
 Sixty-two children aged 18 to 54 months drawn from the publicly available Khozaei cry corpus collected in Iran: 31 autistic and 31 typically developing, with 24 boys and 7 girls in each group, mean ages 35.6 and 30.8 months. The exact sex matching at 24:7 is a genuine design strength and gives the sample 22.6% girls, higher than most autism research samples in this review. Two features of the sample are less favourable and both are reported without being examined. The mean ages differ by 4.8 months - about 16% of the younger group's mean, in a period of rapid vocal-tract and laryngeal maturation - with no test or adjustment reported, which matters because jitter, shimmer and harmonics-to-noise ratio all vary with vocal development. And the recording settings differ sharply by group: 87.10% of the autistic children's cries were recorded at autism centres and 12.90% at home, while 54.84% of the typically developing children's were recorded at health centres and 45.16% at home. Roughly six cry instances were retained per child (6.10 +/- 5.05 for the autistic group, 5.39 +/- 3.66 for the comparison group), giving an instance-level dataset of around 355 cries from 62 children. No cognitive, language, socioeconomic or comorbidity information is available.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Seven hundred and four respondents to the AQ-10 adult autism screening instrument, drawn from a public Kaggle aggregation of screening-app submissions. The paper reports the row count and the field names and nothing else: no class distribution, no age or sex composition, no ethnicity breakdown, although age, gender and ethnicity are all among the 21 fields it prints. In the source dataset the positive class comprises 189 of 704, giving a majority-class baseline of 73.2% that the paper never states. No respondent is known to have received any clinical assessment. The population is self-selected users of an autism screening application, which is neither a clinical sample nor a population sample.
 
@@ -3227,7 +3227,7 @@ Forty-four examples in total - 22 individuals diagnosed with ASD and 22 non-auti
 
 Seventy children in two recruited groups: 35 with autism from a Special Elementary School in Banda Aceh and 35 typically developing children from a State Elementary School in the same city. Each contributed 15 photographs (three expressions x five shots), giving 1,050 images split evenly 525/525. The analysis unit throughout is the image, not the child: the 70/20/10 division yields 369/105/51 images per class, and the reported metrics rest on 102 test images drawn from the same 70 children who supplied the training images. This is genuine primary data collection with a real, separately recruited comparison group - which distinguishes it sharply from the twelve Kaggle-corpus reuses charted in this review - but the group difference is confounded with school of origin, since every autistic child comes from one institution and every comparison child from another.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 No groups were recruited. The unit is the questionnaire record: 1,054 cases from the public ASD Toddler dataset (Thabtah, via Kaggle), of which 735 are labelled ASD and 319 non-ASD - a 69.7% positive rate. SVM-SMOTE then expanded the set to 1,456 instances, meaning 402 of the rows subsequently modelled and evaluated are synthetic interpolations rather than children. The 292-case test set (148 ASD, 144 non-ASD) therefore contains an unstated number of synthetic records, and the number of real children behind the reported 100% is never given.
 
@@ -3243,11 +3243,11 @@ No participants. 1,054 records from the public toddler Q-CHAT dataset, 728 label
 
 Two groups of adults recruited into one online survey: 102 autistic adults with a clinician-made diagnosis (72 women, 18 men, 12 non-binary) and 499 non-autistic adults (399 women, 92 men, 8 non-binary), 601 in total. The analysis unit is the person throughout, and the four cross-validation partitions are participant-disjoint by construction - each participant appears in exactly one partition. Exclusions are enumerated with reasons: 12 self-diagnosed respondents and 13 who did not report a gender they identified with. This is the only charted study in which the number of people, the number of analysis units and the number of rows in every reported metric are the same figure.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 No participants. 2,926 images at 224x224, described as curated from public repositories covering diverse demographics and labelled autism or non-autism; the comparison tables identify the source as the same Kaggle facial corpus used by all five of the studies it benchmarks against. The split is 2,526 training, 200 validation and 200 test images. Class counts are never stated for any partition, though the metric arithmetic implies a balanced 200-image test set. The number of distinct children is unknown - and the paper is aware that this matters, because it notes that one cited study cleaned duplicates from the dataset using the MD5 hash algorithm, an acknowledgement that the corpus contains repeated images. No deduplication is performed here.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 No participants. 2,940 images from the Kaggle ASD Children Facial dataset, balanced at 1,470 autistic and 1,470 non-autistic - the fourteenth charted reuse of this corpus in the review. The number of distinct children is unknown and never raised, and the corpus is known to contain repeated images of the same faces. The paper states a split of 2,540 training images (1,270 per class) and 400 test images (200 per class), but the confusion matrix it then reports covers all 2,940 images, so the population behind the headline figure is the whole dataset rather than the held-out 400.
 
@@ -3299,11 +3299,11 @@ Two recruited groups of adults: 286 autistic and 266 non-autistic in the final d
 
 Twenty-eight participants, 14 with ASD and 14 typically developing, from a public benchmark eye-tracking dataset released on Zenodo. This is the smallest participant base of any charted study apart from local_e771fb69, and it is the only quantity the paper reports about the people involved - no age, sex, cognitive ability, recruitment source, country or diagnostic procedure appears. Crucially, the analysis unit is the participant: scanpath-level features are aggregated to one vector per person by taking the mean and standard deviation across that person's trials, and the evaluation is described as subject-wise specifically to prevent data leakage. With 28 people and five folds, each test fold holds roughly five or six participants.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 No participants. 14,352 annotated facial images of children obtained from the Roboflow platform, labelled autistic or non-autistic and carrying bounding-box annotations. No class counts, no split sizes and no count of distinct children appear anywhere. The scale is worth noting against the branch: the paper's own literature table cites the Kaggle autism face corpus repeatedly, and that corpus contains roughly 3,000 images, so a 14,352-image Roboflow set is most plausibly an augmented export of the same underlying photographs - which the paper's description of Roboflow's built-in augmentation at export time supports but never states.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 No participants. 2,940 images in two balanced classes of 1,470 - the sixteenth charted reuse of the public autism facial-image corpus, identifiable from that exact composition although the paper names only a reference number rather than a repository. The number of distinct children is unknown and never discussed. Results are reported for a 70% training partition and a 30% testing partition with no counts, no seed and no statement of how the split was drawn.
 
@@ -3601,11 +3601,11 @@ Predominantly medical, with 'ASD patients' used throughout and 'recovery progres
 
 'individuals with autism', 'youth with ASD', 'subjects with ASD', 'those with typical development', 'autistic'. Mixed person-first and identity-first, with 'typical development' throughout. The framing is measurement-focused and non-pathologising toward participants - the criticism is directed at instruments, describing the single ADOS-2 speech item as scoring 'a composite of abnormal features crudely lumped together'.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 'children affected by Autism Spectrum Disorder', 'ASD children', 'ASDs', 'ASD subjects', 'ASD patients', against 'Typically Developing (TD) kids', 'TDs', 'typically developed subjects'. Consistently person-with-condition or bare acronym, and the acronym is frequently pluralised into a noun for the people themselves ('ASDs', 'TDs'), which is the least person-centred usage in the corpus. 'Patients' appears for children who are not in any clinical encounter. The framing is deficit-based throughout, describing autism in terms of 'a deficit in social behaviour', children who 'avoid eye contact', and 'ASD syndrome'.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 'children with autism spectrum disorder', 'ASD children', 'ASD subjects', 'individuals with ASD', 'ASD individuals', versus 'typically developed (TD) viewers', 'TD children', 'typically developing controls', and once 'IQ-matched normal peers' when describing prior work. Predominantly acronym-as-noun usage ('ASD and TD subjects') with occasional person-first phrasing. Autism is framed as 'defined by the deficits in social and communication development and the presence of stereotypical behaviors' - a deficit framing, though the paper is descriptively neutral about participants themselves and never uses 'patients'.
 
@@ -3629,7 +3629,7 @@ Predominantly medical, with 'ASD patients' used throughout and 'recovery progres
 
 'children with ASD', 'ASD children', 'ASDs' used as a plural noun for people in the results discussion ('Eye fixation misclassified more ASDs as TDs'), against 'typically developing (TD) children', 'TD controls', 'TDs'. The acronym-as-noun usage is the least person-centred in the corpus alongside Mazumdar. The framing is burden-oriented - autism is 'a worldwide medical problem and a tremendous economic and mental burden to society' - but the paper also carries an unusually non-deterministic aetiological framing, citing 'an emerging view is that the atypical behavior of ASD children may be caused by early brain adaptation to an adverse environment, rather than a result of ongoing neural pathology', which motivates early intervention as prevention of maladaptive adaptation rather than as remediation of pathology.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 'the ASD person', 'ASD patients', 'ASD subjects', 'challenged kids with severe disabilities', 'patients', against 'non-ASD' as the comparison label. The consistent use of 'patients' for children in a non-clinical dataset, and of 'the ASD person' as a category noun, is at the deficit end of the corpus's usage. The background section is the most pathologising in the review, describing autistic people as ranging from 'gifted children with exceptional learning and problem-solving capabilities to challenged kids with severe disabilities that require care-support throughout their whole life', framing behaviours as 'red flags', stating that 'there is no known cure for ASD', and arguing that early diagnosis helps 'children with medical prescriptions to prevent further deterioration of their condition' - a progressive-disease framing that misdescribes autism. The comparison class is named 'non-ASD' rather than typically developing, which is accurate to what is known about it but reflects that nothing is known about it.
 
@@ -3745,7 +3745,7 @@ The terminology is the most internally contradictory in this corpus, and the con
 
 'Individuals with autism spectrum disorder (ASD)' and 'individuals with disabilities' predominate, person-first and generally neutral, with the field's own vocabulary of augmentative and alternative communication used precisely throughout. The register is mostly that of assistive-technology research rather than pathology, and the paper is notably interested in what users do with the app rather than in what is wrong with them - the descriptive sections report which phrases people used, how many unique words they produced, and how long they engaged, framed as evidence of the app's usefulness across populations. Against this, deficit language appears in places: AAC systems 'are usually used by individuals with expressive communication disorders who suffer from impairments in speech, language, reading, and/or writing', autism is 'associated with deficits in social interaction', and 'individuals affected with autism' appears once. One passage is garbled in a way that matters: the text states that people with non-autistic communication challenges 'are typically interested in communicating with others, whereas individuals with ASD may be more motivated', which as written contradicts the contrast it is drawing and appears to have lost a negation - a claim about differential communicative motivation in autism that is contentious in the first place and is here left incoherent. There is no neurodiversity framing and no involvement of AAC users or autistic people in the research, which is a notable absence for a study built entirely on the communication attempts of disabled people.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 'Children with autism spectrum disorder (ASD)' and 'children with typical development (TD)' throughout, person-first and consistent, in the register of a clinical diagnostic journal. Autism is 'a neurodevelopmental disorder characterized by abnormal patterns of social interaction and communication', joint attention is 'deficient in children with ASD', and 'infants with this condition, but not those with typical development, appear to lack joint attention' - deficit-framed but factually anchored to the construct being measured rather than generalised. The framing of purpose is assistive: the stated problem is that clinicians 'have had to rely on subjective assessment scores in diagnosing ASD to date' and that validated joint attention manuals such as the Early Social Communication Scales are 'labor-intensive and difficult to implement without trained clinicians and the proper experimental setup', so the target is objectivity and scalability of an existing clinical construct rather than replacement of clinicians. There is no burden or cost rhetoric and no neurodiversity framing. One descriptive passage is worth noting for its observational quality rather than its terminology: in the high-level RJA task, comparison children are described as turning to view the poster 'and then turned back to face the examiner as if seeking approval' - a phenomenological description of shared attention that conveys what the construct actually is.
 
@@ -3777,7 +3777,7 @@ The terminology is the most internally contradictory in this corpus, and the con
 
 Conventional clinical framing with a specific rhetorical move worth recording. Autism is 'a complex neurodevelopmental disorder' affecting 'over 1% of the global population', characterised by 'defined problems in social interaction, communication, and flexibility of behavior'. The introduction's argument for automation rests on discrediting the standard instruments: ADOS and ADI-R 'remain subjective, time-consuming, and largely impossible in low-resource environments', and elsewhere they 'relied on subjective behavioral ratings subject to inter-rater bias and with poor scalability, therefore calling for the search for objective biomarkers'. Neuroimaging is contrasted as providing 'objective measures'. That framing is standard in this branch, and here it sits directly against the study's own method, which takes the scored output of those same instruments as its most heavily weighted predictors. A framework motivated by the inadequacy of ADOS and ADI-R cannot be deployed without them. No neurodiversity framing appears and no autistic person is reported as involved.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 'Children with ASD' and 'children with typical development (TD)' throughout, person-first and consistent, with 'autistic children' appearing in the highlights. The clinical framing is standard medical-model - 'persistent social communication impairment is a hallmark symptom', 'atypical behavior in social interaction', 'incapability of social reciprocity', 'failure of normal back-and-forth interaction', 'IMC impairments' - and the introduction's list of autistic social characteristics is unrelievedly deficit-framed. There is no neurodiversity framing and no autistic-community involvement. Two features of the framing are nonetheless worth noting. The construct is interactional rather than individual: interpersonal motor coordination is a property of a dyad, and the paper is explicit that 'human movement during interpersonal interaction is not a stochastic process' but something two people do together - which locates the measured difference in the interaction rather than solely in the child, even if the interpretation does not follow that through. And the motivation is explicitly about reducing reliance on expert rating: the paper observes that prior work on coordination in autism 'often relied on expert ratings, potentially introducing biases and requiring substantial time', and that studies shortening diagnostic instruments by machine learning leave the objectivity problem untouched because 'the issue of lack of objectivity remains if individuals' behavior is rated by experts'.
 
@@ -3801,7 +3801,7 @@ The framing is entirely autism-focused and the content is not, which is the reco
 
 'ASD-affected individuals' and 'autism-affected individuals' predominate, with 'ASD-affected children', 'affected children' and 'the individual affected with ASD' appearing throughout - a consistently affliction-framed register. Autism is described as affecting 'the neurological function and also the speech function of children' and as leading to 'uncontrolled aggressive behavior in the affected children', and the case for early detection is made in explicitly economic and burden terms: undetected autism 'may create more economic pressure, affect the family relationship, and also become a burden in social and medical care', and 'the occurrence of ASD has brought a large economic and mental burden to society that leads to severe public health problems'. Elsewhere autism is referred to as a 'defect' and as 'disease growth'. This is the most consistently deficit- and burden-oriented framing in the review, and it is paired with the conflation of autism and sensory processing disorder into a single detection target. There is no neurodiversity framing and no autistic-community involvement.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Clinical and deficit-oriented, with one formulation that is factually wrong. Autism is described as 'a disorder specified by a genetic neurological condition linked to developmental delays in communication skills, recurring attitudes, difficulties switching between activities, and unexpected responses to senses', and the introduction states that 'if autism is identified early enough it can be treated with better outcomes' - a treatment framing that misdescribes what early intervention does. Against this, the paper's account of the access problem is well sourced and is the most concrete statement of it in the review: it cites over 125,000 individuals waiting for a mental health service examination in England in July 2022 against a recommended three-month wait, with the consequence that 'parents and caregivers [do] not have the necessary support and services early'. That is a real and quantified problem, and it is the reason work of this kind is published, funded and cited. No neurodiversity framing appears and no autistic person or family organisation is reported as involved in designing a tool intended for at-home use by families.
 
@@ -3861,7 +3861,7 @@ Predominantly medical, with 'patients with ASD' used repeatedly and autism descr
 
 Clinical and developmental, without pathologising excess. Autism is 'a neurodevelopmental condition', described through 'a wide range of cognitive, social, and communicative challenges' and framed in terms of impact on the child, the family and society across education, healthcare and employment - a systemic rather than individual framing. Person-first phrasing is used consistently ('children with ASD', 'individuals diagnosed with ASD'), and the early-detection argument is made in terms of neuroplasticity and long-term prognosis rather than urgency or alarm. One formulation deserves note for its restraint: the paper states that 'any behavioral cues that raise concerns should be diligently combined with clinical assessments to enable the early identification of atypical development', positioning the technology as an input to clinical judgement rather than a substitute for it. The phrase 'children at risk of ASD' recurs and carries the usual risk framing. No neurodiversity framing appears and no autistic person or family organisation is reported as involved in the work, which is worth noting for a study whose proposed product is an at-home screening tool for caregivers.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Brief and conventional. Autism is 'a complex neurological disorder that involves repetitive behaviors, limited interest, and has interpersonal interaction problems', with traditional diagnosis characterised as 'subjective and time-consuming'. Person-first phrasing predominates. The closing statement refers to 'identifying and supporting children with ASD', although the dataset is an adult screening corpus - a slippage between the population studied and the population invoked. No neurodiversity framing appears and no autistic person is reported as involved.
 
@@ -3913,7 +3913,7 @@ ASD, autism spectrum disorder, individuals with ASD, autistic individuals, non-a
 
 ASD, autism spectrum disorder, children with autism, autistic children, autistic condition, typically developing children, normal children, Normal class. The Normal/Autism class labelling runs throughout including in the figures and conclusion. One artefact of manuscript reuse is worth recording: the description of the testing workflow states that the output classifies the child as either a stunted child (label 1) or a normal child (label 0) - terminology from childhood stunting research that has no place in an autism study and that survived into the published text.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 ASD, autism spectrum disorder, non-ASD, toddlers, children, ASD presentations. Register is clinical and restrained; the comparison class is called non-ASD rather than normal, and the limitations paragraph shows unusual awareness that ASD presentations vary across populations and cultural contexts. One phrase runs against this: the introduction describes ASD as a complex neuro-developmental abnormality. No autistic or community perspective is cited.
 
@@ -3929,11 +3929,11 @@ ASD, autism spectrum disorder, autism traits, ASD traits, toddlers, individuals 
 
 Autistic adults, autistic individuals, neurodivergent, non-autistic, camouflaging, masking, neurotypical behavior. The framing is identity-first and community-aligned throughout: camouflaging is described as an adaptive social coping strategy rather than a symptom, the paper states explicitly that adapting one's behaviour in social contexts - whether to avoid discrimination or to achieve personal goals - is not inherently pathological and does not necessarily indicate autism, and it warns that mental health professionals should be aware of unintentional reinforcement of stigma and the pathologization of (mal)adaptive social strategies like social camouflaging. Non-binary participants are analysed as a group in their own right rather than dropped, and the paper states its reason for using self-reported gender rather than sex assigned at birth: it better reflects participants' identities. This is the only study in the charted corpus whose language would be recognised as respectful by the population it studies.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 ASD, autism spectrum disorder, autistic and non-autistic children, autistic individuals, ASD children, individuals with ASD and their families. The register is clinical and reasonably neutral - non-autistic rather than normal is used for the comparison class - though the opening sentence describes ASD as a complicated neurological disease and the introduction lists cognitive impairments among its defining characteristics. No autistic or community perspective appears.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 ASD, autism spectrum disorder, autistic and non-autistic faces, autistic patients, children. The register is medical and dated: ASD is introduced as a neurodevelopmental disorder with ineffective brain functions and as a conventional developmental neuro-disorder, and deep learning is credited with developing interactive systems to assist in the reintegration and treatment of autistic patients. No autistic or community perspective appears.
 
@@ -3985,11 +3985,11 @@ The most carefully handled in the entire corpus, and explicitly so. The paper in
 
 ASD, autism spectrum disorder, TD, individuals with ASD. The register is clinical and unremarkable; the opening characterisation uses deficits in social communication and the presence of restricted, repetitive patterns of behaviour, standard DSM phrasing. No autistic or community perspective appears, and no demographic or personal description of the participants is offered at any point.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 ASD, autism spectrum disorder, children with autism, autistic, non-autistic. The introduction is unusually careful in one respect - it notes that while certain individuals with ASD may also experience cognitive impairment, the majority possess average to above-average intelligence, and that symptoms vary so that some face mild difficulties while others require full-time care. Elsewhere the register is standard for this branch. No autistic or community perspective appears.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 ASD, autism spectrum disorder, individuals with ASD, children with ASD. The register is medical and dated - ASD is introduced as a complex psychological disease and later as a critical neurodevelopmental condition with excessive medical expenses - and the symptom list includes repetitive and aggressive behaviours, hyperactivity, and cognitive impairment. Grad-CAM++ is described as providing abnormality detection, which frames the highlighted facial regions as abnormalities rather than as model attention. No autistic or community perspective appears.
 
@@ -4287,11 +4287,11 @@ Essentially none. No ages, means, standard deviations, sex counts or matching st
 
 Autistic group: 90 participants, 75 male (80.6%), mean age 10.84 +/- 2.20 (7.8-15.3), WISC-IV full-scale IQ 99.0 +/- 20.0. Comparison group: 28 participants, 12 male (40.0%), mean age 10.96 +/- 1.54 (7.0-15.0), IQ 113.4 +/- 12.3. Age, race and ethnicity show no significant difference. Two variables do: sex (p < 0.001) and IQ (p = 0.005). The IQ difference is addressed by a matched-pair replication; the sex difference is acknowledged but not tested. Given that pitch is sex-dependent and is one of the two features retained, and that the comparison group is 60% female against the autistic group's 19%, the sex imbalance is the more consequential of the two. Race is 86% white in both groups, and Hispanic ethnicity 14-18%, so the sample is demographically narrow but balanced.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Only group sizes are given: 14 and 14. Age, sex, IQ, language level and severity are all absent for both groups, and no matching of any kind is described or possible to verify. This is the least-characterised sample in the corpus. The gap matters more here than it would elsewhere because the paper's own Discussion devotes four bullet points to how fixation behaviour changes with age - contrasting toddlers around 21 months, children under ten and those over twenty - and concludes that 'selection of necessary features for modelling fixation behaviour of subjects should be varied based on the corresponding age', immediately followed by the admission that 'the presented model does not consider the age information'. The authors thus diagnose the omission precisely without being able to remedy it, because the benchmark they inherited does not carry the variable.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Sample sizes are given (14 and 14) and, unlike the companion paper on the same dataset, ages are partially reported: 'the age of children with ASD lied in the range from 5 to 12 years old (8 years old on average)'. No standard deviation. Critically, no age information at all is given for the typically developing group, so age matching cannot be assessed even coarsely. Sex distribution, IQ, language level and severity are absent for both groups. The demographic reporting therefore covers one variable in one of two groups - better than nothing, but insufficient to know whether the two groups are comparable on the variable the authors' own literature review identifies as decisive for gaze behaviour.
 
@@ -4315,7 +4315,7 @@ Fully reported and formally tested, which is uncommon in this corpus. Autistic g
 
 Autistic group: 40 children, 33 boys and 7 girls, aged 3-6, mean 4.6 years with a standard deviation of 9 months. Comparison group: 40 children, 33 boys and 7 girls, aged 3-6, mean 4.8 years, SD 7 months. The paper states 'no significant difference in age or sex existed between the two groups' but reports no test statistic or p value for either. Sex is matched exactly, which is a stronger match than most studies here achieve. What is entirely absent is any measure of cognitive, language or adaptive functioning - a serious gap in a 3-to-6-year-old sample where developmental level varies widely, where EEG spectral power changes rapidly with age and maturation, and where the two groups were drawn from educational settings that themselves sort on developmental level. No IQ, no developmental quotient, no language measure, no severity score.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Nothing. No ages, no sexes, no group sizes in people, no cognitive or language measures, no matching, and no statement that any of these are unavailable. The only quantities reported about the sample are image counts per class. This is the least characterised sample in the corpus, exceeding even Mazumdar, which at least reported that 14 autistic and 14 typically developing children contributed the data.
 
@@ -4431,7 +4431,7 @@ Reported per group in two tables and more completely than most in this corpus, t
 
 Almost nothing usable, and the one variable that is reported creates the study's central problem. Age is given only as a distribution over six bands for survey respondents (0-5: 36, 6-10: 39, 11-18: 20, 19-30: 23, 31-50: 45, over 50: 50, unspecified: 22) with no breakdown by diagnosis, and the totals do not reconcile with the stated respondent counts. No sex, race, ethnicity, socioeconomic status, IQ, language level or comorbidity data were collected at all. Geographic distribution is reported at country level: 66% of users in the United States, with Europe and Oceania represented. The decisive omission is age by diagnostic group, because the composition of the comparison group makes the confound near-certain rather than speculative. Autism is congenital and the app's heaviest and most frequent users were children aged 10 and under; the non-autistic comparison group is dominated by acquired conditions of adult and later life - stroke, dementia, ALS, brain injury - which the paper's own background section describes as the 'acquired disabilities' category of AAC users, explicitly contrasted with congenital ones. A classifier separating these groups from key-press sequences may therefore be separating a five-year-old learning to request food from a seventy-year-old adapting to post-stroke aphasia, and nothing in the analysis distinguishes that possibility from a genuine autism signature. The paper itself observes in its background that older AAC users approach these systems with greater communicative experience but less technological intuitiveness, producing struggle, frustration and abandonment - which is a description of precisely the age-related usage difference that the classifier could be detecting.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 The most complete demographic and clinical characterisation in this review, and completeness is what makes the study's central problem visible. Reported per group with formal tests: recruitment source, sex (53.3% versus 54.0% boys, p > .99), age (48.0 +/- 13.4 versus 47.9 +/- 12.5 months, p = .99, with medians and ranges), the proportion under 48 months (46.7% versus 42.0%, p = .80), best-estimate IQ and verbal IQ stratified by age band, K-CARS-2 stratified by age band, and for the autism group K-ADOS-2 calibrated severity scores in total, social affect and restricted-repetitive domains plus module distribution. Ethnicity is reported using NIH categories - all Korean - and geographic distribution is given. Age and sex are matched essentially perfectly, and the 46.7% proportion of girls in the autism group is remarkably high relative to the population sex ratio and to every other autism sample in this corpus, though unexplained. The decisive feature is IQ. Best-estimate IQ is 60.1 +/- 15.4 versus 104 +/- 19.1 in children under 48 months and 55.1 +/- 20.8 versus 105 +/- 14.5 in those older, with verbal IQ showing the same 41-45 point gaps, all at p < .001 - a difference roughly three standard deviations wide and the largest cognitive separation between compared groups anywhere in this review. The autism group's mean IQ of 55-60 places it in the range of moderate intellectual disability, and the K-ADOS-2 module distribution (17.8% toddler module, 62.2% preverbal or single-word, 20.0% phrase speech) confirms a predominantly minimally verbal sample. This is a population that most studies in this corpus exclude, which is a genuine strength, but it also means the two groups differ in cognitive and language level as profoundly as they differ in diagnosis. One internal inconsistency: the K-CARS-2 median for the older autism stratum is given as 31.3 with a stated range of 32.0-43.0, which is impossible.
 
@@ -4463,7 +4463,7 @@ None. No age (beyond an unverifiable dataset-level claim of 24-72 months), sex, 
 
 Available in unusual depth and reported not at all. ABIDE-I supplies age at scan, sex, handedness, full-scale, verbal and performance IQ, medication status at several sites and site identity for every subject, and the paper enters age, FIQ, VIQ and PIQ into the model - AGE_AT_SCAN ranks fourth and FIQ third among behavioural contributors - while reporting no group means, no distributions and no comparisons for any of them. Three consequences follow. ABIDE-I's autistic and control groups differ in age composition at several contributing sites, and age is a strong predictor of structural brain measures across the childhood-to-adult range the dataset spans, so an unexamined age difference is a live alternative explanation for part of the imaging stream's contribution. IQ differs systematically between groups in ABIDE-I and is entered as a predictor, so part of what the model separates is cognitive ability rather than autism. And sex is not reported at all, in a repository that is heavily male-weighted. Treating covariates as features rather than as things to be described or adjusted for is a defensible modelling choice for maximising accuracy and an indefensible one for supporting a diagnostic claim, and the paper does not distinguish the two purposes.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Reported per group with formal tests for the three variables collected: sex 18:2 versus 17:4 male:female (chi-square = 0.671, p = .413), age 99 +/- 24.6 versus 114 +/- 24.8 months (t(39) = 1.89, p = .066), and non-verbal IQ 102 +/- 22.7 versus 118 +/- 16.2 (t(39) = 2.54, p = .015). Nothing else: no race or ethnicity, socioeconomic status, parental education, language measure, medication or severity. Two of the three reported variables are problematic and neither is handled. The IQ difference of 16 points is significant and unadjusted, and it matters here because interpersonal coordination has been reported to correlate with social cognition, so the group difference in coordination could reflect the group difference in cognitive ability. The age difference of 15 months falls just short of significance but is substantial in a 6-13 year range where motor control and conversational competence change considerably, and the direction - the autistic group younger - is the direction that would independently predict less mature coordination. The sample is also 85% male and drawn entirely from Shenzhen, and the eligibility requirement of at least average non-verbal intelligence excludes the substantial proportion of autistic children with intellectual disability. The authors identify sex ratio and severity range among their stated limitations but not IQ or age.
 
@@ -4487,7 +4487,7 @@ Thin, and thinner for the comparison group than for the autistic group. Reported
 
 None. No age, sex, race, ethnicity, socioeconomic status, cognitive level, language ability, severity or comorbidity information appears for any individual, and no statement acknowledges the absence. The only individual-level variables reported anywhere are the eleven columns of Table 2 - seven emotion probabilities, two emotion aggregates, body temperature and heart rate - shown for five people.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Present as data fields and absent as reported characteristics. Age, gender, ethnicity, jaundice at birth, family history of autism, country of residence, prior app use and who completed the test are all columns in the datasets, and all but two of the twenty-one fields were retained for modelling - but no distribution, group comparison or descriptive statistic is reported for any of them. Age is handled structurally rather than statistically, by fitting a separate model per band, which is defensible since Q-CHAT-10 and AQ-10 are age-calibrated instruments. The one field whose treatment deserves comment is 'Who_completed_the_test', which the paper discusses: for the toddler and child datasets the items are answered by a parent, relative or health professional rather than by the person being screened, so the modelled data are one person's report about another, and the identity of that reporter is itself a predictor. That the respondent's relationship to the person is available as a feature underlines what the dataset contains - a record of someone's judgements, not of anyone's behaviour.
 
@@ -4547,7 +4547,7 @@ Absent for both corpora beyond the stated age ranges of 4 to 12 and 3 to 7 years
 
 Better than most secondary analyses in this review on sex and worse on age. Sex is matched exactly - 24 boys and 7 girls in both groups - so it is fully controlled, and at 22.6% girls the sample is less male-skewed than most autism research. Mean ages are reported per group at 35.6 and 30.8 months, but no statistical comparison is made and no adjustment is applied, despite a 4.8-month difference spanning a developmental window in which laryngeal control, vocal-tract length and respiratory coordination all change substantially. The three features that reached significance - jitter, shimmer and harmonics-to-noise ratio - are exactly the measures known to vary with vocal maturation, so an age difference of this magnitude is a competing explanation for the group findings and no analysis distinguishes them. The authors come close to the point in their limitations, noting that 'cry characteristics may evolve as children grow, potentially influencing model accuracy, making it essential to explore age-specific models', but treat it as a generalisability issue rather than as a confound within their own comparison. No cognitive, language, adaptive, socioeconomic or comorbidity data are available, and the sample is entirely Iranian and Farsi-speaking, which the authors identify as limiting cultural generalisability.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Present as fields and absent as reported characteristics. Age, gender, ethnicity, jaundice at birth, family history of autism, country of residence, prior app use and who completed the test are all among the 21 columns the paper enumerates, and all are candidates for the model; none is described, summarised or analysed. The consequence is that nothing can be said about who the 704 respondents were, and no confounding can be assessed - though the question is largely moot given that the outcome is computable from the inputs.
 
@@ -4599,7 +4599,7 @@ None. Not a single demographic characteristic is reported for the 44 people - no
 
 Thin, and internally inconsistent where present. Age is given as 3 to 14 years in the acquisition narrative and 5 to 15 years in Table I and again in the results; no mean, SD or per-group distribution is provided. Sex is not reported at all. No socioeconomic, ethnic, linguistic or verbal-ability information. The exclusion criteria are unusually explicit for this corpus - children with colds, diarrhoea, lung infections, epilepsy or flu were excluded from both groups, and autistic participants with intellectual disability, cerebral palsy or Down syndrome were excluded - which controls the sample tightly but also removes the co-occurring conditions most likely to be present in a real screening population and narrows the autistic group to those without intellectual disability.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 Almost none reported, though several demographic variables are present in the data and used as predictors. Age is given only as the dataset's 12-36 month scope. Sex, ethnicity and region exist as columns - sex and jaundice are named in the SHAP analysis as low-importance features - but no counts, proportions or distributions are printed for any of them, and no subgroup breakdown is performed. Ethnicity and region are label-encoded into ordinal integers, a transformation that imposes an arbitrary ordering on nominal categories and is not discussed.
 
@@ -4615,11 +4615,11 @@ Better than most of the branch, though still descriptive only. Age averages 25 t
 
 The most complete demographic and clinical reporting in the corpus. Age by group with means, SDs and a tested 2.7-year difference with effect size and confidence interval; mean age at autism diagnosis (32.0 years, SD 12.3); self-reported gender in three categories with between-group tests; full education distribution from no studies to PhD for both groups; and a complete self-reported comorbidity table covering high abilities, ADHD, developmental coordination disorder, specific learning disorder, epilepsy, bipolar disorder, eating disorder, anxiety, depression and sleep disorder, with percentages for both groups. Nationality/residence is stated (Spain). The women-heavy composition (78% overall) is not merely reported but explained and named as the study's most notable limitation, with a mechanism offered - the parent project validates an instrument designed for highly masked autistic adults, especially women, and online studies skew toward respondents with topic interest, higher cognitive ability and moderate-to-high socioeconomic status.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 None. The dataset is asserted to cover diverse demographics and the model is claimed to address demographic variability, but no age, sex, ethnicity, geography or recruitment information exists for any image and none is reported. The diversity claim is therefore unverifiable, and the paper's stated advance over prior work on limited generalizability across diverse demographics rests on it.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 None. No age, sex, ethnicity, geography, socioeconomic status or recruitment source for any image, and no acknowledgement that this information is absent. One of the studies the paper summarises in its own literature review notes that model reliability depends on dataset quality and race factors, so the concern is present in the article's field of view and is not applied to its own data.
 
@@ -4671,11 +4671,11 @@ Complete and analytically load-bearing. Age, gender, ICAR-16 abbreviated IQ, AQ 
 
 None. No age, sex, ethnicity, geography, cognitive ability or recruitment information for any of the 28 participants, and no acknowledgement that this information is absent. The paper's own discussion notes that generalisation across demographics and hardware platforms remains a pressing issue in this literature - a concern it identifies and then cannot address, because it reports no demographic variable at all.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 None. No age, sex, ethnicity, geography or recruitment information for any image, and no acknowledgement of the absence - although the paper's own literature table repeatedly lists limited dataset diversity and poor generalization as limitations of prior studies using the same kind of data.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 None reported, and the paper is one of the few in this branch to say so and to explain why it matters: expression patterns and facial morphology differ across demographic factors, and because the dataset carries no such information, their influence on ASD classification and on facial-feature learning cannot be clearly examined. That is an accurate statement of the branch's central data problem, made by a study that then proceeds anyway.
 
@@ -4973,11 +4973,11 @@ None. The autistic group is defined by recruitment from a child psychiatry depar
 
 Exemplary. DSM-5 diagnosis confirmed by a research diagnostic team comprising an experienced child psychiatrist and a clinical psychologist using best-estimate procedures after reviewing both videos and scored protocols of standardised assessments. ADOS-2 Module 3 administered by staff trained to research reliability level. ADI-R administered to caregivers of the autistic group by trained interviewers and integrated into the best-estimate procedure. Autism actively ruled out in comparison participants using ADOS-2 and SRS supplemented by expert clinical review. An extensive medical and psychiatric exclusion list applied to both groups, including current psychoactive medication - a control that matters directly for voice measures and that almost no other speech study in the corpus applies.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Nothing. No diagnostic instrument, clinical criterion, clinician role or diagnostic setting is mentioned at any point. The autism label is treated as an attribute of the dataset file, and even the source dataset's diagnostic procedure is not summarised or cited. Under the review's classification this is dataset-label-only ascertainment, in the weakest form encountered - some other benchmark-reuse papers here at least restate the original cohort's ADOS or CARS procedure.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Not reported. No diagnostic instrument, criterion, clinician role or setting is named; the label is an attribute of the released dataset. The paper cites the source collection for its recording parameters (Tobii T120, 17-inch monitor, 3-second presentations) but not for its ascertainment procedure. Under the review's classification this is dataset-label-only. The omission is more conspicuous here than in most benchmark-reuse papers because the author list includes established autism-research investigators and the work is funded by an NIMH R01, so the expertise to characterise or question the labels was present.
 
@@ -5001,7 +5001,7 @@ Strong for a four-page conference paper. Diagnosis was made under DSM-5 criteria
 
 The weakest ascertainment in the 2022 cohort. Autism is established by 'the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition' with nothing further: no ADOS, ADI-R, CARS, SRS or any other standardised instrument; no statement of who applied the criteria, with what training, or in what setting; and no indication whether diagnosis was made for this study or taken from school records. Comparison children were 'screened to exclude any with psychiatric or neurological disorders, including ASD', again with no instrument named and no cut-off stated. Under the review's classification this is clinical-diagnosis-only in its least documented form, and it means the reference standard cannot be independently evaluated.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Nothing. No diagnostic instrument, criterion, clinician role or setting, and no summary or citation of the source dataset's ascertainment procedure beyond a pointer to the source paper. The class labels are treated as properties of image files. This matters more than usual because the study reports 98.8% accuracy against a reference standard whose nature is entirely unspecified within the paper.
 
@@ -5117,7 +5117,7 @@ Among the strongest in this review, and the only one applying condition-specific
 
 The weakest reference standard in this review alongside the social-media study. Diagnosis is voluntary self- or proxy-report through an optional online survey embedded in a free commercial app: users 'were asked to disclose their reason for using the application', 214 of 6,033 chose to respond, and 180 named a diagnosis. There is no clinical assessment, no diagnostic instrument, no clinician involvement, no verification, no date of diagnosis, and no record of who completed the survey - the AAC user, a parent, a spouse or a speech-language therapist, each of which would be plausible for a device used by people with communication impairments spanning early childhood to advanced dementia. Because 'refusal to answer the survey did not cause denial of service', respondents are self-selected on unknown characteristics, and they represent 3.4% of usable users. The 'no diagnosis' category (32 users) is particularly ambiguous, since a person using a speech-generating device while reporting no diagnosis may be a therapist, a family member, a curious downloader or someone with an undisclosed condition. The comparison group's composition is simultaneously the study's most interesting feature and a further source of uncertainty: contrasting autism against other communication-impaired populations rather than against typical development is exactly the differential framing this literature usually avoids, but here the comparison group is a convenience aggregate of eight loosely specified categories, one of which is literally labelled 'other' and accounts for half of it.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Strong, staged and transparently described, though with an important detail about which instrument supplies which label. All caregivers completed the Korean Childhood Autism Rating Scale II, a 15-item instrument scored 15 to 60. Children whose scores indicated autism risk, or about whom a caregiver expressed concern, were referred to a child psychiatrist at Seoul National University Hospital for diagnostic evaluation, and the Korean Autism Diagnostic Observation Schedule II was administered to those receiving a clinical diagnosis - so the autism label rests on the conjunction of clinician diagnosis and an above-cutoff score on a criterion-standard observational instrument, with calibrated severity scores reported (total CSS 6.07 +/- 1.6, social affect 6.62 +/- 1.8, restricted and repetitive behaviour 6.16 +/- 2.2). Comparison status rests on a below-cutoff K-CARS-2 score together with no parent-reported history of developmental delay or psychiatric condition, so the comparison group is screened rather than merely assumed - though with a caregiver-completed instrument rather than a clinician assessment. Two qualifications matter. The paper states plainly that these conservative criteria were adopted specifically to produce 'clinically distinct groups', so the reference standard is being used to construct maximal separation rather than to sample a clinical spectrum, which the authors disclose but do not connect to their near-ceiling accuracy. And the severity prediction target is derived from K-CARS-2 bands (under 30 non-autism, 30-36 mild or moderate, 37-60 severe) rather than from the K-ADOS-2 calibrated severity scores that were collected and reported - so the clinician-administered severity measure is available in the paper but is not what the severity model predicts.
 
@@ -5149,7 +5149,7 @@ There is none, and the substitute is source of retrieval. An image is labelled a
 
 The strongest reference standard in the review, and the study's principal problem is what it does with it. Diagnosis at the ABIDE-I contributing sites rested on clinical judgement supported by ADOS and ADI-R - the field's two gold-standard instruments, administered by trained clinicians - so the labels are as sound as any charted here. The difficulty is that the scored output of those instruments is then supplied to the classifier as input. GAMI-Net ranks ADOS_TOTAL first among behavioural contributors at 0.278; the final SHAP analysis ranks ADOS_Gotham_Total first at 0.234; and ADI_R_SOCIAL_TOTAL_A, ADOS_COMM, ADOS_GOTHAM_SEVERITY, SRS_RAW_TOTAL and ADI_R_VERBAL_TOTAL_BV all appear in the top ten. In ABIDE-I these instruments are administered to the autism group as part of establishing the diagnosis and are largely absent for controls, so two mechanisms operate simultaneously: the recorded values encode the clinician's diagnostic judgement, and the presence or absence of a value is itself label-informative. A model with access to this stream will reproduce the diagnosis on any partition, however carefully constructed. This is the clearest instance of target leakage in the corpus, and it differs in one respect from the questionnaire-dataset studies charted alongside it: there the label was an arithmetic function of the features, here it is the clinical judgement that the features summarise, which is less mechanical but no less circular.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Clinician consensus under DSM-IV, described in the same terms as the group's companion paper on this cohort: initial diagnosis by a licensed psychiatrist with at least five years' experience, evaluation of that diagnosis by a senior clinician, and, where the two disagreed, involvement of two further senior clinicians to confirm. No standardised diagnostic instrument was administered - no ADOS, ADI-R, CARS or SRS - and the companion paper on this cohort explains why, stating that the group had 'limited access to established ASD diagnostic instruments'. Typically developing children were recruited from local communities and reported no diagnosis of any psychiatric, motor, vision or other physical disorder, but no autism screening instrument was applied to them. Multi-clinician consensus is a reasonable clinical standard and better than a single unblinded judgement, but it yields no quantified severity, no reliability statistic, and no dimensional measure against which the coordination findings could be checked. The use of DSM-IV rather than DSM-5 in work published in 2024 also reflects the age of the underlying recordings rather than current practice.
 
@@ -5173,7 +5173,7 @@ Solid for the autistic group and absent for the comparison group. Autism require
 
 None. The label is a binary 'Detected' or 'Not detected' for a combined 'autism and visual SPD' construct, with no diagnostic instrument, criterion, clinician, assessment or source described. Two features of the labelling deserve specific note. First, the target conflates two distinct conditions - autism and visual sensory processing disorder - into a single undifferentiated binary, so even if the label were valid it would not identify which condition a positive prediction refers to, and the paper nowhere addresses how a model trained on a merged label could support either diagnosis. Second, the dataset section asserts that 'a new dataset named AQ10 is developed based on autism screening performed in individuals and holds 20 features', which conflates a dataset with the AQ-10, an existing published autism screening questionnaire, and in any case none of the AQ-10 items appears among the eleven variables the paper actually shows. The quantity being predicted is therefore undefined.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None, and its absence is structural rather than incidental. The class variable in the UCI and Kaggle autism screening datasets is not a clinical diagnosis: it is computed by summing the A1 to A10 item responses and applying the instrument's published cut-off, so it is a screening outcome derived arithmetically from the same fields supplied to the model. The paper describes the scoring rule itself - 'each question is scored as either 0 or 1 based on the individual's response. Only responses that indicate autistic traits are given a score of 1' - without drawing the consequence. Two facts follow. No respondent in any of the four datasets is known to have undergone diagnostic assessment, so nothing here is validated against autism as clinically established. And because the label is a deterministic function of the modelled inputs, the classification task has no uncertainty in it: 100% on accuracy, precision, recall, F1, Matthews correlation coefficient and AUC across all four age bands simultaneously is the expected output of the arrangement, obtainable by a single summation and comparison, and no optimisation, architecture or validation scheme bears on it. This is the second study in the review resting on these datasets, and the pattern is identical in both.
 
@@ -5233,7 +5233,7 @@ Inherited and undescribed for both corpora - no diagnostic instrument, criteria,
 
 Among the stronger ascertainment procedures in this review and described with unusual completeness for a secondary analysis. The process ran in four stages: the Gilliam Autism Rating Scale, Second Edition completed by parents; a caregiver interview conducted against DSM-5 criteria; direct evaluation and observation of the child by two child clinical psychologists holding doctorates; and separate confirmation of the diagnosis by at least one child psychiatrist in a different setting. Independent confirmation by a second clinician working in a different setting is a real safeguard against single-assessor error and appears in almost no other study charted here. The authors also state plainly why ADOS was not administered - 'the official version of Autism Diagnostic Observational Schedule (ADOS) is not available for Farsi' - and repeat it in their limitations rather than leaving the omission unexplained. Two qualifications remain. The GARS-2 is a parental questionnaire, and its position at the front of the process means the pathway begins with parental report; and the typically developing group's status is not described as having been screened by any instrument.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 None. The 'Class/ASD' variable in this dataset is not a clinical diagnosis but a screening outcome, computed by summing the A1-A10 item responses and applying the AQ-10 cut-off. No respondent underwent diagnostic assessment, and no instrument, clinician or record is cited. The distinctive feature of this particular study is that the derivation is visible in its own methods: the paper prints the complete field list - 'A1 Score, A2 Score, A3 Score, A4 Score, A5 Score, A6 Score, A7 Score, A8 Score, A9 Score, A10 Score, age, gender, ethnicity, jundice, austim, contry of res, used app before, result, age desc, relation, Class/ASD' - which contains both the ten items, their sum ('result'), and the thresholded outcome ('Class/ASD'). The model is therefore asked to predict a variable that is a deterministic function of another variable it is given.
 
@@ -5285,7 +5285,7 @@ Not described. Labels come as a binary field in the downloaded dataset (1 autist
 
 None. Group membership is determined by school: the autism group is the set of children attending a Special Elementary School, the comparison group the set attending a State Elementary School. No diagnostic instrument, criterion, assessor, date or record is reported for a single child, and the typically developing children were not screened with any instrument. The study's exclusion of intellectual disability, cerebral palsy and Down syndrome implies some clinical information was available, but its source is never described. School placement is a proxy for diagnosis that also carries administrative, geographic and socioeconomic structure into the label.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 None. The outcome is Class/ASD_Traits, the Q-CHAT-10 screening result, and no clinical diagnosis exists for any case. The paper describes this as 735 cases diagnosed with ASD, which overstates what the dataset contains: the ASD label here records that a caregiver's ten checklist answers summed above a cut-off, not that a clinician assessed the child. No assessor, criterion, instrument beyond Q-CHAT-10 or date is reported.
 
@@ -5301,11 +5301,11 @@ None. The outcome is the Class/ASD traits field, the Q-CHAT-10 screening result,
 
 Self-reported but with real safeguards, and honestly characterised. Participants were asked about a clinically based diagnosis and about which professional made it; the 12 who reported self-diagnosis were excluded; and respondents were instructed to report only clinician-confirmed diagnoses and not diagnoses based on personal feelings of distress. The authors then name the residual uncertainty as a limitation and recommend clinician-based confirmation in future work. No diagnostic instrument was administered by the research team. Importantly, diagnosis is not the prediction target here - it is a covariate tested for incremental value - so the study's central claims do not rest on label accuracy in the way the rest of this corpus does.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 None. Labels are the folder assignment of a public image corpus. No clinical diagnosis, instrument, criterion, assessor or date exists for a single image, and unlike several of its neighbours the paper does not even describe the labelling process in passing. The comparison table's premise - that the models being compared share a common foundation because they use the same dataset - makes this the shared and unexamined weakness of the whole benchmark line.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 None. Labels are Kaggle folder names on photographs of unknown provenance. No clinical diagnosis, instrument, criterion, assessor or date exists for a single image. The paper opens by observing correctly that there is no medical screening or test like a blood test or scan for ASD and that diagnosis requires developmental history and behavioural assessment - and then treats folder labels on downloaded photographs as sufficient ground truth for a diagnostic classifier.
 
@@ -5357,11 +5357,11 @@ Self-reported formal diagnosis by a registered clinician, with participants draw
 
 Not described. Labels are inherited from the public dataset with no diagnostic instrument, criterion, assessor or date reported, and the originating collection's ascertainment procedure is not summarised. This is the study's largest unforced omission, since two of its authors are clinicians - one at a psychiatric hospital and one at a clinical medicine school - and a paragraph characterising the source cohort would have been straightforward.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 None. Labels are annotations attached to a Roboflow dataset. No clinical diagnosis, instrument, criterion, assessor or date exists for a single image, and the originating collection is not described. The paper's introduction gives an accurate account of how ASD is actually diagnosed - paediatricians or psychologists using developmental history, behavioural observation and instruments including CARS for severity - and then treats platform annotations on downloaded photographs as an adequate substitute.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 None. Labels are the folder assignments of a public image corpus, with no clinical diagnosis, instrument, criterion, assessor or date for any image, and no description of how the collection was assembled. The introduction gives a conventional account of ASD as requiring thorough clinical testing and then treats folder labels as sufficient ground truth for a system offered as a diagnostic aid in clinical settings.
 
@@ -5659,11 +5659,11 @@ None. No severity, cognitive, language or adaptive measure. Family history of co
 
 The most complete clinical characterisation of any speech study in the corpus. ADOS-2 Social Affect, Restricted and Repetitive Behavior, total and Calibrated Severity Scores; SRS total t-scores; WISC-IV short-form full-scale IQ from Information, Block Design and Vocabulary subtests; and the Children's Communication Checklist-2 yielding both a General Communication Composite and a Social Interaction Difference Index designed so that more negative values indicate autism. All are reported with group means and p-values, and the ADOS-2 CSS, SRS, GCC and SIDI are used analytically as correlates of the selected voice features, with partial Spearman coefficients adjusted for IQ.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 None. No IQ, language, adaptive functioning, comorbidity or medication information for either group, and no exclusions described. Nor is there any severity measure, so the model's outputs cannot be related to any clinical gradient.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 None. No IQ, adaptive functioning, language measure, comorbidity or medication information, and no exclusion criteria. Consequently nothing links model output to any clinical gradient, and the frequently cited possibility that IQ rather than diagnosis drives gaze differences cannot be examined.
 
@@ -5687,7 +5687,7 @@ IQ was measured for every child using an age-appropriate instrument - Korean WPP
 
 None whatsoever. No IQ, developmental quotient, language level, adaptive functioning measure, severity score, comorbidity list or medication information for either group. This is the most complete absence of clinical characterisation among the studies in this corpus that nonetheless report high accuracy, and it compounds the recruitment asymmetry: with children drawn from special education schools versus regular kindergartens and no cognitive measure taken, there is no way to determine whether the classifier separates autism or separates developmental level.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Nothing. No IQ, language, adaptive functioning, comorbidity, medication or severity data, and no exclusions described. Consequently there is no possibility of relating model output to any clinical gradient, and no way to assess whether developmental level rather than diagnosis distinguishes the classes.
 
@@ -5803,7 +5803,7 @@ Rich on symptom severity and empty on cognition - an unusual combination in this
 
 None. No cognitive, language, adaptive-function or autism-severity measure exists for any participant, and none could exist given the data source. This is a substantive gap for a study whose modality is language production: the dataset consists of hundreds of thousands of communicative acts, and the paper reports descriptively that autistic users produced a considerably higher number of unique words than most other diagnostic groups, but no linguistic or communicative competence measure is derived, validated or used. The conclusion identifies the gap without naming it as one, proposing future work on 'how usage patterns can be used to predict quantitative traits of clinical relevance (such as adaptive skills and the severity of the autism presentation)'. Two consequences follow. There is no way to characterise where on the spectrum the 81 autistic users sit, and since they are people who need a speech-generating device they are by construction from the minimally verbal end - a population systematically under-represented in the rest of this corpus, which is a genuine strength of the dataset that the absence of any severity measure prevents the study from exploiting. And the number of unique words used, which the paper reports as evidence of the app's usefulness, is equally readable as a proxy for expressive language level, unmeasured and uncontrolled, and plausibly one of the features the classifier exploits.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Unusually complete on both cognition and severity, and among the best in this review. Cognitive functioning was assessed in every participant using an age-appropriate and ability-appropriate instrument - the Korean Bayley Scales of Infant and Toddler Development, Second Edition, or the Korean Wechsler Preschool and Primary Scale of Intelligence, Fourth Edition - and a best-estimate IQ derived, reported separately from verbal IQ and stratified by age band. Severity is measured twice over: K-ADOS-2 calibrated severity scores are reported for total, social affect and restricted-repetitive domains with medians and ranges, and K-CARS-2 total scores are reported by age band for both groups. Module distribution is given, establishing that the autism sample is predominantly preverbal or single-word. What this permits, and what almost no other study in the corpus can do, is a genuine severity-prediction analysis rather than a binary one - and the study takes it up, reporting AUROCs of 84.2-90.3% for a three-class severity task. Two caveats attach. The severity target is the caregiver-completed K-CARS-2 rather than the clinician-administered K-ADOS-2, which is the weaker of the two instruments the study holds. And the three classes include non-autism, so the severity model is not discriminating within the spectrum but performing a graded version of the detection task - which means its 90.3% AUROC is not evidence that the system can grade severity among autistic children, and no within-autism-only result is reported.
 
@@ -5835,7 +5835,7 @@ None, and none is possible. No severity, cognitive, language or adaptive informa
 
 Present in more detail than anywhere else in this review - ADOS total and communication subscale, ADOS-Gotham severity, ADI-R social and verbal domain totals, SRS raw total - and used exclusively as predictors. No analysis relates the model's output probability to any severity score, which is precisely the validation this review has repeatedly found missing where the data would support it and which this dataset would support better than any other. A study holding both a continuous severity measure and a model probability, and choosing to feed the first into the second rather than to correlate them, forgoes the one analysis that could have distinguished a graded biological signal from a reproduction of the clinical judgement.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Non-verbal cognitive ability was measured with Raven's Advanced Progressive Matrices in both groups and functions both as an eligibility gate (at least average non-verbal intelligence) and as a reported demographic, where it emerges as the one significant group difference. No autism severity measure of any kind was obtained, and no language or adaptive measure is reported. The consequence is specific to this study's construct: the introduction states that interpersonal coordination 'has been found to be closely correlated with social cognition and autistic traits', so a severity or trait measure would have allowed the central question to be asked dimensionally - whether coordination scales with autistic traits within the group - rather than only categorically. The authors name the absence of severity variation as a limitation, which is an acknowledgement that the sample is narrow rather than that the measure is missing. As with the companion paper on this cohort, the requirement of at least average non-verbal intelligence and of conversational competence means the autistic sample is a cognitively able, verbal slice of the population.
 
@@ -5859,7 +5859,7 @@ None for either group. No IQ, developmental quotient, language, adaptive or seve
 
 None. No severity, cognitive, language or adaptive measure exists, and the binary target does not distinguish autism from sensory processing disorder, let alone grade either.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None used as an outcome, although one is present. The 'result' field in these datasets is the summed A1-A10 score - a continuous screening total that could have supported a graded analysis - and it is retained as a model input rather than examined as a severity dimension. No cognitive, adaptive, language or clinical measure exists for any respondent.
 
@@ -5919,7 +5919,7 @@ None used. The Gait Fullbody Dataset includes a subset of nine children with sev
 
 GARS-2 was administered to every autistic child as the first step of the diagnostic process, so a quantified severity measure exists in the source data - and no score is reported, no group summary is given, and no analysis relates severity to any acoustic feature or to the model's output. That is the analysis this review has repeatedly found missing where the data would support it, and here the data plainly do: correlating jitter, shimmer or harmonics-to-noise ratio with GARS-2 total would test whether the acoustic differences track autistic trait severity or only group membership, and would distinguish a graded biological signal from a categorical artefact. No cognitive, language or adaptive measure is available for either group.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 None used as an outcome. The 'result' field is the summed AQ-10 score - a continuous screening total that could have supported a graded analysis - and it appears among the predictors rather than as a severity dimension. No cognitive, adaptive or language measure exists.
 
@@ -5971,7 +5971,7 @@ None. No IQ, adaptive behaviour, language, severity or comorbidity measure of an
 
 None. No IQ, developmental, adaptive or language measure, and no autism severity instrument. Intellectual disability appears only as an exclusion criterion.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 None. No cognitive, developmental, adaptive, language or severity measure is available in the dataset or reported.
 
@@ -5987,11 +5987,11 @@ None. No cognitive, adaptive, language or severity instrument. The Qchat-10-Scor
 
 Dimensional and psychometrically characterised. BAPQ Aloofness, Pragmatic Language and Rigid Personality are the autistic-trait outcomes; PHQ-9 and GAD-7 total scores the affective outcomes; CAT-Q-ES compensation, masking and assimilation subscales the predictors. McDonald's omega is computed in this sample for every instrument (CAT-Q-ES .96, GAD-7 .92, PHQ-9 .91, Aloofness .94, Pragmatics .87, Rigidity .92), and the known psychometric weakness of the Spanish BAPQ Pragmatic Language subscale is flagged in advance.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 None. No cognitive, adaptive, language or severity measure; none obtainable from photographs.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 None. No cognitive, adaptive, language or severity measure; none obtainable from photographs.
 
@@ -6043,11 +6043,11 @@ AQ-28 total, ICAR-16 abbreviated intelligence, and age at diagnosis, all reporte
 
 None. No cognitive, adaptive, language or severity measure.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 None. No cognitive, adaptive, language or severity measure; none obtainable from photographs.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 None. No cognitive, adaptive, language or severity measure; none obtainable from photographs.
 
@@ -6345,11 +6345,11 @@ Goal: build the first autism prediction model for Pakistan from a purpose-collec
 
 Goal: quantify prosodic abnormality automatically and test whether voice alone predicts diagnosis better than chance, and whether ADOS-2 tasks differ in discriminative value. Main findings: prosodic features reached 82.23% AUC against a 49.90% chance baseline; articulation features alone reached only 67.98% and combining the two was worse than prosody alone; friends and marriage conversation was the single best sampling context at 83.04% with no gain from combining tasks; pitch and loudness formed the optimal subset and both correlated with independently rated severity after IQ adjustment; and an IQ-matched 28-pair subsample reproduced the result at 88.27% AUC.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Goal: build a classifier that combines image-content features with viewing-behaviour features, on the argument that competing entries modelled scanpaths without reference to what was being looked at. Main findings: 0.59 accuracy, 0.68 recall, 0.50 specificity on the challenge test set, tied for best of eight entries; performance concentrated on images where mean fixation duration separated the groups (88.5% on the best five images, 46.2% on the worst five); autistic children showed more brief fixation clusters under 100 ms (24% versus 15%) and fewer beyond 500 ms (21% versus 35%); and the authors conclude that age-conditioned feature selection is needed but unavailable.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Goal: extend the authors' ICME 2019 challenge submission by testing whether a generative neurotypical scanning baseline (STAR-FC) improves classification and whether a holistic image-plus-fixation network beats it. Main findings: best test performance 62.13% accuracy and 0.667 AUC (ResNet50), best of five compared methods; substantial improvement over their own challenge entries (53.88% to 61.39% and 55.13% to 61.45%); the STAR-FC synthetic saccade contributes nothing across four paired comparisons; validation-optimal and test-optimal configurations differ in both pipelines; and, decisively, scanpath-only input matches scanpath-plus-image everywhere, which the authors attribute to systematic per-child gaze bias in a 28-participant pool and support with a large group difference in total scanpath duration.
 
@@ -6373,7 +6373,7 @@ Goal: build a screening tool whose input is raw video and whose target behaviour
 
 Goal: compare the discriminative power of eye fixation, facial expression and EEG collected simultaneously, and test whether hybrid fusion - behavioural feature fusion followed by weighted decision fusion with the physiological stream - outperforms any single modality. Main findings: EEG most discriminative (83.75% best, 74.69% average), facial expression next (77.50%, 71.56%), eye fixation weakest (73.75%, 67.50%); hybrid fusion 87.50% against 85.00% for behavioural data alone and 83.75% for physiological data alone; modalities fail in opposite directions, with EEG best on autistic children (90.0%) and facial expression best on typically developing children (92.5%); and theta power elevated in the autistic group across five of six brain regions.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Goal: demonstrate the Giza Pyramids Construction metaheuristic as an optimiser for Kernel Extreme Learning Machine parameters, benchmarked on autism classification from gaze-path images. Main findings: GPC-KELM reached 0.9881 accuracy, 0.9859 precision, 0.9843 sensitivity, 0.9906 specificity, 0.9752 MCC and 0.9851 F1, with sub-0.0015 standard deviations across 30 runs; it beat PSO, ABC, ALO, BA and HHO variants (0.9736-0.9800) with Wilcoxon p-values below 1.1e-11; and it beat a multilayer perceptron (0.8179), naive Bayes (0.7306) and logistic regression (0.7243) on the same data, with AUC 98.18 against 79.17 and 66.55. Optimal parameters were C = 26.644 and gamma = 23.603, converging by the sixth of ten iterations.
 
@@ -6489,7 +6489,7 @@ The stated aim is to test whether modelling the specificity of gaze to particula
 
 Two goals, and the paper is clearer about the first than the second. The first is to demonstrate that the dense telemetry generated by digital AAC systems is worth analysing at all, which the authors argue has been almost entirely neglected: 'with the exception of one prior report, no efforts have been made to use the dense streams of data collected by digital AACs to derive insights of clinical importance'. The second is the classification question, posed precisely and unusually well: 'can we distinguish individuals with ASD from individuals without ASD (but who have need for AAC systems), based solely on patterns of use?' - the parenthesis matters, because it commits the study to a differential rather than an autism-versus-typical contrast. Findings: conventional usage statistics separate nothing. Session length was 2.14 versus 2.10 minutes (p = 0.86), word selects per use 5.6 versus 4.31 (p = 0.166) and word-select frequency 2.99 versus 2.28 per minute (p = 0.147), none significant after Holm-Bonferroni correction, and the authors present this explicitly as motivation for more advanced modelling. The prior analysis of the same data reached 47-61% across sequential, temporal and spectral views - sequential SVM peaking at 58% at window size 40, temporal at 60%, spectral at 61% with LogitBoost - which is at or barely above chance. Accuracy rose to 70% with sequential modelling only after k-means pseudo-labelling enlarged the training set, and to 82% in the present study with stacked autoencoders at window size 40. Descriptively the study also reports that use spanned the whole lifespan with heaviest engagement among under-10s, that autistic users had the highest average number of app accesses, and that the commonest phrases concerned food, sleep, sport and greetings.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Two objectives, both clinically framed. First, to train deep learning models to distinguish autism from typical development using video of joint attention behaviours; second, to differentiate autism symptom severity from the same data. The motivating argument is precise and is worth recording because it diagnoses the corpus's own problems: prior video-based models are said to be unsuitable for tool development 'due to a lack of automation, the requirements for specialized and expensive equipment, calibration, trained personnel, dependence on human rating of autistic behaviors, and low precision and recall', and the authors attribute that low precision and recall to 'a lack of targeted behavioral biomarkers that can readily discriminate ASD from TD' and to the absence of methods for quantitatively measuring hallmark autism behaviours. Their response is to instrument an existing validated clinical construct rather than to search for a statistical signature. Findings: detection AUROC of 99.6% for IJA, 99.8% for low-level RJA and 99.5% for high-level RJA, with accuracy 97.6-98.8% and confidence intervals throughout. Severity prediction was markedly lower and task-ordered: IJA 90.3% AUROC, low-level RJA 84.4%, high-level RJA 84.2%, with precision falling to 68.6% for high-level RJA. The IJA advantage for severity is interpreted substantively - initiation reflects motivation to share attention and so captures nuance that responsiveness tasks miss - and is corroborated by the cluster maps, where IJA attention-weight trajectories separate the three severity classes more cleanly than the RJA ones. The compliance analysis adds a behavioural finding independent of the models: both groups habituated after ten IJA or five RJA repetitions, but autistic children showed comparable initial interest to comparison children in IJA before declining, while showing 'contrasting uninterest in the social cue presented at the beginning of RJA tasks'.
 
@@ -6521,7 +6521,7 @@ The aim is an AI-powered mobile application that identifies autistic children fr
 
 The stated aim is an interpretable, personalised multimodal framework that combines structured behavioural phenotypes with structural MRI, addressing what the authors identify as two gaps in prior work: the absence of principled fusion strategies and insufficient attention to explainability and personalisation. The architecture is genuinely thoughtful - GAMI-Net for transparent additive modelling of tabular clinical data, a CNN-GNN pair to capture both voxel-level structure and inter-region relationships over the Harvard-Oxford atlas, an autoencoder to fuse into a shared 32-dimensional space rather than concatenating naively, and a hypernetwork generating subject-specific classifier weights so that decision boundaries adapt per individual. Reported results are 99.40% accuracy, 100% precision, 98.84% recall and 99.99% ROC-AUC on a held-out split, and 98.56% accuracy with 99.62% ROC-AUC under five-fold stratified cross-validation. The explainability analysis identifies ADOS_TOTAL and ADOS_Gotham_Total as the dominant predictors. Read together, these findings say that a model given the diagnostic instrument scores reproduces the diagnosis nearly perfectly, which is what one would expect and which the architecture's sophistication does not alter. The paper's own contributions section states a different and lower figure - 96.4% accuracy and AUC 0.92 - that is not reconciled with the abstract anywhere.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Two objectives: to quantify interpersonal motor coordination, described as 'an omnipresent yet least studied behavioral characteristic in ASD', and to test whether coordination features can classify autistic from typically developing children. The methodological rationale for cross wavelet analysis is stated explicitly and is the paper's reason for existing: the group's earlier analysis of these same recordings used complexity matching to quantify overall coordination across the conversation and 'failed to find significant differences in IMC between the ASD and TD children', whereas cross wavelet analysis resolves coordination at separate movement frequencies and so 'could provide a more detailed picture', while also generating many candidate features for classification. Findings: coherence was significantly lower in the autistic group at six of 23 time scales, all at the faster end (0.1-0.9 s), with both groups exceeding the pseudo-pair chance level, so real coordination was occurring in both and differed in degree. Classification on original coherence features reached 85.37% (specificity 95.24%, sensitivity 75.00%) with five features, of which four were among the significantly different ones. Constructing 57 derived features by summing subsets of the six significant coherences raised the best result to 92.68% (specificity 95.24%, sensitivity 90.00%) with a decision tree using three of them. The specificity is identical across both conditions, so the whole improvement is a rise in sensitivity from 75% to 90% - three additional autistic children out of twenty.
 
@@ -6545,7 +6545,7 @@ Two objectives, both methodological rather than clinical. First, to test whether
 
 The stated aim is a detection model for autism and visual sensory processing disorder that combines facial expression data with heart rate and body temperature, using a purpose-designed hybrid optimisation algorithm to select features and tune network parameters. Findings: the proposed method reached 96.44886% accuracy, 96.2963% sensitivity, 96.50485% specificity and 91% precision. Four metaheuristic comparators using the identical network architecture clustered within one percentage point (95.45-95.74%), and four conventional classifiers were substantially lower (81.5-86.6%). The tight clustering of the metaheuristic variants is the most interpretable result in the paper: it indicates that the choice among optimisation algorithms contributes about one accuracy point while the network architecture contributes about ten, which somewhat undercuts the paper's central claim that the novel optimiser is the contribution. Against this, the results cannot be evaluated because the dataset on which they were computed is never described, and the two accounts of the validation scheme - a variable learning-percentage split illustrated at 65/35, and 5-fold cross-validation defined among the evaluation measures - are not reconciled or tied to the reported figures.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 The stated aim is to improve the precision and speed of early autism diagnosis by optimising one-dimensional convolutional networks with the Tree-structured Parzen Estimator across four age-specific datasets, and to deploy the result as an interactive diagnostic tool. The methodological argument is coherent and specific: prior work on these datasets relied on predefined hyperparameters or on exhaustive grid search, which the authors correctly characterise as 'computation-intensive and inefficient', and an adaptive Bayesian alternative is a sensible remedy. The result reported is 100% on accuracy, precision, recall, F1, Matthews correlation coefficient and AUC-ROC in every age band, attributed to the optimisation. The alternative explanation is complete and requires nothing of the model: the class label in these datasets is the summed item score thresholded at the instrument's cut-off, the items are among the inputs, and the sum itself is among the tabulated fields, so the model is being asked to reproduce a deterministic function of its own predictors. On that reading the baseline models' shortfall reflects optimisation difficulty rather than any information limit, and the optimised models' perfection reflects the arithmetic. The paper's own literature review is consistent with this: it tabulates the subliterature at 97.15% to 100% on these datasets, and notes one comparator - using physical fitness tests, brain scans and severity assessments on recruited participants - reaching 77.99%, roughly twenty-two points lower.
 
@@ -6605,7 +6605,7 @@ The aim is to optimise a dual-stream skeleton architecture for autism detection,
 
 Two aims: to identify acoustic differences between autistic and typically developing children's cries, and to test whether deep learning can classify them. The statistical result is coherent and physiologically interpretable - significantly higher jitter (p < 0.01) and shimmer (p < 0.01) and significantly lower harmonics-to-noise ratio (p < 0.0001) in the autistic group, which together describe greater cycle-to-cycle instability in both pitch and amplitude and a noisier, less periodic voice signal, consistent with less stable laryngeal and respiratory control. The direction replicates prior cry work the authors cite. The classification result was 90.28% accuracy with AUC 90.83%, sensitivity and specificity both 88.64%, precision 95.12% and F-score 91.75%. The two halves of the study are of very different evidential weight. The acoustic comparison is a straightforward group contrast on prespecified clinical measures and stands or falls on the confounds - age, recording setting, cry cause - none of which is adjusted. The classification figure additionally rests on a validation-set maximum selected across 2,000 epochs with no held-out test partition and no participant-level splitting, so it carries essentially no information about performance on a new child, and the paper does not connect the network's behaviour to the interpretable acoustic features it identified.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 The stated aim is to improve autism prediction with a Bayesian-optimised Random Forest, motivated by the subjectivity and slowness of conventional assessment. The reported result is 0.9890 accuracy, described as highly promising and as providing 'recommendations for a verified diagnostic technique when implemented'. The alternative explanation is complete: the class variable is the summed AQ-10 item score thresholded at the instrument's cut-off, the ten items are inputs, and the sum itself is printed among the study's own feature list with no removal step described - so the model is recovering a threshold rule from its own predictor, a task a single decision stump would solve. The paper attributes the accuracy to Bayesian hyperparameter optimisation of the ensemble.
 
@@ -6657,7 +6657,7 @@ The stated goal is a secure, privacy-preserving ASD diagnostic framework combini
 
 The stated goal is to address the limited variation and representativeness of existing autism facial-image datasets by building a new dataset with broader variation in facial characteristics, lighting and social context, and to refine a CNN classifier on it. Headline findings: accuracy 0.90, precision 0.92, recall 0.88, F1 0.90 on 102 test images, with 47 and 45 correct classifications against 4 false positives and 6 false negatives. The conclusion attributes the result principally to the choice of a 1:1 aspect ratio and 224x224 image size, which is a claim about preprocessing conventions rather than about autism.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 The stated goal is to improve early ASD detection for toddlers aged 12-36 months by combining chi-square feature selection with six machine learning classifiers, SVM-SMOTE balancing, Bayesian hyperparameter optimisation and SHAP explanation, claimed as the first study to combine all four. Headline findings: chi-square selection improved every classifier (DT 0.938 to 0.969, KNN 0.959 to 0.973, LGBM 0.976 to 0.980, ET 0.986 to 0.990, MLP 0.993 to 0.997), and SVM reached 1.000 on accuracy, precision, recall and F1 both before and after selection, with all 292 test cases classified correctly - zero false positives and zero false negatives, reported as 100% sensitivity and 100% specificity and as confirming suitability for reliable clinical screening applications.
 
@@ -6673,11 +6673,11 @@ The stated goal is to identify a minimal feature subset for ASD trait screening 
 
 The stated goal is to evaluate whether machine learning on self-reported camouflaging behaviours can predict dimensional autistic traits and anxiety/depression symptoms, and whether knowing a person's gender or autism diagnosis improves that prediction. Headline findings: correlations between true and predicted scores of R=.85 for Aloofness, .82 for Pragmatics and .75 for Rigidity (strong by the pre-specified Colton criterion), against .58 for Depression and .54 for Anxiety (moderate); and adding gender and/or diagnosis changes R by at most .03, from which the authors conclude that this information is already implicit in the camouflaging items. The stated implication is a possible screening aid for people whose autistic traits are masked or subthreshold and whose diagnosis is unclear or not yet established, regardless of gender identity.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 The stated goal is to overcome the limitations of prior facial-image ASD classifiers - computational cost, pose sensitivity, poor generalisation across demographics - with HyVit-ASD, a hybrid combining a pre-trained ResNet convolutional block, a pre-trained ViT with a custom residual ReAttention mechanism, and an Attention-Based Augmentation Layer. Headline findings: test accuracy 91%, sensitivity 94%, specificity 88%, AUC 95.67%, F-measure 90.99%, G-mean 90.95%, fall-out 0.12, miss rate 0.06, against six models the authors fitted (71-80% validation accuracy) and five literature figures on the same corpus (68-90%).
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 The stated goal is to make facial-image ASD screening robust to poor image quality by adding a deblurring stage and a joint denoising-classification network with metaheuristic parameter tuning. Headline findings: accuracy 96.94%, precision 97.28%, recall 96.62%, F-measure 96.95%, against five literature figures between 92.0% and 96.63%; and, for the deblurring stage, 91.22% blur removed with PSNR 32.75 dB and SSIM 0.96 against Deepblur, Wiener filtering and blind deconvolution.
 
@@ -6729,11 +6729,11 @@ The stated goal is to test whether online performance-based measures can predict
 
 The stated goal is a hybrid ensemble integrating bagging, boosting and stacking that operates directly on raw scanpath features rather than on scanpath images, so as to reduce preprocessing overhead and improve interpretability for real-time screening. Headline findings: the stacking ensemble reached accuracy 0.9600 (SD 0.0800), precision 0.9750, recall 0.9500 and F1 0.9524, above every base learner (AdaBoost 0.9267, KNN 0.8867, random forest 0.8533, decision tree 0.8200, gradient boosting 0.7800), and comparable to image-based deep learning models on the same dataset at a fraction of the preprocessing cost.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 The stated goal is real-time ASD screening from facial images using object detection, with YOLOv8n compared against YOLOv9c to identify the more effective solution. Headline findings: YOLOv8n reached precision 91.95%, recall 92.77%, F1 92.36% and mAP@0.5 94.76%, against YOLOv9c at 91.29%, 90.29%, 90.79% and 93.32%; YOLOv8n showed higher true-positive rates for both classes with fewer misclassifications into the Background class; and, in an out-of-distribution probe, YOLOv8n rejected non-human inputs while YOLOv9c classified a dog as Autistic and a leaf as Nonautistic.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 The stated goal is a computationally efficient, privacy-preserving and optimised framework for ASD detection from facial images, combining Gaussian Gabor filtering, fused deep features from VGG16, DenseNet-121 and XceptionNet, a wavelet neural network classifier tuned by the chimp optimisation algorithm, and Grad-CAM++ for visual interpretation. Headline findings: average accuracy 98.42% with precision 98.40%, recall 98.42%, F-measure 98.41% and AUC 98.42% in the 30% testing phase, against quoted comparators from 92.10% to 97.76%.
 
@@ -7031,11 +7031,11 @@ The Child Psychiatry Department at Mayo Hospital Lahore, described as the only g
 
 Oregon Health and Science University, with participants recruited by community outreach and referral from OHSU specialised clinics into a neuroimaging study, and speech extracted from videotaped ADOS-2 administrations conducted as part of that study's screening. IRB approval from OHSU.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Not reported. The eye-tracking sessions belong to the Saliency4ASD collection and the authors describe neither the room, the tracker, the viewing distance, nor the country. The only settings named are the two Italian universities where the analysis was performed. For a study whose entire signal is fixation duration, the absence of the acquisition sampling rate and calibration procedure is a substantive reproducibility gap rather than a formality.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Not reported for the data collection - the setting belongs to the Saliency4ASD source study. The acquisition conditions are partially restated: Tobii T120 eye tracker, 17-inch monitor, each image presented at original full resolution for 3 seconds. This is more than the companion paper on the same data provides but still omits room conditions, viewing distance, calibration procedure and sampling rate, all of which matter for a signal whose dominant discriminator turns out to be total fixation duration.
 
@@ -7059,7 +7059,7 @@ Seoul, South Korea. The clinical group came from the Child and Adolescent Psychi
 
 China, with the two groups drawn from different institutional settings - special education schools for the autistic children and regular kindergartens for the comparison children. Recording conditions are described only obliquely and only in the limitations, where the authors note that 'the recording environments are changing' and that 'across-day variability exists in recording conditions'. That acknowledgement is candid but incomplete: if recording conditions varied across days and the two groups were recruited from different institutions, sessions may have been clustered by group, in which case environmental variation is partially confounded with diagnosis. The paper does not report whether recordings were interleaved across groups.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Not reported. The recordings belong to the source dataset and the paper describes neither the room, the country, the recruitment route nor the acquisition protocol. The only setting information is the hardware on which the experiments were computed - an AMD Ryzen 7 2700X with 16 GB RAM, a GTX 1050 Ti and a 250 GB SSD - which is specified more precisely than anything about the children.
 
@@ -7175,7 +7175,7 @@ Single-country, clinic-linked laboratory testing in Nara and Osaka, Japan, with 
 
 There is no research setting: the data are telemetry from a free commercial iPad app used by people at home and in daily life across at least three continents over two and a half years, transmitted automatically to a backend server. This is the most naturalistic dataset in the corpus by a wide margin, and the authors are right that it represents a kind of scale that conventional autism research cannot reach - approximately 200 new users per month even at the end of the app's life, and around 1,800 in the busiest month. The corresponding losses are total. Nothing about the context of any interaction is known: whether the user was communicating with a person or exploring the interface, whether a therapist was present, whether the device was being used for its intended purpose, whether the account holder was the person using the screen. The logs were not designed for research and the authors say so plainly - collected 'for developers' debugging purposes and general system usage statistics', with 'little attention... given to the data structure and representation during the app development'. So the study inherits both the reach of consumer telemetry and its complete absence of experimental control, and it is candid about the latter in a way that makes the work easier to appraise.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Multi-site in the sense that participants were drawn from across South Korea - Seoul, other metropolitan cities and self-governing provinces in equal-ish thirds - but recruitment channels differ completely by group. Autistic children came exclusively from the Child Psychiatry Outpatient Clinic of Seoul National University Hospital, described as receiving referrals of children at high risk of autism from throughout the country; comparison children came from day care centres. This is the standard case-control geometry, and here it is compounded by the deliberate selection of clinically distinct groups. The testing environment itself is standardised and low-tech - a quiet room, a height-adjustable chair, a table, a single consumer camera on a front-facing tripod - and this is presented as a feature, since the protocol is designed to be replicable without specialised equipment, calibration or trained raters. The claim that the setup is 'amenable to computer vision and DL and applicable to a wide range of neuropsychiatric conditions' is credible on the acquisition side; what it does not address is that the model was trained on children drawn from the extreme ends of a clinical distribution.
 
@@ -7207,7 +7207,7 @@ No study setting exists. Images were downloaded from Kaggle and processed in Goo
 
 No study setting; ABIDE-I aggregates 17 sites internationally. Multi-site aggregation is the dataset's principal strength and its principal hazard: it provides scale and population diversity, and it introduces systematic between-site differences in scanner hardware, field strength, pulse sequence, head coil and recruitment practice that are well documented to support above-chance autism classification on their own. The paper label-encodes SITE_ID during preprocessing, so site information is available to the model, and reports no site-stratified evaluation, no leave-one-site-out validation and no harmonisation procedure. Within-site case-control recruitment is nonetheless a real advantage over the internet-scraped corpora charted elsewhere in this review, since autistic and control participants at each site were recruited and scanned under comparable local conditions.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Single site in Shenzhen, with autistic children enrolled from a first-class psychiatric hospital and typically developing children recruited from local communities - the standard clinic-versus-community case-control geometry. Recording took place in a controlled setting with a fixed camera and stable lighting, which the authors note is a precondition for motion energy analysis to be valid. Participants were paid 200 CNY. The setting is the same as the companion paper on this cohort. What distinguishes the acquisition from most video studies in this review is its minimalism: a single consumer camcorder positioned to the side with both people framed equally, no markers, no sensors and no calibration, which is the basis for the claim that the approach is 'economic, contactless, and calibration-free' and could be deployed without specialist equipment.
 
@@ -7231,7 +7231,7 @@ Two recruitment sites in the Naples area with a familiar asymmetry: autistic chi
 
 Not reported. No site, clinic, laboratory, school or other setting is named, and the data collection is described only as manual. The authors are at engineering departments in Pune, India, with no clinical affiliation listed.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 No study setting. The four datasets aggregate responses submitted through autism screening applications, collected by third parties and deposited publicly. The absence of a setting is consequential for the deployment claim rather than for the analysis: the proposed tool is intended for 'clinical and at-home use', so the population that would use it is the general public, while the datasets consist of people who had already sought out an autism screening app - a self-selected group with an above-population base rate, which is visible in the class distributions (69% positive among toddlers, 61% among adolescents).
 
@@ -7291,7 +7291,7 @@ No study setting. The Gait Fullbody Dataset records walking trials captured by K
 
 The recording settings are reported group by group and their distribution is the study's most consequential unexamined feature. For the autistic children, 87.10% of recordings came from autism centres and 12.90% from homes; for the typically developing children, 54.84% came from health centres and 45.16% from homes. The paper describes this variety as deliberate - 'a variety of devices and recording locations ... were used to avoid bias and increase generalizability' - but variety across a study is not the same as balance across groups, and here almost nine in ten autistic recordings come from one type of setting while the comparison recordings are split between two others. Jitter, shimmer and harmonics-to-noise ratio are all sensitive to reverberation, background noise and microphone distance, and harmonics-to-noise ratio in particular is a direct measure of the ratio of periodic to aperiodic energy, so ambient noise depresses it mechanically. The strongest statistical finding in the paper (HNR, p < 0.0001) is therefore in the direction that a noisier recording environment would produce. Partial standardisation was applied - a common WAV format at 16-bit and 44.1 kHz, a 25 cm microphone distance instruction, exclusion of recordings not made in quiet conditions - which mitigates but cannot remove the imbalance, and no per-setting stratified analysis is reported although the data to run one plainly exist.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 No study setting. The data are screening-app submissions aggregated on Kaggle by a third party, from respondents who sought out an autism screening tool - a self-selected population whose positive rate reflects help-seeking rather than prevalence.
 
@@ -7343,7 +7343,7 @@ None described. No acquisition setting, no laboratory, no clinic, no country of 
 
 Reported in more detail than any other study in this corpus. A 7x7 m room with a 2x2 m capture area, black curtains over the windows, air conditioning at 25-27 degrees C, controlled humidity, fixed room lighting, sessions restricted to 09:00-12:00 to limit lighting and temperature variation, a fixed one-metre subject-to-camera distance, a tripod-mounted camera, and a stated acclimation period before capture. The two groups were photographed at different institutions, however - a special school and a state school - and the paper does not report whether the studio setup was physically identical at both sites or whether the same operator ran both. Given how completely the acquisition is otherwise specified, this is the one variable that matters most and is left open.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 No study setting. A single-author secondary analysis of a downloaded file; no computing environment or runtime is described.
 
@@ -7359,11 +7359,11 @@ No setting. A single-author secondary analysis of a downloaded file; no computin
 
 An online REDCap survey hosted at Fundacion Publica Galega de Medicina Xenomica, disseminated through autism associations, institutions, federations, clinical units, research networks and social media, within a broader project validating the CAT-Q for the Spanish population. Recruitment channel is stated and its selection consequences are analysed in the limitations rather than left implicit.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 No study setting. Images were obtained from a public repository; training used CUDA acceleration with no hardware, runtime or environment described.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 No study setting. Images downloaded from Kaggle; experiments run in MATLAB R2021a with no hardware, runtime or environment described.
 
@@ -7415,11 +7415,11 @@ Entirely online, in Dutch, via the Neurotask platform, on participants' own devi
 
 No study setting. A public dataset analysed computationally, with no compute environment, runtime or hardware described - which sits awkwardly with a contribution framed around computational efficiency and real-time deployment, since no timing measurement supports it.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 No setting. Images exported from Roboflow and models trained with the Ultralytics framework; no hardware, runtime or environment is described, which is a notable gap in a paper whose central claim is real-time deployability.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 No setting. A downloaded dataset analysed in Python 3.6.5 on a desktop with an i5-8600K, 16 GB RAM and a GeForce GTX 1050 Ti - a configuration reported in unusual detail for a study whose stated contribution includes computational efficiency, though no runtime or inference-time measurement accompanies it.
 
@@ -7717,11 +7717,11 @@ No behavioural task and no observation of any kind. All data are caregiver respo
 
 Four conversational ADOS-2 Module 3 tasks, chosen on an explicit criterion - they occur in the second half of the administration, 'do not require objects, books or images, and are purely conversational', so speech is elicited without competing manipulative demands. The design's central practical virtue is that no new protocol is required at all: the speech already exists in every videotaped ADOS-2, so the measure is retrofittable to routine assessment. The task-by-task comparison then produces a directly actionable finding - the friends and marriage conversation alone matches or exceeds all four combined, so a shorter sampling context suffices, and the authors note it 'could be selected in circumstances where reducing the false positive rate is required'.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Free viewing of 400 natural images from mixed categories, inherited from the benchmark. No instruction, response or trial structure is described. The paradigm is the most passive in the corpus - the child looks at pictures and nothing is asked of them - which is an advantage for feasibility in young or minimally verbal children and a disadvantage for interpretability, since there is no task performance against which viewing behaviour can be referenced. The best/worst image analysis shows how much the paradigm's yield depends on stimulus choice: three of the five best-performing images depict children, which the authors suggest 'might have moved the attention of the young participants', implying that stimulus curation rather than model capacity sets the ceiling.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Free viewing of natural images for 3 seconds each, with no instruction, response or interaction. The paradigm is entirely inherited, and the paper's contribution lies in representation and architecture rather than task design. The 3-second window is worth noting against the finding that total scanpath duration is the dominant discriminator: within a fixed 3-second presentation, total scanpath duration is determined by how much of the window the tracker recorded valid fixations for, so the discriminating quantity is partly a function of tracking quality and compliance rather than of viewing strategy - a data-quality-as-signal pattern that recurs across this corpus and that the paper does not consider.
 
@@ -7745,7 +7745,7 @@ The most carefully constructed elicitation paradigm in the corpus, and the desig
 
 A single 40-second video clip designed so that social and non-social content compete within the same display - social being comedians with happy expressions, funny actions and laughter, non-social being backgrounds and two spinning wheels. The selection procedure is documented and is the more careful part of the design: ten candidate clips were rated by three graduate students in special education on valence and arousal, mean positions on the arousal-valence plane were computed, and the clip with the highest mean positive arousal was chosen. That grounds the stimulus in an explicit affective criterion rather than in the experimenters' intuition, though three raters is a thin basis and the raters were adults rating their own emotions rather than children's. The paradigm's strength is that one stimulus simultaneously probes three constructs - where the child looks (social versus non-social competition), whether the child mirrors the displayed expression (imitation), and the concurrent EEG response - so the three modalities are genuinely commensurate. Its limitation is duration: 40 seconds is the shortest observation window in the corpus, and with a single clip there is no test-retest or within-child replication.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Described in a single clause: participants 'were shown different videos containing stimulating scenarios for the movement of the eye in the entire screen'. No stimulus content, category, duration, number, order or instruction is given, and no response was apparently required. The only substantive remark about the paradigm appears in the discussion, where the authors note that 'the short duration of the video scenarios' limits the information in each image and that 'more extended scenarios should be allowed to obtain images with more information in both classes' - which is an observation about image density rather than about behavioural sampling, and it inadvertently identifies the study's core interpretive problem: the quantity being classified is how much of the plot is filled in, not what the child looked at.
 
@@ -7861,7 +7861,7 @@ The Facial Emotion Identification Test, a validated instrument that uses morphin
 
 None, and its absence defines what the study can and cannot show. There is no task, protocol, prompt, stimulus or elicitation; the behavioural sample is whatever thousands of people chose to do with a communication app over two and a half years. This yields ecological validity that no laboratory paradigm can match - these are real communicative acts serving real needs, not responses to a screen in a clinic - but it also means the behaviour is confounded with everything that varies between users: how the app was configured, who set it up, what vocabulary was loaded, what the user was trying to say, how much support they had, and how long they had owned the device. One design consequence is handled well and is worth recording: the app was fully customisable, so different users operate on different icon arrangements, and the authors correctly reject spatial modelling on this basis - 'between participant or between group analyses are difficult due to the customizability of the app which allows different participants to all potentially create a different base (i.e. set of icons) upon which they operate'. That is a clear-sighted rejection of a representation that would have appeared informative while measuring only how each user had arranged their own screen. The windowing scheme is the substitute for a trial structure, and its trade-off is stated explicitly: longer windows capture more cohesive patterns but produce fewer pseudo-samples and discard short sessions, shorter windows produce more samples but distort the patterns.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 The strongest paradigm in this review, judged by the fit between construct, task and measurement. Three tasks were designed by adapting the Early Social Communication Scales manual of Mundy et al. together with validated behaviour-extraction techniques, each targeting one theoretically distinct form of joint attention: initiation, which indexes a child's motivation to share attention and manifests as triadic gaze shifting between object and partner; low-level response, following an indication to a nearby object; and high-level response, following an indication to an object across the room, requiring the child to turn. The decomposition is not arbitrary - it maps onto an established taxonomy with different developmental and clinical significance, and the study's most interesting result is that the three tasks behave differently, with initiation alone carrying severity information. Three further design features deserve credit. The whole protocol takes a single 10-minute session with one consumer camera in a quiet room, so the paradigm is genuinely deployable. Repetition is built in (up to ten IJA trials, five per RJA task), and the authors monitored engagement across repetitions with a purpose-built compliance score analysed by two-way mixed ANOVA, concluding that both groups habituate and recommending that future models be trained on the first five to ten repetitions - a protocol-optimisation finding derived from data rather than assumed. The countervailing concern arises from that same compliance analysis: autistic children showed early disengagement specifically at the start of RJA tasks, so an unknown portion of what the RJA detection models separate is willingness to attend to the examiner at all rather than joint attention per se. The authors raise this as a limitation for severity modelling but not for detection.
 
@@ -7893,7 +7893,7 @@ None. There is no task, protocol or elicitation - the images are photographs. Th
 
 None. Structural MRI requires no task, and the phenotype fields are administrative records of assessments conducted before and independently of the modelling. This is the defining structural difference between this study and the rest of the review: every included study that measures behaviour must decide what to ask a person to do, and that decision shapes what can be detected - a point the free-play study demonstrates empirically when its 90-second protocol fails to elicit restricted and repetitive behaviour at all. Here there is nothing to elicit, and the corresponding cost is that nothing about the person's behaviour is observed either.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 A structured face-to-face conversation with an interviewer seated 80 cm away, filmed from the side by a fixed camera so that child and adult occupy equal halves of the frame - a framing choice that matters because the analysis requires movement time series from both people at comparable spatial resolution. The conversation had four sessions and only the first was analysed, being the longest and serving to familiarise the two people with each other, with its questions published in an appendix. Only videos longer than 45 s were retained, to give a sufficient frequency range and stable wavelet estimates; all 41 qualified. The paradigm has three properties that suit the construct particularly well. It is genuinely interactive with a live partner, so spontaneous coordination has an opportunity to occur, unlike the screen-based paradigms that dominate this review. It is unscripted in its motor content, so the movement being measured is whatever the conversation produced rather than a prescribed action. And because both parties are recorded, the measurement is symmetric - the same procedure yields the adult's time series as the child's, which is what makes a dyadic measure possible at all. The countervailing weakness is that the interviewer is a live human whose own movement is half the signal and who was presumably not blind to group, so any systematic difference in how the interviewer behaved with the two groups enters the coherence directly and cannot be separated from the child's contribution.
 
@@ -7917,7 +7917,7 @@ A purpose-built drag-and-drop game, and the design reasoning behind it is the pa
 
 None described. The paper does not state what the individuals were doing when their facial expressions, heart rate and body temperature were recorded - whether they were viewing stimuli, engaged in a task, at rest, or in any other condition. This matters directly for the variables measured: emotion probabilities, heart rate and body temperature are all state-dependent, so without knowing the eliciting condition their values are uninterpretable, and any systematic difference in condition between the two label groups would be indistinguishable from a group effect.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None. Respondents completed a ten-item screening questionnaire, answered by a parent, relative or health professional in the toddler and child bands and by the person themselves in the adult band. The distinction from the observational paradigms elsewhere in this review is total: nothing was elicited, observed or measured, and the record contains one person's answers to questions about another person's characteristics.
 
@@ -7977,7 +7977,7 @@ Walking trials in one corpus and robot-assisted therapy sessions in the other, n
 
 None, by the nature of the behaviour - cries were captured opportunistically when they occurred. That is appropriate and unavoidable, and the paper handles the resulting variability better than most: it excluded pain-associated cries, retained 'only pure crying sounds' with segments containing other vocalisations or non-empty-mouth cries eliminated, and recorded the eliciting cause for each cry. Reporting the cause distribution is genuinely good practice and appears nowhere else in this review. It also reveals a further imbalance: complaint or discomfort accounted for 74.20% of autistic and 67.75% of typically developing cries, with sleepiness, hunger and anxiety making up the remainder at 25.80% and 32.25%. Cry acoustics vary with what prompted the cry, so aetiology is a third variable covarying with class alongside age and setting, and it is not adjusted for.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 None. Respondents answered ten AQ-10 statements about themselves. Nothing was observed, elicited or measured.
 
@@ -8029,7 +8029,7 @@ Not reported. Features are said to be extracted per instructional segment, and t
 
 Posed expression photography: each child produced flat, smiling and sad expressions on instruction, five photographs each. The paper states outright that the process focuses solely on the final classification between Normal and Autism without independently assessing the individual expressions. That is a striking design decision - the expression manipulation is the only behavioural content in the study, it was deliberately elicited, and it is then discarded as a variable. A per-expression analysis would have distinguished a model reading facial morphology from one reading expression production, which is precisely the question the design was built to answer.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 No task or paradigm. The instrument is the ten-item Q-CHAT-10 caregiver checklist, completed retrospectively about a toddler; the paper does not reproduce the items but names three of them via the SHAP results.
 
@@ -8045,11 +8045,11 @@ No task or paradigm. The instrument is the ten-item Quantitative Checklist for A
 
 No task or paradigm - a self-report battery completed in one sitting: the 25-item CAT-Q-ES (Likert 1-7) as predictors, and the 36-item BAPQ, the PHQ-9 and the GAD-7 as outcomes. This is the design's central methodological feature and its principal limitation, discussed under RQ4.5.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 No task or paradigm. Static photographs. The rationale nonetheless refers repeatedly to movement - the ReAttention mechanism is justified as capturing fine-grained local features critical for ASD biomarkers such as asymmetric facial movements, and as amplifying regions including eye gaze and mouth movements. None of these is present in a still image, so the architecture's stated motivation describes a modality the study does not use.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 No task or paradigm. Static photographs with no stimulus, interaction or session. The construct measured is facial appearance, framed as a diagnostic route parallel to behavioural analysis.
 
@@ -8101,11 +8101,11 @@ A battery of online tasks spanning three neuropsychological domains - multisenso
 
 Not reported. The viewing task, stimuli, eye tracker and session structure of the originating collection are nowhere summarised, so a reader cannot say what the participants were looking at when the scanpaths were recorded. For a scanpath analysis this matters, because scanpath geometry is jointly determined by the viewer and the stimulus, and without knowing the stimulus set one cannot exclude stimulus identity as a source of the signal.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 No task or paradigm. Static photographs. The construct is facial morphology, with the backbone described as extracting facial symmetry, eye spacing, philtrum width and face shape - a list of dysmorphology features that would require calibrated measurement rather than a detection head trained on uncalibrated web images.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 No task or paradigm. Static photographs with no stimulus, interaction or session; the construct is facial morphology and expression.
 
@@ -8403,11 +8403,11 @@ Cross-sectional; a single questionnaire per family with no follow-up, though the
 
 Cross-sectional; one ADOS-2 administration per participant with no follow-up, though the stated application as a treatment outcome measure would require longitudinal demonstration that the measures capture change, which the authors identify explicitly. Data are audio from videotaped clinical assessments. Governance is reported: informed written consent or assent from all participants and their parents, who also had to be fluent in English, and IRB review and approval at OHSU.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Cross-sectional secondary analysis of a released benchmark; no follow-up. No ethics statement, consent statement or IRB approval appears anywhere - a defensible position for public challenge data, but the paper never states that position, nor does it point to where the original approvals were obtained. A competing-interests declaration is present, though it declares only a domain-based conflict.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Cross-sectional secondary analysis; no follow-up. No ethics, consent or IRB statement anywhere, despite acknowledged NIMH funding (R01MH121344-01) and a full competing-interests declaration - so the omission is not a matter of the paper lacking front-matter sections. Data are public challenge material, which mitigates but does not remove the expectation of a statement about the source approvals.
 
@@ -8431,7 +8431,7 @@ Cross-sectional, single session, no follow-up. Ethics are reported in full for a
 
 Cross-sectional, single session, no follow-up. Ethics reporting is complete and specific: approval by the Institutional Review Board of Pingdingshan University under protocol code 068 dated 20 October 2020, conduct in accordance with the Declaration of Helsinki, and informed consent from all subjects involved. A data availability statement commits to sharing 'from the corresponding author on reasonable request'. Facial video of identifiable preschoolers is collected and no statement about its storage, retention or de-identification appears.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Cross-sectional secondary analysis of a public dataset; no follow-up. No ethics statement, consent statement or IRB approval appears anywhere, and no pointer is given to where the source dataset's approvals were obtained - an omission that is common for benchmark reuse in this corpus but is not acknowledged here either. A competing-interests declaration and a CRediT contribution statement are both present, so the absence of an ethics statement is not a matter of missing front matter.
 
@@ -8547,7 +8547,7 @@ Cross-sectional, single session per participant, no follow-up and no test-retest
 
 Longitudinal in data span and cross-sectional in analysis: usage covers January 2012 to May 2014 with per-month user and event counts charted, but the classification treats windows as exchangeable and models nothing about change over time. This is a striking missed opportunity, since AAC usage is expected to develop as a user learns the system and, in the acquired-condition groups, may decline with disease progression - and the conclusion identifies 'the stability of predictions over time' as future work. Ethics is the study's most serious deficiency and is entirely absent. There is no institutional review board approval, no ethics committee, no research-ethics statement and no consent process for research use of the telemetry, which was gathered automatically for debugging from a commercial product. The only safeguard reported is that 'all the recorded data were encrypted and de-identified', and the only choice offered to users concerned the optional survey. The population includes 75 users aged 10 or under and a further 20 aged 11-18 among survey respondents alone, plus an unknown number among the roughly 5,192 unlabelled users, and every one of them is a person with a communication impairment whose attempts to speak are the data. Retrospective research use of consumer telemetry from disabled children, without consent or ethical review and without any discussion of either, is a governance gap that a four-page conference format does not excuse. No competing-interests statement appears despite three commercial or industry-lab affiliations among the authors and the app itself having been a commercial product.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Prospective and cross-sectional: children were enrolled and assessed over an eleven-month window, but each contributed a single 10-minute session with no follow-up, no repeat testing and no test-retest reliability for the model's output - a gap for a system proposed as a severity-assessment tool, since severity assessment implies sensitivity to change. The nearest thing to a temporal analysis is the within-session compliance study across repeated trials, which is genuinely informative about habituation but says nothing about stability across days. Governance is complete and well documented. The study was approved by the Yonsei University Health System Institutional Review Board, caregivers gave written informed consent, and the report follows the STARD reporting guideline for diagnostic accuracy studies - one of very few studies in this corpus to adopt a formal reporting standard, and the reason its participant table, flow accounting and confidence intervals are as complete as they are. Funding is from a Korean government physician-scientist training programme with an explicit no-role statement. The competing-interests disclosure is material and full: two authors hold issued patents on the method and apparatus for diagnosing developmental disability and its severity in toddlers based on joint attention, a third has a patent pending, two report non-financial support from LumanLab Inc, one is affiliated to that company, and the acknowledgements thank LumanLab's administrative, regulatory and data management staff. So the method is patented by its developers and a commercial entity participated in data management - disclosed properly, but without any independent-analysis safeguard of the kind reported by the Duke group elsewhere in this corpus.
 
@@ -8579,7 +8579,7 @@ Cross-sectional in the trivial sense that photographs have no time dimension. Th
 
 Cross-sectional analysis of a cross-sectional repository, with no longitudinal element - although ABIDE-I's phenotype records include age at scan across a wide range, so age is present as a covariate rather than as a design dimension. No ethics statement appears in the retrieved text; ABIDE-I contributing sites obtained their own approvals and consents, and secondary analysis of the public release conventionally proceeds without fresh approval. Funding and competing interests are not stated in the retrieved text.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Cross-sectional, single session, no follow-up and no test-retest reliability for the coherence measures. The temporal dimension that is analysed is within-conversation frequency rather than change over time: cross wavelet analysis decomposes coordination across 23 time scales from 0.1 to 10 s, which is a genuine and well-motivated use of temporal structure and locates the group difference specifically at the faster scales. Ethics reporting is complete: the protocol conformed to the Declaration of Helsinki, written informed consent was approved by the local ethics committee and signed by caregivers, and a separate declaration confirms Helsinki 2013 conformity, consent, and removal of identifying details. Participants were paid 200 CNY, which is disclosed. Funding from seven Chinese sources is itemised.
 
@@ -8603,7 +8603,7 @@ Cross-sectional, single session per child, with recruitment compressed into five
 
 Cross-sectional as far as can be determined; no temporal structure is described. There is no ethics approval statement, no ethics committee, no consent statement and no governance description of any kind, for a study that reports manual collection of physiological measurements - heart rate and body temperature - and facial data from human subjects. This is the most complete governance absence among included studies that involve primary data collection. No funding or competing-interests statement appears either.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Cross-sectional secondary analysis of public repositories, with no longitudinal element. No ethics statement, consent statement, funding declaration or competing-interest declaration appears in the retrieved text. Secondary use of public tabular repositories conventionally requires no fresh approval; the absence of a competing-interest statement is more notable given that the study's output is a deployed public-facing diagnostic tool.
 
@@ -8663,7 +8663,7 @@ Cross-sectional secondary analysis with no longitudinal element. No ethics state
 
 Cross-sectional secondary analysis with no longitudinal element, though the paper argues that the modality would support one - cry 'allows for longitudinal assessment, enabling researchers to track developmental changes over time', which is a real advantage of a signal that can be captured repeatedly at home at no cost. Ethics reporting is complete for the original collection: approval by the ethics committee of Shahid Beheshti University of Medical Sciences and Health Services in Tehran, with 'comprehensive informed consent ... acquired from the parents or legal guardians' before enrolment, specified as covering objectives, procedures and possible advantages and risks. The competing-interest declaration is the fullest in this review and is itemised by individual: two authors are employed by Zoundream AG, a commercial infant-cry-analysis company, one of them being a co-founder holding stock; a third received compensation as a member of its scientific advisory board; the fourth declares none; and the company funded the research alongside four public and quasi-public funders. Naming employment, founder status, equity and advisory compensation separately is exactly what a commercially sponsored diagnostic-technology study should do, and it allows a reader to weigh the translational claims accordingly.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Cross-sectional secondary analysis of a public tabular repository, with no longitudinal element. No ethics, consent, funding or competing-interest statement appears in the retrieved text; secondary use of a public tabular dataset conventionally requires no fresh approval.
 
@@ -8715,7 +8715,7 @@ Cross-sectional secondary analysis. Ethics reporting is absent - no approval, no
 
 Cross-sectional, single session. Ethics reporting is solid: an ethics code number is given (036/EA/FK/2025, Faculty of Medicine), parents signed a consent form before collection, and children were accompanied by their teachers throughout - a safeguarding measure that no other study in this corpus mentions. What is missing is consent for publication of images, since sample photographs of identifiable children appear in Figures 3 and 6, and any statement about the dataset's future distribution, even though building a shareable dataset is presented as the study's primary contribution.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 Cross-sectional secondary analysis. There is no ethics or consent statement for this study. The single occurrence of the word ethical is in the XAI section, which argues that interpretability is needed in healthcare for clinical adoption, risk reduction, ethical compliance, informed consent and patient engagement - the paper names informed consent as a value that explainable AI supports, while providing no consent or governance statement for its own reuse of 1,054 toddlers' screening records.
 
@@ -8731,11 +8731,11 @@ Cross-sectional secondary analysis. The ethics statement is the notable feature:
 
 Cross-sectional, single administration. Ethics reporting is complete: Declaration of Helsinki, approval by the Ethics Committee of the University of Santiago de Compostela with the code USC 26/2023, informed consent presented in the survey's first section before participation, and participant anonymity preserved throughout collection. Beyond procedural ethics, the discussion contains a substantive ethical analysis absent from every other study charted here - it warns against reinforcing stigma and pathologising adaptive social strategies, insists that algorithmic models should never replace clinical evaluation, and requires that clinicians apply them within a personalised-medicine approach respecting patient autonomy and daily-life context.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 Cross-sectional. Ethics reporting is absent entirely - no approval, no consent, no exemption claim, and no mention of where photographs of identifiable children came from or under what terms they may be reused. The paper does note, in summarising prior work, that web-based screening tools raise privacy concerns, so the category is available to it and simply not applied to its own data.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 Cross-sectional. There is no ethics statement, no consent statement and no exemption claim, and no consideration of where photographs of identifiable children came from or under what terms they may be reused, deblurred, denoised and redistributed in figures - the paper reproduces sample faces at five processing stages in Figure 3.
 
@@ -8787,11 +8787,11 @@ Cross-sectional. Ethics reporting is complete: ethical committee approval from t
 
 Cross-sectional secondary analysis. Ethics is declared not required, with reasoning given: the dataset is publicly available, was released in anonymised form by its creators, contains no identifiable personal information, and no new data were collected. The declaration is at least argued rather than blank, and the paper additionally discloses that one author is an editorial board member of the journal and was excluded from the editorial decision - a disclosure no other charted study makes.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 Cross-sectional. Ethics is not obtained but is genuinely reasoned about, which distinguishes this study from most of its branch: the authors note that the data comprise only de-identified facial images with no personally identifiable information, state that according to Roboflow dataset sharing policies it is understood that the curators obtained adequate consent and ethical clearance before publication, confirm that no personal or clinical collection took place, and - unusually - write explicitly that given the child's facial data aspect, there is ethical sensitivity. That last sentence is the only acknowledgement anywhere in the fifteen-study facial-image branch that photographing and labelling children's faces raises a question at all. Its weakness is the inference immediately preceding it: consent is presumed from a hosting platform's sharing policy rather than verified.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Cross-sectional. The ethics declaration is factually wrong rather than merely permissive: this article does not contain any studies with human participants performed by any of the authors, stated for an analysis of 2,940 photographs of children, with consent to participate and consent to publish both marked not applicable. It is paired with a data-availability statement asserting that no datasets were generated or analysed during the current study, in an article whose results section reports a full metric grid computed on a 2,940-image dataset. Together the two declarations describe a paper that did not use any data, which is the opposite of what the article reports. The framing also claims the framework is privacy-preserving, with no privacy mechanism of any kind described.
 
@@ -9089,11 +9089,11 @@ Paper questionnaires and Google Forms for collection; Python with scikit-learn f
 
 No dedicated recording equipment - the analysis reuses videotape from ADOS-2 administrations, which is what makes it deployable without protocol change. Analytically it rests on the authors' own time-varying harmonic model, developed to correct two specific failures of standard pitch detection algorithms: octave errors that estimate pitch at half or double its true value, and insufficient time-frequency resolution to capture the fine pitch and amplitude perturbation characteristic of disordered speech. The model is fitted by maximum a posteriori estimation to prevent overfitting from model complexity, and had been previously validated on Parkinson's disease and clinical depression.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 No acquisition equipment is described - the eye tracker, its sampling rate, calibration and stimulus presentation are all properties of the source dataset and are not restated. Analysis tools are named specifically: YOLO with a stated architecture (9 convolutional plus 2 fully connected layers) trained on COCO for object detection; SDSP for saliency, with the selection rationale given as low computational complexity relative to Itti-Koch, GBVS, BMS, Salicon, SalGAN and SAM-ResNet; mean-shift clustering with an explicitly stated distance threshold of 100; and MATLAB's TreeBagger with tuned minLS, numPTS and numTree.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Acquisition: Tobii T120 with a 17-inch monitor, restated from the source collection. Analysis: STAR-FC, described in enough detail to follow - central initial fixation, retinal transform giving anisotropic blurring, a conspicuity map fusing a low-level peripheral stream with a high-level deep-learned central stream, and a priority map incorporating inhibition of return - together with ImageNet-pretrained ResNet18 and ResNet50, a 5-layer LSTM, DTW, Hausdorff and Frechet distance implementations, and PyTorch. Every optimiser setting, learning rate, weight decay, batch size, dropout rate and epoch count is specified for each of the five architectures.
 
@@ -9117,7 +9117,7 @@ Acquisition is a single consumer camera - a Sony DSC-RX100 IV at 1920x1080 and 3
 
 Three consumer-grade sensors, which is the practical argument of the paper: a Tobii eye tracker (model not specified), an unspecified video camera, and an Emotiv EPOC+ 14-channel wireless headset with all electrode positions named (AF3, F7, F3, FC5, T7, P7, O1, O2, P8, T8, FC6, F4, F8, AF4, referenced to P3 and P4). The EPOC+ is a consumer device with saline electrodes and no impedance control, applied here to children aged 3-6; the paper cites its noninvasiveness, low cost and high temporal resolution as advantages and does not discuss its known signal-quality limitations. Preprocessing is stated (0.2-45 Hz band, epoching, removal of epochs containing blinks, eye movement or muscle activity, FFT band power) but the number of surviving epochs per group is not reported - the differential-data-quality question that Han et al. at least quantified for their comparable design.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 No acquisition equipment beyond a single mention of the SMI RED screen-based eye tracker used for the source recordings, with no sampling rate, calibration procedure or viewing geometry. Analysis tools are specified in more detail: Lanczos interpolation for resizing (with the justification that it 'provides the best properties for preserving details'), the ITU-R 601-2 luma transform for grayscale conversion at 8-bit depth, contrast stretching with the normalisation equation given, the KELM formulation with its Moore-Penrose pseudo-inverse solution and RBF kernel, and the full GPC update equations with their physical parameters. The asymmetry is characteristic: every step of the image pipeline is documented and nothing about the measurement is.
 
@@ -9233,7 +9233,7 @@ A Tobii Pro Fusion eye tracker sampling at 120 Hz, with participants seated appr
 
 FreeSpeech, an iPad speech-generating AAC application commercially available on the Apple iTunes store from January 2012 to May 2014, with a customisable programmable interface supporting user-modifiable icon arrangement, sentence generation and mapping to synthesised or recorded voices. The app logged all key presses, their timings and other on-screen events and transmitted them automatically to a secure backend on internet connection. No research instrument, sensor or assessment tool was used at any point - the entire measurement apparatus is a consumer application's debug logging. Analysis software, frameworks, library versions and compute are not named anywhere, and neither are the architectures or training settings of the stacked autoencoders and deep belief networks that produce the headline result. The asymmetry is notable: the data-collection platform is described in useful detail while the modelling that generates the paper's claim is described only by algorithm name.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Deliberately minimal. A single Sony DSC-RX100 IV consumer digital camera recording 1920 x 1080 at 30 frames per second from a fixed front-facing viewpoint, a height-adjustable chair and a table in a quiet room. No eye tracker, no depth sensor, no wearable, no markers, no calibration. This is a direct response to the authors' own criticism of prior work for requiring 'specialized and expensive equipment, calibration, trained personnel', and it is what makes the scalability argument credible. Clinical instruments are all named in their Korean validated versions with citations: K-CARS-2, K-ADOS-2, Korean Bayley-II and K-WPPSI-IV. Analysis software is specified to the version number - Python 3.6.8, SciPy 1.4.1, Statsmodels 0.11.1, scikit-learn 0.23.2, Seaborn 0.11.0, Matplotlib 3.3.1 - which is rare in this corpus and is good practice. What the main text does not provide is the network's layer configuration, training hyperparameters or augmentation, though an architecture diagram and training/validation performance appear in supplementary material.
 
@@ -9265,7 +9265,7 @@ Software only: Google Colab with TensorFlow and Keras, three ImageNet-pretrained
 
 MRI scanners at 17 sites, with the heterogeneity that implies, and the Harvard-Oxford atlas for parcellation. The equipment requirement is the highest in the review by a wide margin: structural MRI needs a scanner, a radiographer, and in young autistic children frequently sedation or extensive desensitisation, which is precisely the barrier that the behavioural approaches charted elsewhere exist to avoid. The paper's motivating argument - that ADOS and ADI-R are 'largely impossible in low-resource environments' - sits awkwardly with a proposed alternative requiring an MRI scanner and the same two instruments as input.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 A single fixed Samsung HMX-F90 camcorder sampling at 25 Hz, positioned to the side with both participants framed equally. Raven's Advanced Progressive Matrices for cognitive assessment. The analytical apparatus is the substance: motion energy analysis converts video to movement time series by counting pixel changes between consecutive frames within manually drawn regions of interest, and the authors justify its validity from the acquisition conditions - because the camera is fixed and the lighting stable, 'the sole factor that could lead to pixel changes between image frames was the human movement' - and cite evidence that motion energy analysis achieves reliability comparable to motion tracking and computer vision. Cross wavelet analysis then computes coherence between the two series across 23 time scales. No software package or version is named for either step, which is the one specification gap. The equipment minimalism is the point: nothing beyond a consumer camcorder is required, and no calibration, marker placement or sensor attachment is involved.
 
@@ -9289,7 +9289,7 @@ A 12.3-inch Dell Latitude tablet running purpose-built software written in Unity
 
 Not reported. No camera, facial expression recognition software, heart rate monitor, thermometer or any other instrument is named, and no computational environment or framework is specified. The optimisation algorithm and network are described mathematically but nothing is said about their implementation.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None. The data were collected through mobile and web screening applications by third parties, and the analysis is tabular. The equipment argument is the whole basis of the deployment claim - a screening questionnaire needs nothing but a phone - and it is genuinely the lowest barrier of any approach in this review. What the low barrier delivers here is the ability to re-administer an existing instrument through a neural network.
 
@@ -9349,7 +9349,7 @@ Microsoft Kinect v2 for the Gait Fullbody Dataset, giving 25 three-dimensional j
 
 Sony UX560 and UX512F voice recorders for 74.2% of recordings and smartphones running a custom recording application for the remaining 25.80%, all captured in WAV at 16-bit and 44.1 kHz specifically 'to ensure consistency across devices', with parents and trained voice collectors instructed to record in quiet environments at approximately 25 cm from the child's mouth. Praat performed acoustic analysis. The equipment story is the strongest part of the translational argument: a smartphone recording of a cry costs nothing, requires no clinic visit, no specialist operator, no cooperation from the child and no language ability, and can be repeated indefinitely at home - which is why the authors propose 'continuous remote monitoring'. Two device classes with different microphones nonetheless introduce acoustic variation that no level normalisation or channel compensation is reported to address, and the device mix by group is not stated.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 None. Data collection was by a screening application operated by third parties, and the analysis is tabular.
 
@@ -9401,7 +9401,7 @@ No acquisition instrumentation is named, because the data were downloaded and th
 
 Canon EOS M-100 on a tripod, 256 GB storage, ISO 800, f/5.6, 1/25 s, 6000x4000 capture cropped to 1:1 and resized to 224x224. Room instrumentation includes a 17-inch LCD screen and speakers, listed for video viewing although no video task is described. Analysis software is not named; only the Keras ImageDataGenerator augmentation block is printed. Several environmental parameters conflict between the narrative and Table I: lighting 30 W versus 22 W, humidity 40-45% versus 50-60%, acclimation 10-15 minutes versus 3 minutes.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 None for acquisition. Analytical components: label encoding, MinMaxScaler, SVM-SMOTE, chi-square selection, six scikit-learn-family classifiers, Bayesian optimisation and SHAP. No library, version, seed, hardware or runtime is reported.
 
@@ -9417,11 +9417,11 @@ No instrumentation. Analytical components: StandardScaler, one-hot and label enc
 
 REDCap for capture, with validated data entry, audit trails for tracking data manipulation and export, and automated export procedures. Modelling used fifty regressors implemented in Python, R, Matlab and Octave, with the package and hyperparameter tuning grid for each listed in a supplementary appendix.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 No acquisition instrumentation. Modelling used PyTorch with a torchvision pre-trained ResNet and a ViT-base transformer, AdamW at learning rate 1e-5 with weight decay 1e-2, cross-entropy loss and CUDA. No versions, seed, epoch count, batch size or hardware.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 No acquisition instrumentation. Implementation in MATLAB R2021a. No toolbox versions, hardware, runtime, seed or code. The proposed pipeline's components - DeepDeblur, DOCNN and the Fire Hawk Optimizer - are described by loss functions and a notation table rather than by any reproducible configuration.
 
@@ -9473,11 +9473,11 @@ Participants' own devices, with tasks programmed and delivered online through Ne
 
 No acquisition instrumentation is described. Modelling components: decision tree, random forest, KNN (k=3), AdaBoost, gradient boosting and a stacking meta-learner. No software, version, seed or hardware.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 No acquisition instrumentation. Roboflow supplied preprocessing (640x640 resize, RGB conversion, normalisation) and augmentation (horizontal flipping and transformations for illumination, expression and pose variation) at export; training used the Ultralytics YOLO framework for 50 epochs. No learning rate, batch size, optimiser, seed or hardware.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 No acquisition instrumentation. Compute fully specified (Python 3.6.5, i5-8600K, 16 GB RAM, GTX 1050 Ti 4 GB, 250 GB SSD, 1 TB HDD). Training settings: ReLU, learning rate 0.01, dropout 0.5, 50 epochs, batch size 5 - though the accuracy and loss curves are described over 25 epochs, which does not match.
 
@@ -9775,11 +9775,11 @@ Poor. Reported: the full 21-item questionnaire with each item's type and wording
 
 Very good. Reported: the four ADOS-2 tasks with the criterion for their selection; the full three-level analysis cascade with frame length, frame rate, silence detection, voiced-unvoiced separation, the Markov smoothness constraint and Viterbi decoding; the summarisation statistics and the decision to summarise voiced and unvoiced regions separately; all feature families with their rationale; the classifier, kernel, regularisation and scaling; the cross-validation structure with explicit statement of how test folds were held blind; the undersampling procedure with its convergence criterion; the confidence interval computation; the RFECV method; the IQ-matched subsample construction; and the complete exclusion criteria list. Missing: SVM hyperparameter values, whether RFECV was nested within folds, data or code release, and the number of speech segments or total audio duration per participant.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Mixed, and split cleanly along the boundary between what the authors did and what they inherited. Their own pipeline is reproducible in fine detail: all 30 features are individually named and defined in a table, the saliency-weight feature is given as an equation, the object-region rule (YOLO top-3 by confidence, remainder as non-object) is explicit, the clustering threshold is 100, the heatmap threshold is 0.1 with the source cited, the centre-proximity radius is 100 pixels, all 23 candidate classifiers are tabulated with their accuracies, and the selected hyperparameters and OOB error are stated. What is inherited is absent entirely: participant ages, sexes, diagnostic procedures, acquisition hardware, viewing durations. No code release is mentioned. The net effect is that the model could be re-implemented but the result could not be clinically interpreted.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 The best-reported study in the eye-tracking group and among the best in the corpus for the parts under the authors' control. All preprocessing is specified: coordinate normalisation by image dimensions, duration normalisation by division by 5000, zero-padding to 33 fixations, the discarding of STAR-FC's always-central first point, Gaussian spreading with sigma = 20 versus 30-pixel replication, augmentation by up to 20-pixel fixation shifts and duration scaling in [0.8, 1.2], colour jitter and horizontal flip, and the explicit decision to exclude affine transforms because they could push fixations outside the image. Every architecture is given layer by layer with all training hyperparameters. Tables 4 and 9 go further than any other paper here by tabulating the exact delta between the published challenge submission and the improved version - preprocessing, layer count, inputs, learning rate, regularisation, epochs, dropout and batch size - which makes the source of the improvement auditable rather than asserted. What is missing: no code release, and none of the participant-level or diagnostic information, which is inherited.
 
@@ -9803,7 +9803,7 @@ Good on protocol and architecture, thin on training procedure. Fully specified: 
 
 Uneven, with the mathematics fully specified and the empirical procedure underdocumented. Reported in detail: the K-means loss function, assignment rule, centroid update and convergence criterion; the attribute-weighting formula for naive Bayes with its zero-avoidance property; the two-level fusion architecture; all 14 EEG electrode positions; the filter cut-offs and the five band definitions; the complete t-test table with F, t, p, mean difference and standard error for all 30 region-band combinations; the stimulus selection procedure; and both best and average accuracy for every modality-classifier pair. Not reported: the Tobii model, the camera specification, the sampling rates of any device, the number of EEG epochs retained per child or per group, the final chosen value of K, the CNN architecture and training details beyond a reference to prior work, any hyperparameters for random forest, SVM or KNN, and the order in which feature selection and cross-validation were performed - which has to be inferred from the text's sequence and is the study's decisive ambiguity.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Reproducible as an algorithm, not as a study. Fully specified: the three augmentation operations and the resulting 1300% expansion; the resize target, interpolation kernel, colour transform and bit depth; the normalisation equation; the CSV structure of 785 columns; the KELM equations; the GPC pseudo-code with all four operations and their parameter values; the internal parameters of all five comparator optimisers in a table; the multilayer perceptron's architecture, activation, optimiser and learning rate; the search space for C and gamma; population size, dimension and iteration count; the number of independent runs; and the compute hardware. Entirely absent: any train/test split or cross-validation protocol, the sizes of any partition, the criterion by which the optimiser's fitness was evaluated relative to reported performance, any participant-level information, and any code release. The single most important methodological fact - how performance was estimated on data not used to fit or tune the model - is not stated at any point in the paper.
 
@@ -9919,7 +9919,7 @@ Among the best-specified studies in the review. Reproducible from the text: the 
 
 Partial and uneven. Reproducible in principle: the app's identity and deployment window, the user and event counts, the 12.6% exclusion rule for insufficient events, the survey response numbers, the four-category pseudo-semantic identifier scheme with its non-overlapping ID ranges and the count of 69 unique keys and events, the definitions of sequential, temporal and spectral modelling, the window sizes swept, the classifier inventory, and the repetition and bootstrap counts for both cross-validation schemes. Not reproducible: the unit of cross-validation, which is never stated and determines whether the results mean anything; the k-means configuration, how pseudo-labels were assigned and whether any were checked; the stacked autoencoder and deep belief network architectures and training regimes; the survey instrument; any hyperparameter, seed, code or data. The dataset is telemetry from a discontinued commercial app held by a third-party foundation and is not described as available. Internal consistency is also weak, with three different participant totals recoverable from the text and tables.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Among the best in this review on protocol and reporting, incomplete on the model. Fully specified in the main text: recruitment sources and dates, enrolment and exclusion criteria, the staged screening and diagnostic pathway with every instrument named in its validated Korean version, the theoretical source and operational definitions of the three joint attention constructs, the camera model, resolution and frame rate, the exact input tensor dimensions for each task (224 x 224 x 300 for IJA, 224 x 224 x 150 for RJA), the cross-validation scheme with its grouping unit stated explicitly, the classification threshold, the confidence-interval method, and every software package with version. Supplementary materials carry the enrolment flow diagram, the task procedures and acquisition setup, the compliance metric definition, the architecture diagram, training and validation performance, age-stratified results, and all Grad-CAM, attention-plot and cluster-map figures. STARD adherence and a data sharing statement are declared. What is missing is the model itself in reproducible detail - layer sizes, optimiser, learning rate, epochs, augmentation - and any code release. Given that the method is patented, the absence of code is unsurprising but does mean the central artefact cannot be independently checked.
 
@@ -9951,7 +9951,7 @@ Reported in outline and internally inconsistent in detail. Available: the datase
 
 Reported: the dataset with subject and site counts, the four-stage architecture with each component's role and rationale, the Harvard-Oxford atlas, the GAMI-Net formulation as an explicit equation, the 32-dimensional fused latent space, the four baseline comparators, the ablation design, and SHAP and t-SNE analyses with ranked contributions. Not reported: the complete phenotype field list, hyperparameters, imaging preprocessing beyond parcellation, any resolution of the conflicting 70:30 and 20% split descriptions or of the 99.40% versus 96.4% accuracy figures, quality-control exclusions, code, funding and competing interests. The architectural description is detailed enough to reimplement; the experimental description is not detailed enough to reproduce the numbers.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Well specified on protocol and analysis, absent on artefacts. Reproducible: the conversation structure with appendix questions, the 80 cm seating distance, the camera model and sampling rate, the side-view equal-framing convention, the region-of-interest drawing procedure, the 45 s minimum duration criterion, the principle and justification of motion energy analysis, the full list of 23 time scales from 0.1 to 10 s, the pseudo-pair surrogate construction, the four classifiers, the forward feature selection procedure with its fifteen-feature early-stopping cap, the leave-one-out scheme described iteration by iteration, the enumeration of how the 57 derived features were formed (15 + 20 + 15 + 6 + 1 combinations), and the exact composition of the three winning derived features. Not available: code, data, software packages, and any statement of whether forward feature selection was nested within the leave-one-out loop - which for the original-feature result is the one procedural fact a reader would most want.
 
@@ -9975,7 +9975,7 @@ Among the strongest in this review, and uniquely so on data. Reproducible from t
 
 Sharply divided and instructively so. The computational contribution is documented in detail: the density-factor update equation, the threshold rule switching between artificial bee colony and honey badger updates at alpha = 0.5, the network composition, and all ten evaluation metrics written out as numbered equations with their standard definitions. A reader could reimplement the algorithm. Nothing about the data is available: no sample size, no participants, no collection procedure, no equipment, no task, no label provenance, no code and no dataset. The paper specifies exactly how a number was computed and not at all what it was computed on, which is the inverse of the profile this review has found in the clinically led studies.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Strong on the computational protocol and empty on provenance. Reported: all four datasets with their repositories and instance counts; class distributions for every band; the 80/20 split with absolute partition sizes for all four (843/211, 233/59, 83/21, 563/141); the feature counts before and after dropping two fields; the preprocessing chain of feature selection, categorical encoding and missing-value handling; the baseline and optimised architectures; the Tree-structured Parzen Estimator with an explicit justification for preferring it to grid search; and all six metrics for baseline and optimised models in all four bands. Not reported: search ranges for the optimisation, the partition on which its objective was evaluated, code, and any account of how the class variable in these datasets is derived - which is the one piece of provenance that determines what the results mean.
 
@@ -10035,7 +10035,7 @@ Among the more reproducible computational records in the corpus. Reported: both 
 
 Strong on the human and acoustic protocol, incomplete on the modelling. Reported: the source corpus with citation and public availability, group sizes with exactly matched sex composition, mean ages, the four-stage diagnostic procedure with instruments and clinician qualifications and the stated reason ADOS was unavailable, recorder models and their proportions, the audio format and sampling rate with the rationale, the 25 cm distance instruction, the recording-setting distribution by group, the cry-cause distribution by group, the exclusion rules for pain cries and impure segments, per-child cry yields with standard deviations, the acoustic software and the definitions of the perturbation measures, and the network architecture with layer counts, kernel size, channel count, dropout, augmentation methods, optimiser, cyclic learning-rate bounds, batch size and epoch count. Not reported: any test partition, the split proportions, whether splitting respected participants, the number of cry instances per partition, and code. A reader could reproduce the acoustic analysis and could not evaluate the classification result.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Partial. Reported: the dataset source, its 704 rows and 21 fields with every field name printed verbatim, the preprocessing stage of cleaning and missing-value handling, a feature-engineering stage guided by exploratory data analysis, the 5-fold cross-validation scheme, the Random Forest classifier and the Bayesian optimisation method. Not reported: which features survived the engineering stage - the single fact needed to determine whether 'result' entered the model - together with the class distribution, hyperparameter search ranges, any metric beyond accuracy, and code. Printing the full field list is nonetheless a useful piece of transparency, since it is what makes the leakage identifiable.
 
@@ -10087,7 +10087,7 @@ Very low, and internally contradictory on a basic point. The preprocessing secti
 
 The most sharply divided reproducibility profile in the corpus. The data side is exemplary: room dimensions, temperature, humidity, lighting, session hours, camera body, ISO, aperture, exposure, capture and output resolution, subject distance, curtain arrangement, expression protocol, per-child photograph counts and the verbatim augmentation configuration are all published, so another laboratory could recreate the acquisition closely. The model side is empty: no architecture, no layer specification, no optimiser, no learning rate, no batch size, no epoch count, no seed, no code, and no deposit for the dataset that the paper exists to introduce. The internal contradictions between narrative and Table I further undercut the acquisition detail, and the survival of stunted child in the workflow description indicates text carried over from an unrelated manuscript.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 The strongest reporting in this review's questionnaire branch, with one structural gap. The dataset is public and cited; the preprocessing sequence is given step by step in order; the split proportions and the exact test-set composition (292 cases: 148 ASD, 144 non-ASD) are stated; and Table I lists every tuned hyperparameter for all six classifiers to four significant figures, including C = 635.2340 and alpha = 0.0002816. Against that: no code, no seed, no versions, and - most consequentially - the number of features chi-square retained is never given, the selected features are never listed, and whether selection was fitted inside or outside the split is never stated. The paper's headline claim concerns the effect of feature selection, and the reader cannot determine how many or which features that selection produced.
 
@@ -10103,11 +10103,11 @@ Moderate, and the strongest in this branch alongside local_ed30e24c. The preproc
 
 The highest in the charted corpus. Code and a small sample dataset are publicly deposited on OSF - the only working code released by any study in this review. The fifty models, their implementation languages, packages and hyperparameter grids are enumerated in supplementary material. The cross-validation procedure is specified operationally, including partition disjointness, stratification across the score range, the rotation of training/validation/test roles across four trials, and the refit-on-train-plus-validation step. Missing data are quantified (0.30%) and the imputation justified. Exclusions are counted and reasoned. Internal consistencies are computed in-sample for every instrument. The only gap is the full dataset, withheld for confidentiality with a sample released in its place.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 Low. The architecture is described in prose with three equations, and the optimiser, learning rate, weight decay, loss function and split sizes are given - a better start than several neighbours. What is missing prevents replication: no code, no seed, no epoch or batch count, no ResNet depth or ViT variant, no parameterisation for either of the two components claimed as novel (ReAttention and the Attention-Based Augmentation Layer), no list of augmentation transformations, no dataset accession beyond a reference number, no class counts for any partition, and no statement of how the 200-image validation and test sets were drawn from 2,926.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 Very low, with one distinctive problem. The dataset source, class balance, split sizes and MATLAB version are stated, and a 25-symbol notation table with loss definitions (L2, total variation, facial semantic, total) is provided - superficially detailed. But no architecture, learning rate, batch size, epoch count, image resolution, optimiser budget or search space is given; there is no code or seed; the reported result does not correspond to the stated split; and the deblurring evaluation reports PSNR, MSE and SSIM, all of which are computed against a sharp ground-truth reference image. No such reference exists for a photograph downloaded from the web. Either the blur was synthetically added to already-degraded web images so that a reference existed - in which case the deblurring result describes recovery from artificial corruption and says nothing about real image quality - or the metrics were computed against something unstated. The paper does not say which.
 
@@ -10159,11 +10159,11 @@ High, and complete on the axes that matter. The analysis script is publicly depo
 
 Moderate. Reproducible: the source dataset has a DOI; the nine handcrafted scanpath descriptors are enumerated with definitions; the 20-fixation truncation/padding rule, the mean-and-standard-deviation aggregation to participant level, and z-score standardisation are all specified; fold-wise means and standard deviations are tabulated for every model; and the permutation-importance procedure is described with its intended scope. Not reproducible: no code or seed, no software or versions, no hyperparameters beyond k=3, no count of scanpaths per participant, no description of the source task, and no statement of where in the pipeline the within-subject resampling occurs relative to the fold split.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 Low. Named: the source platform, the export-time preprocessing and augmentation, the image size, the epoch count and the training framework. Missing: the dataset URL, accession or version; class counts and split proportions; the number of distinct children; optimiser, learning rate, batch size and seed; and any code. The reported metrics also contain an internal inconsistency that cannot be reconciled - mAP@0.5:0.95 sits within 0.11 points of mAP@0.5 for both models, which no genuine detection evaluation produces.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Low. The compute environment, the four principal training hyperparameters, the class composition and the pipeline order are all given, which is more than several neighbours provide. Against that: the dataset is identified only by a reference number while the formal data statement denies that any dataset was analysed; no split procedure, partition counts or seed appear; the wavelet basis and network topology are unspecified; the chimp optimiser has no stated objective, search space or budget; no code is released; and the epoch count in the text contradicts the epoch axis of the learning curves.
 
@@ -10461,11 +10461,11 @@ Acknowledged: the dataset should be enlarged for reliability; the model 'should 
 
 Acknowledged directly: 'These results were not adjusted for multiple comparisons and should be viewed as preliminary. They require replication in larger samples, more balanced with respect to IQ and gender composition'. The study is described as a proof of concept and a pilot analysis. The IQ imbalance is not only acknowledged but addressed by a matched-pair replication. Not acknowledged: the sex imbalance receives no matched-subsample check despite being larger and more directly relevant, since pitch is sex-dependent and is one of the two retained features; the finding of lower pitch in autism runs contrary to a substantial part of the prosody literature and this discrepancy is never noted; all 14 exclusions for recording quality came from the autistic group; and RFECV and the choice of best conversational activity were both performed across the reported cross-validation without an outer loop.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Unusually forthright, and volunteered rather than buried. The Discussion opens by conceding the model 'can reach at most 60% accuracy in detecting ASDs' and then sets out four substantive reasons the task is hard - that fixation behaviour changes with age across toddlers, young children and adults; that at-risk toddlers can match typically developing toddlers on face fixation duration so the signal is age-dependent in kind rather than degree; that in scenes containing both faces and objects of circumscribed interest young autistic children do not differ from typically developing ones while older children show a non-object bias; and that consequently features should be selected per age band, which this model does not do. The Conclusion repeats that 'there is room for improvement'. What is not acknowledged: that classification is per scanpath rather than per child; that 23 classifiers were compared before one was selected; that specificity of exactly 0.50 means chance performance on the typically developing group; and the complete absence of participant characterisation and diagnostic provenance.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Substantially acknowledged, and in the most important place. The authors state that scanpath-only performance rivalling scanpath-plus-image is 'a surprising result as the scan-path itself contains no direct information about the visual stimuli', note that it contradicts the premise of their own design and of every study in their related-work section, and offer the explanation that 'the dataset is too small in terms of the number of subjects - only 14 ASD and 14 TD children were included. As such, there might be a systematic bias in terms of the gaze patterns between these two groups'. They also concede they have not mapped learned features back to explainable entities. What is not acknowledged: that the same-28-children-in-every-split design makes this bias exploitable rather than merely present, so it bounds the validity of the 62.13% rather than only explaining an anomaly; that the validation-to-test ranking reversals (LSTM best on validation, worst of three on test) indicate the validation set is too similar to training to guide model selection, which they note descriptively without drawing the inference; that specificity is weak throughout, 0.537 for the best model and 0.44-0.57 across variants, so performance rests disproportionately on the autistic class; and that the supporting KS test treats thousands of scanpaths from 28 children as independent observations.
 
@@ -10489,7 +10489,7 @@ One limitation is stated and it is the right one: 'there is a statistically sign
 
 Two limitations are stated. The sample is 'relatively small' and should be extended. And the data 'have nonstationary characteristics, and the recording environments are changing', so that 'across-day variability exists in recording conditions', motivating future work on models that adapt over time - a limitation rarely raised in this corpus and a real one for consumer EEG. Not acknowledged: that the 12 EEG features were selected by t-tests computed across all 80 children before leave-one-out cross-validation, so the held-out child's label informed feature selection; that the gaze cluster count K was chosen from the experimental results; that the headline 87.50% is the best across three classifiers; that autism was established by DSM-5 criteria alone with no instrument, assessor or setting described; that no cognitive, language or severity measure was taken in a preschool sample; and that the two groups were recruited from special education schools and regular kindergartens respectively, so educational placement is confounded with diagnosis.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Three limitations are stated and none concerns validity. The dataset has a 'low number of participants'; the video scenarios were short, so images carry limited information and 'more extended scenarios should be allowed'; and 'the current version of this work is limited by the reduced number of samples of the eye-tracking dataset. We included a data augmentation step to generate synthetic samples to enlarge the training and testing data to overcome this issue'. That last sentence is the paper's most significant disclosure and is offered as a solution rather than as a problem: augmenting the testing data means near-duplicate transformations of the same source images populate both sides of the evaluation, which is exactly what a test set must exclude. Unaddressed: that no split or cross-validation protocol is described at all; that images from the same child cannot be separated because no participant identifiers exist; that the metaheuristic optimises hyperparameters against what appears to be the reported data; that grayscale conversion discards the velocity, acceleration and jerk information encoded in colour; that no participant characteristics or diagnostic procedures are known; and that the 17-to-26-point gap over conventional classifiers on identical data warrants explanation.
 
@@ -10605,7 +10605,7 @@ The three stated limitations are well chosen and one is a genuine contribution. 
 
 There is no limitations section, and the paper's candour is concentrated in the methods rather than in self-appraisal. What is stated plainly and deserves credit: the data were collected for developer debugging with no analytic aim in mind, so the structure required substantial reprocessing; spatial modelling is unusable because the app is customisable; window size trades pattern fidelity against sample count; and the deep belief network was tuned only for one window size, so its poorer results elsewhere may reflect tuning effort rather than capability. What is not addressed is more consequential. The reference standard is unverified voluntary self-report from 3.4% of users with no clinical component. Age is confounded with diagnosis by the structure of the comparison group, which mixes congenital autism against predominantly acquired adult-onset conditions, and no age adjustment or even age-by-group reporting is performed. The headline 82% is computed after k-means assigned pseudo-labels to roughly 5,192 users, so the great majority of the evaluation data carry labels generated by an unsupervised algorithm rather than reported by any person - which makes the accuracy partly a measure of agreement with a clustering solution. The unit of cross-validation is never stated, and with each user contributing many windows, window-level splitting would put a user's own data on both sides of every fold. Accuracy is the only metric. No chance baseline appears. The three participant totals in the text and tables do not reconcile. And there is no ethics approval, no consent for research use, and no discussion of either.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 The two stated limitations are the right two, and one of them is stated more honestly than most papers in this corpus manage: the small sample, and the significant IQ difference between groups. On IQ the authors are candid that 'IQ affects one's ability to perform behavioral tasks', cite external evidence that joint attention differentiates autism after controlling for IQ, and conclude that 'external validation using a larger sample of IQ-matched cohorts with ASD and TD is still warranted'. That is a correct diagnosis of the problem and an appropriate remedy, though no adjustment is attempted in the present analysis and the 44-50 point gap is large enough that it cannot be assumed away by citation. The discussion adds three further self-critical observations about the RJA tasks: that they may lack sensitivity to motivational nuance, that their performance appears developmentally dependent, and that early loss of interest during RJA data collection may have limited the features available for severity modelling. What is not addressed is more consequential than what is. Detection AUROCs of 99.5-99.8% are reported without any interrogation, in a study that states explicitly that groups were selected to be 'clinically distinct' and that documents a three-standard-deviation IQ gap - conditions under which near-perfect separation is close to expected and tells one very little about performance in a clinical population where the question is not autism versus a typically developing four-year-old with IQ 105 but autism versus developmental delay. The severity model's three classes include non-autism, so its 90.3% AUROC largely re-solves the detection problem and provides no evidence of within-autism grading; no autism-only result is reported. Specificity is never reported, in a diagnostic study reported to STARD. The class distribution across the three severity bands is not given. There is no clinical comparison group in a sample whose autistic children have mean IQ 55-60. And the compliance finding that autistic children disengage early from RJA tasks is treated as a limitation for severity but not for detection, although it bears equally on both.
 
@@ -10637,7 +10637,7 @@ There is no limitations section and no constraint is acknowledged anywhere, whic
 
 One limitation is conceded, in the abstract: because evaluation used stratified cross-validation and a single held-out split, 'future research should seek to validate the framework on larger, multi-site datasets and different partitioning schemes to guarantee robustness over heterogeneous populations'. That identifies partitioning as the issue, which is correct in kind, though ABIDE-I is already multi-site and the specific partitioning needed - leave-one-site-out - is available within it. What is not addressed: the phenotype stream contains the ADOS, ADI-R and SRS totals from which the diagnosis was derived, and the study's own explainability analysis ranks them first, so the reported accuracy substantially measures the model's ability to reproduce a clinical judgement from that judgement's own scored output. Missingness on those fields is additionally label-informative, since controls in ABIDE-I generally do not receive ADOS or ADI-R. No cross-site harmonisation is applied and site is label-encoded into the feature space. Age and IQ, which differ between groups in this dataset, are entered as predictors rather than adjusted for. The accuracy figures are internally inconsistent between sections, as are the split descriptions. And no confidence intervals accompany estimates on a 247-subject test set.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 The stated limitations are three and are given in a single abstract sentence: sample size, sex ratio, and the absence of severity variation. All are real. What is not addressed is more consequential. The headline 92.68% depends on features constructed from the six coherence values found statistically significant in a group comparison using all 41 participants, and those derived features were then evaluated by leave-one-out cross-validation on the same 41 - so although no participant's data trained the model that classified them, every participant's diagnosis informed which features existed. The paper presents this as a methodological contribution: 'our analysis demonstrated that combining original features improved classification performance... by creating novel features through the summation of statistically significant features', and offers larger Cohen's d values as the explanation. The larger effect sizes are precisely what selection on significance produces, so the explanation and the artefact are the same thing. Second, four classifiers were compared across two feature conditions over 63 candidate features with the maximum reported, and no confidence interval accompanies a figure where one participant is 2.4 percentage points. Third, the autistic group's non-verbal IQ is 16 points lower at p = .015 and its mean age 15 months younger at p = .066, neither adjusted, in a study of motor coordination. Fourth and most substantively, the paper's own prior analysis of these identical recordings using complexity matching found no significant group difference in coordination, while the present analysis using cross wavelet analysis finds one - the discrepancy is acknowledged in the literature review as a general feature of a divergent field but is never confronted as a fact about this dataset, and it is the single most informative observation available about how much analytic choice determines the result.
 
@@ -10661,7 +10661,7 @@ The stated limitations are four and are well chosen: small sample size, exclusiv
 
 There is no limitations section and no constraint is acknowledged. The unaddressed problems begin with the impossibility of assessment: without a sample size, participant description, recruitment procedure, task, equipment or diagnostic standard, the study cannot be evaluated, replicated or interpreted, and its reported metrics - given to five decimal places - have no stated denominator. The target conflates autism with visual sensory processing disorder into one binary label. The validation scheme is described twice in mutually inconsistent terms and neither description is connected to the reported results. Feature selection optimises a fitness function involving inter- and intra-class similarity, which requires class labels, with no statement that this was confined to training data. No ethics approval or consent is reported for manual collection of physiological and facial data from human participants. And the paper's own worked example is the clearest evidence about what its labels track: of the five individuals in Table 2, the three labelled 'Detected' have body temperatures of 100.4, 95.5 and 103 with heart rates of 102, 62 and 133, while the two labelled 'Not detected' have 98.5 and 99.5 with heart rates of 85 and 89. Two of the three positives are febrile or hypothermic and two are tachycardic; both negatives are within normal range on both measures. In the only data the paper displays, the label separates people with abnormal vital signs from people without.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 No limitations section exists, and the paper's critical attention is directed entirely at prior work: small sample sizes, narrow diagnostic focus, dependence on predefined hyperparameters, and the inefficiency of grid search. What should have been stated: the class variable is computed from the modelled features by summation and thresholding, so the task contains no uncertainty and the perfect scores are arithmetic rather than empirical; no respondent in any dataset is known to have received a diagnostic assessment; no positive predictive value is computed at any realistic prevalence for a tool proposed for at-home use, where the base rate would be far below the 61-69% positive rates in the training data; no feature ablation isolates what the registration metadata contribute independently of the items, which would have been the single most informative experiment available; and the deployed tool presents the output of the Q-CHAT-10 and AQ-10 scoring rules to parents as an artificial-intelligence diagnosis without indicating that this is what it is.
 
@@ -10721,7 +10721,7 @@ The conclusion names three limitations: generalisability requires further optimi
 
 Four limitations are stated in a dedicated section and they are reasonable as far as they go: generalisability limited by sample size, demographic variation and the 18-to-54-month age range; cry characteristics changing with growth, making age-specific models necessary; the absence of ADOS because no official Farsi version exists; and the need for larger datasets and refined diagnostic methods. The second of these comes close to identifying the age confound but treats it as a generalisability question rather than as a threat to the group comparison in hand. What is not addressed is more consequential. The classification result has no held-out test partition, the final model was selected as the best of 2,000 epochs on the validation set, and the evaluation unit is the cry instance with no participant-level splitting described - so with roughly six instances per child, the network can identify a voice and recover its fixed label, and 90.28% is a selection maximum on data it has partly seen. The recording-setting imbalance is reported in the methods and presented as a strength when 87.10% of autistic recordings came from autism centres against a comparison group split between health centres and homes, and the three significant acoustic measures are all sensitive to room acoustics and background noise. The 4.8-month age difference is not tested or adjusted. Cry causes differ between groups and are not adjusted. Two device classes are used with no normalisation reported. GARS-2 scores exist and are not used for any severity analysis. And the statistical tests appear to be computed over cry instances rather than per-child summaries, so their effective sample size is unclear.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 One limitation is stated and is correct as far as it goes: 'A limitation of this work is its heavy reliance on a single public Kaggle dataset, which may limit the model's generalizability. Future studies should address this by incorporating diverse datasets to enhance the model's applicability across different populations.' That identifies an external-validity problem while leaving the internal one untouched - the issue is not that one dataset was used but that within it the label is computable from the features. Also unstated: no class distribution or majority-class baseline despite the source dataset's 73.2% negative rate; only accuracy reported, with no precision, recall, specificity, AUC, confusion matrix or confidence interval; no feature importance despite Random Forest supplying it without cost, which would have exposed the dependence on 'result' immediately; and no clinical ascertainment for any respondent.
 
@@ -10773,7 +10773,7 @@ None. There is no limitations section. Nothing is said about 44 examples being t
 
 None stated. There is no limitations section. The image-level split across 15 photographs per child, the school-based group assignment standing in for diagnosis, the confounding of group with institution, the absence of any per-expression analysis, and the 102-image test set all pass without comment. The one candid admission is incidental: the study does not record the total number of augmentations applied in the code.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 A real limitations paragraph, and better than most: the results rest on a single public dataset which may not capture the full diversity of ASD presentations across populations and cultural contexts, real-world deployment would require external validation on larger and more heterogeneous cohorts, and additional modalities such as genetic or neuroimaging data could be integrated. What it does not question is the result itself. A model that classifies 292 consecutive cases without a single error is treated as an achievement to be explained by good feature selection rather than as a signal that the target is recoverable from the inputs by construction. Also unmentioned: that SMOTE preceded the split, that the label is the Q-CHAT-10 outcome rather than a diagnosis, and that a fifth of the evaluated instances are synthetic.
 
@@ -10789,11 +10789,11 @@ No limitations section, but two candid remarks stand out. The author writes that
 
 A genuine limitations section, self-critical and mechanistic rather than formulaic. Four limitations are stated with reasoning: the over-representation of women, traced to the parent validation project and to online-recruitment bias toward respondents with topic interest, higher cognitive ability and moderate-to-high socioeconomic status; the inability to verify self-reported diagnoses, with the mitigation described and its residual risk acknowledged; the weaker anxiety and depression models, explained through instrument structure (PHQ-9 and GAD-7 items each map to a distinct diagnostic criterion and so scatter, whereas BAPQ items are interrelated within domain); and the restriction to generalised anxiety, omitting social anxiety, which is the form most closely tied to masking. The one limitation not stated is the shared-method dependence between predictors and outcomes.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 None of its own. This paper has the corpus's most extensive limitations apparatus pointed entirely outward: the introduction runs through roughly twenty prior approaches and attaches a specific weakness to each - high computational cost and limited generalizability across diverse demographics, sensitivity to non-frontal poses, dependence on iterative expert annotation, computational intensity of heterogeneous data fusion, susceptibility to noise in handcrafted features, laborious EEG preprocessing, expensive eye-tracking hardware, domain shift in EfficientNet on medical images, scarce labelled data, need for high-quality motion sensors, shallow architectures, accuracy sacrificed for deployability, privacy concerns and connectivity dependence in web tools, cultural variability in handwriting, cost and immobilisation requirements of fMRI, and overfitting risk in metaheuristic optimisation. It even observes that cross-validation may not reflect real-world variability, risking overfitting. None of this critical vocabulary is turned on its own single unrepeated image-level split of an unlabelled web corpus. The only self-directed hedge is a clause in the conclusion.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 None. There is no limitations section, no threats-to-validity discussion and no caveat. The single occurrence of limitations is a generic sentence in the introduction about facial-feature analysis being affected by image quality and expression variation - which is the problem the paper sets out to solve, not a limitation of its solution. Nothing is said about the dataset's provenance, the absent diagnostic labels, the mismatch between the stated split and the reported evaluation, or the absence of any ablation.
 
@@ -10845,11 +10845,11 @@ Distributed through the discussion rather than isolated, and unusually incisive.
 
 Stated plainly and correctly, in the discussion rather than in a boilerplate paragraph: although the framework achieved high accuracy, it was evaluated on a single small-scale dataset of 28 participants, which limits the statistical generalizability of the findings, so the reported results should be interpreted as a proof-of-concept demonstration pending validation on larger and more diverse populations. That is the right reading of a 28-person study and it is offered without hedging. What is not raised: that the fold-wise standard deviations (0.08 on accuracy, 0.095 on F1) are large precisely because each fold holds five or six people; that no demographic, task or diagnostic information about the source cohort is reported; and that the within-subject resampling step is not located relative to the split.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 None for this study. The literature table (Table 2) is unusually thorough in the opposite direction, assigning each of roughly ten prior works a named weakness - limited dataset diversity and challenges generalizing to real-world conditions; overfitting risk with limited data; overfitting in small datasets and poor generalization; low model interpretability and high training time; small and limited dataset, lack of clinical validation, no multimodal analysis. Every one of those applies to the present study and none is claimed by it. Unmentioned: the absent class counts and split ratios, the unstated number of distinct children, the impossible mAP relationship, and the fact that a model trained to detect autism from a face assigned a class label to a dog.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 One stated limitation, and it is the right one: the dataset lacks demographic information, expression patterns and facial morphology vary across demographic factors, and their influence on classification and feature learning therefore cannot be examined - with future work directed at demographically different datasets to assess fairness and generalisability. Within the facial-image branch this is the clearest statement of the problem that undermines all sixteen of its members. What is not stated: that the labels have no diagnostic basis, that the split is at the image level on a corpus that repeats individuals, that the testing-phase accuracy exceeds the training-phase accuracy, that the epoch counts disagree, and that the ethics and data-availability declarations contradict the article's own contents.
 
@@ -11147,11 +11147,11 @@ Expand the dataset; build a mobile application for clinicians; maintain historic
 
 Compare voice-only against language-only analysis on the same participants and test whether combining them helps, building on the group's parallel work applying natural language processing to ADOS-2 transcripts from this same sample; develop these measures as treatment outcome measures given 'a recognized dearth of outcome measures available for treatment research in autism', which requires longitudinal demonstration of sensitivity to change; and extend to preverbal toddlers at risk and to young children with minimal or no language, where the authors note identification of atypical voice patterns 'might enhance diagnostic procedures'.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Two directions, both specific. Condition the feature set on participant age, given the age-dependence documented in the Discussion - though this requires demographic metadata the benchmark does not supply. And invert the analytic target by studying the regions of an image that autistic viewers fail to cover rather than those they fixate, on the reasoning that this 'might provide an insight on what does not attract the attention of a person with ASD'. The second is a genuinely different framing from the rest of the eye-tracking literature in this corpus, which almost uniformly models where gaze goes rather than where it does not.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 One explicit direction: produce explainable features by mapping the learned representations back to interpretable scanpath properties, which the authors state is 'left for future studies'. One implicit: enlarge the participant pool, since small subject count is their own explanation for the anomalous scanpath-only result. Neither is elaborated, and notably the paper does not propose participant-wise partitioning, which is the direct remedy for the mechanism it identifies.
 
@@ -11175,7 +11175,7 @@ Two directions, both well chosen. Replicate with IQ-matched cohorts - which foll
 
 Two directions, both modest. Enlarge the sample to improve accuracy and stability. And address non-stationarity by 'adopting detection models over time' given the across-day variability in recording conditions - which points toward domain adaptation and is a sensible response to the consumer-EEG constraint the study operates under. Absent from the agenda: any proposal to strengthen diagnostic ascertainment, to measure developmental level, to recruit comparison children from comparable settings, or to validate on an external cohort.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Two lines are proposed, neither addressing the study's weaknesses. First, 'the enhancement and democratization of eye-tracking technologies' - an infrastructure aim rather than a research one. Second, improving the classifier 'by incorporating multi-class information such as medical records or clinical evaluations', which would move the work toward the multimodal designs elsewhere in this corpus but would require exactly the clinical data this study does not have. Notably absent: any proposal to validate at participant level, to obtain participant metadata, to test on an independent cohort, or to separate augmentation from evaluation.
 
@@ -11291,7 +11291,7 @@ Three directions, each tied to a specific finding. Collect more data to establis
 
 Three directions, all in the conclusion and all reasonable. Examine the stability of predictions over time - the obvious next step for a dataset spanning two and a half years that is currently analysed cross-sectionally. Predict quantitative traits of clinical relevance such as adaptive skills and the severity of the autism presentation, which acknowledges that the present labels are binary and unverified. And develop 'next generation digital markers and fingerprints for understanding change, variation, and opportunities for growth' - a framing oriented towards monitoring and personalisation rather than diagnosis, which is the more defensible use of this kind of data. Not proposed, and more pressing: obtaining any clinically verified labels, adjusting for or matching on age, reporting user-level rather than window-level performance, evaluating without pseudo-labelling, and addressing the ethical basis for research use of the telemetry.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 External validation in larger, IQ-matched cohorts is named as the priority and is the correct one. Beyond that, the authors propose that the standardised video acquisition setup could support large-scale collection of behavioural biomarker datasets 'applicable to a wide range of neuropsychiatric conditions', and offer a concrete protocol recommendation derived from their compliance analysis - that a joint attention-driven model should be trained on the first five to ten repetitions of a task, since both groups habituate beyond that point. Not proposed, and needed: a clinical comparison group so that autism-specificity can be separated from general developmental difference; a within-autism-only severity analysis using the K-ADOS-2 calibrated severity scores the study already holds; reporting of specificity; and test-retest assessment for a system intended to track severity.
 
@@ -11323,7 +11323,7 @@ None is proposed. The introduction states an intention to test the model on imag
 
 The paper proposes validation on larger multi-site datasets under different partitioning schemes. The more informative next steps, all available within ABIDE-I: refit with the ADOS, ADI-R and SRS fields removed, which would establish what the imaging and demographic streams contribute on their own; run leave-one-site-out evaluation to quantify the site confound; report an age-and-IQ-only baseline; and correlate the model's output probability with ADOS severity rather than consuming severity as input. The first of these would convert the study from a demonstration of circularity into a genuine test of multimodal fusion, and the architecture is well built enough to make that test worth running.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Larger samples with a balanced sex ratio and a wider severity range. The discussion adds a deployment argument rather than a research direction, positioning the approach as economic, contactless and calibration-free and therefore suited to early objective identification. Not proposed, and needed given the study's own results: nesting the feature construction within the cross-validation to establish whether the derived-feature gain survives, adjusting for the IQ and age differences, relating coordination to severity dimensionally, and directly reconciling the cross wavelet result with the group's own null complexity-matching finding on the same recordings.
 
@@ -11347,7 +11347,7 @@ Four directions, all concrete and following from stated limitations. Expand the 
 
 None stated.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None separately stated. The most useful next step is available from the data already held: refit with the A1-A10 items and the 'result' field removed, which would establish whether the registration metadata - age, gender, ethnicity, jaundice, family history, country - carry any independent information about screening outcome. That experiment would convert the study from a demonstration of arithmetic into a substantive one, and the architecture and optimisation machinery already built would serve it without modification.
 
@@ -11407,7 +11407,7 @@ Lightweight architectures to make dual-stream inference tractable in real time; 
 
 The authors propose larger and more culturally diverse samples, age-specific models to accommodate developmental change in cry acoustics, refined diagnostic methodology, and real-world testing and integration - adding that implementation 'would require clinician training and addressing ethical considerations', which is an appropriate acknowledgement from a commercially sponsored group. Not proposed, and prerequisite to interpreting the classification result: a held-out test partition, participant-level splitting, and a model-selection rule that does not maximise over the evaluation set. Also needed and readily available: a stratified analysis by recording setting, an age-adjusted group comparison, and a correlation between the acoustic features and the GARS-2 scores already collected.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Incorporate diverse datasets to improve generalisability across populations, and explore deep learning and transfer learning. The more informative step, available from the data in hand, would be to refit with 'result' and the A1-A10 items removed and report what the registration metadata alone achieve - which would separate any genuine association from the arithmetic recovery of the label.
 
@@ -11459,7 +11459,7 @@ A single paragraph proposing Physical Neural Networks based on stacked intellige
 
 A single sentence proposing augmentation technologies to generate larger and more diverse datasets, plus unspecified additional techniques. Given that the study's own contribution is a dataset built to address representativeness, proposing synthetic augmentation as the route to further diversity moves away from the recruitment-based solution the paper has just demonstrated.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 External validation on larger and more heterogeneous cohorts, and integration of genetic or neuroimaging modalities. The first directly addresses the stated limitation; the second proposes adding expensive modalities to a pipeline whose reported ceiling is already 100%, which is the characteristic move of this literature - scaling up inputs rather than questioning the estimand.
 
@@ -11475,11 +11475,11 @@ Not available - the extracted text ends mid-discussion and contains no conclusio
 
 Include clinician-confirmed diagnoses and observational measures of camouflaging alongside self-report; replace criterion-based screeners with dimensional continuous scales for anxiety and depression to reduce scatter; and, before any clinical implementation, cross-validate extensively against health-record data. Each future direction addresses a specific stated limitation, which is rare in this corpus.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 Hybrid vision transformers and adaptive learning as a direction for future research in ASD classification and medical imaging, and validation on larger, more diverse datasets. The second addresses the study's real gap; the first proposes more of what was just done.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 None. There is no future-work section; the paper ends on the claim of higher accuracy with reduced model complexity.
 
@@ -11531,11 +11531,11 @@ Use feature ranking to remove uninformative measures and shorten the battery; de
 
 Validation on larger and more diverse datasets, and integration into an end-to-end screening platform. Both follow directly from the stated limitation.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 None stated.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Assessment on demographically different and stable datasets to evaluate fairness and generalisability - proportionate to the stated limitation and the only future direction offered.
 
@@ -11833,11 +11833,11 @@ No behaviour is observed. Six of 21 items concern the child's behaviour as recal
 
 Prosody during naturalistic conversation about emotions and social relationships, decomposed into pitch, cycle-to-cycle frequency perturbation (jitter), cycle-to-cycle amplitude perturbation (shimmer), harmonics-to-noise ratio and loudness, plus articulation indexed by cepstral coefficients and spectral entropy, and fluency indexed by voiced and unvoiced segment durations and counts. The behavioural target is the modulation of voice rather than its content, and the conversational rather than task-based elicitation means the speech is spontaneous.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Visual attention during free viewing, operationalised at three levels: what is looked at relative to image content (fixations on detected objects versus non-object regions, coverage, saliency-weighted fixation), how looking is temporally and spatially structured (fixation counts and durations, saccadic amplitudes, refixation, ROI clusters), and where looking is anchored spatially (distance of fixations and ROI centres from the image centre). Each family operationalises a specific published behavioural claim, so the feature set is a set of testable hypotheses rather than an undirected dump - which is what makes the error analysis interpretable when most of them turn out not to carry the result.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Visual attention during free viewing, represented at the level of the raw fixation sequence - coordinates, durations and their temporal order - rather than through hand-engineered behavioural constructs. Three encodings of the same behaviour are compared: a flat 99-dimensional vector, a 33-channel spatial fixation map preserving temporal order across channels, and a recurrent sequence. The comparison is informative in itself: the multi-channel encoding beat the single-channel version because it preserves ordering (66.06% versus 63.96% on validation), confirming that fixation sequence, not just fixation distribution, carries signal. The behavioural quantity that ultimately dominates, however, is the simplest - total scanpath duration.
 
@@ -11861,7 +11861,7 @@ A single, precisely defined social behaviour: initiation of joint attention, ope
 
 Two behavioural constructs, each operationalised in a way that departs from convention. Social attention allocation is measured not by fixation on hand-drawn regions of interest but by the distribution of fixations across K-means clusters discovered from the data - so the analysis asks where gaze concentrates without the experimenter deciding in advance what counts as a region. This removes one source of investigator judgement and is defensible when a stimulus has no clean object boundaries, but it also severs the link between a feature and any interpretable content: a cluster is a screen location, so a group difference cannot be reported as 'less looking at the comedian's face'. That is why the paper reports no directional gaze findings at all. Facial expression is operationalised as imitation rather than as expression: the expression displayed in the stimulus is defined as the target, and the feature is the count of frames in each 40-frame window in which the child displays that same expression - so the measure is expression contagion or mirroring in response to a specific social display, motivated by prior work suggesting 'spontaneous expression imitation could be used as a behavioral marker'. This is a sharper construct than generic expression frequency and one of the few instances in this corpus of a behavioural feature defined relative to what the stimulus is doing at that moment.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Nominally gaze during free viewing, but the behavioural construct is entirely lost in the representation. The source dataset encodes gaze coordinates together with their first, second and third derivatives - velocity, acceleration and jerk - as RGB colour gradients in a plot of the scanpath. This paper converts those images to grayscale, which discards the colour channel and hence the derivative information, then downsamples from 640x480 to 28x28, leaving 784 luminance values. What the classifier sees is a coarse silhouette of where the trace fell on the screen, with no fixation, saccade, duration or velocity quantity recoverable. The authors' own concluding observation that 'the amount of information in the images and the use of space in the x and y coordinates are essential factors' confirms this: the discriminative property is how much of the frame the trace covers, which is a plot-density statistic. No behavioural finding is reported and, given the representation, none could be.
 
@@ -11977,7 +11977,7 @@ Visual attention during facial emotion recognition, measured in three ways and a
 
 Interaction with a speech-generating communication device, treated as a behavioural signal in its own right rather than as a means to an end. Three representations of that behaviour are constructed and compared. Sequential modelling captures which keys are pressed in what order, encoded as a stream of numeric identifiers whose ranges preserve category membership - normal keys, complex keys, normal app events, complex app events - so that the encoding is 'pseudo-semantic' rather than arbitrary. Temporal modelling replaces the identifiers with inter-press intervals in milliseconds, capturing the rhythm of interaction independent of content. Spectral modelling counts how often each key or key category is pressed within a session, discarding order entirely. Spatial modelling is considered and rejected on the well-reasoned grounds that user customisation makes screen positions incomparable across people. What is measured, then, is the pattern of a person's attempts to communicate: how they sequence icons into utterances, how quickly they move between selections, and which parts of their vocabulary they use. Descriptively the paper reports that autistic users accessed the app most frequently and used a considerably higher number of unique words than most other groups, and that the commonest phrases across all users concerned food, sleep, sport and greetings. This is the only study in the corpus whose behavioural sample consists of real communicative acts serving real purposes - and also the only one where the behaviour is fully confounded with how the device happened to be configured, by whom, and for what.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Joint attention, taken as an established clinical construct and instrumented rather than rediscovered - which distinguishes this study from most in the corpus, where the behavioural target is whatever a model finds discriminative. Three forms are elicited and modelled separately. Initiation of joint attention indexes the child's motivation to share attention with another person and is behaviourally realised as a triadic gaze pattern shifting from an object to the partner and back. Low-level response to joint attention is the ability to follow and sustain attention on an object indicated near the child. High-level response requires following an indication to an object across the room, so the child must physically turn. The interpretability analysis then characterises what the model responded to in exactly these terms, and the descriptions are specific enough to be checked against the construct: comparison children showed the triadic shift in IJA while autistic children fixated neither toy nor examiner; comparison children sustained gaze on the indicated toy in low-level RJA while autistic children glanced briefly then looked away; comparison children turned immediately to the distant poster in high-level RJA and then back to the examiner as if seeking approval, while autistic children responded slowly or not at all. Two secondary behaviours are also measured. Task compliance across repeated trials, from which the authors establish that both groups habituate and that autistic children specifically disengage at the start of RJA tasks. And, implicitly, gaze itself - the Grad-CAM heatmaps localise to face and eyes - measured from ordinary video without an eye tracker, which is the study's quiet technical achievement.
 
@@ -12009,7 +12009,7 @@ The autism classification component does not target behaviour at all - it target
 
 None observed. The study contains no behavioural measurement in the sense the rest of this review uses - no gaze, speech, movement, facial dynamics, play, telemetry or written language. What it calls behavioural data are scored summaries of clinician-administered assessments: ADOS communication and severity scores, ADI-R social and verbal domain totals, SRS raw totals. These are judgements about a person rather than records of what a person did, and the distinction is the one the review applies when admitting nurse-recorded milestone attainment or app telemetry as behavioural while treating instrument totals otherwise. The imaging stream targets neuroanatomy - voxel-level structure and Harvard-Oxford region relationships - which is a different construct again. The study is therefore charted here as the corpus's representative of a parallel literature rather than as a contribution to the behavioural evidence base, and its value to the synthesis lies in what it reveals about that parallel literature's reporting norms.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Interpersonal motor coordination during spontaneous conversation - the extent to which a child's whole-body movement synchronises with the interviewer's, resolved by frequency. This is the most genuinely dyadic behavioural target in the review: coherence cannot be computed from one person's data, the measurement is symmetric across the two parties, and the surrogate control is constructed precisely by breaking the dyad. The construct is developed carefully in the introduction, distinguishing unintentional coordination (limb synchronisation in side-by-side walking, group clapping, mimicry, turn-taking) from intentional coordination (rowing, choral singing), and grounding its social significance in evidence that coordination establishes rapport, enhances affiliation and promotes prosocial behaviour. The empirical finding is frequency-specific: coordination was reduced in the autistic group at the faster time scales (0.1-0.9 s), corresponding to rapid movement adjustments, while slower-scale coordination did not differ. Both groups exceeded the pseudo-pair chance level, so the finding is a difference in degree of real coordination rather than its presence or absence - a distinction the surrogate control makes possible and that a study without such a control could not draw. The measure's principal ambiguity is that half the signal belongs to the interviewer, so reduced coherence could reflect the child coordinating less, the adult coordinating differently with autistic children, or both, and nothing in the design separates these.
 
@@ -12033,7 +12033,7 @@ Fine motor control during goal-directed touchscreen dragging, represented as a f
 
 Nominally facial emotional expression, reduced to seven probability values per individual across angry, disgust, fear, happy, neutral, sad and surprise, plus derived positive and negative emotion aggregates. But no elicitation condition, stimulus, recording apparatus or expression-recognition method is described, so it is unknown what produced these probabilities or what the individuals were expressing about. Two physiological variables sit alongside them, and the paper's framing does not distinguish behaviour from physiology at any point - facial expressions and 'sensory data of heart rate and body temperature' are treated as interchangeable inputs to a detection model. The theoretical discussion also concerns recognition of emotions in others ('impaired identification of sad and fearful expressions', 'facial affect identification deficiency'), which is a perceptual capacity, while the measured variables are expression production; the paper does not note the distinction.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None observed. The A1-A10 fields record whether a respondent endorsed each of ten statements about a person's social-communication characteristics - the person's own answers in the adult band, and a parent's, relative's or professional's answers about a child in the younger bands. These are judgements about behaviour, and the review's line is that a record of behaviour a person produced counts as behavioural data while a respondent's characterisation of that person does not. The remaining fields are administrative: age, gender, ethnicity, jaundice at birth, family history of autism, country of residence, prior app use and who completed the test. Nothing in the dataset is a measurement of anything anyone did. The contrast with the review's other administratively recorded data is instructive: nurse-recorded developmental milestone attainment counts as behaviour because it records whether a child performed an action, whereas a ten-item checklist total records what an informant concluded.
 
@@ -12093,7 +12093,7 @@ Whole-body movement kinematics, and the construct argument is one of the better 
 
 Cry acoustics, and specifically voice quality rather than cry structure. Three perturbation measures were analysed - jitter, shimmer and harmonics-to-noise ratio - selected because of their established clinical use in voice assessment. The construct choice is the study's strongest conceptual contribution and is unique in this review: cry is available before any language develops, is produced by every child regardless of cognitive or verbal level, requires no cooperation, no task compliance and no social engagement, and directly reflects neuromuscular control of the larynx and respiratory system. The paper's formulation is apt - 'infant cries provide a unique window into the neurological and physiological state of the infant' - and it identifies prior work reporting atypical cry acoustics in autistic toddlers under 18 months, which is younger than any other behavioural measure charted here can reach. The findings are physiologically legible: higher jitter and shimmer mean greater cycle-to-cycle instability in the frequency and amplitude of vocal fold vibration, and lower harmonics-to-noise ratio means a greater proportion of aperiodic energy, so the composite picture is of less stable phonatory control. Two constructs are conspicuously not addressed: the temporal and prosodic structure of the cry, which prior work also implicates, and the communicative function of crying, which is discarded when only 'pure crying sounds' are retained.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 None observed. The A1-A10 fields are a respondent's answers to ten statements about their own social-communication characteristics, and the remaining fields are registration metadata. These are self-characterisations rather than records of behaviour produced, which is the distinction this review applies when admitting app telemetry, written language or nurse-recorded milestone attainment as behavioural data.
 
@@ -12145,7 +12145,7 @@ Movement kinematics and eye-movement behaviour, split into general and attention
 
 Posed facial expression - flat, smiling and sad - and, implicitly, static facial appearance. Because expressions are pooled before classification, the study cannot say whether the model distinguishes groups by how the children produce expressions or by how their faces look, and the paper does not raise the distinction.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 Parent-reported early social-communication behaviours drawn from Q-CHAT-10. The SHAP analysis names three specifically: joint attention (does your child follow where you are looking), use of simple gestures, and empathy-related behaviours. These are clinically sensible early markers, and the paper notes correctly that they correspond to established clinical markers - but their prominence in the model is a property of how the label was constructed, not independent evidence about them.
 
@@ -12161,11 +12161,11 @@ Parent-reported early social-communication behaviours from the Q-CHAT: response 
 
 Camouflaging behaviour, decomposed into compensation (copying others' behaviours, preparing scripts for social situations), masking (controlling and adjusting facial and bodily expression to fit in) and assimilation (effortful engagement and pretending to be normal in social situations). The outcomes are dimensional autistic traits - aloof personality, pragmatic language, rigid personality - and depressive and anxious symptoms. The behaviour of interest is therefore an active social strategy rather than a deficit, and the study is the only one in the corpus to treat an autistic behaviour as adaptive rather than symptomatic.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 None. The classification target is static facial appearance. The paper's own account of what the model attends to - periocular regions, eye gaze, mouth movements, asymmetric facial movements - describes dynamic behaviours that a single photograph cannot contain, so the stated biomarker rationale and the actual input are mismatched.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 None. No behaviour is observed, elicited or measured. The target is static facial appearance recovered from deblurring and denoising.
 
@@ -12217,11 +12217,11 @@ Neuropsychological performance across three domains rather than a single behavio
 
 Visual scanning behaviour reduced to nine interpretable descriptors: number of fixations, mean and maximum and first fixation duration, total fixation duration, total path length, mean saccade amplitude, spatial dispersion of fixations, and fixation-duration entropy as a measure of irregularity in gaze allocation. Operating on these rather than on rendered scanpath images is the paper's central methodological claim, and it is a defensible one - the features are inspectable and the permutation analysis can name which of them matter.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 None. No behaviour is observed or measured; the target is static facial appearance, described in terms of symmetry, eye spacing, philtrum width and face shape.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 None. No behaviour is observed or measured. The targets are static facial features enhanced by Gabor filtering, with the paper referring to facial cues relevant to ASD and to expression patterns and facial morphology without identifying any specific feature.
 
@@ -12519,11 +12519,11 @@ No multimodal fusion. What the study does combine is heterogeneous variable type
 
 The fusion result is negative and cleanly reported: prosodic features alone gave 82.23% AUC, articulation alone 67.98%, and the two combined 78.52% - worse than prosody alone. The authors attribute this to articulation's poorer specificity dragging down the combination, and respond by using prosody alone for all subsequent analyses. A second combination test concerns sampling context rather than feature type: the best single conversational activity (83.04%) matched or exceeded every combination of two, three or four activities, so concatenating more speech did not help. Both results run against the assumption that more data or more feature families improve performance, and both are acted on rather than merely noted.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Single-modality: eye tracking only. The paper nonetheless performs a fusion of a different kind - combining stimulus-derived features with observer-derived features - and this is its stated contribution. The comparison against competitors is argued in exactly these terms: the SP-ASDNET entries are said to fail because they 'do not consider the correlation between fixations and the corresponding image content', and the UCK entries because they discard the first fixation of each subject, which the authors argue is informative. The fusion is nonetheless only weakly supported by the results, since the best-performing competitor (TU, 0.59) matched RM3ASD exactly and also used a random forest over combined image and fixation features, while the error analysis attributes the model's success to a single fixation-duration feature that requires no image content at all.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Single-modality eye tracking, but the paper performs and systematically ablates two distinct fusions, and both fail in ways that matter. The first fuses the child's real scanpath with a model-generated neurotypical reference scanpath, on the reasonable premise that deviation from a normative scanning pattern should be more diagnostic than the raw pattern; across four paired comparisons the synthetic saccade never helped, and the authors identify its removal as one of the two changes that produced their post-challenge improvement. The second fuses scanpath with stimulus image, on the premise that autistic viewing differs specifically in response to social content; scanpath-only matched or beat the fused model in three of four comparisons. Taken together the two negative fusion results carry more weight than the positive headline: the information the classifier uses is neither the deviation from normative scanning nor the interaction with image content, but something intrinsic to the scanpath itself - which the authors correctly suspect is subject identity.
 
@@ -12547,7 +12547,7 @@ Single modality - 2D RGB video only, with no audio, depth, gaze tracking or moti
 
 The corpus's most explicit study of fusion architecture, with three design choices argued rather than assumed. First, fusion is hybrid rather than purely early or late: the two behavioural streams are fused at feature level, because they are homogeneous enough that concatenation exploits their correlation, while the physiological stream is fused at decision level with the behavioural subdecision, because feature-level fusion across such different data types would not work - the paper states hybrid fusion 'utilizes the merits of feature fusion and decision fusion and overcomes their disadvantages'. Second, the decision combiner is not plain naive Bayes but an attribute-weighted variant, on the explicit reasoning that 'the naive Bayes algorithm assumes that each attribute has the same influence on the classification result; in fact, they are different', with weights derived from training-set co-occurrence counts and constructed so they cannot vanish. Third, and most valuably, the paper demonstrates why fusion works rather than merely that it does: confusion matrices and pairwise confusion graphs show EEG achieving 90.0% on autistic children but only 77.5% on typical ones while facial expression achieves 92.5% on typical children but only 72.5% on autistic ones, with eye fixation missing 37.5% of autistic children - so the modalities err in opposite directions and the fused model recovers 85.0% and 90.0%. This is the same mechanism-level demonstration Han et al. provide, arrived at independently and with three modalities rather than two, and the convergence between the two studies on the finding that neurophysiological and behavioural streams fail in opposite directions is worth carrying into the synthesis. The one deflating observation is that the two behavioural modalities together (85.00%) essentially match EEG alone (83.75%), and the full fusion adds only 2.5 points over the behavioural pair - so on a cost-benefit view the EEG headset buys very little over a camera and an eye tracker.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Single modality throughout, and no fusion is attempted. The paper's comparative apparatus is entirely internal to the optimisation problem: six metaheuristics searching the same two-dimensional hyperparameter space, and four classifier families on the same features. The most informative comparison for a reader of this review is the classifier table rather than the optimiser table. On identical augmented inputs, a multilayer perceptron reached 0.8179 accuracy with AUC 79.17, naive Bayes 0.7306 and logistic regression 0.7243 with AUC 66.55, against 0.9881 and AUC 98.18 for the tuned KELM. A 17-point accuracy gap and a 19-point AUC gap between a tuned kernel machine and a neural network on the same 784 pixel features is not what one expects if the features carry a robust class signal; it is what one expects if two kernel hyperparameters are being optimised against the evaluation data. The authors read the table as evidence of their method's superiority and do not consider this alternative reading.
 
@@ -12663,7 +12663,7 @@ No cross-sensor fusion, but two forms of within-study integration are central to
 
 No fusion. The three usage-pattern representations are alternatives compared against one another rather than channels combined, and the results across them are informative in their own right: sequential modelling peaked at 58% in the prior analysis, temporal at 60% and spectral at 61%, so all three views performed near chance individually, and no attempt is made to combine them. That is a missed opportunity of exactly the kind this review has seen elsewhere, since content (what was said), timing (how fluently) and frequency (which vocabulary) are plausibly complementary rather than redundant descriptions of the same behaviour, and the paper's own results give no reason to prefer any one of them. Two further channels present in the data are also unused. The survey captured age, which is the single most obvious covariate and is reported descriptively but never entered into any model or adjustment. And the app logged what users actually said - the phrase and unique-word analyses in the descriptive section demonstrate that the content is recoverable and interpretable - yet the classification pipeline reduces every key press to a category-preserving integer, discarding lexical content entirely. Given that the paper reports a large descriptive difference in unique-word count between diagnostic groups, the decision not to model content is a substantive choice left unexplained.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 No cross-sensor fusion; a single camera. Two forms of internal integration are central. Architecturally, spatial features from a CNN are combined with temporal modelling by an LSTM and an attention mechanism over frames, so the system represents both what is in each frame and when in the sequence it matters - and the interpretability analysis exploits this composition directly, using attention weights to find the informative time points and Grad-CAM to localise within them, which is a genuinely joint spatial-temporal explanation rather than two separate ones. Conceptually, three separate task-specific models are built rather than one fused model, and the comparison across them is where the study's substantive findings lie: all three tasks detect autism near-perfectly, but only IJA carries severity information, and high-level RJA improves with age. Treating the three joint attention subtypes as separate models and comparing them, rather than pooling all video into one classifier, is what allows the paper to say something about which behaviour matters for which question - a design choice more informative than a fusion gain would have been. The unexploited channel is the compliance score, which is computed for every trial, shown to differ between groups in a diagnostically interesting way, and then used only descriptively rather than as a model input or covariate.
 
@@ -12695,7 +12695,7 @@ Claimed but not performed. The paper states that it combines 'facial expression 
 
 The most architecturally developed fusion in the review. Rather than concatenating features, the design produces a separate embedding from each modality - an interpretable additive probability from GAMI-Net for the tabular stream, and a CNN-GNN representation for the imaging stream that preserves both local voxel structure and inter-region relationships - then compresses both into a shared 32-dimensional latent space through an autoencoder, and finally uses a hypernetwork to generate subject-specific classifier weights so that the decision function adapts per individual. Each stage has a stated rationale and the ablation studies test the components. As a fusion methodology this is more sophisticated than anything else charted here, including the studies whose data are sound. Its evidential yield is nonetheless nil, because a fusion architecture cannot be assessed when one of the streams it fuses already determines the outcome: no ablation reported can distinguish a genuine multimodal gain from the phenotype stream carrying the label. Removing ADOS, ADI-R and SRS and repeating the ablation would make this the review's most informative fusion experiment.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 No cross-sensor fusion. The paper is nonetheless informative for the review's treatment of fusion in two ways, one architectural and one cautionary. Architecturally, the measure is intrinsically two-stream: two movement time series, one per person, combined by cross wavelet coherence, so the 'fusion' is between people rather than between sensors - a form of integration no other study in this corpus attempts except in the dyadic language features of the speech study. Cautionarily, the derived-feature construction is presented as a general recommendation for feature combination - 'creating novel features based on statistically significant features could help improve classification performance' - and it is the clearest example in the review of a feature-engineering step that raises accuracy by importing label information rather than by capturing additional signal. The 57 derived features are sums of coherences already known to differ between groups; summing correlated significant features raises effect sizes arithmetically, and the reported Cohen's d improvement is a consequence of the selection rather than independent evidence for it. The recommendation should not be carried forward as a fusion technique.
 
@@ -12719,7 +12719,7 @@ No cross-sensor fusion. The study's ablation is between two representations of t
 
 Three data sources are concatenated - emotion probabilities, heart rate and body temperature - with no ablation isolating their contributions, no rationale for combining state physiology with expression measures, and no reporting of which features the optimisation stage selected. Since the selected feature subset is the explicit output of the paper's central algorithmic contribution, its omission is the study's most conspicuous reporting gap: the method is designed to identify essential features and never says which they were. The one available clue is Table 2, where the physiological variables separate the two label groups cleanly and the emotion probabilities do not obviously do so.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None. A single tabular modality throughout.
 
@@ -12779,7 +12779,7 @@ Two representational streams over one sensor, aligned by a pairwise Euclidean di
 
 None. A single acoustic modality, with two analysis routes over the same signal - Praat-derived perturbation measures for the statistical comparison and spectrogram images for the network. The two routes are never joined: the paper does not test whether the network's confidence relates to jitter, shimmer or harmonics-to-noise ratio, which would have connected its interpretable finding to its opaque one and is the single most useful additional analysis the existing data would support.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 None. A single tabular modality.
 
@@ -12831,7 +12831,7 @@ This is one of the few charted studies with genuine cross-modal structure, and i
 
 No multimodal fusion - a single photographic modality. The introduction reviews thermal-imaging work at length (ResNet-50 on facial skin temperature across emotional states) and a thermal branch would have been a natural pairing with this acquisition setup, given that the protocol already controls room temperature and includes a body-temperature acclimation period. Only RGB photographs are collected.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 No fusion - a single questionnaire modality plus static demographic covariates. Multimodal extension with genetic and neuroimaging data is proposed as future work only.
 
@@ -12847,11 +12847,11 @@ No fusion - a single questionnaire modality with demographic covariates. The sys
 
 No modality fusion - a single self-report modality throughout. The nearest analogue is the input-configuration comparison, which tests whether adding gender and/or autism diagnosis to the CAT-Q-ES items improves prediction and finds that it does not. The authors themselves identify observational measurement of camouflaging as the modality this study lacks and recommend adding it.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 No fusion of modalities. The hybrid designation refers to combining two vision backbones (ResNet and ViT) over the same image. The introduction reviews multimodal neuroimaging and EEG-plus-eye-tracking work and dismisses both on cost and complexity grounds.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 No fusion of modalities - a single image source. The pipeline stacks three processing stages (deblurring, denoising, classification) over one photograph, which is depth rather than multimodality.
 
@@ -12903,11 +12903,11 @@ Genuine, declared and quantified multimodal fusion, and the study's central resu
 
 No modality fusion - eye tracking alone. What is fused is classifiers rather than data: bagging, boosting and stacking are combined within one architecture, with base learners selected by a stated diversity criterion to promote complementary decision boundaries.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 No fusion - a single image modality. The paper's own literature table lists no multimodal analysis as a limitation of a cited prior study and does not apply it to itself.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 No modality fusion - a single image source. The paper's fusion is across three ImageNet backbones (VGG16, DenseNet-121, XceptionNet) applied to the same photograph, which is representational concatenation rather than multimodality, and no ablation isolates any backbone's contribution.
 
@@ -13205,11 +13205,11 @@ Nine classifiers spanning probabilistic, instance-based, linear, tree, ensemble 
 
 A single linear SVM with L1 regularisation, chosen after the non-linear variant underperformed and justified by L1's property of zeroing uninformative coefficients - appropriate for a high-dimensional feature space built by summarising frame measures across statistics, regions and activities. The more important modelling decision is the inclusion of an explicit chance classifier that randomly assigns participants, run through the same pipeline and reported in every results table at 49.90% AUC with its own confidence interval. That baseline is what converts the reported figures from numbers into evidence, and its presence distinguishes this study from most of the corpus.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 A bagged decision-tree ensemble over 30 hand-engineered features - deliberately classical rather than deep, and justified by the comparison table showing that no classifier family separated meaningfully from any other. The spread across all 23 candidates is 59.3% (fine KNN) to 68.5% (TreeBagger), roughly nine points across decision trees, discriminant analysis, logistic regression, naive Bayes, six SVM kernels, five nearest-neighbour variants and five ensembles. That flatness is itself an informative negative result: when every model family lands within a few points of every other, the limiting factor is the feature representation and the data, not the learner - which supports the authors' focus on features and undercuts any claim that a deeper model would help.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Five architectures compared directly on the same data: baseline MLP, branched multi-encoder MLP, CNN over fixation maps, ResNet18/ResNet50 two-branch image models, and a 5-layer LSTM. The spread on the blind test set is 52.53% (CNN-SP-STAR) to 62.13% (ResNet50) - about ten points across shallow and deep, feedforward, convolutional and recurrent families - and the two best (62.13% and 61.39%) come from opposite ends of that range, a deep image model and a shallow MLP on raw coordinates. As in the companion paper on the same benchmark, the flatness across architecture families indicates that the limiting factor is the data rather than model capacity. The authors also note a specific failure mode with a plausible cause: the CNN over fixation maps performed worst, which they attribute to 'the mismatch between the fixation image maps and the CNN networked pretrained on natural images' - a sparse synthetic input passed through an ImageNet backbone.
 
@@ -13233,7 +13233,7 @@ CNN-LSTM with soft attention over raw video - a standard action-recognition arch
 
 Deliberately conventional classifiers - random forest, SVM and K-nearest neighbour - with all three applied to every modality, and both best and average accuracy reported. Running the full grid rather than reporting one model is informative: the spread on EEG features runs from 65.00% (SVM) to 83.75% (random forest), an 18-point range on identical inputs, and SVM is the weakest learner on all three modalities. That variability is a caution about single-classifier results generally, and its reporting here is more transparent than the corpus norm. The modelling novelty sits in the combiner rather than the base learners: an attribute-weighted naive Bayes whose weights are computed from training-set counts, with the formula given and its zero-avoidance property noted. No deep model is used for classification, which is appropriate given 80 participants, though a CNN is used upstream for facial expression recognition.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 A Kernel Extreme Learning Machine - a single-hidden-layer feedforward network with randomly assigned input weights and an analytically computed output layer, kernelised with an RBF - chosen for computational economy over deep models, with the paper explicitly excluding deep learning from comparison 'since they require many computational resources and time for training'. The KELM has exactly two tunable parameters, C and gamma, and the entire modelling contribution is how they are chosen. The Giza Pyramids Construction algorithm searches that two-dimensional space via a metaphor of workers pushing stone blocks up a ramp, with gravity, ramp angle, kinetic friction and a worker-substitution probability as parameters. It is worth stating plainly that a two-parameter search over a grid of powers of two from 2^-7 to 2^7 does not require a population-based metaheuristic - exhaustive enumeration of 225 combinations would be cheaper than 10 iterations of a 10-member population - so the algorithmic apparatus considerably exceeds the difficulty of the problem it is applied to. The convergence result reported (optimal values found by iteration six) reflects this.
 
@@ -13349,7 +13349,7 @@ Deliberately small models with a classical aggregation layer, and the modesty is
 
 A wide but shallow model comparison. The classical arm comprises radial-basis and polynomial-kernel SVMs, a probabilistic neural network, logistic regression, LogitBoost and bagging; the deep arm comprises stacked autoencoders with one, two and three encoder layers and deep belief networks with two and three layers. The framing is a straightforward representation-learning argument, stated in the discussion: 'feature manipulations and transformations that are being performed in inner layers of deep learning methods such as DBN and SAE are likely to better position such classifiers to stratify usage patterns to expected classes compared to standard classifiers such as SVM and logistic regression'. Two features of the comparison undercut it. Tuning effort was uneven, and the authors say so - the deep belief network was tuned specifically for the 20-key-press window and its weaker results elsewhere are attributed to that, which means the model ranking partly reflects how much attention each classifier received. And the comparison spans two different experiments with different validation schemes and, crucially, different label sets: the 47-61% figures come from the 180 self-reported cases while the 70% and 82% figures come from the pseudo-labelled corpus, so the apparent progression from classical to deep methods is confounded with the change in what was being predicted. The most consequential algorithmic choice is not a classifier at all but the k-means step that generated labels for roughly 5,192 users, which converts a supervised problem on 180 people into a largely self-supervised one on 5,372.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 A single custom architecture combining a convolutional neural network for spatial features, a long short-term memory network for temporal sequence modelling, and an attention mechanism over frames, applied end-to-end to raw video with no hand-crafted features, pose estimation or gaze tracking. The rationale for each component is given: the CNN for frame-level spatial content, the LSTM because it 'was developed to better process sequential data' and the video is time-dependent, and attention to make it possible 'to access and visualize the attention weights across each video sequence according to which frames or video time points contributed most to the model's decision-making' - so the attention mechanism is included at least partly for interpretability rather than purely for performance, which is a defensible and unusual justification. Three separate models are trained, one per joint attention task, with input dimensions matched to task duration (300 frames for the 10-second IJA clips, 150 for the 5-second RJA clips). No alternative architectures or baselines are compared, and no ablation of the CNN, LSTM or attention components is reported, so the contribution of each is unestablished. Grad-CAM, attention plots and agglomerative hierarchical clustering complete the analysis pipeline.
 
@@ -13381,7 +13381,7 @@ Three ImageNet-pretrained networks - MobileNet, Xception and InceptionV3 - used 
 
 Four components, each chosen for a stated reason. GAMI-Net models tabular clinical data through feature-wise subnetworks with pairwise interaction layers and sparse regularisation, giving an interpretable additive decomposition rather than a black-box embedding - the right choice for clinical variables and a deliberate answer to the interpretability problem that dominates this branch. A CNN captures volumetric structure and a GNN models relationships between Harvard-Oxford regions. An autoencoder fuses the two embeddings. A hypernetwork generates per-subject MLP weights, which is an unusual and interesting device for accommodating heterogeneity. Comparison against TabNet, CNN, LSTM and Bi-LSTM baselines and a component ablation are both reported. The methodology is well constructed throughout; the difficulty lies entirely upstream in what the tabular stream contains.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Four conventional classifiers - support vector machine, linear discriminant analysis, decision tree and random forest - chosen on the stated grounds that they have performed well in prior autism classification work, with forward feature selection and an early-stopping rule capping the model at fifteen features 'to avoid the potential overfitting problem caused by too many features'. The best result in the original-feature condition came from an unspecified classifier with five features, and in the derived-feature condition from a decision tree with three. The modelling is deliberately simple and appropriate to 41 participants, and the explicit feature cap shows awareness of the dimensionality problem. The intellectual content sits in the signal processing rather than the classifier: motion energy analysis to extract movement without markers or tracking, cross wavelet analysis to decompose coordination by frequency, and the surrogate-pair construction to establish a chance level. That the best model uses a decision tree with three features is worth noting - the discriminative structure is simple enough that a small tree captures it, which is consistent with the features having been pre-selected for group difference.
 
@@ -13405,7 +13405,7 @@ Two artificial neural networks trained on sequential data, differing only in inp
 
 A metaheuristic contribution presented as a detection model. DF-ABHBO hybridises artificial bee colony with the honey badger algorithm, motivated by the observation that the former suffers from local optima and slows under sequential processing while the latter offers dynamic and global search, and switching between them according to an adaptive density factor thresholded at 0.5. This tunes the hidden neuron count and weights of a deep neural network, and the weights and epoch count of a recurrent network, which together form HWODNRN. The comparison against PSO, WOA, ABC and HBO variants of the same architecture is the appropriate ablation for an optimisation contribution and shows differences under one percentage point, while the comparison against decision tree, ANN, RNN and ensemble learning shows ten-point differences - so the architecture rather than the optimiser accounts for most of the reported advantage, a reading the paper does not draw.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 One-dimensional convolutional networks fitted separately per age band, with a baseline configuration and a Tree-structured Parzen Estimator-optimised version. The methodological argument for the optimiser is the paper's best contribution and is correctly reasoned: prior work on these datasets used predefined hyperparameters or exhaustive grid search, and an adaptive Bayesian method that concentrates sampling in promising regions is both cheaper and more likely to find good configurations. Fitting a separate model per age band is also appropriate, since Q-CHAT-10 and AQ-10 are distinct age-calibrated instruments. The difficulty is that neither choice can be evaluated on this task: when the label is a deterministic function of the features, an optimiser that reaches 100% and a baseline that does not are distinguishable only in how efficiently they discover a summation rule, which is not what the comparison is presented as measuring.
 
@@ -13465,7 +13465,7 @@ A dual-stream architecture derived from a prior design, with two deliberate subs
 
 A recurrent convolutional network trained from scratch, combining three convolutional layers (kernel size 3, 32 output channels) for spatial feature extraction from spectrograms with LSTM layers for temporal structure - a standard and well-motivated architecture for audio, and the paper justifies the hybrid by reference to its success in video and speech recognition. Regularisation is taken seriously: dropout at 0.2 in each LSTM layer, and frequency masking and time masking augmentation applied specifically to the training split, which is the correct restriction. Optimisation used Adam with a cyclic learning rate between 1e-6 and 1e-5 and batch size 16. All of this is competently specified. The problem is not the model but the selection rule: training ran for 2,000 epochs and 'the model exhibiting superior validation accuracy being designated as the final trained classifier', so the reported figure is the maximum of 2,000 validation-accuracy draws, reported from the partition on which the maximum was taken.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 A Random Forest with hyperparameters tuned by Bayesian optimisation, evaluated by 5-fold cross-validation. Ensemble trees are a sensible default for a small mixed-type tabular dataset, cross-validation is appropriate at 704 rows, and Bayesian optimisation is a reasonable alternative to grid search. The methodology is proportionate to the data; the difficulty is entirely in what the data contain.
 
@@ -13517,7 +13517,7 @@ Supervised deep learning in a simulated federated architecture: two local DNNs p
 
 A convolutional neural network with a sigmoid output, trained end to end. The architecture is never described. The introduction promises the design of custom layers to optimise detection of ASD-specific visual characteristics, and no custom layer, or indeed any layer, is ever specified. Prior architectures (VGG-19, ShuffleNet, MobileNet, ResNet-18/34/50, AlexNet, VGG16) are discussed only as literature figures.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 Six classical supervised learners - LightGBM, Extra Trees, Decision Tree, KNN, RBF-kernel SVM and a four-layer MLP - each evaluated with the full feature set and with a chi-square-selected subset, all tuned by Bayesian hyperparameter optimisation with cross-validation inside the training data. No deep learning on raw signals; no ensemble of the six.
 
@@ -13533,11 +13533,11 @@ Four supervised learners: logistic regression, k-nearest neighbours, a feed-forw
 
 Fifty supervised regression algorithms compared under a common protocol - support vector regression, neural networks, linear and regularised linear regressors, decision trees, random forests, boosting ensembles, k-nearest neighbours and Gaussian processes among others. Different algorithms won for different outcomes (SGD for Aloofness, SVR for Pragmatics, Ridge for Rigidity, KNN for Depression, boosted trees for Anxiety), and the winners are simple regularised or instance-based methods rather than deep networks. This is regression to continuous scores rather than the binary classification that dominates the corpus, which removes the threshold and prevalence problems that make most of the charted accuracy figures uninterpretable.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 A three-stage architecture: a ConvBlock in which a pre-trained ResNet produces a 512-dimensional feature vector that is projected by a 1x1 convolution to three channels and interpolated back to 224x224; a TransformerBlock applying a pre-trained ViT-base with a residual ReAttention mechanism; and global average pooling into a linear classifier. The intermediate step is unusual and unexplained - ResNet features are collapsed to a three-channel image-shaped tensor purely so that a pre-trained ViT's input interface can consume them, which discards most of the convolutional representation before the transformer sees it. No ablation tests whether the ConvBlock, the ReAttention module or the ABAL contributes anything.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 A two-stage pipeline: DeepDeblur, a convolution/deconvolution network learning a blurred-to-sharp mapping, followed by DOCNN, a CNN in which one layer set denoises and the next classifies, with a Fire Hawk Optimizer tuning parameters. Three separable components are each claimed as a contribution and none is ablated, so the reader cannot tell whether the deblurring stage, the denoising branch or the metaheuristic contributes anything to the classification result.
 
@@ -13589,11 +13589,11 @@ Random forest, selected with reasons given: capacity to detect sparse signals in
 
 A three-strategy ensemble - bagging, boosting and stacking - over five base learners (decision tree, random forest, KNN k=3, AdaBoost, gradient boosting) with a stacking meta-learner. The base-learner set is chosen by an explicit diversity-aware strategy rather than assembled arbitrarily, and every constituent's performance is reported separately so the ensemble's increment is visible: the best base learner reaches 0.9267 accuracy and the stack 0.9600, a gain of about 3.3 points.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 YOLOv8n and YOLOv9c, single-stage object detectors, applied to a whole-image binary classification problem. The architectural choice is consequential and unexamined: an object detector localises instances within a scene and scores them against a Background class, so the confusion matrices contain Autistic, Non-Autistic and Background categories, and the reported mAP is a localisation-plus-classification measure rather than a diagnostic accuracy. Nothing in the task requires detection - each image contains one face - so the apparatus adds a spatial estimation problem and a third class to a two-class question.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 A four-stage pipeline: Gaussian Gabor filtering, concatenated features from three pretrained CNNs, a wavelet neural network classifier, and chimp-optimisation parameter tuning, with Grad-CAM++ appended for visualisation. Each stage is named as a contribution and none is ablated, so the reader cannot tell whether the Gabor stage, the three-way fusion, the wavelet classifier or the metaheuristic contributes anything to the reported figure.
 
@@ -13891,11 +13891,11 @@ Twenty-one questionnaire items binary- or one-hot-encoded, reduced by three alte
 
 A three-level cascade producing a fixed-dimension subject vector from variable-length speech: frame measures at 100 per second, summarised by five distributional statistics separately for voiced and unvoiced regions and augmented with duration statistics, then summarised again per conversational activity, then concatenated across four activities. The separation of voiced from unvoiced regions is a considered choice - 'features extracted from voiced regions tend to differ in nature compared to those from unvoiced regions' - and the per-activity structure is what enables the sampling-context comparison. Recursive elimination then reduces the prosodic set to two interpretable quantities, pitch and loudness.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 One fixed-length 30-dimensional vector per subject-image pair, computed by summarising the scanpath against the image. The representation choice determines the unit of analysis: because features are per subject-image, each child contributes one labelled instance per image, and the model classifies scanpaths rather than children. Nothing aggregates the multiple scanpaths belonging to the same child into a single participant-level prediction, and the reported metrics are means over per-image scanpath classifications.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 The most thorough exploration of input representation in the corpus. Scanpaths were encoded as (i) a zero-padded 99-dimensional flat vector of normalised coordinates and durations, (ii) a 33-channel image where each channel places one fixation's duration at its location, with two densification schemes (Gaussian sigma = 20 versus replication to a 30-pixel radius) and two channel schemes (one channel per fixation versus all collapsed into one), and (iii) a sequence fed to an LSTM alongside a 49-dimensional image feature taken from the ResNet 7x7 map before global pooling. The ablation over these choices is reported cleanly: separated channels beat collapsed channels because temporal order is preserved, and Gaussian spreading beat replication. Two representational decisions are also documented as corrections of earlier error - the original challenge entry had aligned real to synthetic scanpaths with dynamic time warping, which 'completely ignores the duration of each fixation point because no duration information is provided by the STAR-FC model' and thereby 'introduces distortion and omission to the real scan-path'; abandoning the warping and using raw 33-point scanpaths with durations was one of the two sources of the improvement.
 
@@ -13919,7 +13919,7 @@ Raw video reduced only by clip trimming and, for three of four partitions, foreg
 
 One feature vector per child per modality, so the unit is the participant throughout - which is what permits genuine leave-one-out cross-validation. The gaze representation is the most distinctive: rather than manually delineating areas of interest, K-means partitions the fixation space and cluster occupancy frequencies become the features, with K tested at 8, 12, 16 and 20. The approach adapts the region structure to where children actually looked, but it carries two costs the paper does not discuss - the clusters are fitted to the pooled data of both groups, and the choice of K was made on the basis of classification results. The expression representation is a time series of target-expression counts per 40-frame window, preserving some temporal structure. The EEG representation is 12 scalar band powers, reduced from 30 candidate region-band combinations by significance testing.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 784 grayscale pixel intensities from a 28x28 downsample of a 640x480 gaze-path plot, contrast-stretched to [0,1] and flattened into CSV rows. The paper describes this resizing as its dimensionality reduction and states explicitly that 'the entire DR process is also the feature selection used in the proposed method' - so there is no feature engineering, no domain representation and no learned encoding, only downsampling. Two consequences follow. The colour encoding of velocity, acceleration and jerk that the source dataset was constructed to carry is destroyed by the grayscale conversion, so the very information that made the images more than plots of position is discarded before modelling. And at 28x28 the trace is a coarse blob, meaning the retained signal is essentially spatial coverage and density. Augmentation by horizontal flipping is also questionable for this representation: mirroring a scanpath about the vertical axis produces an image that no eye could have generated on the original stimulus, so the synthetic examples are not merely redundant but physically impossible.
 
@@ -14035,7 +14035,7 @@ Two parallel representations, compared directly. The baseline uses three interpr
 
 Fixed-length windows over a pseudo-semantic numeric encoding of the key-press stream. All events and keys across the corpus were enumerated - 69 unique ones despite users being able to add vocabulary - and partitioned into normal keys, complex keys, normal app events and complex app events, with each category assigned a non-overlapping range of integer identifiers so that a value's category is recoverable from its magnitude. That design is a genuine thought: it gives an otherwise arbitrary integer encoding a coarse semantic structure that a model can exploit. The stream is then cut into non-overlapping windows of 10, 20, 30, 40, 50 or 100 consecutive presses, each becoming a pseudo-sample; overlapping windows were tested and gave 'no tangible improvement'. Temporal modelling substitutes inter-press intervals for identifiers, and spectral modelling replaces windows with per-session frequency counts. Two properties of this representation matter for interpretation. Users contribute pseudo-samples in proportion to how much they used the app, so heavy users dominate and the effective sample size is never reported. And lexical content is discarded: what a person said is reduced to a category-preserving integer, even though the paper's descriptive analysis shows content to be both recoverable and group-discriminating.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Raw RGB video frames at 224 x 224, in sequences of 300 (IJA) or 150 (RJA) - a fully end-to-end representation with no intermediate abstraction whatsoever. This is a stronger commitment to learned representation than any other study in this corpus, most of which extract landmarks, poses, gaze coordinates or hand-crafted statistics before modelling. It has two consequences that pull in opposite directions. It removes an entire class of failure - no landmark detector to fail on a child who turns away, no gaze estimator to calibrate, no feature engineering to bias - and it is what allows the same pipeline to work on a task where the child physically turns around, which a face-based method could not handle. But it also means the model has access to everything in the frame: the child's appearance, clothing, posture, the examiner, the room, and anything that co-varies with recruitment site. With autistic children recruited exclusively from one hospital clinic and comparison children from day care centres, and with a 44-50 point IQ difference between groups, an end-to-end model on raw frames has many routes to near-perfect separation that have nothing to do with joint attention. The Grad-CAM analysis is the study's answer to this, and it is a good one as far as it goes - the heatmaps localise to faces and eyes and the described behaviours match the constructs - but it is illustrative rather than systematic, and no quantitative check on background or appearance confounds is reported.
 
@@ -14067,7 +14067,7 @@ Cropped facial photographs, resized (to 96 x 96 in one passage and 224 x 224 x 3
 
 Voxel volumes and Harvard-Oxford region graphs for imaging; approximately 65-70 tabular clinical fields for the phenotype stream; a 32-dimensional fused latent vector. The phenotype representation is where the study's problem is located and where its transparency is greatest - because GAMI-Net decomposes contributions feature by feature, the paper is able to report exactly which fields drive the prediction, and it does so honestly. The top ten are ADOS_TOTAL, ADI_R_SOCIAL_TOTAL_A, FIQ, AGE_AT_SCAN, SRS_RAW_TOTAL, ADOS_COMM, ADOS_GOTHAM_SEVERITY, VIQ, PIQ and ADI_R_VERBAL_TOTAL_BV - six diagnostic-instrument scores, three IQ measures and age. Not one is a measurement of behaviour, and six of the ten are the assessment whose result is the label.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 A 41 x 23 matrix: one row per participant, one column per time scale of cross wavelet coherence, with scales spanning 0.1 s to 10 s. Each value is the coherence between the child's and the interviewer's whole-body movement time series at that scale, computed from motion energy analysis of a single side-view video. Two properties are worth recording. The representation is inherently relational - no value describes the child alone - and it is inherently frequency-resolved, which is what allowed the group difference to be localised to the fast scales where a summary measure had found nothing. A second representation of 57 derived features was then built by summing subsets of the six significant coherences: all 15 pairs, 20 triples, 15 quadruples, 6 quintuples and the single six-way sum. These are transparent linear combinations of the originals and add no new information about movement, only a re-weighting chosen with reference to the group difference.
 
@@ -14091,7 +14091,7 @@ A rotation-normalised sequence of 20-69 points per trajectory. The rotation step
 
 A tabular vector of eleven variables per individual, reduced by the optimisation-based selection stage to an unnamed subset. The fitness function combines correlation, data variance and inter- and intra-class cosine similarity, which is a reasonable multi-objective formulation for filter-style selection but depends on class labels and is therefore a candidate leakage route if applied outside training folds - a question the paper does not address. No temporal, sequential or image representation is used, so whatever dynamics the underlying facial or physiological recordings contained are absent from the model input.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 A 17-dimensional tabular vector per respondent, retained from 19 or 21 available fields after dropping two judged irrelevant. Ten of the seventeen are the binary screening item responses. The critical structural fact is that the outcome is computed from those ten by summation and thresholding, and that the sum is itself present among the fields in these datasets - so the representation contains the answer twice over, once implicitly across the items and once explicitly in the total.
 
@@ -14151,7 +14151,7 @@ Three-dimensional joint coordinate sequences, re-expressed two ways - as Skepxel
 
 Two representations. For the statistical analysis, Praat-derived scalar features per cry pattern - jitter as the mean absolute difference between consecutive pitch periods, shimmer as the amplitude analogue, and harmonics-to-noise ratio - each with a clinical interpretation and an established literature. For the classification, 128x128 single-channel spectrogram images per cry instance. The spectrogram representation retains time-frequency structure that the scalar perturbation measures discard, which is the right complement in principle; but because each cry instance is treated as an independent observation and roughly six come from each child, the representation also carries whatever is idiosyncratic to an individual voice, which is what an instance-level split allows the model to exploit.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 A tabular vector per respondent drawn from 21 fields, with the retained subset unspecified after a feature-engineering stage. The decisive representational fact is that both the ten AQ-10 items and their summed total appear in the enumerated field list, and no removal of the total is described.
 
@@ -14203,7 +14203,7 @@ Tabular vectors of 120 kinematic or 48 behavioural/eye features per instructiona
 
 224x224 RGB face crops at 1:1 aspect ratio, rescaled to [0,1], with training-time augmentation by rotation to 20 degrees, width and height shifts to 0.2, shear 0.2, zoom 0.2 and horizontal flip. Noise removal and contrast enhancement are mentioned without method. The conclusion treats the 1:1 ratio and 224x224 size as the study's principal finding, which places a preprocessing convention where an empirical result should be.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 A tabular row per toddler: ten binary Q-CHAT-10 items plus sex, ethnicity, jaundice, family history, region, respondent and age, label-encoded and min-max scaled. Two features of this representation matter. First, the ten items are the constituents of the Q-CHAT-10 score whose threshold defines the label, so the predictor set arithmetically determines the outcome - the same structure as local_8253c2ec and local_a0d73248 (which reach 100% on six metrics) and the inverse of local_8ff20c48 (which deleted five of the ten items and consequently fell to 0.83). Second, ethnicity and region are nominal categories converted to ordered integers by label encoding, imposing an artificial ordering that the paper does not remark on.
 
@@ -14219,11 +14219,11 @@ Standardised tabular vectors in five configurations: the default 19-attribute se
 
 The 25 raw CAT-Q-ES Likert items, in four configurations: items alone, items plus gender, items plus autism diagnosis, and items plus both. Subscale scores were tested as an alternative input and did not improve accuracy - a negative result the paper reports rather than suppresses.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 224x224 RGB face crops from the public corpus, with unspecified preprocessing and augmentation plus a proposed Attention-Based Augmentation Layer applying unnamed non-destructive transformations. Neither the augmentation set nor its placement relative to the split is stated.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 Resized, deblurred and denoised RGB face images at unstated resolution. Resizing is described as adjusting the facial image for ratio and resolution with the loss of pixels - an unusual admission that information is discarded before the pipeline whose purpose is to recover information begins.
 
@@ -14275,11 +14275,11 @@ One row per participant containing 54 task-derived dependent variables, with AQ 
 
 One vector per participant, formed by aggregating nine scanpath descriptors across that person's trials via mean and standard deviation, after each scanpath was truncated or zero-padded to 20 fixations and before z-score standardisation. The 20-fixation cap is a substantive modelling decision - it discards everything after the twentieth fixation in longer scanpaths and pads shorter ones - and its effect is not tested.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 640x640 RGB images with bounding boxes, preprocessed and augmented by Roboflow's export pipeline. Because augmentation is applied at export rather than at training time, augmented variants of an image may be distributed across the train, validation and test partitions - the paper gives no information that would exclude this, and gives no split ratio either.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Gabor-filtered facial images encoded as a concatenation of three backbone feature vectors. Neither the input resolution, the fused vector dimensionality, nor the wavelet basis is stated.
 
@@ -14577,11 +14577,11 @@ Accuracy for all 27 combinations, confusion matrices for nine algorithms under o
 
 AUC with 95% confidence intervals, sensitivity, specificity and accuracy, reported for three feature configurations and seven activity configurations, every one alongside the chance baseline. Reporting confidence intervals on AUC allows the differences between conditions to be assessed - the prosody interval (81.11-83.35) does not overlap the articulation interval (66.62-69.35), so that comparison is supported, while the intervals for the four individual activities largely overlap, so the ranking among them is weaker than the point estimates suggest. Missing: confusion matrices and per-fold variability.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Seven metrics - accuracy, recall, precision, F1, specificity, false positive rate and false negative rate - reported for the proposed model and all seven competing entries in a single table, which is the most complete comparative reporting in the corpus and allows failure modes to be read directly. It shows, for instance, that SP-ASDNET_1's apparently strong 0.87 recall comes with 0.25 specificity and a 0.75 false positive rate, meaning it classifies almost everything as autistic - a pathology that accuracy alone would have hidden. Applied to RM3ASD itself, the same table shows specificity of exactly 0.50 against recall of 0.68, so the model performs at chance on typically developing children and its accuracy advantage rests entirely on the autistic class. No confidence intervals, no significance testing, and no confusion matrices.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Accuracy, sensitivity, specificity and AUC for every one of roughly twenty configurations, on both validation and blind test, with standard deviations across two or three runs on validation - the most complete metric reporting in the corpus, and complete enough to read failure modes directly. Doing so is instructive: specificity is the consistent weakness, at 0.537 for the best test model and dropping as low as 0.35 for BrMLP-F and 0.44-0.48 for several others, against sensitivities of 0.71-0.78 - so most configurations lean toward calling children autistic, and accuracy alone would conceal this. The final comparison table adds F1 and flags, with an asterisk and a footnote, that two competitor AUCs were computed over binary labels as the mean of sensitivity and specificity because probability scores were unavailable - a precision about the comparability of borrowed numbers that is rare anywhere in this literature. No confidence intervals and no significance testing between methods, so the 62.13% versus 59.84% margin over the nearest competitor is a comparison of point estimates.
 
@@ -14605,7 +14605,7 @@ Accuracy, precision, recall, F1 and full confusion matrices for both testing set
 
 Accuracy only, plus confusion matrices - no sensitivity, specificity, precision, recall, F1, ROC or AUC is reported by name, though the confusion matrices supply per-class rates from which sensitivity and specificity can be read (85.0% and 90.0% for the fused model). No confidence intervals, no variance across leave-one-out iterations, and no statistical test of any comparison, despite the text repeatedly describing differences as significant ('significantly greater than that obtained using a single modality', 'can significantly improve the classification accuracy') where no test was performed. The reporting of both best and average accuracy per modality is a genuine strength that partly offsets this, since it makes classifier-dependence visible. The absence of any trivial baseline is a real gap given that the two groups differ in educational placement and no developmental measure was taken.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 The most complete metric panel in the corpus in form - accuracy, precision, sensitivity, specificity, Matthews correlation coefficient and F1, each with average, median and standard deviation over 30 runs, plus a confusion matrix, ROC curves with AUC for four classifiers, and Wilcoxon signed-rank tests for every optimiser comparison. Including MCC is good practice for imbalanced classes and is rare here. The apparatus is nonetheless measuring the wrong thing. The 30 runs vary only the metaheuristic's random seed, not the data partition, so the sub-0.0015 standard deviations quantify optimiser stability rather than generalisation variance, and they should not be read as precision of the accuracy estimate. The Wilcoxon p-values of 5e-12 test whether one optimiser reliably beats another across seeds - a valid question about algorithms and an irrelevant one about autism. And the confusion matrix's 1,423 instances cannot be located in any described partition, since no split is specified; it corresponds to about 20% of the 7,111 augmented images, which is the only reading consistent with the paper's own statement that augmentation enlarged the testing data.
 
@@ -14721,7 +14721,7 @@ Accuracy, sensitivity and specificity for four model variants across three class
 
 Average classification accuracy, and nothing else. No sensitivity, specificity, precision, recall, F1, AUC, ROC curve, confusion matrix or confidence interval appears anywhere for any model - the thinnest metric reporting of any study charted in this review that reports quantitative results. Two consequences follow directly. Because the labelled set is 81 autistic against 99 non-autistic and bootstrapping was used for training-sample balancing, chance is approximately 50%, so the prior analysis's 47-61% range is at or barely above chance while the present 82% is a large gain - but the paper never computes or states the baseline, so a reader must infer it. And because no class-conditional metric is given, it is impossible to tell whether errors fall on autistic or non-autistic users, which matters especially here given that the comparison group is a heterogeneous aggregate of eight categories that the model may separate very unevenly. The one statistical analysis that is reported properly is the negative one: three simple usage measures compared with t-tests under Holm-Bonferroni correction, all non-significant, presented honestly as motivation for the modelling work rather than buried.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 AUROC, accuracy, precision and recall, each with 95% confidence intervals estimated by the Hanley and McNeil method, reported for all three tasks in both the detection and severity problems - twenty-four interval-bounded estimates, and the most complete uncertainty reporting in this review. That completeness is a direct consequence of adopting the STARD reporting guideline and publishing in a journal that enforces it, and it makes the results checkable in a way that most of this corpus is not. The gaps are nonetheless significant for a diagnostic study. Specificity is never reported, which is an odd omission under STARD and matters because precision and recall alone do not characterise false-positive behaviour at a given prevalence; for the detection models precision is 95.5-98.9% at roughly balanced prevalence, so specificity is evidently high, but it should have been stated. No negative predictive value, no calibration, and no prevalence-adjusted predictive value are given, although the proposed use is referral support in a population where autism prevalence is a few per cent rather than 47%. For the three-class severity problem the class distribution is not reported, so the reader cannot compute a chance baseline, and no baseline is offered. And no permutation test or majority-class comparison accompanies the near-ceiling detection figures.
 
@@ -14753,7 +14753,7 @@ Accuracy, sensitivity and specificity for three models, plus a confusion matrix;
 
 Accuracy, precision, recall, F1 and ROC-AUC under two evaluation schemes, with ablation tables, ranked SHAP contributions and t-SNE visualisation. The metric set is adequate and the dual evaluation scheme is more than most of this branch reports. Three problems. The figures are internally inconsistent: the abstract and results report 99.40% accuracy with 99.99% ROC-AUC, while the contributions section reports 'up to 96.4% classification accuracy and an area under the ROC curve (AUC) of 0.92', and no reconciliation is offered. The split description is likewise inconsistent, given as 70:30 in the methods and as a 20% held-out set of about 247 subjects in the abstract, where 20% of 1,112 is 222. And no confidence intervals accompany any estimate, on a test set of roughly 247 subjects where a 95% interval around 99.4% would still span about a point and a half. A ROC-AUC of 99.99% on a diagnostic task is in any case a figure that should prompt a search for leakage rather than a claim of state-of-the-art performance.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Accuracy, sensitivity and specificity for the best model in each of the two feature conditions, plus ROC curves for all four classifiers and Cohen's d for the derived features. Reporting sensitivity and specificity separately is what makes the study's key numerical detail visible: specificity is 95.24% in both conditions, identical to the decimal, so the entire improvement from 85.37% to 92.68% consists of sensitivity rising from 75.00% to 90.00% - that is, three more of twenty autistic children correctly classified, with no change at all in performance on the comparison group. On a sample of 41 where one participant is 2.4 percentage points, a three-participant difference obtained after selecting features on the outcome is not a stable result, and no confidence interval, permutation test or majority-class baseline is offered against which to judge it. AUC values are not quoted numerically despite ROC curves being plotted. The statistical analysis by contrast is properly equipped, with ANOVA across three groups including the surrogate control, Fisher's LSD post-hoc tests, and effect sizes.
 
@@ -14777,7 +14777,7 @@ Binary accuracy, reported as a distribution across cross-validation folds rather
 
 Ten metrics defined by numbered equation - accuracy, sensitivity, specificity, precision, false positive rate, false negative rate, negative predictive value, false discovery rate, F1-score and Matthews correlation coefficient - reported across two comparison tables to five decimal places. The precision of the reporting is inversely related to its informativeness: five decimal places imply a sample size in the hundreds of thousands, while the sample size is never stated. The metrics are also internally revealing in one respect: precision of 91% alongside sensitivity of 96.3% and specificity of 96.5% implies a positive class comprising roughly a quarter of the sample, information the paper does not supply directly. Three different headline figures appear - 96% accuracy with 93% F1 in the abstract, 96.44% accuracy with 91% precision in the conclusion, and 96.44886% with 91% in Table 3 - and the abstract's F1 value is not reproduced anywhere else. No confusion matrix, confidence interval or AUC appears.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Six metrics reported for baseline and optimised models across all four datasets - accuracy, precision, recall, F1, Matthews correlation coefficient and AUC-ROC. Including the Matthews correlation coefficient is good practice for imbalanced tabular data and is rare in this corpus, and class distributions are reported for every band so that majority-class baselines are computable at 69%, 52%, 61% and 73%. None of those baselines is stated or compared against, and no confidence intervals are given. The decisive reporting failure is not in the metric set but in its interpretation: six independent-looking metrics all reaching exactly 100% simultaneously, in four separate datasets, is a signature of a degenerate task rather than a converging body of evidence, and the paper reads it as the latter.
 
@@ -14837,7 +14837,7 @@ Accuracy only, but reported with dispersion - average, maximum, minimum and stan
 
 A fuller metric set than most of this branch: accuracy 90.28%, AUC 90.83%, sensitivity 88.64%, specificity 88.64%, precision 95.12% and F-score 91.75%, with sensitivity and specificity reported separately and defined explicitly in the table as counts of autistic and typically developing instances. The statistical analysis reports means with standard errors and codes significance at three thresholds. Two problems limit what any of it means. Every classification figure is a validation-set value with no held-out test, taken at the best of 2,000 epochs, so all six metrics inherit the same selection optimism. And the instance-level definition of sensitivity and specificity means these are not per-child operating characteristics: a screening tool's sensitivity is the proportion of autistic children it flags, not the proportion of their individual cries, and with six cries per child the two quantities can differ substantially. No confidence intervals accompany any figure, on an effective sample of 62 children.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Accuracy alone, at 0.9890. No precision, recall, specificity, F1, AUC, confusion matrix or confidence interval is reported, and no class distribution is given, so the figure cannot be compared against the 73.2% majority-class baseline that the source dataset implies. For a screening application, sensitivity and specificity are the quantities that matter and neither is provided.
 
@@ -14889,7 +14889,7 @@ Accuracy, precision, recall and F1, reported per client, per feature subset, per
 
 Accuracy, precision, recall, F1 and a confusion matrix, with sensitivity and specificity defined by formula but specificity never reported numerically. The reported figures reconcile exactly with the confusion-matrix cells - 92 of 102 correct gives 0.902; 47 of 51 predicted-positive gives 0.922; 47 of 53 actual-positive gives 0.887 - which is a level of internal consistency several other studies in this corpus fail to achieve. What is absent is any interval: with 102 test images the 95% confidence interval around 0.90 runs from roughly 0.83 to 0.95, so the comparison against the quoted literature figures of 87%, 88%, 89.2%, 90% and 92% is not discriminating. The abstract also describes the evaluation as using a nuisance matrix.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 Accuracy, precision, recall, F1 and log loss for all twelve configurations, plus a confusion matrix and SHAP plots for the best model. The log loss column deserves credit: it is the only calibration-sensitive measure reported by any study charted in this review, and it does real work here - Decision Tree posts 0.938 accuracy with a log loss of 2.223, exposing badly miscalibrated probabilities that accuracy alone would hide. Against that, no confidence interval accompanies any figure, and neither baseline is stated (50.7% on the balanced test set, 69.7% majority-class on the original data). The F1 score is also described as the geometric mean of precision and recall, when it is the harmonic mean.
 
@@ -14905,11 +14905,11 @@ Accuracy, precision, F1, sensitivity, specificity, MCC and a confusion matrix fo
 
 Pearson R between true and predicted scores, MAE, MAPE relative to the score range, and RMSE, per outcome and averaged across the four trials, with predicted-versus-true scatter plots against a perfect-agreement diagonal. Correlation magnitudes are interpreted against a pre-specified external criterion (Colton 1974), so strong and moderate are defined before the results rather than after. The tolerance analysis is the most practically informative reporting in the corpus: the best Aloofness model places 36.3% of predictions within 5% of the true score and just over 60% within 10%, which states plainly what the R=.85 does and does not deliver at the individual level. The paper also notes correctly that the lower MAE for Depression and Anxiety reflects their narrower score ranges rather than better prediction, and reads the MAPE accordingly. Two gaps: no confidence intervals or across-trial variance accompany the metrics, and no trivial baseline (for instance, predicting the sample mean) is reported against which the MAE and RMSE could be judged. A minor inconsistency: the abstract gives Rigidity R=.74 and Depression R=.60, while Table 3 gives .75 and .58 for the CAT-Q-ES-only configuration.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 Accuracy, AUC, F-measure, G-mean, sensitivity, specificity, fall-out and miss rate, with formulae given, reported for both validation and test, plus a confusion-matrix figure. This is a fuller and better-chosen metric set than most of the facial-image branch offers - specificity and fall-out are reported as numbers rather than merely claimed, and the figures are internally consistent (sensitivity 94% with miss rate 0.06; specificity 88% with fall-out 0.12; their mean 91% matching the reported accuracy on a balanced test set). Two problems. No confidence interval accompanies any figure, and on 200 test images the 95% interval around 91% runs from roughly 86% to 95% - a range that contains almost every entry in the comparison tables, so the claimed ordering among methods is not established. And validation accuracy (86.5%) is lower than test accuracy (91%) by 4.5 points on 200 images each, which is reported without comment.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 Accuracy, precision, recall, F-measure, a confusion matrix and an ROC curve for classification; percentage blur removed, PSNR, MSE and SSIM for deblurring. Specificity is not reported, no AUC value is given numerically, no calibration or predictive values appear, and no confidence interval accompanies any figure. The reported accuracy of 96.94% reconciles exactly with the confusion-matrix counts - 2,850 correct out of 2,940 - which is the problem rather than a reassurance, because 2,940 is the entire dataset and not the 400-image test set the methods section defines.
 
@@ -14961,11 +14961,11 @@ Accuracy, sensitivity, specificity and F1 for both samples and each configuratio
 
 Accuracy, precision, recall and F1 with fold-wise means and standard deviations for all six models, plus a Friedman test on fold-wise F1 and a permutation-importance ranking. Reporting the standard deviations is a real strength and is also where the study's honest signal lies: an accuracy standard deviation of 0.0800 and an F1 standard deviation of 0.0952 on a five-fold split of 28 people means individual folds ranged widely, which is what five- or six-person test sets produce. On such folds, 0.9600 accuracy corresponds to roughly 27 of 28 participants classified correctly across the full cross-validation, and a single reclassification moves the figure by about 3.6 points. No confidence interval accompanies any estimate and the 50% chance level is never stated.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 Precision, recall, F1, mAP@0.5 and mAP@0.5:0.95 for both models, with normalised confusion matrices, precision-recall curves and F1-confidence curves. The reporting looks complete and contains an impossibility. For YOLOv8n, mAP@0.5 is 94.76% and mAP@0.5:0.95 is 94.73%; for YOLOv9c, 93.32% and 93.21%. mAP@0.5:0.95 averages average precision across ten IoU thresholds from 0.5 to 0.95, so it is bounded above by mAP@0.5 and in practice falls well below it - gaps of twenty to forty points are typical for face-scale objects. A gap of 0.03 points implies that localisation quality is perfect at every threshold up to 0.95, which no detector trained for 50 epochs on uncalibrated web photographs achieves. The two numbers are therefore not both genuine mAP values. No class counts, no split sizes, no chance level and no variance across the repeated runs the paper claims to have performed are reported.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Accuracy, precision, recall, F-measure and AUC, per class and averaged, for both phases, with confusion matrices, precision-recall and ROC curves. The reporting is dense and contains one telling relationship: the 30% testing-phase average accuracy (98.42%) is higher than the 70% training-phase average accuracy (97.75%), and the per-class figures move in the same direction. A model that performs better on held-out data than on the data it was fitted to is normally a signal that the partition is not independent - shared or near-duplicate images across the split being the usual cause on this corpus - or that the reported training figure is not a resubstitution score. The paper reads the same inversion in its learning curves as good generalisation without overfitting. No confidence interval, no chance level and no variance across runs accompanies any value.
 
@@ -15263,11 +15263,11 @@ The paper's stated aim includes helping 'visualize common causes leading up to' 
 
 Interpretability is pursued through three complementary routes. Recursive feature elimination reduces the prosodic set to pitch and loudness, both physically meaningful. Those two are then correlated against four clinical measures using partial Spearman coefficients adjusted for WISC IQ, establishing that both track severity as rated by a professional (ADOS-2 CSS) and independently by a parent (SRS) - the authors note this is 'a noticeable result since it was established with separate informants', which is the right emphasis, since agreement across informant types is stronger evidence than a single-source correlation. Finally, the distributions of both features are plotted by group across all four activities and jointly in a two-dimensional visualisation, showing lower pitch with comparable dispersion and higher loudness with much greater variability in autism. The one interpretive gap is that the direction of the pitch effect is not reconciled with the prosody literature.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 No model-derived interpretability method - no SHAP, no permutation importance, no tree-based importance despite using a random forest, where importance would have been available at no cost. In its place is a stimulus-level error analysis that turns out to be more informative: partitioning by classification accuracy shows that the five best images had autistic mean fixation duration of 213 ms against 574 ms for typically developing children, while the five worst had 318 versus 313 ms - so the model succeeds exactly where one feature separates the groups and fails where it does not. This localises the whole discriminative effect in mean fixation duration and simultaneously shows it is a property of particular stimuli rather than of the children. The dwell-time binning that follows (24% versus 15% of clusters under 100 ms; 21% versus 35% over 500 ms) links the finding to an existing reading-research framework in which sub-100 ms dwells indicate only partial information retention and dwells over 500 ms indicate further processing, giving the result a cognitive interpretation rather than leaving it as an unexplained numeric difference.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 No formal interpretability method, and the authors say so: they 'have not conducted a full investigation to map these features back into explainable entities related to the scan-path data'. What they provide instead is more useful than a saliency map would have been. The ablation functions as an interpretability analysis by elimination, establishing which input families the model does and does not use - not the synthetic saccade, not the stimulus image, only the scanpath. That negative result then drives a direct distributional analysis: histograms of total scanpath duration by group, showing autistic scanpaths markedly shorter, with a one-sided two-sample Kolmogorov-Smirnov statistic of 0.278. The finding converges with the competing Startsev and Dorr entry, which independently identified total fixation duration as its most discriminating feature - cross-method agreement on the same benchmark, which is stronger evidence about what the signal is than any single model's attribution would be. The accompanying p-value of 4.09e-122 should be disregarded: it is computed over several thousand scanpaths treated as independent when they come from 28 children, which is precisely the non-independence the surrounding paragraph is arguing exists.
 
@@ -15291,7 +15291,7 @@ The strongest video-model interpretability analysis in the corpus, and the reaso
 
 Interpretability is strongest for EEG and absent for the behavioural modalities. The EEG t-test table is complete - all 30 region-band combinations with F, t, p, mean difference and standard error - and the directions and interpretations are given: theta power significantly higher in the autistic group in five of six regions with the largest effect at left frontal (t = 5.82), and interpretations offered for each band ('theta waves mainly reflect the emotional experience of individuals', 'the low-beta band is related to the capacity for concentration', gamma 'related to the abilities of learning, memory, and information processing'). Those band-to-function attributions are loose and would not survive scrutiny in the EEG literature, but the underlying statistics are fully reported and the theta finding is placed in the context of prior work. For gaze and facial expression there is nothing: no group means, no directions, no effect sizes, no indication of which clusters or which time windows differ. This asymmetry follows from the representations - clusters and frame counts have no semantic content to report - and it means the study, despite recording two behavioural modalities, contributes no behavioural finding beyond classification accuracy. The confusion-graph analysis is a genuine interpretability contribution at modality level, showing exactly which class each modality handles and which it fails.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 None, and none is possible. There is no feature importance, attribution, saliency map or ablation, and the representation - individual pixels of a 28x28 downsampled plot - admits no behavioural interpretation even if attribution were computed. The paper offers no group difference, no effect direction and no descriptive statistic about gaze. Its one interpretive sentence, that 'the amount of information in the images and the use of space in the x and y coordinates are essential factors when classifying ASD', is a statement about how much of the frame the trace fills. Placed against the rest of this corpus, that is a meaningful observation in an unintended way: it is consistent with the classifier keying on trace density, which is a property of how much usable gaze data the tracker captured, and hence potentially on data quality rather than on viewing behaviour - the pattern seen in Li 2020's SHAP quality feature, Fang 2021's untracked-gaze 'area0' and Zhao 2021's differential OpenFace failure rates.
 
@@ -15407,7 +15407,7 @@ Interpretability is built into the aggregation design and is then cross-checked 
 
 Essentially absent at the model level and moderately good at the data level. No feature importance, saliency, attention, latent-space inspection, error analysis or example-level examination is performed for any classifier, so the paper cannot say what distinguishes autistic from non-autistic usage patterns - only that a stacked autoencoder can tell them apart 82% of the time on a largely pseudo-labelled corpus. This is a particularly costly gap because the alternative explanation is so readily available: with a comparison group dominated by acquired adult-onset conditions and an autism group dominated by young children, the most parsimonious account of the classification is age, and a single look at what the model responds to would have addressed it. What interpretive content exists is descriptive and is genuinely useful for understanding AAC use: usage frequency and duration by age band, average time in app by diagnostic category, the top 14 phrases across the corpus, and unique-word counts by diagnosis showing autistic and stroke users producing considerably more distinct vocabulary than other groups. The pseudo-semantic identifier scheme is designed to make the numeric encoding interpretable, and the rejection of spatial modelling is well argued - but neither is followed through into any analysis of what the models learned.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 The most thorough interpretability work in this review, and unusually it is used to verify the model's reasoning against an independent clinical account rather than to generate a post-hoc narrative. Three techniques operate in sequence. Attention weights across the frame sequence identify which time points drove the decision, plotted per participant. Grad-CAM is then applied specifically at those attention peaks, localising the spatially informative regions within the frames that mattered - so the spatial and temporal explanations are coupled rather than independent. Agglomerative hierarchical clustering of attention-weight trajectories across the test set, displayed as dendrograms with participant identifiers alongside the heatmaps, tests whether the model's temporal decision patterns cluster by class at the dataset level rather than only in selected examples. The results are behaviourally specific and, crucially, match the constructs the tasks were designed to elicit: triadic gaze shifting in IJA, sustained versus fleeting gaze on the indicated object in low-level RJA, and immediate turning with a return to the examiner in high-level RJA. The authors' claim that the system 'made predictions based on salient behavioral differences... in the same way trained specialists diagnose ASD' is therefore supported by evidence rather than asserted. The cluster maps also corroborate the quantitative severity finding independently, showing IJA separating the three severity classes more cleanly than the RJA tasks. Two limits remain. Grad-CAM and attention illustrations are presented for selected participants and time points, so they demonstrate that the model can attend to the right things without establishing that it always does. And no quantitative test rules out appearance, background or site confounds, which an end-to-end model on raw frames from differently recruited groups is exposed to.
 
@@ -15439,7 +15439,7 @@ None, and the absence is the study's central evidential gap rather than a periph
 
 The most thoroughly interpretable model in the review, and the interpretability is what makes the study diagnostically useful to this synthesis. GAMI-Net is transparent by construction: each behavioural feature passes through its own subnetwork so its marginal contribution is isolated, pairwise interaction layers capture second-order relationships such as ADOS_Total by Age, and sparse regularisation prunes redundant inputs. The paper states the intended clinical benefit directly - the decomposition allows clinicians 'to directly visualize how an increase in, say, ADOS-Gotham_Total or ADI_R_RRB_Total_C, elevates the predicted ASD probability'. SHAP extends the analysis to the imaging and fused stages and t-SNE visualises the latent space. The machinery functions exactly as designed, and what it reports is that the model's dominant predictor is the ADOS score. The authors present this as evidence that the model aligns with clinical knowledge; it is better read as the interpretability apparatus correctly identifying that the model is reading the answer off its own input. That a transparent architecture surfaces this where a black-box model would have hidden it is a genuine argument for interpretable design, and the strongest positive lesson the study offers.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Interpretable by construction and mechanistically grounded, with one gap. Every feature is a coherence at a nameable time scale, so the finding translates directly into a physical statement: autistic children's whole-body movement was less synchronised with their conversation partner's at time scales below one second, while synchrony at slower scales was comparable. The pseudo-pair surrogate makes the interpretation secure in a way that a bare group comparison would not, by establishing that both groups' coherence exceeds what two non-interacting people produce - so the difference is in the degree of genuine coordination rather than in some artefact of shared periodicity. The derived features remain interpretable as explicit sums of named coherences. What is missing is any individual-level analysis: no examination of which children were misclassified, no relation between a child's coherence profile and their IQ or age, and no dimensional analysis relating coordination to autistic traits - the last being the natural next question given the introduction's claim that coordination correlates with social cognition and autistic traits, and given that no severity measure was collected to test it.
 
@@ -15463,7 +15463,7 @@ The strongest element of the study, and methodologically distinctive. Rather tha
 
 None. No feature importance, attribution or error analysis is reported. The omission is particularly consequential here because the paper's central algorithmic claim is that its optimiser identifies 'the most essential features', and the identity of those features is never disclosed - so the one output that would connect the computational contribution to any clinical or behavioural interpretation is withheld. Given that the paper's only displayed data show the label tracking body temperature and heart rate rather than emotion probabilities, naming the selected features would have been directly informative about what the model detects.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 None. No feature-importance, attribution or ablation analysis is reported. The omission is the single most consequential methodological gap in the study, because the one experiment that would have distinguished a real finding from an arithmetic one - refitting without the A1-A10 items and the summed result - requires nothing that the study has not already built.
 
@@ -15523,7 +15523,7 @@ None attempted, and the omission is more notable here than in most of this revie
 
 Split between a well-interpreted feature analysis and an uninterpreted model. The three perturbation measures are clinical voice-quality metrics with direct physiological meaning, so the statistical result translates into a specific and evaluable claim about phonatory stability, and the paper articulates it correctly. The network is treated as a black box: no attribution over the spectrogram, no examination of which frequency bands or temporal regions drive its decisions, no error analysis by age, setting or cry cause, and - most importantly - no test of whether its confidence relates to the jitter, shimmer or harmonics-to-noise ratio the same study found significant. That last analysis is available from the data already collected and would have determined whether the network learned the acoustic phenomenon the paper identified or something else entirely, such as the recording environment. Its absence means the study's two halves neither corroborate nor constrain each other.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 None. No feature importance is reported, which is both the study's clearest missed opportunity and the analysis that Random Forest makes available at no cost. A single importance plot would have shown the model splitting on the summed screening score and would have identified the problem before publication.
 
@@ -15575,7 +15575,7 @@ SHAP over an XGBoost surrogate produces a summary plot ranking feature importanc
 
 None. No saliency, attribution or ablation, and no per-expression error breakdown despite expression being a designed factor. In a study whose premise is that specific facial characteristics reflect social and emotional traits relevant to autism, no facial characteristic is identified anywhere.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 SHAP beeswarm and bar plots for the SVM with chi-square selection, showing joint attention, simple gestures and empathy-related behaviours as the dominant predictors and sex and jaundice as negligible. This is properly executed explainability, presented as evidence of clinical trustworthiness on the grounds that the model's important features align with established clinical markers. The alignment is real but uninformative: the label is a threshold on the sum of exactly those items, so any model that recovers the label must weight them heavily, and any model that recovered the label from sex or jaundice instead would be the anomaly. SHAP here confirms that the pipeline learned the arithmetic it was given, and the paper reads that confirmation as external validation of the behavioural markers.
 
@@ -15591,11 +15591,11 @@ The most thorough feature analysis in this branch: chi-squared scores, RF and Ex
 
 No model-level attribution for the fifty regressors - no coefficients, feature importances or SHAP values are reported, so which camouflaging items carry the signal is not established. The interpretive work is done instead by the input-configuration comparison, which supports a clean negative claim: gender and autism diagnosis add at most .03 to R and 0.10 to MAE, so neither provides information not already implicit in the camouflaging items. That result is the basis for the paper's central applied argument - that the tool could work regardless of gender identity and where a diagnosis is unclear or absent.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 Claimed, not shown. The ReAttention mechanism is described as adaptively amplifying diagnostically relevant regions such as eye gaze and mouth movements and as focusing on periocular regions, aligning with clinical studies linking ASD to reduced eye contact. No attention map, saliency overlay, feature attribution or region-level analysis appears anywhere in the paper to support this, and no ablation isolates the module. The claim that the model attends to the periocular region - which would be the study's most interesting finding if demonstrated - is asserted as a design intention and presented as though it were a result.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 None. No saliency, attribution or feature analysis, and no ablation of the three pipeline stages. In a paper whose thesis is that image quality restoration improves ASD detection, no experiment isolates the contribution of restoration to the classification outcome - the deblurring metrics and the classification metrics are reported side by side but never linked.
 
@@ -15647,11 +15647,11 @@ Feature importance is used as a scientific instrument rather than as decoration.
 
 Permutation-based feature relevance, with an unusually precise statement of scope: the analysis was performed independently of model selection procedures and served solely as an interpretability tool rather than as a feature selection mechanism. That distinction matters and is drawn correctly - permutation importance computed for interpretation cannot leak into the model, whereas the same computation used to select features would. A full ranking is presented, though the extracted text does not name which descriptors dominated.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 No formal attribution, but the paper contains an out-of-distribution probe that is the single most informative result in it and is presented only as a robustness comparison between architectures. Given a picture of a dog and a picture of a leaf, YOLOv9c classified the dog as Autistic and the leaf as Nonautistic, while YOLOv8n rejected both. The authors read this as evidence of YOLOv8n's superior filtering. The more important reading is what it reveals about the task: a model trained to detect autism from a photograph will assign an autism label to whatever is placed in front of it unless something else stops it, and the difference between the two architectures here is a difference in background rejection rather than in anything about autism. No other study in this fifteen-strong branch tests its model on a non-face input, and this one does so almost incidentally.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Grad-CAM++ is applied and a visual interpretation figure is shown, described as highlighting the most significant facial regions and improving model transparency. The description also calls this abnormality detection, which reframes model attention as pathology. No quantitative attribution is reported, no facial region is named as consistently salient across images, and no test establishes whether the highlighted regions correspond to anything anatomically meaningful rather than to image-provenance artefacts - the question the branch most needs answered and the one a saliency method is least able to settle on unlabelled web photographs.
 
@@ -15949,11 +15949,11 @@ The weakest element. A single 80/20 split of 200 children gives a 40-child test 
 
 Five-fold cross-validation with training, development and test sets rotated and an explicit statement that model parameters were learned only from training examples and were 'totally blinded from the test examples'. Class imbalance is handled by iterative undersampling to 28 per class, repeated until scores converged at around 100 iterations - a substantially more rigorous treatment than a single balanced draw, since it averages away the randomness of which majority-class participants are selected. Confidence intervals are computed on every AUC. The IQ-matched subsample analysis functions as an internal replication under a controlled confound and returns a higher AUC (88.27%) than the main analysis, which is strong evidence that IQ was not driving the result. What remains: RFECV and the best-activity selection were both performed across the same cross-validation used for reporting, with no outer loop; and no independent cohort or external site was tested.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 The benchmark's fixed 300/100 image split, with hyperparameters tuned by out-of-bag error on the training portion. Three weaknesses. The split partitions stimuli, not participants: all 28 children appear on both sides, so the model can learn subject-specific viewing idiosyncrasies from a child's training-image scanpaths and apply them to that same child's test-image scanpaths - the segment-level leakage pattern that recurs throughout this corpus, although here the low absolute performance suggests little was gained from it. Second, 23 classifiers plus a three-parameter grid were evaluated before one was chosen, and the resulting optimism is directly visible: the selection table reports 68.5% for TreeBagger while the test set returns 0.59, a nine-point gap that the paper presents without reconciling the two numbers. Third, no repeated splits, no cross-validation over participants, no confidence intervals and no significance test against the 0.59 competitor, so the claimed tie for first place rests on a single comparison of two point estimates on 100 images.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 The strongest external evaluation arrangement in the corpus paired with the weakest partitioning principle. On the strong side: the test labels were withheld by the ICME 2019 organisers and all test performance was computed by them, so no amount of iteration could tune to the test set - the only genuinely third-party-scored evaluation here - and validation results are averaged over repeated runs with standard deviations reported. On the weak side: the partition is over images (240 train / 60 validation / 100 test), not over children, so all 28 participants appear in all three sets, and a model that learns a child's characteristic viewing tempo from their training scanpaths can apply it to their test scanpaths. The authors identify this mechanism themselves as the explanation for scanpath-only parity, which makes it the corpus's only self-diagnosed instance of the leakage pattern - but they do not draw the consequence that it bounds the 62.13%. The benchmark's fixed splits preclude re-partitioning without forfeiting the blind test, which is a real constraint rather than an oversight; the appropriate response would have been to state the resulting ceiling explicitly. A further diagnostic sits unremarked in the tables: validation-optimal and test-optimal configurations differ in both pipelines (LSTM 67.23% on validation but 60.40% on test; BrMLP-SP-F best on validation, BrMLP-SP on test), which the authors attribute to training and validation being 'more similar to each other than to the test dataset' without noting that this makes the validation set unfit for model selection.
 
@@ -15977,7 +15977,7 @@ Correct in its most important respect and incomplete in a secondary one. The par
 
 Leave-one-out cross-validation over 80 children with the participant as the unit - structurally the right design, and it forecloses the within-subject leakage that inflates Simeoli, Liaqat, Mazumdar and Akter. But two selection steps precede it and contaminate it. The EEG feature set was determined by running independent-samples t-tests on band power across all 80 children and retaining the 12 region-band combinations reaching significance; only then was classification with leave-one-out cross-validation performed on those features. Every held-out child therefore contributed their label to the choice of features used to classify them - the classic selection-bias pattern, and one that inflates the EEG modality specifically, which is the modality the paper concludes is most discriminative and which anchors its central claim. Second, the number of gaze clusters was tested at four values and 'the final value of K was determined from the experimental results', so a preprocessing hyperparameter was also chosen on classification performance across the full sample. A third, milder issue is that the headline 87.50% is the best of three classifiers; the paper reports averages for single modalities but not for the fusion. There is no external validation, no independent cohort and no repeated-split estimate of variability. The correct reading is that the participant-level design is sound but that the reported figures - particularly for EEG and for the fusion that depends on it - are optimistic by an unmeasured margin.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 The corpus's weakest evaluation design, and the weakness is threefold. First, no train/test split, cross-validation scheme, held-out set or partition of any kind is described anywhere in the paper; the only replication is 30 reruns of the optimiser. Second, augmentation preceded whatever evaluation occurred, and the authors state their purpose plainly: 'We included a data augmentation step to generate synthetic samples to enlarge the training and testing data.' Flips, translations and blurs of a source image are near-duplicates of it, so populating a test set with them guarantees that the model has effectively seen every test instance. Third, and independently of augmentation, the 547 source images come from a small number of children contributing roughly nine images each, and no participant identifiers exist in the released image set, so images from the same child necessarily span any partition. Layered on top, the metaheuristic optimises C and gamma against the KELM's mean squared error with the accuracy-versus-iteration curve in Figure 4 rising monotonically over ten iterations, which indicates the search is scored on the same predictions that are reported. The instructive comparison is with Cilia and colleagues, who built this dataset and reported that image-level accuracy near 90% fell to approximately 71% when computed per child. This paper reports 98.8% on the same images, cannot compute a per-child figure because it records no participants, and does not cite the correction. The gap between 71% and 98.8% is the measure of what these three compounding decisions add.
 
@@ -16093,7 +16093,7 @@ One of the two or three soundest validation designs in this review. The scheme i
 
 The weakest element, with two problems either of which would be decisive on its own. The first is the pseudo-labelling. Only 180 users of approximately 5,372 disclosed a diagnosis; the remainder were assigned labels by k-means clustering seeded from the labelled cases, and the 70% and 82% figures are obtained on this enlarged corpus. So roughly 97% of the evaluation data carry labels generated by an unsupervised algorithm rather than reported by any person, and the reported accuracy is substantially a measure of how well a supervised classifier reproduces a clustering solution - a quantity that can be high regardless of whether the clusters correspond to diagnosis. The contrast with the same data before pseudo-labelling is stark and is visible in the paper's own Table IV: 47-61% across all three modelling views and six window sizes, at or barely above a 50% chance level. The second problem is the unit of cross-validation, which is never stated. The modelling operates on windows, each user generates many windows in proportion to their app use, and neither the earlier leave-one-out-with-100-bootstraps scheme nor the present ten-repetition 20-fold-with-ten-bootstraps scheme is described as partitioning users. If windows were partitioned - the natural reading - then every user's own data appear on both sides of every fold, and since key-press sequences from a customised icon layout are close to an individual signature, the classifier can succeed by recognising users rather than diagnoses. No user-level accuracy is reported anywhere, which is the number the stated research question requires. Compounding both: accuracy is the only metric, no chance baseline is computed, no confidence interval is given, window size was swept with the best reported, and tuning effort differed between the compared classifiers by the authors' own account. The corrective experiment is clear and would be worth more than the present result - partition by user, evaluate only on the 180 verified labels, report sensitivity and specificity at the user level, and adjust for or match on age.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Correctly constructed at the split, and this deserves explicit credit: 'we used 10-fold group-wise (by individual) cross-validation', stated unambiguously, so all clips from a child fall in the same fold and no participant contributes to both training and testing. That is exactly the safeguard most of this corpus omits, and it matters here because each child supplies up to ten IJA and five RJA clips from a single continuous session, which under clip-level splitting would be near-duplicates. Confidence intervals are computed by a named method and reported for every metric, and the classification threshold is fixed at 0.5 rather than tuned. Within its own terms the evaluation is therefore sound, and the near-perfect detection figures cannot be attributed to participant leakage. The problem lies upstream, in what the evaluation is an evaluation of. The paper states that conservative criteria were used deliberately 'to select individuals belonging to clinically distinct groups to ensure development of an accurate and precise ASD vs TD classification model', and the participant table shows a 44-50 point IQ gap at p < .001 with an autism sample that is 62% preverbal or single-word. Separating those two groups is a far easier problem than the clinical question, and AUROCs of 99.5-99.8% are the expected result rather than a surprising one - so the honest reading is that the study demonstrates the protocol and pipeline work, not that the system would perform at this level on the children a referral tool would actually see. The severity analysis inherits the same issue in a specific form: its three classes include non-autism, so a large part of its 90.3% AUROC is the already-solved detection problem, and because no autism-only result is reported there is no evidence that the system grades severity within the spectrum. Further gaps: no external validation, which the authors acknowledge; no clinical comparison group; no specificity; no class distribution for the severity bands and hence no chance baseline; and no adjustment for the IQ difference despite ANCOVA being straightforward and the authors demonstrably comfortable with mixed ANOVA elsewhere in the paper. The corrective study is well specified by the authors themselves - an IQ-matched external cohort - and would be worth considerably more than the present numbers.
 
@@ -16125,7 +16125,7 @@ The design cannot support the claim, and the reasons are structural rather than 
 
 The subject is the analytic unit under both evaluation schemes, so the within-subject leakage that dominates the image, frame, EEG, thermal and cry branches of this review does not arise. What arises instead is target leakage of the most direct kind, and it operates through two channels simultaneously. First, the recorded values: ADOS_TOTAL, ADOS_COMM, ADOS_GOTHAM_SEVERITY, ADI_R_SOCIAL_TOTAL_A, ADI_R_VERBAL_TOTAL_BV and SRS_RAW_TOTAL are the scored output of the assessments through which the ABIDE-I sites established the diagnoses that constitute the label, and the study's own explainability analysis ranks them first and second among all contributors. Second, missingness: ADOS and ADI-R are administered to establish an autism diagnosis and are largely absent for control participants in ABIDE-I, so the presence or absence of a value on these fields carries the label independently of its magnitude, and no imputation or missingness-handling procedure is described that would neutralise it. A ROC-AUC of 99.99% is the expected consequence, and no partitioning scheme - subject-level, site-level or otherwise - could alter it. Three further issues are secondary but real. Neither evaluation is site-stratified, despite 17 sites with distinct scanners and protocols and a substantial literature documenting site as a confound for autism classification on this dataset; SITE_ID is label-encoded into the preprocessing, and no leave-one-site-out result is reported. Age and IQ, which differ between groups in ABIDE-I, are entered as predictors rather than adjusted for, so part of the residual signal is cognitive ability and developmental stage. And the reported accuracy and split descriptions are mutually inconsistent between sections. The remedy is straightforward and would make the study genuinely informative: refit with the six instrument-derived fields removed, run leave-one-site-out, and report an age-and-IQ-only baseline. The architecture is well enough constructed that the resulting numbers would be worth having.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Structurally sound at the level of splitting and compromised at the level of feature construction, and the two need to be separated. The splitting is correct and clearly described: leave-one-out cross-validation with each of 41 iterations training on 40 participants and testing on the remaining one, with each participant contributing a single feature vector, so within-participant leakage is impossible - the same standard achieved by the best studies in this review and not by most. The chance-level handling in the statistical analysis is better still: the pseudo-pair surrogate group, constructed by pairing a child's movement with an adult's from a different video, is an empirically derived null for a synchrony measure, which is the appropriate control because coherence between any two quasi-periodic signals is non-zero by default. Very few studies in this corpus construct a surrogate null of this kind. The compromise lies elsewhere. The 92.68% headline is achieved with features built by summing the six coherence values that a group comparison on all 41 participants had identified as significantly different. Leave-one-out cross-validation then evaluates those features on the same 41 participants. No participant's data trains the model that classifies them, but every participant's diagnosis determined which features the model could choose from, so the evaluation is not label-blind and the derived-feature result is optimistically biased by an amount the design cannot quantify. The paper's own explanation confirms the mechanism without naming it: the improvement is attributed to 'higher Cohen's d values' for the derived features, and higher effect sizes are exactly what selecting and summing on significance produces. The original-feature result of 85.37% is the more trustworthy figure, though even there four of the five selected features were among the significant ones and it is not stated whether forward feature selection was nested inside the loop. Two further points: four classifiers across two feature conditions and 63 candidate features were compared with the maximum reported; and no confidence interval accompanies a comparison in which the entire improvement is three children.
 
@@ -16149,7 +16149,7 @@ The decisive weakness, and it is structural rather than procedural. The dataset 
 
 Not assessable, and not assessable in a stronger sense than any other study in this review. The paper gives two accounts of its evaluation that are not reconciled: one describing a variable 'learning percentage' divided into five values with the complement used for testing, illustrated at 65% training and 35% testing; and another defining 5-fold cross-validation within the list of evaluation measures. Neither is linked to the reported figures, and neither states a unit of splitting - which is unrecoverable in any case, since the number of individuals contributing the data is never given, so it cannot be determined whether the rows being split are people or repeated measurements from people. Feature selection optimises a fitness function that uses inter- and intra-class similarity, and therefore class labels, with no statement that it was confined to training partitions. No chance baseline, class distribution, confusion matrix or confidence interval is reported. Underneath all of this lies the fact that the reported 96.44886% accuracy has no stated denominator: a reader cannot say whether it was computed on ten individuals or ten thousand, nor what proportion of them carried each label, nor what condition they were in when measured. The figure is not an estimate of anything that can be identified.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 The mechanics are sound and irrelevant. Each respondent contributes one row, so the split unit is the person and within-participant leakage cannot occur; the 80/20 partition sizes are tabulated for all four datasets; class distributions are reported and the decision not to oversample is explained rather than assumed, which avoids the synthetic-minority inflation affecting several comparators in the paper's own literature review. All of this is better practice than much of this corpus. It has no bearing on the reported result, because the target in these datasets is computed from the predictors: the class is the summed A1-A10 score thresholded at the instrument's published cut-off, the ten items are model inputs, and the sum itself appears among the tabulated fields. A model with access to either can recover the label exactly, on any partition, under any validation scheme, with any architecture. Scores of 100% on accuracy, precision, recall, F1, Matthews correlation coefficient and AUC-ROC across four independent datasets simultaneously are the arithmetic consequence of that arrangement, and the paper's attribution of them to Bayesian hyperparameter optimisation misidentifies the cause. This is target leakage in its most complete form - more complete than the neuroimaging study charted alongside it, where the features summarised a clinical judgement, since here the label is a closed-form function of the inputs. The paper's own comparison table is the strongest available evidence that this is systematic rather than idiosyncratic: it places the subliterature on these datasets at 97.15% to 100%, and records one comparator using genuinely independent measurements - physical fitness tests, brain scans and severity assessments on recruited participants - at 77.99%.
 
@@ -16209,7 +16209,7 @@ Two arrangements with materially different properties, reported clearly enough t
 
 Three compounding failures make the reported 90.28% uninterpretable, and none is discussed. First, there is no test partition: accuracy, AUC, sensitivity, specificity, precision and F-score are all validation-set figures, and no held-out evaluation of any kind appears in the paper. Second, the final model was chosen as the epoch with the best validation accuracy out of 2,000 - so the reported number is a maximum over 2,000 draws taken on the very partition it is reported from, an optimistic selection whose inflation on a small validation set is substantial. Third, the evaluation unit is the cry instance rather than the child, as Table 1's own definitions confirm, and no participant-level partitioning is described anywhere; with roughly six instances per child from 62 children, cries from the same child will fall on both sides of the boundary, so the network can recognise an individual voice and recover that child's fixed label. This is the same failure documented in this review for scanpath images, video frames, EEG epochs and thermal images, appearing here in a fifth modality. Set against this, the statistical analysis is a separate and more defensible piece of work - a prespecified comparison of three clinically established measures, replicating a direction reported in prior cry research, with significance at p < 0.01 and p < 0.0001. But it faces its own confounds, all reported in the paper and none adjusted: the groups differ by 4.8 months in mean age during a period of rapid vocal maturation, using measures that change with that maturation; 87.10% of autistic recordings came from autism centres against a comparison group split between health centres and homes, and all three measures are sensitive to room acoustics and background noise, with harmonics-to-noise ratio - the strongest finding - being a direct measure of periodic-to-aperiodic energy that ambient noise depresses mechanically; the eliciting causes of the cries differ between groups; two device classes were used; and the tests appear to be computed over cry instances rather than per-child means, leaving their effective sample size unclear. The corrective analyses are all available from data the paper already reports - stratify by recording setting, adjust for age, aggregate per child, and correlate the acoustic features with the GARS-2 scores already collected.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Sound mechanics on a task with no uncertainty in it. Each respondent contributes one row so the split unit is the person, and 5-fold cross-validation is appropriate for 704 rows - both better than several comparators in this branch. Neither bears on the result. The outcome variable 'Class/ASD' is the summed A1-A10 score thresholded at the AQ-10 cut-off; the ten items are inputs; and 'result', the sum itself, is printed among the paper's own enumerated feature list with no feature-selection step removing it described. A model with access to either the items or the sum recovers the label exactly, on any partition, under any resampling scheme, with any classifier - and 0.9890 accuracy is a figure a single decision stump on the 'result' column would reach or exceed. This is the third study in the review resting on the UCI-derived autism screening tables, and the pattern is identical across all three: careful analytic practice above a label that is a closed-form function of the features. The paper's own stated limitation, that reliance on a single dataset may limit generalisability, correctly names an external-validity concern while leaving the internal one entirely unaddressed - which is the characteristic failure of this subliterature, since diversifying the datasets would change nothing if each new dataset carries the same arithmetic relationship between its items and its label.
 
@@ -16261,7 +16261,7 @@ This is the review's clearest case of a metric grid resting on almost nothing. T
 
 A single 70/20/10 division at the image level - 369, 105 and 51 images per class - applied to 1,050 photographs from 70 children at exactly 15 photographs each. Participant separation is therefore impossible: five near-identical shots of the same child pulling the same expression, taken minutes apart under fixed lighting at a fixed one-metre distance with the same camera settings, are distributed across training, validation and test. This is the same frame-level leakage documented across the video, EEG-epoch, thermal, cry and facial-image branches of this review, and it is the study's decisive methodological failure - the more so because the acquisition protocol is so tightly controlled that the only systematic variation left between images of different children is the children themselves. Three further points. The split is unrepeated and unseeded, with no cross-validation and no interval on any figure. Training and validation accuracy are reported as reaching nearly 100% within the first few epochs with loss near zero, described as optimal and stable performance without signs of overfitting, while held-out accuracy is 90% - a gap the paper reads as success rather than as evidence about the split. And group membership is perfectly confounded with institution, since all autistic children were photographed at a special school and all comparison children at a state school, so any residual site difference in setup, operator or child preparation is available to the classifier. What would have rescued the design is available and unused: with 70 children, a participant-level split holding out, say, 7 autistic and 7 typically developing children entirely would have cost nothing and produced an interpretable, if less impressive, number.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 The validation section is, in most respects, the most carefully constructed in this review's questionnaire branch. A stratified 70/10/20 split is used, the roles of the three partitions are stated explicitly (fitting, hyperparameter tuning and model selection, final reporting), Bayesian optimisation is cross-validated inside the training data only, the test set is described as never used during training or tuning, and the author pre-empts the overfitting objection directly, listing four mitigations. Two problems defeat all of that care. The first is ordering: SVM-SMOTE was applied to the whole 1,054-case dataset before partitioning, expanding it to 1,456 instances, and only then was the balanced dataset randomly partitioned. Synthetic minority instances are interpolations between real minority cases, so synthetic rows in the training set are constructed from real rows that ended up in the test set, and synthetic rows in the test set are constructed from real training rows. The hold-out is therefore not independent, and this alone can produce near-perfect minority-class recall. The second is the estimand: the label Class/ASD_Traits is the Q-CHAT-10 outcome, a deterministic threshold on the sum of ten items that are supplied as features. No split scheme can make the reconstruction of that threshold into a diagnostic accuracy. Together these explain a result that the paper instead attributes to methodological quality - 292 of 292 test cases correct, zero false positives and zero false negatives, reported as 100% sensitivity and 100% specificity and as confirming suitability for reliable clinical screening. The external comparison in Table III compounds this by ranking the 100% against literature figures of 97.15%, 97.82% and 93.69% from other datasets and protocols, presenting the gap as a methodological advance.
 
@@ -16277,11 +16277,11 @@ The validation design is under-reported - no split proportions, no value of k, n
 
 The validation design is the most rigorous in the charted corpus and is reported operationally rather than by name. Two-layer 4-fold cross-validation: 601 participants divided into four partitions that are disjoint at the participant level and stratified so that each spans the full score range; in each of four trials, two partitions train, one validates and one tests, with roles rotating so that every partition serves as test exactly once; for models with tunable hyperparameters, candidates are fitted on the training partitions, selected by MAE on the validation partition, then refitted on training plus validation before a single prediction on the untouched test partition; the four test MAEs are averaged. Hyperparameter selection therefore never sees the test data, the analysis unit is the person, and no participant contributes to both sides of any split - the three failures that account for most of the inflated figures elsewhere in this review are all absent here. Two real limitations remain. The first is the one the paper does not name: predictors and outcomes are self-report questionnaires completed by the same person in the same sitting, so the correlations are inflated by common-method variance, and there is direct construct overlap between camouflaging items (which describe effortful management of social interaction) and the BAPQ Aloofness and Pragmatic Language subscales (which measure social and pragmatic difficulty). The R=.85 for Aloofness should be read as agreement between two overlapping self-descriptions of social experience, not as prediction of an independently ascertained trait - which is precisely why the anxiety and depression models, whose outcomes are less conceptually adjacent to camouflaging, drop to .54 and .58. The authors explain that gap through instrument structure; construct proximity is at least as plausible. The second is that no external cohort is tested, which the paper itself insists on before any clinical use. Set against the corpus, this study is the reference point: a properly nested, participant-level, model-selection-clean design applied to a genuinely dimensional target yields R=.85 at best and .54 at worst, with only 36% of individual predictions landing within 5% of the truth - the realistic ceiling against which the 99% and 100% figures elsewhere in this review should be read.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 A single image-level split of 2,926 images into 2,526 training, 200 validation and 200 test, with no cross-validation, no repetition, no seed and no description of how the split was drawn. Three problems follow. First, the corpus is the widely reused web-scraped autism face collection, which contains duplicate and near-duplicate images of the same individuals; the paper demonstrates awareness of exactly this, noting that a cited study cleaned duplicates from the dataset using the MD5 hash algorithm, and then does not deduplicate, so images of the same child can sit on both sides of the split. Second, the test set is 200 images, giving a 95% confidence interval around 91% of roughly 86-95% - wide enough to contain the great majority of the comparison entries the paper ranks itself above, including MobileNet-V1 at 90.67 and Xception at 92.01, so the reported ordering is not supported. Third, validation accuracy is 4.5 points below test accuracy on partitions of equal size, an inversion that normally indicates split variance rather than generalisation and is reported without remark. Underneath all three sits the problem the whole benchmark line shares and this paper states approvingly: the models being compared have a solid common foundation because they use the same dataset - a dataset with no diagnostic labels, no provenance and no demographic information. A common foundation of that kind makes the numbers comparable to each other and to nothing else.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 This study's decisive problem is that the reported result does not come from its stated evaluation design. The methods define an image-level split of 2,940 images into 2,540 for training and 400 for testing, balanced within each. The results section then states that out of 2,940 images used for evaluation the model correctly classified 1,430 autism images and 1,420 non-autism images, 2,850 correct with 90 misclassified - and 2,850/2,940 is precisely 96.94%, the headline accuracy carried into the abstract and the comparison table. The reported performance is therefore a resubstitution figure computed over the whole dataset, with 86% of the evaluated images having been used to fit the model. The 400-image test set is defined and never used to produce a number. Three further issues compound this. The corpus is the web-scraped autism face collection that repeats individuals, so even a correctly executed image-level split would not separate children. The Fire Hawk Optimizer tuned unspecified parameters against an unspecified objective on an unspecified partition. And the comparison table ranks 96.94% against five literature figures spanning 92.0% to 96.63% obtained on different image counts (2,636 to 3,014) under unstated protocols, with the paper asserting that the comparisons are done under the same conditions used in the existing methods to ensure fair comparison - a claim that cannot hold when this study's own figure is a training-set score.
 
@@ -16333,11 +16333,11 @@ This is one of the two most rigorously evaluated studies in the charted corpus, 
 
 The design gets the structural question right and is limited by size rather than by construction. Subject-wise aggregation and evaluation are adopted explicitly to prevent data leakage and to provide a more realistic estimate of generalisation in clinical settings, and this is listed as one of the paper's four stated contributions - a rare instance in the eye-tracking branch of participant-level splitting being treated as a design requirement rather than overlooked. Set against the branch, that choice is what separates this study's 0.96 on 28 people from local_44d3aef5's 1.00 on 55 scanpath images and local_bb4d1f7a's 0.97 on 100 eye crops per child. Three qualifications remain. First, size: 28 participants across five folds gives test sets of five or six, and the reported standard deviations (0.08 accuracy, 0.095 F1) reflect that directly - the estimate is not wrong, it is imprecise, and the paper says as much in calling the work a proof of concept. Second, the within-subject resampling: additional subject-level samples were generated by resampling scanpaths within each subject and recomputing the aggregated representation, described as occurring during model training; if that augmentation was performed before the fold split rather than inside it, several aggregated vectors derived from the same participant's scanpaths would cross the partition and the subject-wise protocol would be undermined by the very step intended to increase sample diversity. The paper's wording suggests the correct placement but does not state it unambiguously. Third, the source cohort is uncharacterised - no task, no equipment, no diagnostic procedure, no demographics - so what the classifier separates cannot be independently assessed.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 The evaluation is thinly described and internally inconsistent. The dataset is said to be divided into three groups for testing, validation and training, with the reasoning that such splitting reduces the bias and overfitting possibility - and no ratio, no partition size, no seed and no cross-validation follows. The split is at the image level on a corpus whose per-child composition is unknown, and whose 14,352 images most plausibly derive by augmentation from a much smaller set of underlying photographs, since Roboflow's augmentation was applied at export rather than during training; if so, transformed variants of the same photograph sit on both sides of the partition. Training and evaluation are said to have been carried out multiple times with highly consistent results, and no variance figure supports that claim. Most concretely, the two mAP figures cannot both be genuine: mAP@0.5:0.95 within 0.11 points of mAP@0.5 is arithmetically achievable only under near-perfect localisation at IoU 0.95, which is not attainable here. And the informal robustness probe demonstrates directly that the system's decision surface extends to objects that are not faces, which no reported metric captures.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 The evaluation rests on a single image-level partition of 2,940 photographs into 70% training and 30% testing, with no cross-validation, no repetition, no seed and no statement of how the split was drawn. The corpus repeats individuals, so an image-level split does not separate children, and the number of distinct children is unknown - the same defect documented across the other fifteen members of this branch. Two further features are specific to this paper. First, the accuracy inversion: the testing phase reports 98.42% against the training phase's 97.75%, and the learning curves show validation accuracy exceeding training accuracy, which the authors interpret as evidence of good generalisation. The more usual explanation on this corpus is that the partitions are not independent. Second, the chimp optimisation algorithm tuned the classifier's parameters against an unstated objective on an unstated partition, so the reported test figure may be the outcome of a search evaluated on the data it is then reported against. On top of this, the comparison against seven quoted literature figures (92.10% to 97.76%) is drawn from other papers under unknown protocols, and no component of the four-stage pipeline is ablated.
 
@@ -16635,11 +16635,11 @@ Index terms: autism, autism spectrum disorder, machine learning, predictive anal
 
 Keywords: voice, speech analysis, autism spectrum disorder, harmonic model, prosody, machine learning. 'Harmonic model' is the technical core - the paper's distinctive contribution is a signal-processing method for extracting reliable pitch from quasi-periodic disordered speech, with autism as the application.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Keywords: autism spectrum disorder, object detection, fixations, classification, visual saliency. Three of the five are computer-vision terms and none is clinical, placing the paper firmly in the multimedia-signal-processing tradition rather than the clinical one - consistent with a venue, a challenge origin, and an evaluation framed as benchmark competition.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Keywords: autism spectrum disorders, eye gaze data, deep learning. Three terms, one clinical and two technical - the sparsest keyword set in the corpus, and consistent with a paper whose contribution is architectural and whose clinical content is inherited.
 
@@ -16663,7 +16663,7 @@ Keywords: AI-assisted diagnosis, autism spectrum disorder, behavioral biomarker,
 
 No keyword list appears in the extracted text. The operative vocabulary is multimodal fusion, hybrid fusion, weighted naive Bayes, eye fixation, facial expression recognition, EEG, and early detection - a method-dominated register with 'early detection' as the only clinical term.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Keywords: Autism Spectrum Disorder (ASD), Machine Learning, Kernel Extreme Learning Machine (KELM), Eye tracking, Metaheuristic algorithms. Three of five are optimisation or learning terms and the ordering of the paper's stated contributions confirms the priority: propose a tool, 'test the GPC over a real application', improve KELM accuracy. Autism is the application domain for a metaheuristics contribution.
 
@@ -16779,7 +16779,7 @@ Keywords: autism spectrum disorder, schizophrenia, convolutional neural networks
 
 Title keywords and body terminology rather than a formal keyword list: augmentative and alternative communication, speech-generating devices, usage patterns, stacked autoencoders, autism spectrum disorder, data mining. The framing terms are drawn from data science rather than clinical assessment - 'usage model profiles', 'pseudo-semantic representation', 'pseudo-samples', 'digital markers and fingerprints', 'insight generation from a data science perspective' - and 'screening' does not appear at all, while 'diagnosis classification accuracy' does. The prominence of 'stacked autoencoders' in the title signals that the modelling method is presented as a contribution in its own right.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 No formal keyword list is carried in the retrieved text; the article is categorised under Psychiatry as an Original Investigation. Governing terms in the title and body: joint attention, deep learning, detection, symptom severity assessment, behavioural biomarker, explainable AI, initiation of joint attention, response to joint attention, Early Social Communication Scales, compliance score, Grad-CAM, attention weights, hierarchical clustering, digitalized measurement. The framing vocabulary is diagnostic-clinical rather than engineering - 'diagnostic study', 'criterion standard diagnostic tool', 'predictive performance' - and 'screening' appears only in reference to the K-CARS-2 stage.
 
@@ -16811,7 +16811,7 @@ Keywords: autism spectrum disorder (ASD), Deep Learning, Convolutional Neural Ne
 
 Keywords: Autism Spectrum Disorder; GAMI-Net; Graph Neural Network; Convolutional Neural Network; Hypernetworks; Explainable artificial intelligence. Five of six name a method or architecture, with no term identifying the modality, the population or the data source - characteristic of the branch. Terms carried through the body: ABIDE-I, Harvard-Oxford atlas, phenotypic embedding, autoencoder fusion, personalised classification, SHAP, t-SNE, ADOS, ADI-R, SRS.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Keywords: Autism; Automated diagnosis; Behavioral markers; Cross wavelet analysis; Interpersonal motor coordination; Machine learning. The set is balanced between construct, method and application, and 'Interpersonal motor coordination' names a behavioural target rather than a technique - unusual in this corpus, where keyword lists are typically dominated by architectures. 'Automated diagnosis' is a stronger application claim than the paper's own conclusions support. Terms carried through the body: motion energy analysis, coherence, time scales, pseudo group, forward feature selection, unintentional and intentional coordination, contactless, calibration-free.
 
@@ -16835,7 +16835,7 @@ No formal keyword list appears in the retrieved text. The organising terms are r
 
 Keywords: autism and visual sensory processing disorder, density factor-based artificial bee honey badger optimization, hybrid weight optimized deep neural recurrent network, multi-objective function, optimal feature selection. Four of five name the paper's own coined methods; none names a behaviour, a clinical construct or an application. The keyword list accurately reflects the paper's centre of gravity, which is metaheuristic optimisation rather than autism.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Keywords: machine learning, one-dimension convolution neural networks, 1D CNN, tree-structured parzen estimator, autistic spectrum disorder. Four of five name the method or its components, with the population named once and no term identifying the data source, the modality or the fact that the inputs are questionnaire responses.
 
@@ -16895,7 +16895,7 @@ Keywords: autism diagnosis; Graph Convolutional Networks (GCNs); Convolutional N
 
 Keywords: cry analysis, early childhood, autism spectrum disorder, deep learning. Compact and well balanced across modality, population, condition and method. Terms carried through the body: vocal biomarker, jitter, shimmer, harmonics-to-noise ratio, fundamental frequency, spectrogram, R-CNN, Praat, GARS-2, at-home screening, continuous remote monitoring.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Keywords: Autism Spectrum Disorder (ASD); Machine Learning; Bayesian Optimization; Random Forest; Early Diagnosis; Predictive Modeling. Method-facing with the population named once; no term identifies the data source or the fact that the inputs are questionnaire responses.
 
@@ -16947,7 +16947,7 @@ Multimodal data; Kinematic features; Eye movement; Federated learning; Explainab
 
 ASD; Normal; CNN; Confusion Matrix; Dataset. Five terms, two of which name an evaluation artefact and a data structure rather than a subject; Normal appears as a keyword in its own right.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 Autism Spectrum Disorder (ASD); chi-square feature selection; machine learning; explainable AI. Four terms, three naming technique. Neither the instrument (Q-CHAT-10) nor the population (toddlers) appears, despite both being central.
 
@@ -16963,11 +16963,11 @@ machine learning; feature selection; hyperparameter tuning; logistic regression;
 
 ASD; Autism; CAT-Q-ES; Camouflaging; Supervised machine learning; Mental health; Gender. Seven terms covering condition, instrument, construct, method, outcome domain and a demographic dimension analysed substantively - the most informative keyword set in the corpus.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 Autism spectrum disorder; Vision transformers; Facial image analysis; ReAttention; Early diagnosis; CNN. Four of six terms name architecture; participants, validation and setting are absent.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 Autism spectrum disorder; Face recognition; DeepDeblur; Denoising optimized convolutional neural network; Fire hawk optimizer. Four of five terms name pipeline components; face recognition rather than screening or classification is used for the task.
 
@@ -17019,11 +17019,11 @@ Not captured in the extracted text.
 
 Autism Spectrum Disorder; Bagging; Boosting; Stacking; Ensemble learning; Eye-tracking. Four of six terms name ensemble strategies; participants, task and validation are absent.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 Autism Spectrum Disorder (ASD); Facial Image Analysis; YOLO; Real-time screening; AI-based Diagnostics. Five terms, two of them deployment claims (real-time screening, AI-based diagnostics) that the paper does not measure - no inference latency or throughput figure appears anywhere despite real-time being the central selling point.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Autism Spectrum Disorder; Facial Images; Wavelet Neural Network; Deep Learning; Chimp Optimisation Algorithm. Three of five terms name pipeline machinery; validation, participants and setting are absent.
 
@@ -17321,11 +17321,11 @@ International Journal of Social Robotics 13:67-82, 2021; accepted 25 February 20
 
 Frontiers in Psychology, 12, article 665096, in the Psychology for Clinical Settings section - a psychology venue, with authorship spanning a paediatrics institute on development and disability and departments of psychiatry and paediatrics, which explains the depth of clinical characterisation relative to the modelling.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 Signal Processing: Image Communication, volume 94, article 116184 (Elsevier), authored from Roma Tre University and the University of Padova. An image-processing journal with no clinical readership, and the paper is an extended write-up of an IEEE ICME 2019 Grand Challenge submission - a publication route that explains both its strengths (standardised data, common test set, direct comparison against seven other methods) and its weaknesses (no participant characterisation, no diagnostic provenance, no ethics statement, no clinical framing beyond the opening paragraphs).
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 Signal Processing: Image Communication, volume 94, article 116198 (Elsevier) - the same issue as the Mazumdar RM3ASD paper, which it cites and benchmarks against. Authorship spans the University of Kentucky and UC Davis and combines signal-processing and networking engineers with two autism researchers from the MIND Institute tradition, and the work is supported by NIMH R01MH121344-01. The engineering-clinical composition is visible in the framing (the introduction cites mean US age at diagnosis over 4 years, fewer than 25% before age 3, and characterises the delay as 'squandering years of potential intervention when the brain is most plastic') but not in the participant reporting, which remains that of a benchmark paper.
 
@@ -17349,7 +17349,7 @@ IEEE 3rd International Conference on Human-Machine Systems (ICHMS) 2022, DOI 10.
 
 Journal of Healthcare Engineering, volume 2022, article 9340027, an open-access Hindawi title. Authorship is from the Department of Education at Pingdingshan University and the National Engineering Laboratory for Technology of Big Data Application in Education at Central China Normal University - an educational-technology rather than clinical or biomedical-engineering provenance, which explains the paper's shape: careful engineering of the fusion architecture and the stimulus selection, competent statistics on the EEG, and essentially no clinical characterisation of the participants. The review timeline is notably compressed (received 16 February 2022, revised 5 March, accepted 8 March, published 25 March - eleven days from submission to acceptance). Funded by Henan provincial science and social science programmes.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 Applied Soft Computing, volume 120, article 108654 (Elsevier) - a computational intelligence journal with no clinical readership. Authorship is from the Division of Technologies for Cyber-Human Integration at Universidad de Guadalajara and the School of Engineering and Sciences at Tecnologico de Monterrey, with no clinical or psychological co-authorship. The venue and authorship together account for the paper's profile completely: rigorous treatment of the optimisation problem, six-metric reporting with non-parametric testing, full algorithmic specification, and no participants, no ethics statement, no diagnostic information and no validation protocol. Its related-work section surveys classifiers and data sources broadly and accurately but engages with no methodological literature on evaluation.
 
@@ -17465,7 +17465,7 @@ Frontiers in Digital Health 5:952433, Digital Mental Health section, Original Re
 
 2023 IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC), pages 851-857 - a seven-page general computing conference paper rather than a clinical, assistive-technology or machine-learning venue. The format accounts for some compression, though not for the absence of an ethics statement or of any metric beyond accuracy. The venue choice also explains the paper's structure: roughly half is a literature review of AAC efficacy research, followed by descriptive characterisation of the user base, with the classification experiments occupying comparatively little space and being presented partly as a replication and extension of the same group's earlier report on the same dataset.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 JAMA Network Open 6(5):e2315174, published 25 May 2023, accepted 10 April 2023, open access under CC-BY, with a correction issued 7 July 2023 for an author contact detail. This is the highest-profile clinical venue of any study in the corpus and the venue standards are visible throughout: adherence to the STARD reporting guideline is declared, the participant table carries formal group comparisons with p values for every characteristic, every performance metric is reported with a 95% confidence interval computed by a named method, funder role and author contributions are itemised, competing interests including issued patents are disclosed in full, and a data sharing statement is provided. Two supplements carry the enrolment flow diagram, task and acquisition procedures, compliance metric, architecture diagram, training and validation performance, age-stratified results and all interpretability figures. The contrast with the conference-proceedings papers elsewhere in this corpus is instructive: the same underlying study reported at a workshop would have shown none of the participant characterisation that makes its IQ confound visible.
 
@@ -17497,7 +17497,7 @@ Proceedings of ICMISI 2024, the International Conference on Machine Intelligence
 
 Diagnostics 15(17):2232, MDPI, open access under CC BY; received 26 July 2025, revised 30 August, accepted 1 September, published 3 September 2025 - a 39-day cycle. A diagnostics journal, and the review appears to have engaged with the architecture rather than the inputs: a paper reporting 99.99% ROC-AUC for autism diagnosis, whose own explainability figures name the ADOS total as the leading predictor, was accepted with an internally inconsistent accuracy figure (99.40% against 96.4%), an internally inconsistent split description (70:30 against 20%), and a subject count for the held-out set matching neither. The supplied metadata dates the article to 2024 while the article itself is a 2025 publication.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 IRBM 45 (2024), article 100838, Elsevier - a biomedical engineering journal, published as an Original Article with a highlights list and graphical abstract. Received 22 February 2023, revised 15 January 2024, accepted 27 May 2024, available online 6 June 2024, so nearly sixteen months in review. The venue is a reasonable fit: the paper's substance is signal processing applied to a clinical question, and the reporting reflects that balance, with the motion energy and wavelet procedures specified carefully and the clinical apparatus - diagnostic procedure, demographics, ethics - reported to adequate but not detailed standards. The journal's declaration templates produce the unusual artefact of an animal-research statement in a study of children.
 
@@ -17521,7 +17521,7 @@ PLOS ONE 19(4), article e0302238, published 22 April 2024; received 9 January 20
 
 Intelligent Decision Technologies 18(1):533-559, IOS Press, 2024; received 26 September 2022, accepted 28 October 2023 - a thirteen-month review at a decision-technologies journal outside the clinical and biomedical literature. Twenty-seven pages, of which the great majority document the optimisation algorithm, the network architecture and the metric definitions, with a single paragraph and one five-row table describing the data. The venue explains the balance and the absence of clinical reporting conventions; it does not explain the absence of a sample size, which no venue's norms would require to be omitted.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Journal of Computational Mathematics and Data Science 13:100105, Elsevier, 2024. A computational mathematics venue, and the reviewing focus followed accordingly: the optimisation methodology, the architecture comparison, the class-distribution reporting and the metric set are all handled to a reasonable standard, while a paper reporting 100% on six metrics across four datasets - and deploying a public diagnostic tool on that basis - was accepted without the derivation of the class variable being examined.
 
@@ -17581,7 +17581,7 @@ Electronics 14(11):2231, MDPI, open access under CC BY; received 26 April 2025, 
 
 Journal of Autism and Developmental Disorders, Brief Report, accepted 18 March 2025, open access under CC BY-NC-ND, doi 10.1007/s10803-025-06811-1. A clinical autism journal, and the venue's influence is visible in what is reported well: the four-stage diagnostic procedure with clinician qualifications, the explanation of why ADOS was unavailable in Farsi, the ethics and consent statements, the exclusion rules, the per-group recording-setting and cry-cause distributions, and above all a competing-interest declaration that itemises employment, founder status, equity holding and advisory compensation by individual. The brief-report format constrains length, but the omissions that matter are not length-related - a test partition, a participant-level split and a model-selection rule that does not maximise over the evaluation set are design decisions rather than reporting ones, and the same journal's structure that elicited an exemplary conflict declaration did not elicit any account of how the 90.28% was obtained.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Procedia Computer Science 258:1576-1585, Elsevier, 2025, open access under CC BY-NC-ND, doi 10.1016/j.procs.2025.04.389, peer-reviewed under the scientific committee of the International Conference on Machine Learning and Data Engineering. A conference-proceedings venue with a short review cycle, and the reviewing engaged with the modelling rather than the data: a paper whose own methods section prints a feature list containing both the summed screening score and the thresholded outcome derived from it was accepted reporting 0.9890 accuracy without that relationship being examined.
 
@@ -17633,7 +17633,7 @@ Complex & Intelligent Systems 11:173 (Springer) - a computational-intelligence j
 
 2025 10th International Conference on Computer and Communication Engineering (ICCCE), IEEE, pages 351-355. A short engineering conference paper. The venue explains but does not excuse the asymmetry between a fully specified acquisition protocol and a completely unspecified model, and the survival of unrelated stunting terminology in the workflow description.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 Engineering, Technology & Applied Science Research 15(5):27954-27959 - an open-access general engineering journal. A 100% diagnostic accuracy claim, a hold-out contaminated by pre-split synthetic oversampling, and a label that is a threshold on its own predictors passed review there in 48 days including a revision round.
 
@@ -17649,11 +17649,11 @@ Engineering Research Express 7(2):025269 (IOP Publishing) - an open-access gener
 
 Research in Autism 128:202712 (Elsevier) - a specialist autism research journal rather than an engineering or general-science venue, and the difference is visible throughout: dimensional outcomes, in-sample psychometrics, effect sizes with confidence intervals for group comparisons, a self-critical limitations section, an ethics analysis of algorithmic screening in mental health, and deposited code. It is the only paper in the corpus published in a venue whose reviewers are subject-matter specialists in autism, and it is also the only one to release code, report internal consistencies, or discuss stigma.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 International Journal of Intelligent Engineering and Systems 18(3):312-319 - an open-access computing journal. Review appears to have been rapid (received 17 January 2025, revised 4 February 2025) and did not surface the absent ethics statement, the unreported class counts, the 200-image test set behind a four-way ranking claim, or the mismatch between a movement-based biomarker rationale and a still-image input.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 International Journal of Intelligent Engineering and Systems 18(4) - an open-access computing journal, the same venue as local_6e7174c0. Review did not surface the mismatch between the stated 400-image test set and the 2,940-image evaluation, the absent ethics statement, or the reporting of reference-dependent image-quality metrics for photographs that have no sharp reference.
 
@@ -17705,11 +17705,11 @@ Translational Psychiatry 16:129 (Nature Portfolio) - a clinical and translationa
 
 Array 30 (2026) 100753 (Elsevier) - an open-access computer science journal. The author list spans engineering and clinical institutions including a psychiatric hospital, which makes the absence of any description of the source cohort's diagnosis or demographics more notable rather than less. The paper discloses an editorial conflict of interest for one author, which is good practice and uncommon in this corpus.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 Journal of Pioneering Medical Sciences 15(1):137-145, a medical sciences journal, 90 days from submission to acceptance. Clinical review did not surface the absent class counts and split ratios, the mAP inconsistency, or the reported finding that one of the two models labels a dog as autistic.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 Multimedia Tools and Applications 85:300 (Springer), 218 days with a revision round. A multimedia and computing venue. Review did not surface an ethics declaration stating that no human participants were involved in a study of 2,940 children's photographs, a data-availability statement denying that any dataset was analysed, a test accuracy above training accuracy read as good generalisation, or the mismatch between the stated 50 epochs and the 25-epoch learning curves.
 
@@ -18007,11 +18007,11 @@ Published 2021 by a group at United Arab Emirates University with Al Ain Hospita
 
 2021. The framing is the most precisely targeted in the corpus. Rather than arguing that clinical assessment is subjective in general, it identifies exactly where prosody falls through the diagnostic net: ADOS-2 Module 3 contains one item rating 'Speech abnormalities associated with autism (Intonation/Volume/Rhythm/Rate)' on a 0-2 scale where an abnormal score 'represents a composite of abnormal features crudely lumped together'; the SRS contains one item on unusual tone of voice; and 'there is no reference to speech or voice quality in any of the 7 diagnostic criteria laid out in' DSM-5. It also identifies a technical rather than clinical obstacle - that existing pitch detection algorithms produce octave errors on quasi-periodic disordered speech and lack the resolution to capture fine perturbation - and addresses it with a model previously validated on other clinical populations. Its account of why prior pitch findings conflict is likewise specific, attributing heterogeneity to variation in voice sampling context, from home recordings to structured caregiver interactions to professional evaluations 'with varying social and cognitive demands', and then testing that account directly by comparing four conversational contexts within one dataset.
 
-**S-070** [local_b7ec3755] — *Signal Processing: Image Communication 94 (2021) 116184*
+**S-070** [local_b7ec3755] — *Early detection of children with Autism Spectrum Disorder based on visual exploration of images*
 
 2021 (submitted 2020, revised December 2020). Framed as early detection enabling early intervention, with the standard supporting claim that symptoms appear in the first two years and that early programmes let children enter kindergarten alongside typically developing peers - though the model is applied to school-age children of unstated age and could not address toddlers, whose viewing behaviour the paper's own Discussion says differs qualitatively. The more distinctive feature of the framing is what surrounds it: this is a challenge paper, so its comparative claim is against seven named competitor methods on a shared test set rather than against the literature at large, and its headline number is a modest 0.59 stated without inflation. The corpus contains few papers that report a result this weak, and its presence is a useful corrective - the same modality that yields 90%-plus in single-laboratory studies yields 0.53-0.59 across all eight entries when the data are fixed and shared.
 
-**S-071** [local_684969f6] — *Signal Processing: Image Communication 94 (2021) 116198*
+**S-071** [local_684969f6] — *Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data*
 
 2021 (submitted May 2020, revised January 2021), extending a 2019 ICME Grand Challenge submission. The framing is the standard early-detection argument, sharpened by specific epidemiological figures on the diagnostic delay and by the claim that scanpath-only classifiers would be computationally light enough for mobile deployment. What distinguishes this paper's position in the literature is not its framing but its evaluative stance: it is one of the few here written in explicit competition with named alternatives on a shared blind test set, reporting its own prior submission's weaker numbers alongside the improved ones, and it treats the failure of its own central idea as a finding rather than an embarrassment. Its related-work section is also unusually careful about generalisation, noting that a 92%-accuracy adult study 'may not directly translate to ASD diagnosis among children' because children's and adults' gaze patterns differ - a caution that other papers in this corpus citing the same adult results do not observe.
 
@@ -18035,7 +18035,7 @@ Published 2021 by a group at United Arab Emirates University with Al Ain Hospita
 
 2022. The framing is standard in its premises - 1 in 54 prevalence, 'a tremendous economic and mental burden to society', existing methods 'depend on the assessment of experts, which are subjective and costly' - but two elements are distinctive. The critique of current tools is concrete rather than generic, citing the M-CHAT as a case where a parent questionnaire 'is administered by specialists in rigorously controlled clinical settings, usually taking hours to complete', so the objection is to throughput rather than to validity. And the aetiological framing is unusually non-deterministic for this literature: the paper cites 'an emerging view is that the atypical behavior of ASD children may be caused by early brain adaptation to an adverse environment, rather than a result of ongoing neural pathology', which recasts early intervention as preventing maladaptive adaptation during a period of plasticity rather than as treating a fixed pathology. That framing then does argumentative work, supplying the paper's justification for including EEG at all - that 'atypical brain development in children with ASD appears earlier than atypical behavior, and the critical period of early intervention will be missed if the detection is based on behavioral data'. The claimed contributions are explicitly comparative: that prior work has applied each modality separately, that 'studies on data fusion are few', and that 'the discriminative powers of different data modalities are unclear' - a gap the study does address, and the modality-ranking result is its most transferable finding whatever the absolute accuracies are worth.
 
-**S-077** [local_893ce2fa] — *Applied Soft Computing 120 (2022) 108654*
+**S-077** [local_893ce2fa] — *An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images*
 
 2022 (received October 2021, revised February 2022). The framing is the standard objectivity argument in a strong form: 'the accurate diagnosis of ASD is usually affected since it is linked to the judgment of an expert, which produces biases related to the lack of objectivity', with the gold standard characterised as requiring 'multiple sessions and a qualified professional', hence 'time and... high cost'. The proposed role is appropriately modest - 'automatic screening tools can accelerate the diagnosis by identifying which individual require a complete autism assessment' - and the discussion repeats that the method 'permits the experts to provide a preliminary overview that guides diagnosis to more complex stages and tests'. Two features of the background are worth noting against the corpus. The clinical description is the least accurate here, framing autism as a condition from which children 'deteriorate' without early medical prescription and cataloguing 'red flags' at 12, 14 and 18 months. And the paper's positioning of its own novelty - 'to the best of our knowledge, this is the first time KELM is used for ASD classification by using gaze tracking images' - is a claim about the pairing of an algorithm with a dataset rather than about any question concerning autism, which is a fair statement of what the study contributes.
 
@@ -18151,7 +18151,7 @@ Published 2023 by the Augmented Human Communication Laboratory at Nara Institute
 
 Published 2023 by a distributed group spanning University of Colorado Colorado Springs, Yale, University of Virginia, University of Miami, University of Washington, Seattle Children's Research Institute, Microsoft Research and Van Robotics, funded by NSF and NIH grants, with data provided by the GiveSpeech Foundation. The framing is a data-availability argument rather than a clinical one: the authors contend that AAC research is dominated by single-subject designs and expensive clinical trials requiring 'specialized infrastructure and a great deal of clinical expertise', while the dense telemetry that digital AAC systems generate has been almost entirely ignored - 'with the exception of one prior report, no efforts have been made to use the dense streams of data collected by digital AACs to derive insights of clinical importance'. That is an accurate observation and the study's real contribution is to demonstrate the point. Its positioning within this review is distinctive in three ways. It is the only study whose participants are AAC users, so its autistic sample comes from the minimally verbal end of the spectrum that the rest of the corpus systematically excludes. It is one of very few that pose the differential question explicitly - autism versus others who also need AAC, not autism versus typical development. And it is the only one whose data were generated as a by-product of people using a product for their own purposes, which gives it unmatched ecological validity and simultaneously removes every control that makes a finding interpretable. The paper is also unusual in reporting a null result prominently: three simple usage measures showed no group difference at all, and this is presented as the motivation for the modelling rather than concealed.
 
-**S-106** [local_8a706eaa] — *Original Investigation | Psychiatry*
+**S-106** [local_8a706eaa] — *Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder*
 
 Published 2023 by the Department of Biomedical Systems Informatics at Yonsei University College of Medicine with the Division of Child and Adolescent Psychiatry at Seoul National University College of Medicine and LumanLab Inc, funded by an MD-PhD Physician-Scientist Training Program grant from the Korea Health Industry Development Institute. The framing is a critique of the existing computational literature rather than of clinical practice, and it is one of the sharpest such critiques in the corpus: prior autism-detection models are said to be unsuitable for tool development because of 'a lack of automation, the requirements for specialized and expensive equipment, calibration, trained personnel, dependence on human rating of autistic behaviors, and low precision and recall', with the low performance attributed to the absence of targeted behavioural biomarkers and of methods for quantitatively measuring hallmark autism behaviours. The response - instrument an already-validated clinical construct with a replicable protocol and a consumer camera, rather than search for a statistical signature in whatever data are available - is the study's real contribution and is a template the rest of this literature could usefully follow. Two contextual features should be carried into the synthesis. This is one of very few studies here whose autistic sample is predominantly minimally verbal with mean IQ in the 50s, a population systematically excluded elsewhere by paradigms requiring screen attention or conversation - and simultaneously the study whose groups differ most on IQ, so the two facts are the same fact. And the method is patented by its authors with a commercial entity involved in data management, disclosed fully but without the independent-analysis safeguard reported by the Duke group elsewhere in this corpus.
 
@@ -18183,7 +18183,7 @@ Published 2024 by the Department of Computer Engineering at the Arab Academy for
 
 Published September 2025 by computer science groups at Lahore College for Women University and The Superior University in Pakistan, with collaborators at the University of North Dakota and King Saud University. The framing is the branch standard: ADOS and ADI-R are 'subjective, time-consuming, and largely impossible in low-resource environments', so objective neuroimaging biomarkers combined with automated classification should replace them. For this review the study earns extended treatment for three reasons, none of which concerns its accuracy. It is the corpus's clearest and most instructive case of target leakage, and its mechanism is distinct from the questionnaire-dataset studies charted alongside it: there the label was an arithmetic function of the features, here the features are the scored output of the clinical assessment that produced the label, which is less mechanical and equally circular - and compounded by the fact that ADOS and ADI-R are largely absent for controls in ABIDE-I, so missingness carries the label as well. Second, the leakage was made visible by the study's own interpretability apparatus. GAMI-Net's additive decomposition ranks ADOS_TOTAL first at 0.278 and the final SHAP analysis ranks ADOS_Gotham_Total first at 0.234, and the paper reports both transparently while reading them as clinical alignment. That is the strongest argument in this review for interpretable-by-design architectures: a black-box model on the same inputs would have produced the same 99.99% with nothing to reveal why. Third, its own Table 1 tabulates recent comparators in the neuroimaging branch at 80.2% to 97.1% accuracy, so figures in the high nineties are that branch's norm rather than an outlier - and if phenotype fields are commonly used alongside imaging, those figures require the same provenance and arithmetic scrutiny this review has had to apply to the scanpath-reuse and facial-image literatures. Two structural notes complete the picture. The study has the richest clinical phenotype of any in the review - ADOS, ADI-R, SRS, FIQ, VIQ, PIQ across 1,112 subjects at 17 sites - and reports none of it as sample description, having converted it into features; and its motivating argument, that the standard instruments are impractical in low-resource settings, is contradicted by a proposed alternative requiring both an MRI scanner and those same instruments as input.
 
-**S-114** [local_5b5f2237] — *Contents lists available at ScienceDirect*
+**S-114** [local_5b5f2237] — *Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development*
 
 Published 2024 by Shenzhen University's Institute of Human Factors and Ergonomics with the Shenzhen Guangming District Center for Disease Control and Prevention and Shenzhen Kangning Hospital - the same engineering-plus-public-health-plus-psychiatry consortium, the same cohort and the same recordings as the group's oculomotor paper charted elsewhere in this review, funded by seven Chinese sources including the National Natural Science Foundation. The framing is the familiar objectivity-and-efficiency argument, but it is developed with more precision than most: the paper distinguishes two separate deficiencies in current practice, lack of objectivity and excessive time cost, and observes that machine-learning work which merely shortens ADOS or ADI-R by pruning items addresses the second while leaving the first untouched, because 'the issue of lack of objectivity remains if individuals' behavior is rated by experts'. That is a sharper diagnosis of what automation is for than most papers in this corpus offer. Its distinctive scientific contribution is to target a dyadic construct - coordination between two people - rather than a property of the child, and to control it with a surrogate-pair null. Its distinctive cautionary contribution, for the review's purposes, is that it is the clearest available demonstration of how much analytic choice determines outcome: the same recordings analysed by the same group with complexity matching yielded no significant coordination difference, and with cross wavelet analysis yield both a significant difference and a 92.68% classifier. The paper reports both facts and reconciles neither.
 
@@ -18207,7 +18207,7 @@ Published 2024 by the Natural and Artificial Cognition Lab in the Department of 
 
 Published 2024 by computer science and engineering departments at MIT-ADT University and the Vishwakarma Institute of Information Technology, Pune, with no funding statement and no clinical collaboration. The framing is the economic-burden argument in its strongest form in this review: undetected autism 'may create more economic pressure, affect the family relationship, and also become a burden in social and medical care', and the condition 'has brought a large economic and mental burden to society'. For the review the study is worth recording for three reasons, none of them to do with its result. It is the only included study that reports no sample size at all, which marks the outer limit of what this literature will publish. Its target conflates autism with visual sensory processing disorder into a single binary label, which no other included study does and which makes even a valid result uninterpretable clinically. And its one worked data table shows the three 'Detected' individuals carrying body temperatures of 100.4, 95.5 and 103 and heart rates of 102, 62 and 133 against 98.5 and 99.5 with heart rates of 85 and 89 for the two 'Not detected' - so in the only data the paper displays, the label separates abnormal from normal vital signs. Read alongside the facial-photograph studies charted here, it indicates that the segment of this literature driven by algorithmic novelty rather than by a clinical question can reach the high nineties on data it does not describe, with a target it does not define, and pass peer review at a journal with a thirteen-month review period.
 
-**S-120** [local_8253c2ec] — *Journal of Computational Mathematics and Data Science 13 (2024) 100105*
+**S-120** [local_8253c2ec] — *Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder*
 
 Published 2024 by mathematics and computer science departments at four Nigerian universities. The framing is an access argument stated with more precision than anywhere else in this review: over 125,000 individuals were reported waiting for a mental health service examination in England in July 2022 against a recommended three-month wait, so 'parents and caregivers [do] not have the necessary support and services early'. That problem is real, quantified and correctly identified, and it is why work of this kind is written, published and cited. For the review the study contributes three things, all cautionary. It is the corpus's most complete instance of target leakage: the class variable in the UCI and Kaggle autism screening datasets is the summed A1-A10 item score thresholded at the instrument's published cut-off, the items are the model's inputs, and the sum is itself among the tabulated fields - so the outcome is a closed-form function of the predictors and 100% on accuracy, precision, recall, F1, Matthews correlation coefficient and AUC across four independent datasets is the expected arithmetic, obtainable by a summation and a comparison. Second, the paper's own literature review documents that this is systematic rather than isolated, tabulating the subliterature on these datasets at 97.15% to 100% while recording one comparator that used independent measurements - fitness tests, brain scans and severity assessments on recruited participants - at 77.99%, roughly twenty-two points below. Third, and most consequentially, the study does not stop at reporting: it deploys. An interactive web-based diagnostic tool was built, illustrated in the paper, and described as routing user input through age-specific pre-trained models to give 'immediate diagnostic feedback', 'accessible for clinical and at-home use'. A parent using it answers the Q-CHAT-10 or AQ-10 items and receives back, presented as an artificial-intelligence diagnosis, the output of those instruments' own scoring rule - with no positive predictive value computed at any realistic prevalence, and with the training data drawn from screening-app users whose positive rates run to 69%. What should be said in the study's favour is that its analytic reporting is careful where the corpus norm is not: class distributions are given for every band, the decision not to oversample is explained, split sizes are tabulated in full, the Matthews correlation coefficient is included, and the methodological critique of grid-search hyperparameter tuning is well reasoned. The gap between that care and the unexamined provenance of the label is the review's clearest illustration of how rigorous analysis above a corrupted target produces a confidently wrong deployment.
 
@@ -18267,7 +18267,7 @@ Published May 2025 by the School of Computer Science and Engineering at the Univ
 
 Published 2025 by a group spanning Zoundream AG in Basel, the Barcelona Center for Maternal-Fetal and Neonatal Medicine, and the University of Bologna, funded by Zoundream AG together with Swiss and Spanish innovation agencies, with two authors employed by the company, one of them a co-founder holding stock, and a third compensated as a scientific advisory board member. For this review the study occupies a position no other paper does. Cry is the earliest behaviour any included study measures: it is present before language, requires no cooperation, no task compliance, no social engagement and no cognitive floor, and it can be captured on a phone at home and repeated indefinitely at no cost. That combination reaches a population - pre-verbal infants, and children whose developmental level precludes the tasks used everywhere else in this corpus - that nothing else charted here can assess, and the physiological rationale is coherent, since jitter, shimmer and harmonics-to-noise ratio index the stability of laryngeal control rather than any social or communicative construct. The diagnostic ascertainment behind the corpus is also among the better ones in the review, with four stages culminating in independent confirmation by a child psychiatrist in a separate setting, and the authors explain rather than conceal the absence of ADOS. And the competing-interest declaration is the most complete in the corpus. Against all of this, the evidential yield is limited by three things the paper reports and does not examine. The classification figure has no held-out test, was taken as the best of 2,000 epochs on the validation set, and is computed over cry instances with no participant-level split from 62 children contributing roughly six cries each - so it says nothing about performance on a new child. The recording settings are strongly imbalanced, with 87.10% of autistic cries captured at autism centres against a comparison group split between health centres and homes, and all three significant acoustic measures are sensitive to the acoustic environment, with the strongest finding being the one ambient noise would most directly produce. And the groups differ by 4.8 months in mean age, untested and unadjusted, in a window of rapid vocal maturation using measures that change with it. The study's most useful contribution to the synthesis is therefore its construct rather than its numbers: it demonstrates what a pre-linguistic, task-free, physiologically interpretable behavioural signal would look like, and simultaneously how easily such a signal is confounded by where the recording was made.
 
-**S-135** [local_a0d73248] — *Available online at www.sciencedirect.com*
+**S-135** [local_a0d73248] — *Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm*
 
 Published 2025 by computer science and electrical engineering departments at Alliance University, Bengaluru, with a collaborator at Nitte Institute of Professional Education, Mangalore. The framing is the standard access argument - conventional diagnosis is subjective and time-consuming, so machine learning should make it faster and more accurate. For this review the study's value is corroborative rather than novel: it is the third built on the UCI-derived autism screening tables, and it makes the leakage visible in a way the others do not, because it prints its complete feature list including both 'result' - the summed A1-A10 score - and 'Class/ASD', the outcome that is that sum thresholded at the AQ-10 cut-off. The relationship between the two is a matter of arithmetic, and the reported 0.9890 accuracy is its consequence rather than a measurement of detection. Two features of the study make the case more useful than the bare finding. Its analytic practice is otherwise unremarkable but adequate - 5-fold cross-validation, one row per respondent, a stated preprocessing and feature-engineering pipeline, a reasonable classifier and a reasonable optimiser - which is the same pattern the review has now recorded across five modalities: rigour applied above a corrupted target produces a confidently wrong result. And its single stated limitation is diagnostic of how the subliterature understands itself: 'heavy reliance on a single public Kaggle dataset, which may limit the model's generalizability', with the remedy proposed as incorporating diverse datasets. That names an external-validity problem while leaving the internal one untouched, and would not help, because every dataset in this family carries the same closed-form relationship between its items and its label. The one analysis that would have settled the matter - a Random Forest feature-importance plot, available at no cost - is not reported.
 
@@ -18319,7 +18319,7 @@ Received 12 August 2024, accepted 4 October 2024, published online 4 December 20
 
 2025 IEEE conference proceedings. Framing is optimistic but hedged more than most: the study is said to pave the way for further application of facial recognition technology in clinical contexts and the potential development of automated detection systems that can be used in daily diagnostic practice. The novelty claim is placed on the dataset rather than on the accuracy - the paper's stated purpose is to remedy the poor representativeness of existing autism face datasets, and it does so by actually recruiting and photographing 70 children under a controlled protocol rather than by downloading images. That is a real contribution to a branch of this literature that has otherwise recycled the same web-scraped corpus twelve times over.
 
-**S-148** [local_ed30e24c] — *Microsoft Word - ETASR_V15_N5_pp-27954-27959*
+**S-148** [local_ed30e24c] — *Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI*
 
 2025, accepted 14 August, 48 days from submission. Framing is screening-tool improvement rather than diagnostic replacement, and is comparatively measured: integrating robust feature selection with explainable ML models can significantly advance the reliability of early ASD screening tools. The overreach is concentrated in one sentence - that 100% sensitivity and specificity confirm the model's suitability for reliable clinical screening applications - and in a comparison table that ranks the perfect score above three published figures from unrelated datasets. The paper's genuine contributions are its hyperparameter transparency, its inclusion of log loss, and a limitations paragraph that correctly identifies single-dataset dependence.
 
@@ -18335,11 +18335,11 @@ Received 12 August 2024, accepted 4 October 2024, published online 4 December 20
 
 2025, accepted 15 September, 133 days with a substantive revision round. Framing is deliberately bounded: the results show the viability of machine learning to predict traits and symptoms and suggest potential for developing a tool that may improve screening in individuals whose diagnosis is unclear or not yet established. The discussion then constrains that further - algorithms should be extensively cross-validated against health records before implementation, should be used as screeners to accelerate referral rather than replace clinical evaluation, and should be applied within a personalised-medicine approach respecting autonomy. Where the rest of this corpus claims diagnosis and delivers checklist arithmetic, this study claims correlation between self-reports and delivers exactly that, with the error bars in view.
 
-**S-152** [local_6e7174c0] — *Received: January 17, 2025. Revised: February 4, 2025. 312*
+**S-152** [local_6e7174c0] — *A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach*
 
 2025. Framing is diagnostic and confident: the model is a pioneering approach contributing significantly to early diagnosis and intervention strategies, and a powerful tool to enhance ASD diagnosis and improve outcomes for individuals with ASD and their families, hedged only by a clause acknowledging that further validation on larger, diverse datasets is needed. The contribution is expressed as a position in a leaderboard over one public image corpus, and the paper is explicit that this shared corpus is what makes the comparison solid - which is the clearest statement in the review of how this branch understands evidence.
 
-**S-153** [local_e04bcd32] — *Received: October 26, 2024. Revised: March 1, 2025. 1*
+**S-153** [local_e04bcd32] — *Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network*
 
 2025 (received 26 October 2024, revised 1 March 2025). Framing is diagnostic and efficiency-oriented: the model is offered for screening and detection of ASD in children, as computer-aided diagnosis, and as achieving higher accuracy with reduced model complexity and less execution time. There is no limitations section and no future work; the contribution is stated entirely as a position above five quoted figures on the same public image corpus, and the paper's own account of why ASD diagnosis is difficult - that there is no blood test or scan and that developmental history and behaviour must be assessed - is not reconciled with what it then does.
 
@@ -18391,11 +18391,11 @@ Published 19 July 2024 (indexed here under 2025), 44 days from submission. Frami
 
 2026. The framing is proportionate and, on the point that matters, correct: the reported results should be interpreted as a proof-of-concept demonstration, pending validation on larger and more diverse populations. The claims that go beyond that are about engineering rather than clinical accuracy - reduced preprocessing overhead by eliminating scanpath-to-image conversion, suitability for real-time screening environments, and a more direct and deployable solution bridging the gap between research prototypes and practical clinical tools - and even those are asserted without any timing measurement. Its contribution to the review is as the eye-tracking branch's demonstration that participant-level evaluation is achievable in this modality and that when it is applied, the resulting figure comes with a standard deviation of eight accuracy points on 28 people.
 
-**S-166** [local_e54c304c] — *Microsoft Word - JPMS205729 - Composed*
+**S-166** [local_e54c304c] — *Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models*
 
 2026, published 5 February. Framing is real-time clinical screening: the study is said to facilitate real-time ASD screening, providing healthcare professionals with timely and effective interventions in clinical environments, with mobile and web deployment proposed to reach remote areas. There is no limitations section and no future work, and the contribution is expressed as a position above one quoted prior YOLO result. Its distinguishing features within the branch are two: an ethics paragraph that at least names the sensitivity of children's facial data before proceeding, and an out-of-distribution test that inadvertently shows the model assigning an autism label to a photograph of a dog.
 
-**S-167** [local_e4c2a776] — *Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026*
+**S-167** [local_e4c2a776] — *Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images*
 
 2026. Framing is diagnostic-aid: the technique is offered as a promising diagnostic aid in clinical settings for the early and non-invasive detection of autism, and the stated research gap is a computationally efficient, privacy-preserving and accurately optimised framework - with no privacy mechanism described and no runtime measured. The contribution is expressed as a position above seven quoted figures. Its one substantive merit within the branch is its limitation paragraph, which states plainly that the dataset's lack of demographic information prevents any assessment of how facial morphology and expression vary across populations, and commits future work to demographically diverse data - the clearest statement of the branch's central problem made by any of its sixteen members, sitting alongside declarations asserting that the study used no data and involved no human participants.
 
@@ -21903,7 +21903,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-070 — Signal Processing: Image Communication 94 (2021) 116184
+### S-070 — Early detection of children with Autism Spectrum Disorder based on visual exploration of images
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -21954,7 +21954,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-071 — Signal Processing: Image Communication 94 (2021) 116198
+### S-071 — Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -22283,7 +22283,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-077 — Applied Soft Computing 120 (2022) 108654
+### S-077 — An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -23821,7 +23821,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-106 — Original Investigation | Psychiatry
+### S-106 — Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -24213,7 +24213,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-114 — Contents lists available at ScienceDirect
+### S-114 — Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -24507,7 +24507,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-120 — Journal of Computational Mathematics and Data Science 13 (2024) 100105
+### S-120 — Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -25242,7 +25242,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-135 — Available online at www.sciencedirect.com
+### S-135 — Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -25848,7 +25848,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-148 — Microsoft Word - ETASR_V15_N5_pp-27954-27959
+### S-148 — Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -26028,7 +26028,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-152 — Received: January 17, 2025. Revised: February 4, 2025. 312
+### S-152 — A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -26073,7 +26073,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-153 — Received: October 26, 2024. Revised: March 1, 2025. 1
+### S-153 — Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -26660,7 +26660,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-166 — Microsoft Word - JPMS205729 - Composed
+### S-166 — Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -26705,7 +26705,7 @@ Framing is screening-support and privacy-forward, and both claims are qualified 
 
 ---
 
-### S-167 — Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026
+### S-167 — Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images
 
 #### Domain 1: Participants and Sample (PROBAST: participants)
 

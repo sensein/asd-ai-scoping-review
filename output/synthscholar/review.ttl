@@ -9878,7 +9878,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Original Investigation | Psychiatry" ;
+            dcterms:title "Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder" ;
             bibo:pmid "local_8a706eaa" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10039,7 +10039,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Signal Processing: Image Communication 94 (2021) 116184" ;
+            dcterms:title "Early detection of children with Autism Spectrum Disorder based on visual exploration of images" ;
             bibo:pmid "local_b7ec3755" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10064,7 +10064,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Applied Soft Computing 120 (2022) 108654" ;
+            dcterms:title "An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images" ;
             bibo:pmid "local_893ce2fa" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -10202,7 +10202,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Microsoft Word - ETASR_V15_N5_pp-27954-27959" ;
+            dcterms:title "Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI" ;
             bibo:pmid "local_ed30e24c" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -10226,7 +10226,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Contents lists available at ScienceDirect" ;
+            dcterms:title "Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development" ;
             bibo:pmid "local_5b5f2237" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10310,7 +10310,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Microsoft Word - JPMS205729 - Composed" ;
+            dcterms:title "Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models" ;
             bibo:pmid "local_e54c304c" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -10409,7 +10409,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Available online at www.sciencedirect.com" ;
+            dcterms:title "Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm" ;
             bibo:pmid "local_a0d73248" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10614,7 +10614,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Contents lists available at ScienceDirect" ;
+            dcterms:title "Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development" ;
             bibo:pmid "local_5b5f2237" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -10638,7 +10638,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Received: October 26, 2024. Revised: March 1, 2025. 1" ;
+            dcterms:title "Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network" ;
             bibo:pmid "local_e04bcd32" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10681,7 +10681,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Journal of Computational Mathematics and Data Science 13 (2024) 100105" ;
+            dcterms:title "Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder" ;
             bibo:pmid "local_8253c2ec" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10751,7 +10751,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Microsoft Word - JPMS205729 - Composed" ;
+            dcterms:title "Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models" ;
             bibo:pmid "local_e54c304c" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10835,7 +10835,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Available online at www.sciencedirect.com" ;
+            dcterms:title "Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm" ;
             bibo:pmid "local_a0d73248" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -10902,7 +10902,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Received: January 17, 2025. Revised: February 4, 2025. 312" ;
+            dcterms:title "A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach" ;
             bibo:pmid "local_6e7174c0" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -10945,7 +10945,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Received: January 17, 2025. Revised: February 4, 2025. 312" ;
+            dcterms:title "A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach" ;
             bibo:pmid "local_6e7174c0" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -10971,7 +10971,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Signal Processing: Image Communication 94 (2021) 116198" ;
+            dcterms:title "Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data" ;
             bibo:pmid "local_684969f6" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -11021,7 +11021,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Microsoft Word - ETASR_V15_N5_pp-27954-27959" ;
+            dcterms:title "Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI" ;
             bibo:pmid "local_ed30e24c" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -11200,7 +11200,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Journal of Computational Mathematics and Data Science 13 (2024) 100105" ;
+            dcterms:title "Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder" ;
             bibo:pmid "local_8253c2ec" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -11299,7 +11299,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Original Investigation | Psychiatry" ;
+            dcterms:title "Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder" ;
             bibo:pmid "local_8a706eaa" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -11429,7 +11429,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Applied Soft Computing 120 (2022) 108654" ;
+            dcterms:title "An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images" ;
             bibo:pmid "local_893ce2fa" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -11532,7 +11532,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Signal Processing: Image Communication 94 (2021) 116184" ;
+            dcterms:title "Early detection of children with Autism Spectrum Disorder based on visual exploration of images" ;
             bibo:pmid "local_b7ec3755" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -11590,7 +11590,7 @@
             slr:screening_stage "full_text" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Received: October 26, 2024. Revised: March 1, 2025. 1" ;
+            dcterms:title "Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network" ;
             bibo:pmid "local_e04bcd32" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -11858,7 +11858,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026" ;
+            dcterms:title "Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images" ;
             bibo:pmid "local_e4c2a776" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -11902,7 +11902,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026" ;
+            dcterms:title "Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images" ;
             bibo:pmid "local_e4c2a776" ;
             slr:assessed_on "title_abstract" ;
             slr:decision "include" ;
@@ -12527,7 +12527,7 @@
             slr:screening_stage "title_abstract" ],
         [ a prov:Activity,
                 slr:ScreeningDecisionRecord ;
-            dcterms:title "Signal Processing: Image Communication 94 (2021) 116198" ;
+            dcterms:title "Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data" ;
             bibo:pmid "local_684969f6" ;
             slr:assessed_on "full_text" ;
             slr:decision "include" ;
@@ -12602,11 +12602,11 @@
 <https://doi.org/10.1016/j.procs.2025.04.389> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition marked by social communication difficulties, re- stricted interests, and repetitive behaviors. Early and accurate diagnosis is critical for timely intervention and improved outcomes. Traditional diagnostic methods, which rely on clinical observations and assessments, can be subjective and time-consuming. This study introduces a novel approach to predicting ASD using a machine learning technique, specifically a Bayesian-optimized Ran- dom Forest classification algorithm. The proposed method uses a comprehensive dataset containing various behavioral, cognitive, and demographic features associated with ASD. The Optimized Random Forest with Bayesian approach is used to categorize indi- viduals into two groups: those who have ASD and those who do not. To develop this ensemble learning technique, multiple decision trees are used, and to achieve higher performance as well as better capability to generalize, the hyperparameters are optimized with Bayesian optimization. Preliminary analysis and comparison with existing databases substantiated the findings and revealed the effectiveness of the proposed approach. The Bayesian-optimized Random Forest classifier achieved an accuracy value of 0.9890. Such performance is highly promising and could enable increased use of machine learning methods in timely and accurate diagno- sis of ASD. The proposed approach provides recommendations for a verified diagnostic technique when implemented and creates a strong foundation for future investigations into the use of machine learning for identifying and supporting children with ASD. © 2025 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/) Peer-review under responsibility of the scientific committee of the International Conference on Machine Learning and Data Engi- neering." ;
-    dcterms:bibliographicCitation "Babu T; Nair RR; Mahapatra S (2025). Available online at www.sciencedirect.com. *Procedia Computer Science, 258, 1576-1585*. https://doi.org/10.1016/j.procs.2025.04.389" ;
+    dcterms:bibliographicCitation "Babu T; Nair RR; Mahapatra S (2025). Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm. *Procedia Computer Science, 258, 1576-1585*. https://doi.org/10.1016/j.procs.2025.04.389" ;
     dcterms:creator "Babu T",
         "Mahapatra S",
         "Nair RR" ;
-    dcterms:title "Available online at www.sciencedirect.com" ;
+    dcterms:title "Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm" ;
     bibo:doi "10.1016/j.procs.2025.04.389" ;
     bibo:pmid "local_a0d73248" ;
     fabio:hasPublicationYear 2025 ;
@@ -12922,6 +12922,7 @@
         "Szatmari P",
         "Zwaigenbaum L" ;
     dcterms:title "Very early detection of Autism Spectrum Disorders based on acoustic analysis of pre-verbal vocalizations of 18-month old toddlers" ;
+    bibo:doi "10.1109/icassp.2013.6639134" ;
     bibo:pmid "local_76fc33d0" ;
     fabio:hasPublicationYear 2013 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -13072,6 +13073,7 @@
         "Niemiec T",
         "Szczepanowski R" ;
     dcterms:title "Social robot in diagnosis of autism among preschool children" ;
+    bibo:doi "10.1109/mmar.2019.8864666" ;
     bibo:pmid "local_c6f1209b" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -13227,6 +13229,7 @@
         "Bhaskari DL",
         "Sarwani IS" ;
     dcterms:title "Emotion-based Autism Spectrum Disorder Detection by Leveraging Transfer Learning and Machine Learning Algorithms" ;
+    bibo:doi "10.14569/ijacsa.2024.0150556" ;
     bibo:pmid "local_948fa8d0" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -13388,6 +13391,7 @@
         "Yazgan MY",
         "Yilmaz SS" ;
     dcterms:title "ADHD and ASD Classification Based on Emotion Recognition Data" ;
+    bibo:doi "10.1109/icmla.2016.0145" ;
     bibo:pmid "local_dc5fc4bb" ;
     fabio:hasPublicationYear 2016 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -14180,6 +14184,7 @@
         "Ozonoff S",
         "Wu C" ;
     dcterms:title "Predicting Autism Diagnosis using Image with Fixations and Synthetic Saccade Patterns" ;
+    bibo:doi "10.1109/icmew.2019.00125" ;
     bibo:pmid "local_309e5baa" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -14347,6 +14352,7 @@
         "Jaiswal S",
         "Valstar MF" ;
     dcterms:title "Automatic Detection of ADHD and ASD from Expressive Behaviour in RGBD Data" ;
+    bibo:doi "10.1109/fg.2017.95" ;
     bibo:pmid "local_3a331973" ;
     fabio:hasPublicationYear 2017 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -14513,6 +14519,7 @@
         "Battisti F",
         "Mazumdar P" ;
     dcterms:title "Exploiting Visual Behaviour for Autism Spectrum Disorder Identification" ;
+    bibo:doi "10.1109/icmew.2019.00123" ;
     bibo:pmid "local_05ef29e5" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -14676,6 +14683,7 @@
         "Alsalman A",
         "Dris AB" ;
     dcterms:title "Intelligent Gaze-Based Screening System for Autism" ;
+    bibo:doi "10.1109/cais.2019.8769452" ;
     bibo:pmid "local_6230fe22" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -14833,12 +14841,13 @@
 <urn:slr:article:74a48b2cecd0> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "Autistic Spectrum Disorder (ASD) is a challenging neurological development disorder, which involves poor social interaction, communication, and repetitive behaviours. If autism is identified early enough it can be treated with better outcomes but present diagnostic tests are dependent on subjective opinion, consume a lot of time, and are vague. This study is aimed at optimizing one-dimensional convolutional neural networks (1D CNN) to improve the precision and speed of early ASD diagnosis. Four ASD datasets representing different age groups — toddlers, children, adolescents, and adults were modelled using one-dimensional convolutional neural networks (1D CNN). These datasets are accessible to the public on the UCI Machine Learning Repository and Kaggle, they consist of behavioural features relevant to ASD diagnosis. Each dataset underwent feature selection, categorical encoding, and missing value handling. Then, baseline 1D CNN with predefined hyperparameters was modelled on each of the datasets. Subsequently, the baseline models were optimized using the Tree-structured Parzen Estimator (TPE). An interactive web-based ASD diagnostic tool was developed, where user inputs are processed through age-specific pre-trained optimized models to determine ASD probability. The optimized 1D CNN models significantly outperformed the baseline models across all age groups and achieved scores of 100% in accuracy, precision, recall, F1-score, MCC, and AUC ROC. This implies that the optimized models can reliably identify people in various age groups who have and do not have ASD. The development of an interactive web-based diagnostic tool extends the practical utility of the models, making them accessible for clinical and at-home use." ;
-    dcterms:bibliographicCitation "Omotehinwa TO; Lawrence MO; Oyewola DO; Dada EG (2024). Journal of Computational Mathematics and Data Science 13 (2024) 100105. *Journal of C*." ;
+    dcterms:bibliographicCitation "Omotehinwa TO; Lawrence MO; Oyewola DO; Dada EG (2024). Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder. *Journal of C*." ;
     dcterms:creator "Dada EG",
         "Lawrence MO",
         "Omotehinwa TO",
         "Oyewola DO" ;
-    dcterms:title "Journal of Computational Mathematics and Data Science 13 (2024) 100105" ;
+    dcterms:title "Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder" ;
+    bibo:doi "10.1016/j.jcmds.2024.100105" ;
     bibo:pmid "local_8253c2ec" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -14994,6 +15003,7 @@
         "Priyanto JE",
         "Vinski DSP" ;
     dcterms:title "Detection of Autism Spectrum Disorder (ASD) Using Lightweight Ensemble CNN Based on Facial Images for Improved Diagnostic Accuracy" ;
+    bibo:doi "10.14569/ijacsa.2025.0160724" ;
     bibo:pmid "local_0a39cca9" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -15153,6 +15163,7 @@
         "Perego P",
         "Salvatore C" ;
     dcterms:title "Use of Machine Learning to Identify Children with Autism and Their Motor Abnormalities" ;
+    bibo:doi "10.1007/s10803-015-2379-8" ;
     bibo:pmid "local_0dbc5018" ;
     fabio:hasPublicationYear 2015 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -15308,6 +15319,7 @@
         "Peterson BS",
         "Shinall JA" ;
     dcterms:title "Semantic mapping reveals distinct patterns in descriptions of social relations in adults with autism spectrum disorder" ;
+    bibo:doi "10.1002/aur.1581" ;
     bibo:pmid "local_be8aa62f" ;
     fabio:hasPublicationYear 2016 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -15797,11 +15809,11 @@
 <https://doi.org/10.1007/s11042-026-21473-6> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "Autism spectrum disorder (ASD) is a complex psychological disease described by persis­ tent problems in restricted behaviours, speech, social interaction, and non-verbal commu­ nication. Individuals with ASDs have trouble identifying and connecting with others. The ASD symptoms might arise in an extensive range of conditions. Many dissimilar kinds of functions exist for individuals with ASD. Emerging expert methods for recognising ASD that depend on the facial signs of children are one of the foremost contributions for perceiving ASD at an initial phase. At present, deep learning (DL) models have delivered excellent performance in a diversity of pattern recognition tasks. The utilization of mod­ els that depend on convolutional neural networks (CNNs) was projected by numerous researchers to be utilized in the study of ASD. In this paper, an innovative methodology called Deep Feature Fusion Integrated with Wavelet Neural Network for Autism Spectrum Disorder Identification (DFFWNN-ASDI) utilizing facial images is proposed. The primary goal of the DFFWNN-ASDI technique is to serve as a promising diagnostic aid in clinical settings for the early and non-invasive detection of autism. Initially, the DFFWNN-ASDI technique performs pre-processing by utilising the Gaussian Gabor Filter (GGF) to en­ hance relevant facial features and suppress noise. Furthermore, a feature fusion strategy is implemented by incorporating deep features extracted from VGG16, DenseNet-121, and XceptionNet models, ensuring a rich and diverse representation of facial cues relevant to ASD. Moreover, the wavelet neural network (WNN) technique is employed for detecting ASD. Additionally, the chimp optimisation algorithm (COA) technique is implemented for optimal tuning of WNN parameters to enhance classification performance. Eventually, the Grad-CAM + + technique is applied to provide visual interpretation and abnormality detection. To establish the improved performance of the DFFWNN-ASDI approach, an ex­ tensive set of simulations was conducted under the autism image dataset. The comparison outcomes of the DFFWNN-ASDI model established a greater accuracy value of 98.42% compared to existing approaches across diverse metrics." ;
-    dcterms:bibliographicCitation "Shaik J; Shekhar R; Shelke CJ (2026). Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026. *Multimedia Tools and Applications, 85*. https://doi.org/10.1007/s11042-026-21473-6" ;
+    dcterms:bibliographicCitation "Shaik J; Shekhar R; Shelke CJ (2026). Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images. *Multimedia Tools and Applications, 85*. https://doi.org/10.1007/s11042-026-21473-6" ;
     dcterms:creator "Shaik J",
         "Shekhar R",
         "Shelke CJ" ;
-    dcterms:title "Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026" ;
+    dcterms:title "Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images" ;
     bibo:doi "10.1007/s11042-026-21473-6" ;
     bibo:pmid "local_e4c2a776" ;
     fabio:hasPublicationYear 2026 ;
@@ -17356,7 +17368,7 @@
         "Hajjej F",
         "Maddeh M" ;
     dcterms:title "Novel Framework for Autism Spectrum Disorder Identification and Tailored Education With Effective Data Mining and Ensemble Learning Techniques" ;
-    bibo:doi "10.1109/ACCESS.2017.DOI" ;
+    bibo:doi "10.1109/access.2024.3349988" ;
     bibo:pmid "local_b9de0d7f" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -18306,10 +18318,10 @@
 <https://doi.org/10.22266/ijies2025.0430.21> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "Autism Spectrum Disorder (ASD) is a complicated neurological disease that causes difficulty with social interaction and communication. Proper diagnosis at an early stage is essential for successful intervention. This paper introduces a novel deep learning model called the Hybrid Vision Transformer model for detecting Autism Spectrum Disorder \"HyVit-ASD\" designed to classify ASD based on facial feature images. The HyVit-ASD model combines the strengths of convolutional neural networks (CNNs) and vision transformers (ViTs) to form a strong and efficient classification framework. The HyVit-ASD model has three main components: a convolutional block (ConvBlock), a transformer block with re-attention (TransformerBlock), and a classification layer. The ConvBlock uses a pre-trained ResNet for initial feature extraction, reducing the feature map's channels and resizing them for further processing. The TransformerBlock integrates a pre-trained ViT with a custom ReAttention mechanism, enhancing the model's focus on critical facial regions through attention scores and residual connections. The final stage involves global average pooling and a linear layer for classification likelihood. Our proposed model achieved 91% accuracy, 94% sensitivity, 88% specificity, and a 95.67% AUC. The combination of CNN and ViT architectures and the innovative ReAttention mechanism make HyVit-ASD a pioneering approach in deep learning for ASD classification, contributing significantly to early diagnosis and intervention strategies." ;
-    dcterms:bibliographicCitation "Ibadi H; Lakizadeh A (2025). Received: January 17, 2025. Revised: February 4, 2025. 312. *International Journal of Intelligent Engineering and Systems, 18(3)*. https://doi.org/10.22266/ijies2025.0430.21" ;
+    dcterms:bibliographicCitation "Ibadi H; Lakizadeh A (2025). A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach. *International Journal of Intelligent Engineering and Systems, 18(3)*. https://doi.org/10.22266/ijies2025.0430.21" ;
     dcterms:creator "Ibadi H",
         "Lakizadeh A" ;
-    dcterms:title "Received: January 17, 2025. Revised: February 4, 2025. 312" ;
+    dcterms:title "A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach" ;
     bibo:doi "10.22266/ijies2025.0430.21" ;
     bibo:pmid "local_6e7174c0" ;
     fabio:hasPublicationYear 2025 ;
@@ -18451,10 +18463,10 @@
 <https://doi.org/10.22266/ijies2025.0531.01> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "Autism Spectrum Disorder (ASD) is a neurodevelopmental disorder with ineffective brain functions leading to challenges in verbal and non-verbal communication, social behavior, and learning disabilities. Early detection of ASD in children can help determine the required therapies to stabilize physical and psychological behaviors. The accurate diagnosis of ASD has been primarily obtained through analysis of behavioral changes and facial features. Estimating the presence of ASD in children from static facial images is very challenging due to many challenges in the quality and resolution of the images. This paper develops an advanced Deep Learning (DL)-based framework of DeepDeblur-Denoising Optimized Convolutional Neural Network (DeepDeblur-DOCNN) for screening and detection of ASD in children images with the presence of noise and blur. The proposed DeepDeblurDOCNN framework utilizes the DeepDeblur method in the first stage for image sharpening. Then, it employs a novel DOCNN in the second stage for joint denoising and classification. In this proposed DeepDeblur-DOCNN framework, the DOCNN is enhanced by combining the features of denoising network and CNN with Fire Hawk Optimizer (FHO) for parameter tuning to improve the training process. By combining denoising and classification tasks in a single DOCNN, the model can leverage the denoised image and perform better feature learning for more accurate classification predictions. Experiments are conducted using the Kaggle ASD Children Facial dataset containing 2940 facial images. The results showed that the proposed model is more effective for ASD diagnosis, with 96.94% detection accuracy with reduced model complexity." ;
-    dcterms:bibliographicCitation "Vijayan N; Vanitha DV (2025). Received: October 26, 2024. Revised: March 1, 2025. 1. *International Journal of Intelligent Engineering and Systems, 18(4*. https://doi.org/10.22266/ijies2025.0531.01" ;
+    dcterms:bibliographicCitation "Vijayan N; Vanitha DV (2025). Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network. *International Journal of Intelligent Engineering and Systems, 18(4*. https://doi.org/10.22266/ijies2025.0531.01" ;
     dcterms:creator "Vanitha DV",
         "Vijayan N" ;
-    dcterms:title "Received: October 26, 2024. Revised: March 1, 2025. 1" ;
+    dcterms:title "Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network" ;
     bibo:doi "10.22266/ijies2025.0531.01" ;
     bibo:pmid "local_e04bcd32" ;
     fabio:hasPublicationYear 2025 ;
@@ -19808,13 +19820,13 @@
 <https://doi.org/10.47310/jpms2026150119> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "The condition in which an individual's communication abilities and social interactions are affected during early development is called autism spectrum disorder (ASD). Such people feel more anxious, react to emotions in different ways and experience sounds, lights or touch differently. Early diagnosis and timely interventions can significantly improve behavioural and language development. Traditional methods for ASD detection, such as subjective questionnaires and behavioural observations, are often time-consuming, costly and reliant on specialized expertise, leading to a delay in intervention. To address these challenges, this work introduces a novel approach for the early identification and detection of ASD in children using facial images. The research focuses on utilizing YOLOv8n for facial features identification and ASD classification, harnessing its advanced object detection capabilities to enhance both accuracy and efficiency. This paper also presents a comparative analysis of YOLOv8n and YOLOv9c to conclude with the most effective solution. This study facilitates real-time ASD screening, providing healthcare professionals with timely and effective interventions in clinical environments." ;
-    dcterms:bibliographicCitation "Vasundhara; D. .. N.; Lakshmi Prasanna P; Moorthy C; Venkata Sailaja N (2026). Microsoft Word - JPMS205729 - Composed. *Journal of Pioneeri*. https://doi.org/10.47310/jpms2026150119" ;
+    dcterms:bibliographicCitation "Vasundhara; D. .. N.; Lakshmi Prasanna P; Moorthy C; Venkata Sailaja N (2026). Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models. *Journal of Pioneeri*. https://doi.org/10.47310/jpms2026150119" ;
     dcterms:creator "D. .. N.",
         "Lakshmi Prasanna P",
         "Moorthy C",
         "Vasundhara",
         "Venkata Sailaja N" ;
-    dcterms:title "Microsoft Word - JPMS205729 - Composed" ;
+    dcterms:title "Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models" ;
     bibo:doi "10.47310/jpms2026150119" ;
     bibo:pmid "local_e54c304c" ;
     fabio:hasPublicationYear 2026 ;
@@ -19956,9 +19968,9 @@
 <https://doi.org/10.48084/etasr.12999> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "This study presented a framework that utilized Chi-square feature selection and Machine Learning (ML) classifiers to improve the early detection of Autism Spectrum Disorder (ASD) for children 12 to 36 months old. Six classifiers -Light Gradient Boosting Machine (LGBM), Extra Trees (ET), Decision Tree (DT), KNearest Neighbors (KNN), Support Vector Machine (SVM), and Multi-Layer Perceptron (MLP) -were tested. The findings revealed that the integration of Chi-square feature selection with SVM achieved perfect accuracy, precision, recall, and F1-score, while the other models demonstrated notable gains (up to 90%). Additionally, a SHapley Additive exPlanation (SHAP) analysis was conducted to interpret the model predictions and highlight the key behavioral features, while a literature comparison with recent research showed that the current method outperformed the latter. This study demonstrated that integrating robust feature selection with explainable ML models can significantly advance the reliability of early ASD screening tools." ;
-    dcterms:bibliographicCitation "Abu-Errub A (2025). Microsoft Word - ETASR_V15_N5_pp-27954-27959. *Engineering, Technology & Applied Science Research, 15(5), 27954-27959*. https://doi.org/10.48084/etasr.12999" ;
+    dcterms:bibliographicCitation "Abu-Errub A (2025). Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI. *Engineering, Technology & Applied Science Research, 15(5), 27954-27959*. https://doi.org/10.48084/etasr.12999" ;
     dcterms:creator "Abu-Errub A" ;
-    dcterms:title "Microsoft Word - ETASR_V15_N5_pp-27954-27959" ;
+    dcterms:title "Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI" ;
     bibo:doi "10.48084/etasr.12999" ;
     bibo:pmid "local_ed30e24c" ;
     fabio:hasPublicationYear 2025 ;
@@ -20107,7 +20119,7 @@
         "Mansoor W",
         "Ritz C" ;
     dcterms:title "Hybrid ensemble learning for Autism Spectrum Disorder screening using eye-tracking scanpath" ;
-    bibo:doi "10.5281/zenodo.2" ;
+    bibo:doi "10.1016/j.array.2026.100753" ;
     bibo:pmid "local_d7b6fa00" ;
     fabio:hasPublicationYear 2026 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -20248,6 +20260,7 @@
         "Mache MA",
         "Todd TA" ;
     dcterms:title "Automated identification of postural control for children with autism spectrum disorder using a machine learning approach" ;
+    bibo:doi "10.1016/j.jbiomech.2020.110073" ;
     bibo:pmid "local_878c259f" ;
     fabio:hasPublicationYear 2020 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -20425,6 +20438,7 @@
         "Mohammed MA",
         "Thaljaoui A" ;
     dcterms:title "An explainable machine unlearning algorithm framework for early detection of autism spectrum disorder and brain disabilities in newborns" ;
+    bibo:doi "10.1016/j.aej.2026.04.002" ;
     bibo:pmid "local_367db0b6" ;
     fabio:hasPublicationYear 2026 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -20571,6 +20585,7 @@
         "Alhamadi AA",
         "Alsubari SNM" ;
     dcterms:title "Diagnosing autism spectrum disorder based on eye tracking technology using deep learning models" ;
+    bibo:doi "10.3389/fmed.2025.1690177" ;
     bibo:pmid "local_7432ffd7" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -20718,6 +20733,7 @@
         "Shim S",
         "So D" ;
     dcterms:title "Reliable Autism Spectrum Disorder Diagnosis for Pediatrics Using Machine Learning and Explainable AI" ;
+    bibo:doi "10.3390/diagnostics14222504" ;
     bibo:pmid "local_183eaef4" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -20862,6 +20878,7 @@
         "Elbattah M",
         "Guérin JL" ;
     dcterms:title "Learning to Predict Autism Spectrum Disorder based on the Visual" ;
+    bibo:doi "10.5220/0007402601030112" ;
     bibo:pmid "local_fea042be" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -21034,6 +21051,7 @@
         "Veneselli E",
         "Zunino A" ;
     dcterms:title "Video Gesture Analysis for Autism Spectrum Disorder Detection" ;
+    bibo:doi "10.1109/icpr.2018.8545095" ;
     bibo:pmid "local_d8dc996a" ;
     fabio:hasPublicationYear 2018 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -21201,6 +21219,7 @@
         "Rezaei B",
         "Vyas K" ;
     dcterms:title "Recognition Of Atypical Behavior In Autism Diagnosis From Video Using Pose Estimation Over Time" ;
+    bibo:doi "10.1109/mlsp.2019.8918863" ;
     bibo:pmid "local_a45f39e9" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -21362,6 +21381,7 @@
     dcterms:creator "Cheekaty S",
         "Muneeswari G" ;
     dcterms:title "Enhanced multilevel autism classification for children using eye-tracking and hybrid CNN-RNN deep learning models" ;
+    bibo:doi "10.1007/s00521-024-10633-0" ;
     bibo:pmid "local_bb4d1f7a" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -21508,6 +21528,7 @@
         "Melinda M",
         "Zainal Z" ;
     dcterms:title "Facial Images Dataset for Early Screening of Autism Children Using Convolutional Neural Network" ;
+    bibo:doi "10.1109/iccce66530.2025.11474117" ;
     bibo:pmid "local_945300a5" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -21657,6 +21678,7 @@
         "Standen PJ",
         "Szczepanowski R" ;
     dcterms:title "The Use of Social Robots in the Diagnosis of Autism in Preschool Children" ;
+    bibo:doi "10.3390/app12178399" ;
     bibo:pmid "local_76de1c03" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -21816,6 +21838,7 @@
         "Pozo-Rodríguez M",
         "Tubío-Fungueiriño M" ;
     dcterms:title "Predicting autistic traits, anxiety and depression symptoms using camouflaging autistic traits questionnaire (CAT-Q-ES): A machine learning study" ;
+    bibo:doi "10.1016/j.reia.2025.202712" ;
     bibo:pmid "local_4da2b941" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -21967,6 +21990,7 @@
         "Wall DP",
         "Washington P" ;
     dcterms:title "Detecting Developmental Delay and Autism Through Machine" ;
+    bibo:doi "10.2196/13822" ;
     bibo:pmid "local_4b031d44" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -22133,6 +22157,7 @@
         "Poliakoff E",
         "Vabalas A" ;
     dcterms:title "Kinematic features of a simple and short movement task to predict autism diagnosis" ;
+    bibo:doi "10.1109/embc.2019.8857307" ;
     bibo:pmid "local_785ba418" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -22294,6 +22319,7 @@
     dcterms:creator "Moghadas M",
         "Moradi H" ;
     dcterms:title "Analyzing Human-Robot Interaction Using Machine Vision for Autism screening" ;
+    bibo:doi "10.1109/icrom.2018.8657569" ;
     bibo:pmid "local_cb9a5b48" ;
     fabio:hasPublicationYear 2018 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -22456,6 +22482,7 @@
         "Liu W",
         "Yi L" ;
     dcterms:title "Identifying children with autism spectrum disorder based on their face processing abnormality: A machine learning framework" ;
+    bibo:doi "10.1002/aur.1615" ;
     bibo:pmid "local_863980f8" ;
     fabio:hasPublicationYear 2016 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -22613,6 +22640,7 @@
         "Ryant N",
         "Schultz RT" ;
     dcterms:title "Automatic Detection of Autism Spectrum Disorder in Children Using Acoustic and Text Features from Brief Natural Conversations" ;
+    bibo:doi "10.21437/interspeech.2019-1452" ;
     bibo:pmid "local_51533de4" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -22781,6 +22809,7 @@
         "Purushwalkam S",
         "Sharma A" ;
     dcterms:title "Applying machine learning to identify autistic adults using imitation: An exploratory study" ;
+    bibo:doi "10.1371/journal.pone.0182652" ;
     bibo:pmid "local_780141fc" ;
     fabio:hasPublicationYear 2017 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -22943,6 +22972,7 @@
         "Ramesh V",
         "Shehabeddine Z" ;
     dcterms:title "Screening autism spectrum" ;
+    bibo:doi "10.1038/s41598-025-01500-6" ;
     bibo:pmid "local_1b457442" ;
     fabio:hasPublicationYear 2026 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -23087,6 +23117,7 @@
     dcterms:creator "Król M",
         "Król ME" ;
     dcterms:title "A Novel Eye Movement Data Transformation Technique that Preserves Temporal Information: A Demonstration in a Face Processing Task" ;
+    bibo:doi "10.3390/s19102377" ;
     bibo:pmid "local_88ddfdd1" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -23252,6 +23283,7 @@
     dcterms:creator "Shyu ML",
         "Tao Y" ;
     dcterms:title "SP-ASDNet: CNN-LSTM Based ASD Classification Model using Observer ScanPaths" ;
+    bibo:doi "10.1109/icmew.2019.00124" ;
     bibo:pmid "local_08b8027d" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -23417,6 +23449,7 @@
     dcterms:creator "Kovacic Z",
         "Petric F" ;
     dcterms:title "Hierarchical POMDP Framework for a Robot-Assisted ASD Diagnostic Protocol" ;
+    bibo:doi "10.1109/hri.2019.8673295" ;
     bibo:pmid "local_9528024b" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -23582,6 +23615,7 @@
         "Souza FAD",
         "Teixeira LC" ;
     dcterms:title "Towards screening of children students with autism spectrum disorder based on executive functions with serious game and machine learning approaches" ;
+    bibo:doi "10.1016/j.eswa.2025.128884" ;
     bibo:pmid "local_b26db2f2" ;
     fabio:hasPublicationYear 2026 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -23726,6 +23760,7 @@
         "Jailani R",
         "Tahir NM" ;
     dcterms:title "ANN and SVM Classifiers in Identifying Autism Spectrum Disorder Gait Based on Three-Dimensional Ground Reaction Forces" ;
+    bibo:doi "10.1109/tencon.2018.8650468" ;
     bibo:pmid "local_44b58f21" ;
     fabio:hasPublicationYear 2018 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -23894,6 +23929,7 @@
         "Farhah N",
         "Khan ZI" ;
     dcterms:title "Utilizing deep learning models in an intelligent eye-tracking system for autism spectrum disorder diagnosis" ;
+    bibo:doi "10.3389/fmed.2024.1436646" ;
     bibo:pmid "local_44d3aef5" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -24042,6 +24078,7 @@
         "Srishyla D",
         "Zhao Q" ;
     dcterms:title "Classifying Individuals with ASD Through Facial Emotion Recognition and Eye-Tracking" ;
+    bibo:doi "10.1109/embc.2019.8857005" ;
     bibo:pmid "local_96c87d36" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -24207,6 +24244,7 @@
     dcterms:creator "Attar N",
         "Paygude S" ;
     dcterms:title "Enhanced ASD detection using 3D facial landmark localization with convolutional shape appearance model and graph-randomized XGBoost" ;
+    bibo:doi "10.1007/s12046-025-03024-1" ;
     bibo:pmid "local_986436f2" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -24353,6 +24391,7 @@
         "Zhang X",
         "Zhao Z" ;
     dcterms:title "Applying Machine Learning to Identify Autism With Restricted Kinematic Features" ;
+    bibo:doi "10.1109/access.2019.2950030" ;
     bibo:pmid "local_361110f1" ;
     fabio:hasPublicationYear 2019 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -24520,6 +24559,7 @@
         "Ramyachitra D",
         "Shabarna M" ;
     dcterms:title "Deep learning-based detection of autism spectrum disorder and emotion recognition in children" ;
+    bibo:doi "10.1016/j.patcog.2025.112906" ;
     bibo:pmid "local_86a67a4f" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -25530,6 +25570,7 @@
         "Niu Z",
         "Song J" ;
     dcterms:title "The identification of children with autism spectrum disorder by SVM approach on EEG and eye-tracking data" ;
+    bibo:doi "10.1016/j.compbiomed.2020.103722" ;
     bibo:pmid "local_56237213" ;
     fabio:hasPublicationYear 2020 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -25705,6 +25746,7 @@
         "Wimpory D",
         "Yogarajah P" ;
     dcterms:title "Effects of Intra-Subject Variation in Gait Analysis on ASD Classification Performance in Machine Learning Models" ;
+    bibo:doi "10.1109/issc49989.2020.9180201" ;
     bibo:pmid "local_c79e100a" ;
     fabio:hasPublicationYear 2020 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -25869,11 +25911,12 @@
 <urn:slr:article:5908df2cffca> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "Autism Spectrum Disorder is a developmental disorder characterized by a deficit in social behaviour and specific interactions such as reduced eye contact and body gestures. Recent advancements in software and hardware multimedia technologies provide the tools for early detecting the presence of this disorder. In this paper we present an approach based on the combined use of machine learning and eye tracking information. More specifically, features are extracted from image content and viewing behaviour, such as the presence of objects and fixations towards the centre of a scene. Those features are used to train a machine learning-based classifier. The obtained results show that the considered features allow to identify children affected by autism spectrum disorder and typically developing ones." ;
-    dcterms:bibliographicCitation "Mazumdar P; Arru G; Battisti F (2021). Signal Processing: Image Communication 94 (2021) 116184. *Signal Processing: Image Communication, 94, Article 116184*." ;
+    dcterms:bibliographicCitation "Mazumdar P; Arru G; Battisti F (2021). Early detection of children with Autism Spectrum Disorder based on visual exploration of images. *Signal Processing: Image Communication, 94, Article 116184*." ;
     dcterms:creator "Arru G",
         "Battisti F",
         "Mazumdar P" ;
-    dcterms:title "Signal Processing: Image Communication 94 (2021) 116184" ;
+    dcterms:title "Early detection of children with Autism Spectrum Disorder based on visual exploration of images" ;
+    bibo:doi "10.1016/j.image.2021.116184" ;
     bibo:pmid "local_b7ec3755" ;
     fabio:hasPublicationYear 2021 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -30137,6 +30180,7 @@
         "Ponticorvo M",
         "Simeoli R" ;
     dcterms:title "Enhancing early autism diagnosis through machine learning: Exploring raw motion data for classification" ;
+    bibo:doi "10.1371/journal.pone.0302238" ;
     bibo:pmid "local_e7c16f2a" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -30296,6 +30340,7 @@
         "Soyeon K",
         "Yu Rang P" ;
     dcterms:title "AI-assisted Initiation to Joint Attention Evaluation for Autism Spectrum Disorder Detection" ;
+    bibo:doi "10.1109/ichms56717.2022.9980778" ;
     bibo:pmid "local_5b7ea7dc" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -30480,6 +30525,7 @@
     dcterms:bibliographicCitation "Dinesh A (2020). Utilizing Artificial Intelligence to Diagnose Autism Spectrum Disorder Based on Eye Tracking Saccades. *2020 IEEE MIT Undergraduate Research Technology Conference (URTC)*." ;
     dcterms:creator "Dinesh A" ;
     dcterms:title "Utilizing Artificial Intelligence to Diagnose Autism Spectrum Disorder Based on Eye Tracking Saccades" ;
+    bibo:doi "10.1109/urtc51696.2020.9668883" ;
     bibo:pmid "local_9c4af7a3" ;
     fabio:hasPublicationYear 2020 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -30652,6 +30698,7 @@
         "Wu Y",
         "Yi L" ;
     dcterms:title "Automatic classification of children with autism spectrum disorder by using a computerized visual‐orienting task" ;
+    bibo:doi "10.1002/pchj.447" ;
     bibo:pmid "local_991fe435" ;
     fabio:hasPublicationYear 2021 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -30832,6 +30879,7 @@
     dcterms:bibliographicCitation "Zhao W (2020). Research and Design of Autism Smart Diagnosis Information System Based on Chinese Children's Facial Expression Data and Deep Convolution Neural Network. *Proceedings of the 53rd Hawaii International Conference on System Sciences*." ;
     dcterms:creator "Zhao W" ;
     dcterms:title "Research and Design of Autism Smart Diagnosis Information System Based on Chinese Children's Facial Expression Data and Deep Convolution Neural Network" ;
+    bibo:doi "10.24251/hicss.2020.406" ;
     bibo:pmid "local_7547db68" ;
     fabio:hasPublicationYear 2020 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -31003,6 +31051,7 @@
         "Li X",
         "Ouyang G" ;
     dcterms:title "A Multimodal Approach for Identifying Autism Spectrum Disorders in Children" ;
+    bibo:doi "10.1109/tnsre.2022.3192431" ;
     bibo:pmid "local_115dfe8d" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -31193,6 +31242,7 @@
         "Eldawansy M",
         "M Shohieb S" ;
     dcterms:title "Data Mining–Based Model for Computer-Aided Diagnosis of" ;
+    bibo:doi "10.2196/72115" ;
     bibo:pmid "local_84bcd4ed" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -31343,13 +31393,14 @@
 <urn:slr:article:3dc286a9aa92> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "Autism spectrum disorder (ASD) is a lifelong neurological condition that affects how a person interacts and learns. The early and accurate diagnosis of ASD is vital to developing a comprehensive rehabilitation plan that improves the quality of life and the integration of the ASD person in the social, family, and work environment. However, the accurate diagnosis of ASD is usually affected since it is linked to the judgment of an expert, which produces biases related to the lack of objectivity. In consequence, several works have been dedicated to developing early detection techniques for ASD based on Machine Learning (ML) technologies and eye-tracking tools. The present work aims to introduce a new methodology for ASD classification, which uses Kernel Extreme Learning Machine (KELM), an objective dataset based on gaze tracking, feature extraction techniques, and data augmentation for training the model. In turn, to enhance the accuracy in ASD classification, the KELM model is optimized through the Giza Pyramids Construction (GPC) algorithm. The proposed approach includes pipeline data augmentation, dimensionality reduction, and a posterior normalization to classify ASD subjects accurately. Statistical tests and analyses were performed to validate the performance of the proposed methodology, resulting in an average accuracy of 98.8% in ASD classification. © 2022 Elsevier B.V. All rights reserved." ;
-    dcterms:bibliographicCitation "Gaspar A; Oliva D; Hinojosa S; Aranguren I; Zaldivar D (2022). Applied Soft Computing 120 (2022) 108654. *Applied Sof*." ;
+    dcterms:bibliographicCitation "Gaspar A; Oliva D; Hinojosa S; Aranguren I; Zaldivar D (2022). An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images. *Applied Sof*." ;
     dcterms:creator "Aranguren I",
         "Gaspar A",
         "Hinojosa S",
         "Oliva D",
         "Zaldivar D" ;
-    dcterms:title "Applied Soft Computing 120 (2022) 108654" ;
+    dcterms:title "An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images" ;
+    bibo:doi "10.1016/j.asoc.2022.108654" ;
     bibo:pmid "local_893ce2fa" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -31532,6 +31583,7 @@
         "Farooqi N",
         "Iqbal W" ;
     dcterms:title "Predictive Analysis of Autism Spectrum Disorder (ASD) using Machine Learning" ;
+    bibo:doi "10.1109/fit53504.2021.00063" ;
     bibo:pmid "local_02fa4215" ;
     fabio:hasPublicationYear 2021 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -31708,6 +31760,7 @@
         "Lee JH",
         "Yoo HJ" ;
     dcterms:title "Deep-Learning-Based Detection of Infants with Autism Spectrum Disorder Using Auto-Encoder Feature Representation" ;
+    bibo:doi "10.3390/s20236762" ;
     bibo:pmid "local_8be557e3" ;
     fabio:hasPublicationYear 2020 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -31882,6 +31935,7 @@
         "Liao M",
         "Wang G" ;
     dcterms:title "Application of Machine Learning Techniques to Detect the Children with Autism Spectrum Disorder" ;
+    bibo:doi "10.1155/2022/9340027" ;
     bibo:pmid "local_87fe26aa" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -32072,6 +32126,7 @@
         "Fang H",
         "Hwang JN" ;
     dcterms:title "Auxiliary Diagnostic Method for Early Autism Spectrum Disorder Based on Eye Movement Data Analysis" ;
+    bibo:doi "10.1109/ccis53392.2021.9754665" ;
     bibo:pmid "local_8692a64f" ;
     fabio:hasPublicationYear 2021 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -32245,6 +32300,7 @@
     dcterms:creator "Jayasree T",
         "Shia S" ;
     dcterms:title "Combined Signal Processing Based Techniques and Feed Forward Neural Networks for Pathological Voice Detection and Classification" ;
+    bibo:doi "10.32604/sv.2021.011734" ;
     bibo:pmid "local_25e34bbd" ;
     fabio:hasPublicationYear 2021 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -32417,6 +32473,7 @@
     dcterms:bibliographicCitation "Li J (2025). Artificial Intelligence-Based Detection of Autism Spectrum Disorder Using Linguistic Features. *2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI)*." ;
     dcterms:creator "Li J" ;
     dcterms:title "Artificial Intelligence-Based Detection of Autism Spectrum Disorder Using Linguistic Features" ;
+    bibo:doi "10.1109/icmi60790.2024.10585946" ;
     bibo:pmid "local_786b6280" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -32571,6 +32628,7 @@
     dcterms:creator "Ali MAS",
         "Ismail WN" ;
     dcterms:title "Multiscale attention-based network to enhance detection and classification of autism spectrum disorders using convolutional neural network" ;
+    bibo:doi "10.7717/peerj-cs.3134" ;
     bibo:pmid "local_b9e05a8f" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -32721,7 +32779,7 @@
 <urn:slr:article:e51e9878eb2c> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "As early intervention is highly effective for young children with autism spectrum disorder (ASD), it is imperative to make accurate diagnosis as early as possible. ASD has often been associated with atypical visual attention and eye gaze data can be collected at a very early age. An automatic screening tool based on eye gaze data that could identify ASD risk offers the opportunity for intervention before the full set of symptoms is present. In this paper, we propose two machine learning methods, synthetic saccade approach and image based approach, to automatically classify ASD given children’s eye gaze data collected from free-viewing tasks of natural images. The first approach uses a generative model of synthetic saccade patterns to represent the baseline scan-path from a typical non-ASD individual and combines it with the real scan-path as well as other auxiliary data as inputs to a deep learning classifier. The second approach adopts a more holistic imagebased approach by feeding the input image and a sequence of fixation maps into a convolutional or recurrent neural network. Using a publicly-accessible collection of children’s gaze data, our experiments indicate that the ASD prediction accuracy reaches 67.23% accuracy on the validation dataset and 62.13% accuracy on the test dataset." ;
-    dcterms:bibliographicCitation "Liaqat S; Wu C; Duggirala PR; Cheung SCS; Chuah CN; Ozonoff S; Young G (2021). Signal Processing: Image Communication 94 (2021) 116198. *Signal Processing: Image Commun*." ;
+    dcterms:bibliographicCitation "Liaqat S; Wu C; Duggirala PR; Cheung SCS; Chuah CN; Ozonoff S; Young G (2021). Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data. *Signal Processing: Image Commun*." ;
     dcterms:creator "Cheung SCS",
         "Chuah CN",
         "Duggirala PR",
@@ -32729,7 +32787,8 @@
         "Ozonoff S",
         "Wu C",
         "Young G" ;
-    dcterms:title "Signal Processing: Image Communication 94 (2021) 116198" ;
+    dcterms:title "Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data" ;
+    bibo:doi "10.1016/j.image.2021.116198" ;
     bibo:pmid "local_684969f6" ;
     fabio:hasPublicationYear 2021 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -32907,6 +32966,7 @@
         "Moustafa N",
         "Wael N" ;
     dcterms:title "AI-Powered Human-Computer Interaction Assisting Early Identification of Emotional and Facial Symptoms of Autism Spectrum Disorder in Children: &#x201C;A Deep Learning-Based Enhanced Facial Feature Recognition System&#x201D;" ;
+    bibo:doi "10.1109/icmisi61517.2024.10580320" ;
     bibo:pmid "local_261afa51" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -33064,6 +33124,7 @@
         "Menashe I",
         "Zigel Y" ;
     dcterms:title "Estimating Autism Severity in Young Children From Speech Signals Using a Deep Neural Network" ;
+    bibo:doi "10.1109/access.2020.3012532" ;
     bibo:pmid "local_4fecbf6d" ;
     fabio:hasPublicationYear 2020 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -33233,6 +33294,7 @@
     dcterms:creator "Kannan RM",
         "Sasikala R" ;
     dcterms:title "Predicting autism in children at an early stage using eye tracking" ;
+    bibo:doi "10.1109/vitecon58111.2023.10157663" ;
     bibo:pmid "local_6b9484ce" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -34758,6 +34820,7 @@
         "Othmani A",
         "Sabri AQM" ;
     dcterms:title "Video-based continuous affect recognition of children with Autism Spectrum Disorder using deep learning" ;
+    bibo:doi "10.1016/j.bspc.2023.105712" ;
     bibo:pmid "local_5a331ffe" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -34908,13 +34971,14 @@
 <urn:slr:article:12accba36eb4> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "• Autistic children exhibited less behavioral coordination during social interaction. • Interpersonal motor coordination could help objectively identify autistic children. • This study proposed an objective, economic, and contactless approach to autism identiﬁcation. a r t i c l e i n f o a b s t r a c t Article history: Received 22 February 2023 Received in revised form 15 January 2024 Accepted 27 May 2024 Available online 6 June 2024" ;
-    dcterms:bibliographicCitation "Zhao Z; Zhang X; Zhang X; Qu X; Hu X; Lu J (2024). Contents lists available at ScienceDirect. **." ;
+    dcterms:bibliographicCitation "Zhao Z; Zhang X; Zhang X; Qu X; Hu X; Lu J (2024). Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development. **." ;
     dcterms:creator "Hu X",
         "Lu J",
         "Qu X",
         "Zhang X",
         "Zhao Z" ;
-    dcterms:title "Contents lists available at ScienceDirect" ;
+    dcterms:title "Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development" ;
+    bibo:doi "10.1016/j.irbm.2024.100838" ;
     bibo:pmid "local_5b5f2237" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -35071,6 +35135,7 @@
         "Shin J",
         "Tomioka Y" ;
     dcterms:title "Autism Spectrum Disorder Detection Using Skeleton-Based Body Movement Analysis via Dual-Stream Deep Learning" ;
+    bibo:doi "10.3390/electronics14112231" ;
     bibo:pmid "local_879ec69b" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -35229,6 +35294,7 @@
         "Wang S",
         "Zhao Y" ;
     dcterms:title "A multimodal discrimination method for the response to name behavior of autistic children based on human pose tracking and head pose estimation" ;
+    bibo:doi "10.1016/j.displa.2022.102360" ;
     bibo:pmid "local_c6853fe2" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -35389,6 +35455,7 @@
         "Wall DP",
         "Washington P" ;
     dcterms:title "Classifying Autism From Crowdsourced Semistructured Speech" ;
+    bibo:doi "10.2196/35406" ;
     bibo:pmid "local_2b766683" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -35578,6 +35645,7 @@
     dcterms:creator "Narayan V",
         "Shukla J" ;
     dcterms:title "SPASHT: Semantic and Pragmatic Speech Features for Automatic Assessment of Autism" ;
+    bibo:doi "10.1109/icassp49357.2023.10095135" ;
     bibo:pmid "local_c6a4ea7b" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -35735,6 +35803,7 @@
         "Prieto-Fernández N",
         "Rubio-Martín S" ;
     dcterms:title "Early Detection of Autism Spectrum Disorder through AI-Powered Analysis of Social Media Texts" ;
+    bibo:doi "10.1109/cbms58004.2023.00223" ;
     bibo:pmid "local_0e476686" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -35892,6 +35961,7 @@
         "Shimizu H",
         "Terada K" ;
     dcterms:title "Machine learning’s effectiveness" ;
+    bibo:doi "10.3389/fpsyt.2024.1464285" ;
     bibo:pmid "local_1e9d0b71" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -36055,6 +36125,7 @@
         "Suzuki H",
         "Yamauchi M" ;
     dcterms:title "Predictive model using autism" ;
+    bibo:doi "10.3389/fpsyt.2024.1493158" ;
     bibo:pmid "local_cd7545e2" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -36208,6 +36279,7 @@
     dcterms:creator "Jaiswal A",
         "Washington P" ;
     dcterms:title "Using #ActuallyAutistic on Twitter for Precision Diagnosis of Autism" ;
+    bibo:doi "10.2196/52660" ;
     bibo:pmid "local_4b02df7c" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -36362,6 +36434,7 @@
     dcterms:creator "Muniraja Manjunath K",
         "Veeramani V" ;
     dcterms:title "A novel thermal imaging-based framework for continuous ASD classification and behavior analysis using facial mood and skin temperature features" ;
+    bibo:doi "10.1016/j.bspc.2024.107009" ;
     bibo:pmid "local_45ef7022" ;
     fabio:hasPublicationYear 2025 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -36517,6 +36590,7 @@
         "Gao X",
         "Zhang C" ;
     dcterms:title "Speech Signal Analysis of Autistic Children Based on Time-Frequency Domain Distinguishing Feature Extraction" ;
+    bibo:doi "10.1109/ictai56018.2022.00164" ;
     bibo:pmid "local_65974fc7" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -36700,6 +36774,7 @@
         "Natraj S",
         "Schaer M" ;
     dcterms:title "Video-audio neural network ensemble for comprehensive screening of autism spectrum disorder in young children" ;
+    bibo:doi "10.1371/journal.pone.0308388" ;
     bibo:pmid "local_7d7f1fcc" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -36856,6 +36931,7 @@
         "Nakamura K",
         "Saito M" ;
     dcterms:title "Creating a diagnostic assessment model for autism spectrum disorder by differentiating lexicogrammatical choices through machine learning" ;
+    bibo:doi "10.1371/journal.pone.0311209" ;
     bibo:pmid "local_13426811" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -38083,6 +38159,7 @@
         "Rega A",
         "Simeoli R" ;
     dcterms:title "A deep learning latent variable model to identify children with autism through motor abnormalities" ;
+    bibo:doi "10.3389/fpsyg.2023.1194760" ;
     bibo:pmid "local_a22f97df" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -38245,6 +38322,7 @@
         "Shic F",
         "Snider" ;
     dcterms:title "Large-scale Investigations of AAC Usage Patterns: Trends, Autism, and Stacked Autoencoders" ;
+    bibo:doi "10.1109/ccwc57344.2023.10099096" ;
     bibo:pmid "local_7c6a5aa4" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -38400,6 +38478,7 @@
         "Kok I",
         "Ozdemir S" ;
     dcterms:title "Development of a visual attention based decision support system for autism spectrum disorder screening" ;
+    bibo:doi "10.1016/j.ijpsycho.2022.01.004" ;
     bibo:pmid "local_bc62bc4b" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -38602,6 +38681,7 @@
         "Xia C",
         "Zhang D" ;
     dcterms:title "Dynamic Viewing Pattern Analysis: Towards Large-Scale Screening of Children With ASD in Remote Areas" ;
+    bibo:doi "10.1109/tbme.2022.3223736" ;
     bibo:pmid "local_8b9e0e8a" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -38942,13 +39022,14 @@
 <urn:slr:article:6131bfb6ef7c> a fabio:Expression,
         slr:IncludedSource ;
     dcterms:abstract "IMPORTANCE Joint attention, composed of complex behaviors, is an early-emerging social function that is deficient in children with autism spectrum disorder (ASD). Currently, no methods are available for objectively quantifying joint attention. OBJECTIVE To train deep learning (DL) models to distinguish ASD from typical development (TD) and to differentiate ASD symptom severities using video data of joint attention behaviors. DESIGN, SETTING, AND PARTICIPANTS In this diagnostic study, joint attention tasks were administered to children with and without ASD, and video data were collected from multiple institutions from August 5, 2021, to July 18, 2022. Of 110 children, 95 (86.4%) completed study measures. Enrollment criteria were 24 to 72 months of age and ability to sit with no history of visual or auditory deficits. EXPOSURES Children were screened using the Childhood Autism Rating Scale. Forty-five children were diagnosed with ASD. Three types of joint attention were assessed using a specific protocol. MAIN OUTCOMES AND MEASURES Correctly distinguishing ASD from TD and different levels of ASD symptom severity using the DL model area under the receiver operating characteristic curve (AUROC), accuracy, precision, and recall. RESULTS The analytical population consisted of 45 children with ASD (mean [SD] age, 48.0 [13.4] months; 24 [53.3%] boys) vs 50 with TD (mean [SD] age, 47.9 [12.5] months; 27 [54.0%] boys). The DL ASD vs TD models showed good predictive performance for initiation of joint attention (IJA) (AUROC, 99.6% [95% CI, 99.4%-99.7%]; accuracy, 97.6% [95% CI, 97.1%-98.1%]; precision, 95.5% [95% CI, 94.4%-96.5%]; and recall, 99.2% [95% CI, 98.7%-99.6%]), low-level response to joint attention (RJA) (AUROC, 99.8% [95% CI, 99.6%-99.9%]; accuracy, 98.8% [95% CI, 98.4%-99.2%]; precision, 98.9% [95% CI, 98.3%-99.4%]; and recall, 99.1% [95% CI, 98.6%-99.5%]), and highlevel RJA (AUROC, 99.5% [95% CI, 99.2%-99.8%]; accuracy, 98.4% [95% CI, 97.9%-98.9%]; precision, 98.8% [95% CI, 98.2%-99.4%]; and recall, 98.6% [95% CI, 97.9%-99.2%]). The DL-based ASD symptom severity models showed reasonable predictive performance for IJA (AUROC, 90.3% [95% CI, 88.8%-91.8%]; accuracy, 84.8% [95% CI, 82.3%-87.2%]; precision, 76.2% [95% CI, 72.9%- 79.6%]; and recall, 84.8% [95% CI, 82.3%-87.2%]), low-level RJA (AUROC, 84.4% [95% CI, 82.0%- 86.7%]; accuracy, 78.4% [95% CI, 75.0%-81.7%]; precision, 74.7% [95% CI, 70.4%-78.8%]; and recall, 78.4% [95% CI, 75.0%-81.7%]), and high-level RJA (AUROC, 84.2% [95% CI, 81.8%-86.6%]; accuracy, 81.0% [95% CI, 77.3%-84.4%]; precision, 68.6% [95% CI, 63.8%-73.6%]; and recall, 81.0% [95% CI, 77.3%-84.4%]). CONCLUSIONS AND RELEVANCE In this diagnostic study, DL models for identifying ASD and differentiating levels of ASD symptom severity were developed and the premises for DL-based (continued) Key Points Question Can joint attention be quantified for detecting autism spectrum disorder (ASD) and assessing ASD symptom severities? Find" ;
-    dcterms:bibliographicCitation "Ko C; Lim JH; Hong J; Hong SB; Park YR (2023). Original Investigation | Psychiatry. *JA*." ;
+    dcterms:bibliographicCitation "Ko C; Lim JH; Hong J; Hong SB; Park YR (2023). Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder. *JA*." ;
     dcterms:creator "Hong J",
         "Hong SB",
         "Ko C",
         "Lim JH",
         "Park YR" ;
-    dcterms:title "Original Investigation | Psychiatry" ;
+    dcterms:title "Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder" ;
+    bibo:doi "10.1001/jamanetworkopen.2023.15174" ;
     bibo:pmid "local_8a706eaa" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -39107,6 +39188,7 @@
         "Nativ L",
         "Shaham M" ;
     dcterms:title "A Prediction Model of Autism Spectrum Diagnosis from Well-Baby Electronic Data Using Machine Learning" ;
+    bibo:doi "10.3390/children11040429" ;
     bibo:pmid "local_15ed96cb" ;
     fabio:hasPublicationYear 2024 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -39263,6 +39345,7 @@
         "Gorodetski A",
         "Zigel Y" ;
     dcterms:title "The Impact of Speaker Diarization on DNN-based Autism Severity Estimation" ;
+    bibo:doi "10.1109/embc48229.2022.9871523" ;
     bibo:pmid "local_988c462e" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -39451,6 +39534,7 @@
         "Wall DP",
         "Washington P" ;
     dcterms:title "Machine learning models using mobile game play accurately classify children with autism" ;
+    bibo:doi "10.1016/j.ibmed.2022.100057" ;
     bibo:pmid "local_6dcefc34" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -39648,6 +39732,7 @@
         "Wall DP",
         "Washington P" ;
     dcterms:title "Identification of Social Engagement Indicators Associated With" ;
+    bibo:doi "10.2196/31830" ;
     bibo:pmid "local_db6c2d7c" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -39842,6 +39927,7 @@
         "Patel S",
         "Wong PCM" ;
     dcterms:title "Cross-linguistic patterns of speech prosodic differences in autism: A machine learning study" ;
+    bibo:doi "10.1371/journal.pone.0269637" ;
     bibo:pmid "local_ffa35101" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -40047,6 +40133,7 @@
         "Perochon S",
         "Sapiro G" ;
     dcterms:title "Complexity analysis of head movements in autistic toddlers" ;
+    bibo:doi "10.1111/jcpp.13681" ;
     bibo:pmid "local_423b636b" ;
     fabio:hasPublicationYear 2022 ;
     slr:appraisal [ a slr:CriticalAppraisal ;
@@ -40439,6 +40526,7 @@
         "Perochon S",
         "Sapiro G" ;
     dcterms:title "Exploring Complexity of Facial Dynamics in Autism Spectrum Disorder" ;
+    bibo:doi "10.1109/taffc.2021.3113876" ;
     bibo:pmid "local_fbaf69bf" ;
     fabio:hasPublicationYear 2023 ;
     slr:appraisal [ a slr:CriticalAppraisal ;

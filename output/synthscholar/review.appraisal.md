@@ -3488,7 +3488,7 @@
 
 ---
 
-## S-070 — Signal Processing: Image Communication 94 (2021) 116184
+## S-070 — Early detection of children with Autism Spectrum Disorder based on visual exploration of images
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -3539,7 +3539,7 @@
 
 ---
 
-## S-071 — Signal Processing: Image Communication 94 (2021) 116198
+## S-071 — Predicting ASD Diagnosis in Children with Synthetic and Image-based Eye Gaze Data
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -3868,7 +3868,7 @@
 
 ---
 
-## S-077 — Applied Soft Computing 120 (2022) 108654
+## S-077 — An optimized Kernel Extreme Learning Machine for the classification of the autism spectrum disorder by using gaze tracking images
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -5406,7 +5406,7 @@
 
 ---
 
-## S-106 — Original Investigation | Psychiatry
+## S-106 — Development and Validation of a Joint Attention-Based Deep Learning System for Detection and Symptom Severity Assessment of Autism Spectrum Disorder
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -5798,7 +5798,7 @@
 
 ---
 
-## S-114 — Contents lists available at ScienceDirect
+## S-114 — Interpersonal Motor Coordination in Children with Autism and the Establishment of Machine Learning Models to Objectively Classify Children with Autism and Typical Development
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -6092,7 +6092,7 @@
 
 ---
 
-## S-120 — Journal of Computational Mathematics and Data Science 13 (2024) 100105
+## S-120 — Bayesian optimization of one-dimensional convolutional neural networks (1D CNN) for early diagnosis of Autistic Spectrum Disorder
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -6827,7 +6827,7 @@
 
 ---
 
-## S-135 — Available online at www.sciencedirect.com
+## S-135 — Enhancing Early Diagnosis of Autism Spectrum Disorder Using a Bayesian-Optimized Random Forest Algorithm
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -7433,7 +7433,7 @@
 
 ---
 
-## S-148 — Microsoft Word - ETASR_V15_N5_pp-27954-27959
+## S-148 — Improving Early Autism Detection with Chi-Square Feature Selection, Machine Learning, and Explainable AI
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -7613,7 +7613,7 @@
 
 ---
 
-## S-152 — Received: January 17, 2025. Revised: February 4, 2025. 312
+## S-152 — A Computational Method for Early Diagnosis of Autism Spectrum Disorder in Children Using Deep Learning Approach
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -7658,7 +7658,7 @@
 
 ---
 
-## S-153 — Received: October 26, 2024. Revised: March 1, 2025. 1
+## S-153 — Early Detection of ASD from Facial Images Using DeepDeblur and Denoising Optimized Convolutional Neural Network
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -8245,7 +8245,7 @@
 
 ---
 
-## S-166 — Microsoft Word - JPMS205729 - Composed
+## S-166 — Early Detection of Autism Spectrum Disorder in Children Using Facial Images and AI-Based Deep Learning Models
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
@@ -8290,7 +8290,7 @@
 
 ---
 
-## S-167 — Received: 28 July 2025 / Revised: 24 January 2026 / Accepted: 2 March 2026
+## S-167 — Multimodal fusion of deep transfer learning with wavelet neural network for autism spectrum disorder detection using facial images
 
 ### Domain 1: Participants and Sample (PROBAST: participants)
 
