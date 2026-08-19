@@ -8,6 +8,7 @@ dependencies:
   - numpy=2.2.5
   - openpyxl=3.1.5
   - scikit-learn=1.6.1
+  - pytest=8.4.1
   - pip
   - pip:
       - sentence-transformers==5.6.1
