@@ -1,5 +1,6 @@
-from pathlib import Path
+import os
 import textwrap
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -23,8 +24,14 @@ EXPECTED_TOTAL_STUDIES = 172
 # Assumes this script is stored in scripts/Figures/
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-RQ1_OUTPUT_DIR = PROJECT_ROOT / "output" / "rq1_results"
-FIGURE_OUTPUT_DIR = PROJECT_ROOT / "output" / "figures"
+OUTPUT_ROOT = Path(
+    os.environ.get("ASD_REVIEW_OUTPUT_ROOT", PROJECT_ROOT / "output")
+).expanduser()
+if not OUTPUT_ROOT.is_absolute():
+    OUTPUT_ROOT = PROJECT_ROOT / OUTPUT_ROOT
+
+RQ1_OUTPUT_DIR = OUTPUT_ROOT / "rq1_results"
+FIGURE_OUTPUT_DIR = OUTPUT_ROOT / "figures"
 FIGURE_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 SAMPLE_SIZE_PATH = (

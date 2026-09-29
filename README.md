@@ -68,6 +68,16 @@ python3 scripts/run_icr_pipeline.py
 python3 scripts/intercoderreliability_paper_selection.py
 ```
 
+After generating the RQ1 outputs, render Figure 2 with:
+
+```bash
+python3 scripts/Figures/RQ1_Figure2.py
+```
+
+The figure script reads `output/rq1_results/` and writes PNG, PDF, and SVG files
+under `output/figures/`. It also honors `ASD_REVIEW_OUTPUT_ROOT` when results are
+stored outside the repository.
+
 The BERT semantic-category ICR is a separate analysis and is not invoked by
 `run_icr_pipeline.py`. Run it independently when that additional analysis is
 needed:
