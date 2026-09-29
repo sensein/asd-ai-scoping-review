@@ -92,3 +92,13 @@ their coefficients must not be presented as though they came from one combined
 pipeline.
 
 See `scripts/PRISMA_pipeline/README.md` for the reusable screening pipeline.
+
+After generating the RQ5 outputs, render the publication-year plot with:
+
+```bash
+python3 scripts/Figures/Studies_per_year_line_plot.py
+```
+
+The plot reads `output/rq5_results/RQ5_publication_year_exact_summary.csv`
+and writes PNG and PDF files under `output/figures/`. It also honors
+`ASD_REVIEW_OUTPUT_ROOT` when results are stored outside the repository.

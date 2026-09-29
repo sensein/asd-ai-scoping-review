@@ -1,5 +1,5 @@
 from pathlib import Path
-import re
+import os
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -12,95 +12,58 @@ from matplotlib.ticker import MaxNLocator
 
 # This script is intended to be stored in scripts/Figures/.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "output" / "figures"
+OUTPUT_ROOT = Path(
+    os.environ.get("ASD_REVIEW_OUTPUT_ROOT", PROJECT_ROOT / "output")
+).expanduser()
+if not OUTPUT_ROOT.is_absolute():
+    OUTPUT_ROOT = PROJECT_ROOT / OUTPUT_ROOT
+
+YEAR_COUNTS_PATH = OUTPUT_ROOT / "rq5_results" / "RQ5_publication_year_exact_summary.csv"
+OUTPUT_DIR = OUTPUT_ROOT / "figures"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 PNG_PATH = OUTPUT_DIR / "Publication_year_line_plot.png"
 PDF_PATH = OUTPUT_DIR / "Publication_year_line_plot.pdf"
 
 
-def find_annotation_workbook(project_root: Path) -> Path:
-    """Find the final annotation workbook anywhere in the project."""
-    matches = sorted(
-        path
-        for path in project_root.rglob("*.xlsx")
-        if "final_annotation_sheet" in path.name.lower()
-        and not path.name.startswith("~$")
+if not YEAR_COUNTS_PATH.is_file():
+    raise FileNotFoundError(
+        f"Required RQ5 output was not found: {YEAR_COUNTS_PATH}\n"
+        "Run python3 scripts/rq5_.py before rendering the figure."
     )
 
-    if not matches:
-        raise FileNotFoundError(
-            "Could not find an Excel file whose name contains "
-            "'final_annotation_sheet' under:\n"
-            f"{project_root}\n\n"
-            "Place the workbook somewhere inside the project, or replace "
-            "WORKBOOK_PATH below with its exact path."
-        )
-
-    if len(matches) > 1:
-        print("Multiple annotation workbooks were found; using:")
-        print(matches[0])
-        print("Other matches:")
-        for path in matches[1:]:
-            print(f"  - {path}")
-
-    return matches[0]
-
-
-WORKBOOK_PATH = find_annotation_workbook(PROJECT_ROOT)
-
-
-# ============================================================
-# 2. READ AND CLEAN COLUMN E
-# ============================================================
-
-# sheet_name=0 reads the first worksheet. Change this to a worksheet name
-# such as sheet_name="Final annotations" if the data are on another sheet.
-dataframe = pd.read_excel(WORKBOOK_PATH, sheet_name=0)
-
-if dataframe.shape[1] < 5:
+dataframe = pd.read_csv(YEAR_COUNTS_PATH)
+required_columns = {"Publication Year", "Count", "Total Valid Papers"}
+missing_columns = required_columns - set(dataframe.columns)
+if missing_columns:
     raise ValueError(
-        f"The worksheet has only {dataframe.shape[1]} columns; column E is missing."
+        f"Missing columns in {YEAR_COUNTS_PATH}: {sorted(missing_columns)}"
     )
+if dataframe.empty:
+    raise ValueError(f"No publication years were found in {YEAR_COUNTS_PATH}")
 
-year_column_name = dataframe.columns[4]
-raw_years = dataframe.iloc[:, 4]
+years = pd.to_numeric(dataframe["Publication Year"], errors="raise")
+counts = pd.to_numeric(dataframe["Count"], errors="raise")
+denominators = pd.to_numeric(dataframe["Total Valid Papers"], errors="raise")
+if years.isna().any() or counts.isna().any() or denominators.isna().any():
+    raise ValueError(f"Missing year, count, or denominator in {YEAR_COUNTS_PATH}")
+if (years % 1 != 0).any() or (counts % 1 != 0).any() or (denominators % 1 != 0).any():
+    raise ValueError(f"Non-integer year, count, or denominator in {YEAR_COUNTS_PATH}")
+if years.duplicated().any() or (counts < 0).any() or denominators.nunique() != 1:
+    raise ValueError(f"Invalid or duplicate RQ5 summary rows in {YEAR_COUNTS_PATH}")
 
+total_valid_papers = int(denominators.iloc[0])
+if total_valid_papers <= 0 or counts.sum() > total_valid_papers:
+    raise ValueError(f"Year counts exceed the valid-study total in {YEAR_COUNTS_PATH}")
 
-def extract_year(value):
-    """Return a four-digit year from numbers, dates, or text."""
-    if pd.isna(value):
-        return pd.NA
-
-    if isinstance(value, pd.Timestamp):
-        return value.year
-
-    # Handles numeric Excel values such as 2021 or 2021.0.
-    if isinstance(value, (int, float)):
-        numeric_year = int(value)
-        return numeric_year if 1900 <= numeric_year <= 2100 else pd.NA
-
-    match = re.search(r"\b(19|20)\d{2}\b", str(value))
-    return int(match.group(0)) if match else pd.NA
-
-
-years = raw_years.map(extract_year).dropna().astype(int)
-
-if years.empty:
-    raise ValueError(
-        f"No valid four-digit publication years were found in column E "
-        f"({year_column_name!r})."
-    )
-
-# Count papers by year and include zero-count years between the minimum and
-# maximum so the line represents a continuous timeline.
-year_counts = years.value_counts().sort_index()
+# Include zero-count years between the first and last observed publication year.
+year_counts = pd.Series(counts.astype(int).to_numpy(), index=years.astype(int))
+year_counts = year_counts.sort_index()
 complete_years = range(int(year_counts.index.min()), int(year_counts.index.max()) + 1)
 year_counts = year_counts.reindex(complete_years, fill_value=0)
 
-print(f"Workbook: {WORKBOOK_PATH}")
-print(f"Column E: {year_column_name}")
-print(f"Valid publication years: {len(years)}")
+print(f"RQ5 output: {YEAR_COUNTS_PATH}")
+print(f"Valid publication years: {int(counts.sum())}/{total_valid_papers}")
 print(year_counts.to_string())
 
 
@@ -171,4 +134,4 @@ fig.savefig(PDF_PATH, bbox_inches="tight", pad_inches=0.05)
 print(f"Saved PNG: {PNG_PATH}")
 print(f"Saved PDF: {PDF_PATH}")
 
-plt.show()
+plt.close(fig)
