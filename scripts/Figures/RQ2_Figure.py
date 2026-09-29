@@ -1,5 +1,6 @@
 from pathlib import Path
 import math
+import os
 import textwrap
 
 import matplotlib.pyplot as plt
@@ -12,8 +13,14 @@ import pandas as pd
 
 # This script is intended to be saved in scripts/Figures/.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-INPUT_DIR = PROJECT_ROOT / "output" / "rq2_results"
-OUTPUT_DIR = PROJECT_ROOT / "output" / "figures"
+OUTPUT_ROOT = Path(
+    os.environ.get("ASD_REVIEW_OUTPUT_ROOT", PROJECT_ROOT / "output")
+).expanduser()
+if not OUTPUT_ROOT.is_absolute():
+    OUTPUT_ROOT = PROJECT_ROOT / OUTPUT_ROOT
+
+INPUT_DIR = OUTPUT_ROOT / "rq2_results"
+OUTPUT_DIR = OUTPUT_ROOT / "figures"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 PNG_PATH = OUTPUT_DIR / "RQ2_Combined_Figure.png"
@@ -132,10 +139,8 @@ def draw_partition_pie(
     study_denominator = denominator_from(dataframe)
 
     if use_category_total:
-        # Use this only when the plotted unit is an instance rather than a
-        # study. For data availability, one study contributed two datasets
-        # with different access conditions, producing 173 access instances
-        # across 172 studies.
+        # Availability categories can overlap within a study, so the plotted
+        # unit is a coded response rather than a unique study.
         pie_denominator = int(sum(values))
     else:
         validate_partition(dataframe, study_denominator, title)
@@ -278,6 +283,11 @@ sensitive = clean_category_column(
         {"Sensitive Data Category", "Count", "Total Valid Papers", "Percentage"},
     ),
     "Sensitive Data Category",
+)
+sensitive = ordered_summary(
+    sensitive,
+    "Sensitive Data Category",
+    ["yes", "no", "empty_or_not_reported", "other_nonempty_manual_review"],
 )
 
 protection = clean_category_column(
@@ -453,6 +463,7 @@ availability_categories = [
     "available_on_request",
     "limited_or_pseudocode",
     "not_reported_or_placeholder",
+    "manual_review_non_placeholder",
 ]
 availability_labels = [
     "Publicly available",
@@ -460,6 +471,7 @@ availability_labels = [
     "Available on request",
     "Limited",
     "Not reported",
+    "Needs manual review",
 ]
 
 protection_categories = [
@@ -715,32 +727,13 @@ for bar, method, count, percentage in zip(
         color="black",
     )
 
-sensitive_denominator = denominator_from(sensitive)
-yes_rows = sensitive.loc[sensitive["Sensitive Data Category"] == "yes"]
-if len(yes_rows) != 1:
-    raise ValueError(
-        "RQ2_sensitive_data_summary.csv must contain exactly one 'yes' row."
-    )
-sensitive_yes = int(yes_rows.iloc[0]["Count"])
-sensitive_binary = pd.DataFrame(
-    {
-        "Sensitive Data Category": ["reported", "not_reported_or_identified"],
-        "Count": [sensitive_yes, sensitive_denominator - sensitive_yes],
-        "Total Valid Papers": [sensitive_denominator, sensitive_denominator],
-        "Percentage": [
-            (sensitive_yes / sensitive_denominator) * 100,
-            ((sensitive_denominator - sensitive_yes) / sensitive_denominator) * 100,
-        ],
-    }
-)
-
 draw_partition_pie(
     ax_e2,
-    sensitive_binary,
+    sensitive,
     "Sensitive Data Category",
-    ["Sensitive data reported", "Not reported"],
+    ["Yes", "No", "Not stated", "Other response needing review"],
     "E(i)  Sensitive-data reporting",
-    colors=[BLUE, ORANGE],
+    colors=[BLUE, ORANGE, GRAY, PURPLE],
 )
 
 
@@ -768,7 +761,7 @@ draw_partition_pie(
     "F(ii)  Data availability",
     colors=PALETTE[:6],
     use_category_total=True,
-    total_unit="dataset-access instances",
+    total_unit="coded access responses",
 )
 
 
@@ -782,4 +775,4 @@ fig.savefig(PDF_PATH, bbox_inches="tight", pad_inches=0.03)
 print(f"Saved PNG: {PNG_PATH}")
 print(f"Saved PDF: {PDF_PATH}")
 
-plt.show()
+plt.close(fig)
