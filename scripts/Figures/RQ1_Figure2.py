@@ -246,7 +246,7 @@ comorbidities = extract_binary_result(
 
 panel_c_definitions = [
     {
-        "title": "C(i) Adaptive measures of functioning",
+        "title": "C(i) Additional ASD-related assessments",
         "result": additional_assessments,
     },
     {
@@ -484,7 +484,7 @@ for ax in panel_b_axes[1:]:
 
 
 # ============================================================
-# 10. PANEL C: ADAPTIVE MEASURES AND COMORBIDITY
+# 10. PANEL C: ADDITIONAL ASSESSMENTS AND COMORBIDITY
 # ============================================================
 
 panel_c_grid = outer_grid[2].subgridspec(
