@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 import textwrap
 
 import matplotlib.pyplot as plt
@@ -11,8 +12,14 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 # This script is intended to be stored in scripts/Figures/.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "output" / "figures"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+OUTPUT_ROOT = Path(
+    os.environ.get("ASD_REVIEW_OUTPUT_ROOT", PROJECT_ROOT / "output")
+).expanduser()
+if not OUTPUT_ROOT.is_absolute():
+    OUTPUT_ROOT = PROJECT_ROOT / OUTPUT_ROOT
+
+OUTPUT_DIR = OUTPUT_ROOT / "figures"
 
 PNG_PATH = OUTPUT_DIR / "Figure_RQ3_summary_mapping.png"
 PDF_PATH = OUTPUT_DIR / "Figure_RQ3_summary_mapping.pdf"
@@ -24,24 +31,33 @@ PDF_PATH = OUTPUT_DIR / "Figure_RQ3_summary_mapping.pdf"
 
 TOTAL_STUDIES = 172
 
+# Counts below are the source of truth (taken from the RQ2/RQ3 result CSVs).
+# Every displayed percentage is computed from them by format_percent(), so no
+# percentage is typed by hand and each value is rounded exactly once.
+MULTIPLE_TASK_TYPES = 58
+UNREPORTED_TASK_TYPE = 24
+
+
+def format_percent(numerator, denominator):
+    return f"{100 * numerator / denominator:.1f}%"
+
 ROWS = [
     {
         "name": "GAZE / EYE TRACKING",
         "subtitle": "Visual-attention and eye-movement data",
         "count": 74,
-        "percentage": 43.0,
         "color": "#0072B2",
         "tasks": [
-            ("Gaze/visual-attention tasks", "61/172", "35.5%"),
-            ("Passive viewing", "59/172", "34.3%"),
-            ("Active viewing", "15/172", "8.7%"),
-            ("Joint-attention tasks", "8/172", "4.7%"),
+            ("Gaze/visual-attention tasks", 61, 172),
+            ("Passive viewing", 59, 172),
+            ("Active viewing", 15, 172),
+            ("Joint-attention tasks", 8, 172),
         ],
         "tools_heading": "Among 61 gaze-task studies",
         "tools": [
-            ("Specific eye-tracking tool", "37/61", "60.7%"),
-            ("Tobii", "19/61", "31.2%"),
-            ("SMI", "8/61", "13.1%"),
+            ("Specific eye-tracking tool", 37, 61),
+            ("Tobii", 19, 61),
+            ("SMI", 8, 61),
         ],
         "tool_examples": "Other reported systems: Gazefinder, GazePoint, EyeLink, and SciEye",
     },
@@ -49,17 +65,16 @@ ROWS = [
         "name": "MOTOR / MOVEMENT",
         "subtitle": "Pose, gesture, gait, and kinematic data",
         "count": 53,
-        "percentage": 30.8,
         "color": "#009E73",
         "tasks": [
-            ("Motor/movement tasks", "50/172", "29.1%"),
-            ("Gait and posture tasks", "23/172", "13.4%"),
-            ("Imitation tasks", "7/172", "4.1%"),
+            ("Motor/movement tasks", 50, 172),
+            ("Gait and posture tasks", 23, 172),
+            ("Imitation tasks", 7, 172),
         ],
         "tools_heading": "Among 50 motor-task studies",
         "tools": [
-            ("Specific motor-based tool", "10/50", "20.0%"),
-            ("Kinect", "5/50", "10.0%"),
+            ("Specific motor-based tool", 10, 50),
+            ("Kinect", 5, 50),
         ],
         "tool_examples": "Other reported tools: force plates, OpenPose, and OpenFace",
     },
@@ -67,10 +82,9 @@ ROWS = [
         "name": "SPEECH / LANGUAGE",
         "subtitle": "Acoustic, linguistic, and conversational data",
         "count": 40,
-        "percentage": 23.3,
         "color": "#E69F00",
         "tasks": [
-            ("Language/speech/audio tasks", "27/172", "15.7%"),
+            ("Language/speech/audio tasks", 27, 172),
         ],
         "task_examples": (
             "Representative tasks: picture description; word, sentence, or story reading; "
@@ -78,9 +92,9 @@ ROWS = [
         ),
         "tools_heading": "Across 92 audio/video-relevant studies*",
         "tools": [
-            ("Codable recording tool", "32/92", "34.8%"),
-            ("Camera or webcam", "27/92", "29.4%"),
-            ("Microphone/audio recorder", "8/92", "8.7%"),
+            ("Codable recording tool", 32, 92),
+            ("Camera or webcam", 27, 92),
+            ("Microphone/audio recorder", 8, 92),
         ],
     },
 ]
@@ -89,15 +103,6 @@ ROWS = [
 # ============================================================
 # 3. STYLE
 # ============================================================
-
-plt.rcParams.update(
-    {
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans"],
-        "font.size": 10,
-        "axes.unicode_minus": False,
-    }
-)
 
 PANEL_FACE = "#F7F7F7"
 CARD_FACE = "#FFFFFF"
@@ -209,7 +214,8 @@ def draw_modality_card(axis, x, y, width, height, row):
     axis.text(
         x + width / 2 + 0.006,
         y + height * 0.49,
-        f"n = {row['count']}/{TOTAL_STUDIES} ({row['percentage']:.1f}%)",
+        f"n = {row['count']}/{TOTAL_STUDIES} "
+        f"({format_percent(row['count'], TOTAL_STUDIES)})",
         ha="center",
         va="center",
         fontsize=11,
@@ -254,10 +260,13 @@ def draw_item_card(axis, x, y, width, height, row, kind):
     if qualifier and len(items) >= 3:
         # Keep the final item clear of the explanatory text at the card base.
         item_gap = 0.040
+    elif len(items) >= 4:
+        # Distribute the rows so the last one keeps a margin above the card edge.
+        item_gap = (height - 0.078 - 0.035) / (len(items) - 1)
     else:
-        item_gap = 0.043 if len(items) >= 4 else 0.050
+        item_gap = 0.050
 
-    for index, (label, fraction, percentage) in enumerate(items):
+    for index, (label, numerator, denominator) in enumerate(items):
         item_y = item_start - index * item_gap
         axis.text(
             x + 0.020,
@@ -280,7 +289,7 @@ def draw_item_card(axis, x, y, width, height, row, kind):
         axis.text(
             x + width - 0.018,
             item_y,
-            f"{fraction} ({percentage})",
+            f"{numerator}/{denominator} ({format_percent(numerator, denominator)})",
             ha="right",
             va="center",
             fontsize=8.8,
@@ -301,133 +310,152 @@ def draw_item_card(axis, x, y, width, height, row, kind):
 
 
 # ============================================================
-# 5. BUILD FIGURE
+# 5. BUILD AND SAVE FIGURE
 # ============================================================
 
-fig, ax = plt.subplots(figsize=(16, 10))
-ax.set_xlim(0, 1)
-ax.set_ylim(0, 1)
-ax.axis("off")
 
-# Column geometry
-modality_x, modality_w = 0.025, 0.245
-tasks_x, tasks_w = 0.315, 0.315
-tools_x, tools_w = 0.675, 0.300
+def build_figure():
+    plt.rcParams.update(
+        {
+            "font.family": "sans-serif",
+            "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans"],
+            "font.size": 10,
+            "axes.unicode_minus": False,
+        }
+    )
 
-draw_column_heading(
-    ax,
-    modality_x,
-    modality_w,
-    "1. BEHAVIORAL MODALITY",
-    "Most frequently represented data types",
-)
-draw_column_heading(
-    ax,
-    tasks_x,
-    tasks_w,
-    "2. TASKS",
-    "Broad task types and selected subcategories",
-)
-draw_column_heading(
-    ax,
-    tools_x,
-    tools_w,
-    "3. COMMON TOOLS",
-    "Tool denominators are task-specific",
-)
+    fig, ax = plt.subplots(figsize=(16, 10))
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
 
-# Large background panels
-for x, width in [
-    (modality_x, modality_w),
-    (tasks_x, tasks_w),
-    (tools_x, tools_w),
-]:
+    # Column geometry
+    modality_x, modality_w = 0.025, 0.245
+    tasks_x, tasks_w = 0.315, 0.315
+    tools_x, tools_w = 0.675, 0.300
+
+    draw_column_heading(
+        ax,
+        modality_x,
+        modality_w,
+        "1. BEHAVIORAL MODALITY",
+        "Most frequently represented data types",
+    )
+    draw_column_heading(
+        ax,
+        tasks_x,
+        tasks_w,
+        "2. TASKS",
+        "Broad task types and selected subcategories",
+    )
+    draw_column_heading(
+        ax,
+        tools_x,
+        tools_w,
+        "3. COMMON TOOLS",
+        "Tool denominators are task-specific",
+    )
+
+    # Large background panels
+    for x, width in [
+        (modality_x, modality_w),
+        (tasks_x, tasks_w),
+        (tools_x, tools_w),
+    ]:
+        rounded_box(
+            ax,
+            x,
+            0.105,
+            width,
+            0.775,
+            PANEL_FACE,
+            edgecolor="#B5B5B5",
+            linewidth=0.9,
+            radius=0.012,
+            zorder=0,
+        )
+
+    row_height = 0.215
+    row_y_values = [0.645, 0.395, 0.145]
+
+    for row, row_y in zip(ROWS, row_y_values):
+        draw_modality_card(
+            ax,
+            modality_x + 0.012,
+            row_y,
+            modality_w - 0.024,
+            row_height,
+            row,
+        )
+        draw_item_card(
+            ax,
+            tasks_x + 0.012,
+            row_y,
+            tasks_w - 0.024,
+            row_height,
+            row,
+            kind="tasks",
+        )
+        draw_item_card(
+            ax,
+            tools_x + 0.012,
+            row_y,
+            tools_w - 0.024,
+            row_height,
+            row,
+            kind="tools",
+        )
+
+        center_y = row_y + row_height / 2
+        draw_arrow(ax, modality_x + modality_w + 0.004, tasks_x - 0.004, center_y)
+        draw_arrow(ax, tasks_x + tasks_w + 0.004, tools_x - 0.004, center_y)
+
+
+    # Compact corpus-level context strip
     rounded_box(
         ax,
-        x,
-        0.105,
-        width,
-        0.775,
-        PANEL_FACE,
-        edgecolor="#B5B5B5",
-        linewidth=0.9,
-        radius=0.012,
-        zorder=0,
+        0.025,
+        0.018,
+        0.950,
+        0.055,
+        facecolor="#FFFFFF",
+        edgecolor="#777777",
+        linewidth=0.8,
+        radius=0.010,
+        zorder=2,
     )
 
-row_height = 0.215
-row_y_values = [0.645, 0.395, 0.145]
-
-for row, row_y in zip(ROWS, row_y_values):
-    draw_modality_card(
-        ax,
-        modality_x + 0.012,
-        row_y,
-        modality_w - 0.024,
-        row_height,
-        row,
-    )
-    draw_item_card(
-        ax,
-        tasks_x + 0.012,
-        row_y,
-        tasks_w - 0.024,
-        row_height,
-        row,
-        kind="tasks",
-    )
-    draw_item_card(
-        ax,
-        tools_x + 0.012,
-        row_y,
-        tools_w - 0.024,
-        row_height,
-        row,
-        kind="tools",
+    ax.text(
+        0.500,
+        0.046,
+        f"Multiple task types: n = {MULTIPLE_TASK_TYPES}/{TOTAL_STUDIES} "
+        f"({format_percent(MULTIPLE_TASK_TYPES, TOTAL_STUDIES)})    |    "
+        f"Task type unreported or unclear: n = {UNREPORTED_TASK_TYPE}/{TOTAL_STUDIES} "
+        f"({format_percent(UNREPORTED_TASK_TYPE, TOTAL_STUDIES)})    |    "
+        "*Audio/video tool estimates use 92 unique studies spanning relevant task categories.",
+        ha="center",
+        va="center",
+        fontsize=8.4,
+        color="#333333",
     )
 
-    center_y = row_y + row_height / 2
-    draw_arrow(ax, modality_x + modality_w + 0.004, tasks_x - 0.004, center_y)
-    draw_arrow(ax, tasks_x + tasks_w + 0.004, tools_x - 0.004, center_y)
+    fig.subplots_adjust(left=0.005, right=0.995, top=0.995, bottom=0.005)
+
+    return fig
 
 
-# Compact corpus-level context strip
-rounded_box(
-    ax,
-    0.025,
-    0.018,
-    0.950,
-    0.055,
-    facecolor="#FFFFFF",
-    edgecolor="#777777",
-    linewidth=0.8,
-    radius=0.010,
-    zorder=2,
-)
+def main():
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-ax.text(
-    0.500,
-    0.046,
-    "Multiple task types: n = 58/172 (33.7%)    |    "
-    "Task type unreported or unclear: n = 24/172 (14.0%)    |    "
-    "*Audio/video tool estimates use 92 unique studies spanning relevant task categories.",
-    ha="center",
-    va="center",
-    fontsize=8.4,
-    color="#333333",
-)
+    fig = build_figure()
+    fig.savefig(PNG_PATH, dpi=600, bbox_inches="tight", pad_inches=0.04)
+    fig.savefig(PDF_PATH, bbox_inches="tight", pad_inches=0.04)
 
-fig.subplots_adjust(left=0.005, right=0.995, top=0.995, bottom=0.005)
+    plt.show()
+
+    print(f"Saved PNG: {PNG_PATH}")
+    print(f"Saved PDF: {PDF_PATH}")
 
 
-# ============================================================
-# 6. SAVE AND DISPLAY
-# ============================================================
-
-fig.savefig(PNG_PATH, dpi=600, bbox_inches="tight", pad_inches=0.04)
-fig.savefig(PDF_PATH, bbox_inches="tight", pad_inches=0.04)
-
-plt.show()
-
-print(f"Saved PNG: {PNG_PATH}")
-print(f"Saved PDF: {PDF_PATH}")
+if __name__ == "__main__":
+    main()
