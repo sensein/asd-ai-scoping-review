@@ -1,0 +1,33 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      # The tests never import torch or sentence-transformers (only BERT_icr.py
+      # does), so skip those two heavy packages. Everything else keeps the
+      # versions pinned in requirements.txt.
+      - name: Install pinned dependencies
+        run: |
+          grep -v -E '^(torch|sentence-transformers)==' requirements.txt > ci-requirements.txt
+          pip install -r ci-requirements.txt
+
+      # The private workbooks are not in the repository; the tests do not need them.
+      - name: Run tests
+        run: python -m pytest tests/ -v
