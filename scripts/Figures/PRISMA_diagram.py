@@ -8,7 +8,6 @@ from matplotlib.patches import FancyArrowPatch, Rectangle
 # 1. OUTPUT PATHS
 # ============================================================
 
-# This script is intended to be stored in scripts/Figures/.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = PROJECT_ROOT / "output" / "figures"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -23,60 +22,102 @@ PDF_PATH = OUTPUT_DIR / "Figure_1_PRISMA_flow_diagram.pdf"
 
 phase_1 = [
     (
-        "Records identified from\n"
-        "IEEE Xplore, ACM Digital\n"
-        "Library, ScienceDirect,\n"
-        "Web of Science, Scopus,\n"
-        "PubMed, and CINAHL\n"
-        r"$(n\ =\ 162{,}986)$"
+        "Records identified from databases\n"
+        "IEEE Xplore, ACM Digital Library,\n"
+        "ScienceDirect,\n"
+        "Scopus, PubMed, and CINAHL\n"
+        r"$(n = 162{,}986)$"
     ),
     (
-        "After removing duplicates:\n"
-        r"$n\ =\ 114{,}879$"
-        "\n\nAfter filtering by\n"
-        "computation-, diagnosis-,\n"
-        "and behavioral-\n"
-        "data-related words:\n"
-        r"$n\ =\ 1{,}836$"
+        "Records removed before screening\n"
+        "Duplicates removed: "
+        r"$n = 48{,}107$"
+        "\nRecords after deduplication: "
+        r"$n = 114{,}879$"
+        "\nRecords after keyword filtering: "
+        r"$n = 1{,}836$"
     ),
     (
-        "After filtering based\n"
-        "on titles and abstracts\n"
-        r"$(n\ =\ 204)$"
+        "Records screened by\n"
+        "title and abstract\n"
+        r"$(n = 1{,}836)$"
     ),
     (
-        "After filtering\n"
-        "based on full texts\n"
-        r"$(n\ =\ 111)$"
+        "Reports assessed for eligibility\n"
+        r"$(n = 204)$"
     ),
-    "Final set\n" + r"$(n\ =\ 111)$",
+    (
+        "Studies included from Phase 1\n"
+        r"$(n = 110)$"
+    ),
 ]
+
+phase_1_exclusions = {
+    2: (
+        "Records excluded\n"
+        r"$(n = 1{,}632)$"
+        "\nOut of scope of the\n"
+        "inclusion criteria"
+    ),
+    3: (
+        "Reports excluded\n"
+        r"$(n = 94)$"
+        "\nOut of scope of the\n"
+        "inclusion criteria"
+    ),
+}
 
 phase_2 = [
     (
-        "Records identified from\n"
-        "the same databases\n"
-        r"$(n\ =\ 4{,}773)$"
+        "Records identified from databases\n"
+        "Web of Science, ACM Digital Library,\n"
+        "ScienceDirect,\n"
+        "Scopus, PubMed, and CINAHL\n"
+        r"$(n = 4{,}773)$"
     ),
     (
-        "After removing\n"
-        "duplicates:\n"
-        r"$n\ =\ 3{,}838$"
+        "Records removed before screening\n"
+        "Duplicates removed: "
+        r"$n = 935$"
+        "\nRecords after deduplication: "
+        r"$n = 3{,}838$"
     ),
     (
-        "After filtering based\n"
-        "on titles and abstracts\n"
-        r"$n\ =\ 310$"
+        "Records screened by\n"
+        "title and abstract\n"
+        r"$(n = 3{,}838)$"
     ),
     (
-        "After filtering\n"
-        "based on full texts:\n"
-        r"$n\ =\ 74$"
-        "\n\nManual removal:\n"
-        r"$n\ =\ 13$"
+        "Reports assessed for eligibility\n"
+        r"$(n = 310)$"
     ),
-    "Final set\n" + r"$(n\ =\ 61)$",
+    (
+        "Studies included from Phase 2\n"
+        r"$(n = 32)$"
+    ),
 ]
+
+phase_2_exclusions = {
+    2: (
+        "Records excluded\n"
+        r"$(n = 3{,}528)$"
+        "\nOut of scope of the\n"
+        "inclusion criteria"
+    ),
+    3: (
+        "Reports excluded after full text\n"
+        r"$(n = 236)$"
+        "\nManual removals: "
+        r"$n = 42$"
+        "\nOut of scope of the\n"
+        "inclusion criteria"
+    ),
+}
+
+total_included = (
+    "Total studies included in review\n"
+    r"$(n = 142)$"
+)
 
 
 # ============================================================
@@ -86,26 +127,23 @@ phase_2 = [
 plt.rcParams.update(
     {
         "font.family": "serif",
-        "font.serif": [
-            "Times New Roman",
-            "Times",
-            "DejaVu Serif",
-        ],
+        "font.serif": ["Times New Roman", "Times", "DejaVu Serif"],
         "mathtext.fontset": "stix",
-        "font.size": 11,
+        "font.size": 10,
     }
 )
 
 BOX_FACE = "#F2F2F2"
 BOX_EDGE = "#333333"
-ARROW_COLOR = "#8A8A8A"
+ARROW_COLOR = "#6F6F6F"
+DIVIDER_COLOR = "#B8B8B8"
 
 
 # ============================================================
 # 4. DRAWING HELPERS
 # ============================================================
 
-def draw_box(axis, x, y, width, height, text, fontsize=10.5):
+def draw_box(axis, x, y, width, height, text, fontsize=8.6):
     rectangle = Rectangle(
         (x, y),
         width,
@@ -124,7 +162,7 @@ def draw_box(axis, x, y, width, height, text, fontsize=10.5):
         ha="center",
         va="center",
         fontsize=fontsize,
-        linespacing=1.03,
+        linespacing=1.05,
         zorder=3,
     )
 
@@ -134,7 +172,7 @@ def draw_arrow(axis, x_start, x_end, y):
         (x_start, y),
         (x_end, y),
         arrowstyle="-|>",
-        mutation_scale=10,
+        mutation_scale=9,
         linewidth=0.8,
         color=ARROW_COLOR,
         shrinkA=0,
@@ -144,15 +182,30 @@ def draw_arrow(axis, x_start, x_end, y):
     axis.add_patch(arrow)
 
 
-def draw_stage_box(axis, x, width, label):
-    y = 0.07
-    height = 0.055
+def draw_down_arrow(axis, x, y_start, y_end):
+    arrow = FancyArrowPatch(
+        (x, y_start),
+        (x, y_end),
+        arrowstyle="-|>",
+        mutation_scale=9,
+        linewidth=0.8,
+        color=ARROW_COLOR,
+        shrinkA=0,
+        shrinkB=0,
+        zorder=4,
+    )
+    axis.add_patch(arrow)
+
+
+def draw_stage_label(axis, x, width, label):
+    y = 0.035
+    height = 0.045
 
     rectangle = Rectangle(
         (x, y),
         width,
         height,
-        facecolor=BOX_FACE,
+        facecolor="white",
         edgecolor=BOX_EDGE,
         linewidth=0.7,
         zorder=2,
@@ -165,7 +218,7 @@ def draw_stage_box(axis, x, width, label):
         label,
         ha="center",
         va="center",
-        fontsize=10,
+        fontsize=9,
     )
 
 
@@ -173,71 +226,90 @@ def draw_stage_box(axis, x, width, label):
 # 5. BUILD FIGURE
 # ============================================================
 
-fig, ax = plt.subplots(figsize=(13.2, 5.5))
+fig, ax = plt.subplots(figsize=(13.5, 6.2))
 
 ax.set_xlim(0, 1)
 ax.set_ylim(0, 1)
 ax.axis("off")
 
-# Main box geometry
-left = 0.135
-right = 0.975
-gap = 0.006
+# Main geometry
+left = 0.115
+right = 0.965
+gap = 0.013
 
 box_width = (right - left - 4 * gap) / 5
-box_height = 0.31
+box_height = 0.17
 
-top_y = 0.62
-bottom_y = 0.22
+top_y = 0.68
+bottom_y = 0.31
+exclusion_height = 0.075
 
 x_positions = [
     left + index * (box_width + gap)
     for index in range(5)
 ]
 
+# Horizontal divider between phases
+ax.hlines(
+    y=0.535,
+    xmin=0.04,
+    xmax=0.97,
+    colors=DIVIDER_COLOR,
+    linewidth=0.9,
+)
+
 # Phase labels
 ax.text(
-    0.111,
+    0.085,
     top_y + box_height / 2,
-    "2013–2023",
-    ha="right",
+    "Phase 1\n2013-2023",
+    ha="center",
     va="center",
-    fontsize=10.5,
+    fontsize=10,
     fontweight="bold",
 )
 
 ax.text(
-    0.111,
+    0.085,
     bottom_y + box_height / 2,
-    "2024–2026",
-    ha="right",
+    "Phase 2\n2024-2026",
+    ha="center",
     va="center",
-    fontsize=10.5,
+    fontsize=10,
     fontweight="bold",
 )
 
-# Draw both phases
+# Draw main phase boxes
 for x, text in zip(x_positions, phase_1):
-    draw_box(
-        ax,
-        x,
-        top_y,
-        box_width,
-        box_height,
-        text,
-    )
+    draw_box(ax, x, top_y, box_width, box_height, text)
 
 for x, text in zip(x_positions, phase_2):
-    draw_box(
+    draw_box(ax, x, bottom_y, box_width, box_height, text)
+
+# Draw exclusion boxes underneath relevant PRISMA steps
+for index, text in phase_1_exclusions.items():
+    x = x_positions[index]
+    y = top_y - exclusion_height - 0.035
+    draw_box(ax, x, y, box_width, exclusion_height, text, fontsize=8.1)
+    draw_down_arrow(
         ax,
-        x,
-        bottom_y,
-        box_width,
-        box_height,
-        text,
+        x + box_width / 2,
+        top_y,
+        y + exclusion_height,
     )
 
-# Connecting arrows
+for index, text in phase_2_exclusions.items():
+    x = x_positions[index]
+    y = bottom_y - exclusion_height - 0.035
+    draw_box(ax, x, y, box_width, exclusion_height, text, fontsize=8.1)
+    draw_down_arrow(
+        ax,
+        x + box_width / 2,
+        bottom_y,
+        y + exclusion_height,
+    )
+
+# Main horizontal arrows
 for row_y in (top_y, bottom_y):
     arrow_y = row_y + box_height / 2
 
@@ -249,45 +321,63 @@ for row_y in (top_y, bottom_y):
             arrow_y,
         )
 
-# PRISMA stage labels
-draw_stage_box(
+# Combined inclusion box
+combined_width = 0.22
+combined_height = 0.07
+combined_x = x_positions[4] + box_width / 2 - combined_width / 2
+combined_y = 0.115
+
+draw_box(
     ax,
-    x_positions[0] + 0.002,
-    (
-        x_positions[1]
-        + box_width
-        - x_positions[0]
-        - 0.004
-    ),
+    combined_x,
+    combined_y,
+    combined_width,
+    combined_height,
+    total_included,
+    fontsize=9,
+)
+
+draw_down_arrow(
+    ax,
+    x_positions[4] + box_width / 2,
+    bottom_y,
+    combined_y + combined_height,
+)
+
+# PRISMA stage labels
+draw_stage_label(
+    ax,
+    x_positions[0],
+    (x_positions[1] + box_width) - x_positions[0],
     "Identification",
 )
 
-draw_stage_box(
+draw_stage_label(
     ax,
-    x_positions[2] + 0.002,
-    box_width - 0.004,
+    x_positions[2],
+    box_width,
     "Screening",
 )
 
-draw_stage_box(
+draw_stage_label(
     ax,
-    x_positions[3] + 0.002,
-    box_width - 0.004,
-    "Selection",
+    x_positions[3],
+    box_width,
+    "Eligibility",
 )
 
-draw_stage_box(
+draw_stage_label(
     ax,
-    x_positions[4] + 0.002,
-    box_width - 0.004,
-    "Inclusion",
+    x_positions[4],
+    box_width,
+    "Included",
 )
 
 fig.subplots_adjust(
     left=0.005,
     right=0.995,
-    top=0.995,
-    bottom=0.005,
+    top=0.99,
+    bottom=0.01,
 )
 
 
@@ -312,4 +402,3 @@ plt.show()
 
 print(f"Saved PNG: {PNG_PATH}")
 print(f"Saved PDF: {PDF_PATH}")
-

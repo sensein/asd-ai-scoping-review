@@ -20,7 +20,7 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 PNG_PATH = OUTPUT_DIR / "Figure_RQ4_summary.png"
 PDF_PATH = OUTPUT_DIR / "Figure_RQ4_summary.pdf"
 
-TOTAL_STUDIES = 172
+TOTAL_STUDIES = 142
 
 
 # ============================================================
