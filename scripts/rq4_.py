@@ -335,175 +335,292 @@ def main() -> None:
 
 
     # ============================================================
-    # 6. FEATURES: BROAD CATEGORIES
+    # 6. FEATURES: PARENT MODALITIES FROM RQ3 CODING
     # ============================================================
+    # Broad modality counts should come from the manually coded RQ3-style
+    # modality flags, not from keyword matches in the free-text feature column.
+    # The feature column is used only *within* each parent modality to identify
+    # feature subtypes.
 
-    def features_broad(col, valid_mask):
-        patterns = {
-            "gaze_eye_tracking_features": (
-                r"\baoi\b|\broi\b|area of interest|region of interest|fixation|saccade|blink|eye[- ]?movement"
-                r"|eye[- ]?tracking|scanpath|scan[- ]?path|gaze|visual attention|visit count|revisit|length of gaze"
-                r"|tracking ratio|point regard|gaze vector|heatmap|saliency map"
-            ),
-            "facial_expression_face_features": (
-                r"facial landmark|face landmark|openface|open face|open-face|facial expression|face|facial"
-                r"|action unit|\bau\d+\b|smile|smiling|mouth|eyes|eyebrow|lip|emotion recognition|facial dynamics"
-            ),
-            "motor_pose_kinematic_features": (
-                r"speed|acceleration|velocity|duration|movement|motion|amplitude|deceleration|distance|displacement"
-                r"|openpose|open pose|head pose|head movement|pitch|yaw|roll|rotation|joint movement|skeleton|skeletal"
-                r"|keypoint|\bpose\b|grip force|sway|jerk|kinematic|gait|stride|walking|gesture|tablet|touch|wheel rotation|rmse"
-            ),
-            "social_interaction_behavioral_features": (
-                r"reaction|latency|response latency|eye contact|social engagement|human behavior coding|observation coding"
-                r"|imitation|imitate|social influence|response bias|correctness of response|turn[- ]?taking|joint attention|interaction"
-            ),
-            "language_speech_acoustic_features": (
-                r"\bword\b|\bwords\b|word count|tf[- ]?idf|word2vec|wav2vec|bert|transformer|nlp|natural language"
-                r"|universal sentence encoder|sentence embedding|text embedding|tweet|questionnaire|q[- ]?chat|aq\b|cat[- ]?q"
-                r"|audio|raw audio|spectrogram|spectogram|spectral|prosody|pitch|timbre|voice|vocalization|vocalisation"
-                r"|echolalia|sound response|mfcc|speech rhythm|acoustic"
-            ),
-            "vector_or_embedding_features": (
-                r"presence vector|weighted presence vector|feature vector|behavioral vector|behavioural vector|embedding|embeddings"
-                r"|latent representation|latent vector|vector\b|vectors\b"
-            ),
-            "image_video_visual_features": (
-                r"raw video|\bvideo\b|\bvideos\b|\bimage\b|\bimages\b|frame|frames|rgb|optical flow"
-                r"|visual features|video analysis|image analysis|heatmap|heat-map|scanpath image|facial image"
-            ),
-            "demographic_developmental_background_features": (
-                r"\bage\b|\bsex\b|\bgender\b|developmental history|age of walking|age of first words|crib rocking"
-                r"|pregnancy|delivery|premature|family history|parental|vaccination|sensory|adaptive behavior|iq\b"
-            ),
-        }
-        return summarize_patterns(
-            col,
-            valid_mask,
-            patterns,
-            label="Features Broad Categories",
-            category_col="Feature Category",
-            save_prefix="rq4_features_broad",
-        )
+    def compute_parent_gated_feature_modalities(
+        feature_col,
+        valid_mask,
+        modality_match_table,
+        task_type_match_table,
+    ):
+        print("\n============= Features: Parent Modalities from RQ3 Coding =============")
 
-
-    summary_features, features_match_table = features_broad(df_subset.iloc[:, COL_FEATURES], valid_total)
-
-
-    # ============================================================
-    # 7. FEATURES: SUBCATEGORIES
-    # ============================================================
-
-    def feature_subcategories(col, valid_mask):
-        print("\n============= Features: Subcategories =============")
-
-        valid_mask = ensure_series_mask(valid_mask, col.index)
-        col_filtered = clean_text_series(col[valid_mask])
+        valid_mask = ensure_series_mask(valid_mask, feature_col.index)
+        feature_text = clean_text_series(feature_col[valid_mask])
+        valid_index = feature_text.index
         total_valid = int(valid_mask.sum())
 
-        parent_patterns = {
+        modality_flags = modality_match_table.reindex(valid_index).fillna(False)
+        task_flags = task_type_match_table.reindex(valid_index).fillna(False)
 
-            "gaze_eye_tracking": (
-                r"\baoi\b|\broi\b|area of interest|region of interest|fixation|saccade|blink|eye movement|eye[- ]?tracking"
-                r"|scanpath|scan path|scan-path|visit count|revisits|length of gaze|gaze|visual attention|heatmap"
-            ),
-            "facial_face_based": (
-                r"facial landmark|face landmark|openface|open face|open-face|facial expression|smile|smiling"
-                r"|adult eyes|child eyes|adult mouth|child mouth|joint attention|action unit|\bau\d+\b|facial dynamics"
-            ),
-            "motor_pose_kinematic": (
-                r"speed|acceleration|velocity|duration|movement|motion|amplitude|deceleration|distance|displacement|jerk"
-                r"|kinematic|rmse|head movement|head pose|pitch|yaw|roll|rotation|openpose|skeleton|skeletal|keypoint"
-                r"|joint movement|gait|grip force|sway|wheel rotation|accelerometer|gesture|tablet|touch"
+        other_behavioral_text = clean_text_series(df_subset.iloc[:, COL_OTHER_BEHAVIOURAL][valid_mask])
+        other_data_text = clean_text_series(df_subset.iloc[:, COL_OTHER_DATA][valid_mask])
+        participant_task_text = clean_text_series(df_subset.iloc[:, COL_TASK_PARTICIPANTS][valid_mask])
+        combined_context = (
+            feature_text + " " + other_behavioral_text + " " + other_data_text + " " + participant_task_text
+        )
+
+        def has(pattern):
+            return combined_context.str.contains(pattern, regex=True, na=False)
+
+        parent_masks = {
+            # These three parent categories are directly inherited from the manual RQ3 columns.
+            "gaze_eye_tracking": modality_flags.get("gaze_yes", pd.Series(False, index=valid_index)).astype(bool),
+            "motor_pose_kinematic": modality_flags.get("motor_yes", pd.Series(False, index=valid_index)).astype(bool),
+            "language_speech_acoustic": modality_flags.get("speech_yes", pd.Series(False, index=valid_index)).astype(bool),
+
+            # These parent categories are derived from RQ3 task/context coding, then refined by feature text.
+            "facial_expression_face_based": (
+                task_flags.get("facial_emotion_expression_task", pd.Series(False, index=valid_index)).astype(bool)
+                | has(r"facial expression|facial expressions|emotion recognition|affective expression|smil(?:e|ing)|social smiling|action unit|\bau\d+\b|openface|open face|facial landmark|face landmark")
             ),
             "social_interaction_behavioral": (
-                r"duration of reaction|latency of reaction|latency in response|response latency|eye contact|social engagement"
-                r"|imitation|imitate|response bias|correctness of response|social influence|human behavior coding|observation coding|turn[- ]?taking"
+                task_flags.get("social_interaction_task", pd.Series(False, index=valid_index)).astype(bool)
+                | has(r"social interaction|social engagement|eye contact|joint attention|imitation|imitate|turn[- ]?taking|human behavior coding|human observation coding|observation coding|response latency|latency in response|correctness of response")
             ),
-            "language_speech_acoustic": (
-                r"word|word count|tf[- ]?idf|word2vec|wav2vec|bert|nlp|natural language|universal sentence encoder"
-                r"|\btext embedding\b|tweet|questionnaire|q[- ]?chat|audio|raw audio|spectrogram|spectral|mfcc|timbre|prosody|pitch"
-                r"|voice|vocalization|vocalisation|echolalia|sound responses|speech rhythm|acoustic"
-            ),
-            "vector_representations": r"presence vector|weighted presence vector|feature vector|behavioral vector|behavioural vector|vector-based|embedding|latent|vector\b|vectors\b",
-            "image_video_visual": r"raw video|video|videos|image|images|frame|frames|rgb|optical flow|video analysis|image analysis|visual features|heatmap|heat-map",
-            "demographic_developmental_background": (
-                r"age|sex|gender|age of walking|age of first words|crib rocking|music insistence|reaction to bright lights"
-                r"|reaction to colors|reaction to sounds|pregnancy|delivery|premature|oxygen after birth|miscarriage"
-                r"|family history|parental|suspected deafness|vaccination|iq|adaptive behavior"
-            ),
+            "image_video_visual": has(r"raw video|\bvideo\b|\bvideos\b|video frame|video frames|\bframe\b|\bframes\b|rgb|optical flow|fixation map|heatmap|heat-map|scanpath image"),
+            "vector_embedding_representation": has(r"presence vector|weighted presence vector|feature vector|behavioral vector|behavioural vector|embedding|embeddings|latent representation|latent vector|vector-based|\bvector\b|\bvectors\b"),
+            "demographic_developmental_background": has(r"\bage\b|\bsex\b|\bgender\b|developmental history|age of walking|age of first words|family history|parental|pregnancy|delivery|premature|adaptive behavior|\biq\b"),
+            "neurophysiology_eeg": has(r"\beeg\b|relative power|power energy|multiscale entropy|brain network|theta|alpha|beta|gamma|time[- ]?frequency|synchronization analysis|lf of|rf of|parietal|occipital"),
         }
-
-        subcategory_patterns = {
-            "aoi_roi_features": {"parent": "gaze_eye_tracking", "pattern": r"\baoi\b|\broi\b|area of interest|areas of interest|region of interest|regions of interest"},
-            "fixation_features": {"parent": "gaze_eye_tracking", "pattern": r"fixation|fixation count|fixation duration|total fixation duration|time to first fixation|fixation map"},
-            "saccade_eye_movement_features": {"parent": "gaze_eye_tracking", "pattern": r"saccade|saccades|blink|eye movement|eye movements|eye[- ]?tracking|smooth pursuit|anti[- ]?saccade"},
-            "scanpath_features": {"parent": "gaze_eye_tracking", "pattern": r"scanpath|scanpaths|scan path|scan paths|scan-path|scan-paths|scanpath image"},
-            "visual_attention_features": {"parent": "gaze_eye_tracking", "pattern": r"visit count|revisits|length of gaze|attentional pattern|visual attention|tracking ratio|point regard|gaze vector|heatmap|saliency"},
-            "facial_landmark_features": {"parent": "facial_face_based", "pattern": r"facial landmark|facial landmarks|face landmark|openface|open face|open-face|landmark dynamics"},
-            "facial_expression_features": {"parent": "facial_face_based", "pattern": r"facial expression|facial expressions|smile|smiling|smile detection|social smiling|emotion|affective expression|expression|emotion"},
-            "facial_action_unit_features": {"parent": "facial_face_based", "pattern": r"action unit|\bau\d+\b|inner[- ]?brow|lip[- ]?corner|facial action"},
-            "face_region_social_attention_features": {"parent": "facial_face_based", "pattern": r"adult eyes|child eyes|adult mouth|child mouth|joint attention|mouth|eyes|face region"},
-            "general_kinematic_features": {"parent": "motor_pose_kinematic", "pattern": r"speed|acceleration|velocity|duration|movement amplitude|amplitude|deceleration|distance|displacement|jerk|kinematic|rmse"},
-            "head_movement_features": {"parent": "motor_pose_kinematic", "pattern": r"head movement|head pose|head pose angles|head rotation|head motion|\bhead\b|pitch|yaw|roll|rotation range"},
-            "pose_skeletal_features": {"parent": "motor_pose_kinematic", "pattern": r"openpose|open pose|open-pose|skeletal keypoint|skeletal keypoints|skeleton|keypoint|joint movement|\bpose\b"},
-            "task_specific_motor_features": {"parent": "motor_pose_kinematic", "pattern": r"gait|stride|walking|grip force|sway area|wheel rotation|length of action|tablet|touch|gesture|grasp"},
-            "interaction_timing_features": {"parent": "social_interaction_behavioral", "pattern": r"duration of reaction|latency of reaction|latency in response|response latency|reaction time"},
-            "eye_contact_social_engagement_features": {"parent": "social_interaction_behavioral", "pattern": r"eye contact|duration and frequency of eye contact|social engagement|joint attention"},
-            "imitation_turn_taking_features": {"parent": "social_interaction_behavioral", "pattern": r"imitation|imitate|accuracy of imitation|turn[- ]?taking|spontaneous engagement"},
-            "response_task_performance_features": {"parent": "social_interaction_behavioral", "pattern": r"response bias|response-bias|correctness of response|social influence factor|task performance"},
-            "human_coded_behavior_features": {"parent": "social_interaction_behavioral", "pattern": r"human behavior coding|human observation coding|observation coding|behavior coding|behaviour coding|manual coding"},
-            "text_word_level_features": {"parent": "language_speech_acoustic", "pattern": r"\bword\b|\bwords\b|number of words|word count|word error rate|word correctness rate|repeated words|tf[- ]?idf"},
-            "text_embedding_nlp_features": {"parent": "language_speech_acoustic", "pattern": r"\bnlp\b|natural language processing|universal sentence encoder|\buse\b|word2vec|wav2vec|bert|transformer|\btext embedding\b|language embedding|sentence embedding"},
-            "text_data_sources": {"parent": "language_speech_acoustic", "pattern": r"tweets|tweet|questionnaire|questionnaires|q[- ]?chat|aq\b|cat[- ]?q|survey"},
-            "audio_acoustic_features": {"parent": "language_speech_acoustic", "pattern": r"audio length|raw audio|spectrogram|spectogram|spectral|spectral entropy|mfcc|timbre|formant|jitter|shimmer|harmonic|hnr"},
-            "speech_vocal_features": {"parent": "language_speech_acoustic", "pattern": r"prosody|pitch|fundamental frequency|\bf0\b|vocalization|vocalizations|vocalisation|vocalisations|echolalia|sound responses|speech rhythm|voice"},
-            "presence_vector_features": {"parent": "vector_representations", "pattern": r"presence vector|presence vectors"},
-            "weighted_vector_features": {"parent": "vector_representations", "pattern": r"weighted presence vector|weighted presence vectors"},
-            "other_vector_based_representations": {"parent": "vector_representations", "pattern": r"feature vector|feature vectors|behavioral vector|behavioural vector|vector-based|embedding|embeddings|latent representation|latent vector|\bvector\b|\bvectors\b"},
-            "raw_visual_inputs": {"parent": "image_video_visual", "pattern": r"raw video|video|videos|image|images|frames|rgb|facial image|scanpath image"},
-            "image_video_analysis_features": {"parent": "image_video_visual", "pattern": r"video analysis|image analysis|image analysis features|visual features|optical flow|frame-level"},
-            "spatial_visual_representations": {"parent": "image_video_visual", "pattern": r"heatmap|heatmaps|heat-map|heat-maps|saliency map|fixation map"},
-            "demographic_features": {"parent": "demographic_developmental_background", "pattern": r"\bage\b|\bsex\b|\bgender\b"},
-            "developmental_history_features": {"parent": "demographic_developmental_background", "pattern": r"age of walking|age of first words|crib rocking|music insistence|reaction to bright lights|reaction to colors|reaction to sounds|developmental history"},
-            "prenatal_perinatal_history_features": {"parent": "demographic_developmental_background", "pattern": r"pregnancy|delivery|premature birth|oxygen after birth|miscarriage|perinatal|prenatal"},
-            "family_parental_history_features": {"parent": "demographic_developmental_background", "pattern": r"family cognitive disability history|family history|parental educational|parental smoking|parental drug use|anti[- ]?depressants|antidepressants"},
-            "medical_sensory_background_features": {"parent": "demographic_developmental_background", "pattern": r"suspected deafness|vaccination|sensory|medical history|adaptive behavior|iq\b"},
-        }
-
-        parent_masks = {parent: col_filtered.str.contains(pattern, regex=True, na=False) for parent, pattern in parent_patterns.items()}
-        parent_counts = {parent: int(mask.sum()) for parent, mask in parent_masks.items()}
 
         rows = []
-        match_table = pd.DataFrame(index=col_filtered.index)
-        match_table["feature_text"] = col_filtered
+        match_table = pd.DataFrame(index=valid_index)
+        match_table["feature_text"] = feature_text
+        match_table["combined_context_text"] = combined_context
+
+        for category, mask in parent_masks.items():
+            mask = ensure_series_mask(mask, valid_index).astype(bool)
+            match_table[f"parent__{category}"] = mask
+            count = int(mask.sum())
+            rows.append({
+                "Feature Modality": category,
+                "Count": count,
+                "Total Valid Papers": total_valid,
+                "Percentage": pct(count, total_valid),
+            })
+
+        summary_df = pd.DataFrame(rows).sort_values("Count", ascending=False)
+        print(summary_df.to_string(index=False))
+        save_df_optional(summary_df, "rq4_feature_modalities_parent_from_rq3_summary.csv")
+        save_df_optional(match_table.reset_index().rename(columns={"index": "row_index"}), "rq4_feature_modalities_parent_from_rq3_match_table.csv")
+        return summary_df, match_table, parent_masks, feature_text
+
+
+    def compute_parent_gated_feature_subcategories(feature_text, parent_masks):
+        print("\n============= Features: Parent-Gated Subcategories =============")
+
+        valid_index = feature_text.index
+        total_valid = len(valid_index)
+
+        # These subtype regexes are intentionally narrower than the old broad feature regexes.
+        # They should identify feature subtypes only after a study is already assigned to a
+        # parent modality by RQ3/manual coding.
+        subcategory_patterns = {
+            # Gaze / eye tracking
+            "aoi_roi_features": {
+                "parent": "gaze_eye_tracking",
+                "pattern": r"\baoi\b|\broi\b|area of interest|areas of interest|region of interest|regions of interest|webpage id|screen area",
+            },
+            "fixation_features": {
+                "parent": "gaze_eye_tracking",
+                "pattern": r"fixation|fixations|fixation count|fixation duration|total fixation duration|time to first fixation|fixation time|fixation start|fixation end|fixation map",
+            },
+            "saccade_eye_movement_features": {
+                "parent": "gaze_eye_tracking",
+                "pattern": r"saccade|saccades|eye movement|eye movements|gaze movement|smooth pursuit|anti[- ]?saccade",
+            },
+            "scanpath_sequence_features": {
+                "parent": "gaze_eye_tracking",
+                "pattern": r"scanpath|scan path|scan-match|scanmatch|needleman|wunsch|viewing order|sequential",
+            },
+            "dwell_visit_visual_attention_features": {
+                "parent": "gaze_eye_tracking",
+                "pattern": r"visit count|revisit|revisits|time viewed|on-screen|face-looking|eye-looking|dwell time|net dwell|visual attention|attentional engagement|point regard|gaze vector|heatmap|saliency",
+            },
+
+            # Motor / pose / kinematic
+            "general_kinematic_features": {
+                "parent": "motor_pose_kinematic",
+                "pattern": r"kinematic|speed|velocity|acceleration|deceleration|jerk|displacement|trajectory|trajectories|distance|amplitude|meanlength|mean speed|maxspeed|minspeed|peak velocity|peak acceleration|peak deceleration|time to peak|rmse",
+            },
+            "gait_posture_balance_features": {
+                "parent": "motor_pose_kinematic",
+                "pattern": r"gait|stride|walking|grf|ground reaction force|force plate|center of pressure|\bcop\b|sway|postur|balance|anteroposterior|mediolateral|\bap\b|\bml\b",
+            },
+            "pose_skeletal_keypoint_features": {
+                "parent": "motor_pose_kinematic",
+                "pattern": r"openpose|open pose|open-pose|pose estimation|skeleton|skeletal|keypoint|keypoints|joint movement|kinect|motion capture|motion caption",
+            },
+            "head_movement_pose_features": {
+                "parent": "motor_pose_kinematic",
+                "pattern": r"head movement|head movements|head pose|head rotation|head motion|mean_ratehm|head acceleration|pitch|yaw|roll|rotation range",
+            },
+            "task_specific_motor_touch_features": {
+                "parent": "motor_pose_kinematic",
+                "pattern": r"motor imitation|grip force|grasp|gesture|wheel rotation|car movement|touch-based|touch|tablet|trajectory drawn|number of trajectories|length of action|drag|move card|manipulate virtual objects",
+            },
+
+            # Speech / language / audio
+            "audio_acoustic_features": {
+                "parent": "language_speech_acoustic",
+                "pattern": r"acoustic|mfcc|rasta|plp|covarep|opensmile|egemaps|spectrogram|spectral|formant|jitter|shimmer|harmonic|hnr|audio length|raw audio|timbre",
+            },
+            "speech_voice_prosody_features": {
+                "parent": "language_speech_acoustic",
+                "pattern": r"prosody|pitch|fundamental frequency|\bf0\b|intonation|vocalization|vocalisation|utterance|voice|speech rhythm|envelop spectrum|temporal modulation|sound response|echolalia|speaking rate",
+            },
+            "text_linguistic_features": {
+                "parent": "language_speech_acoustic",
+                "pattern": r"\bword\b|\bwords\b|word count|word error rate|word correctness|number of words|words per second|liwc|lexical|parts of speech|sentence|language measure|linguistic|tf[- ]?idf",
+            },
+            "nlp_embedding_features": {
+                "parent": "language_speech_acoustic",
+                "pattern": r"nlp|natural language processing|word2vec|wav2vec|bert|transformer|universal sentence encoder|\buse\b|language model|text embedding|sentence embedding",
+            },
+
+            # Facial expression / face-based behavior
+            "facial_expression_emotion_features": {
+                "parent": "facial_expression_face_based",
+                "pattern": r"facial expression|facial expressions|emotion recognition|emotion|affective expression|smile|smiling|social smiling|target expressions",
+            },
+            "facial_action_unit_features": {
+                "parent": "facial_expression_face_based",
+                "pattern": r"action unit|action units|\bau\d+\b|facial action|inner[- ]?brow|lip[- ]?corner|dynamic deep learned facial action units",
+            },
+            "facial_landmark_region_features": {
+                "parent": "facial_expression_face_based",
+                "pattern": r"facial landmark|facial landmarks|face landmark|openface|open face|open-face|3d morphable model|3dmm|adult eyes|child eyes|adult mouth|child mouth|outer-face|face region|mouth|eyes|nose",
+            },
+
+            # Social / interactional behavior
+            "eye_contact_social_engagement_features": {
+                "parent": "social_interaction_behavioral",
+                "pattern": r"eye contact|social engagement|active social engagement|joint attention|presence and distance|presence of the child|presence of people|presence of face",
+            },
+            "imitation_turn_taking_features": {
+                "parent": "social_interaction_behavioral",
+                "pattern": r"imitation|imitate|motor imitation|turn[- ]?taking|spontaneous engagement",
+            },
+            "response_timing_task_performance_features": {
+                "parent": "social_interaction_behavioral",
+                "pattern": r"latency in response|latency of response|response latency|reaction time|response time|response times|correctness of the response|correct answers|task performance|response bias",
+            },
+            "human_coded_behavior_features": {
+                "parent": "social_interaction_behavioral",
+                "pattern": r"human behavior coding|human observation coding|observation coding|behavior coding|behaviour coding|rated by humans|human rater|manual coding|cami score",
+            },
+
+            # Raw visual / learned visual representations
+            "raw_video_image_inputs": {
+                "parent": "image_video_visual",
+                "pattern": r"raw video|\bvideo\b|\bvideos\b|\bimage\b|\bimages\b|frame|frames|rgb|input the videos|video frames|facial image|scanpath image",
+            },
+            "learned_cnn_visual_features": {
+                "parent": "image_video_visual",
+                "pattern": r"convolutional layers|cnn|deep learned|learned features|end-to-end|feature maps|frame-level|optical flow",
+            },
+            "spatial_visual_map_features": {
+                "parent": "image_video_visual",
+                "pattern": r"heatmap|heatmaps|heat-map|fixation map|saliency map|spatial distribution|spatial distributions|visual representation",
+            },
+
+            # Vector / embedding representations
+            "presence_vector_features": {
+                "parent": "vector_embedding_representation",
+                "pattern": r"presence vector|presence vectors|weighted presence vector|weighted presence vectors",
+            },
+            "general_vector_embedding_features": {
+                "parent": "vector_embedding_representation",
+                "pattern": r"feature vector|feature vectors|behavioral vector|behavioural vector|embedding|embeddings|latent representation|latent vector|vector-based|cosine similarity",
+            },
+
+            # Demographic / developmental background
+            "demographic_features": {
+                "parent": "demographic_developmental_background",
+                "pattern": r"\bage\b|\bsex\b|\bgender\b",
+            },
+            "developmental_medical_background_features": {
+                "parent": "demographic_developmental_background",
+                "pattern": r"developmental history|age of walking|age of first words|family history|parental|pregnancy|delivery|premature|adaptive behavior|\biq\b|medical history|sensory",
+            },
+
+            # EEG / neurophysiology
+            "eeg_power_entropy_features": {
+                "parent": "neurophysiology_eeg",
+                "pattern": r"relative power|power energy|entropy|multiscale entropy|theta|alpha|beta|gamma|time[- ]?frequency|spectral entropy",
+            },
+            "eeg_connectivity_network_features": {
+                "parent": "neurophysiology_eeg",
+                "pattern": r"brain network|network features|synchronization|synchronisation|connectivity",
+            },
+        }
+
+        rows = []
+        match_table = pd.DataFrame(index=valid_index)
+        match_table["feature_text"] = feature_text
+
+        parent_masks_clean = {
+            parent: ensure_series_mask(mask, valid_index).astype(bool)
+            for parent, mask in parent_masks.items()
+        }
+
+        for parent, parent_mask in parent_masks_clean.items():
+            match_table[f"parent__{parent}"] = parent_mask
 
         for subcategory, info in subcategory_patterns.items():
             parent = info["parent"]
             pattern = info["pattern"]
-            subcategory_mask = col_filtered.str.contains(pattern, regex=True, na=False)
-            count = int(subcategory_mask.sum())
-            parent_count = int(parent_counts[parent])
-            match_table[subcategory] = subcategory_mask
+            parent_mask = parent_masks_clean[parent]
+            subtype_mask = parent_mask & feature_text.str.contains(pattern, regex=True, na=False)
+            match_table[subcategory] = subtype_mask
+
+            count = int(subtype_mask.sum())
+            parent_count = int(parent_mask.sum())
             rows.append({
                 "Feature Subcategory": subcategory,
-                "Parent Category": parent,
+                "Parent Modality": parent,
                 "Count": count,
                 "Total Valid Papers": total_valid,
                 "Percentage of Total Papers": pct(count, total_valid),
                 "Parent Count": parent_count,
-                "Percentage of Parent Category": pct(count, parent_count),
+                "Percentage of Parent Modality": pct(count, parent_count),
             })
 
-        summary_df = pd.DataFrame(rows)
+        summary_df = pd.DataFrame(rows).sort_values(["Parent Modality", "Count"], ascending=[True, False])
+
+        subtype_cols = list(subcategory_patterns.keys())
+        parent_cols = [f"parent__{parent}" for parent in parent_masks_clean]
+        match_table["any_parent_modality"] = match_table[parent_cols].any(axis=1)
+        match_table["any_feature_subcategory"] = match_table[subtype_cols].any(axis=1)
+        manual_review_rows = match_table[match_table["any_parent_modality"] & ~match_table["any_feature_subcategory"]]
+
         print(summary_df.to_string(index=False))
-        save_df_optional(summary_df, "rq4_feature_subcategories_summary.csv")
-        save_df_optional(match_table.reset_index().rename(columns={"index": "row_index"}), "rq4_feature_subcategories_match_table.csv")
-        return summary_df, match_table
+        print("\nParent-coded rows without a detected feature subtype:", int(len(manual_review_rows)))
+        if len(manual_review_rows):
+            print(manual_review_rows[["feature_text"]].to_string())
+
+        save_df_optional(summary_df, "rq4_feature_subcategories_parent_gated_summary.csv")
+        save_df_optional(match_table.reset_index().rename(columns={"index": "row_index"}), "rq4_feature_subcategories_parent_gated_match_table.csv")
+        save_df_optional(manual_review_rows.reset_index().rename(columns={"index": "row_index"}), "rq4_feature_subcategories_parent_gated_manual_review_rows.csv")
+        return summary_df, match_table, manual_review_rows
 
 
-    summary_feature_subcategories, feature_subcategory_match_table = feature_subcategories(
-        df_subset.iloc[:, COL_FEATURES], valid_total
+    summary_features, features_match_table, parent_feature_masks, feature_text_for_subcategories = compute_parent_gated_feature_modalities(
+        feature_col=df_subset.iloc[:, COL_FEATURES],
+        valid_mask=valid_total,
+        modality_match_table=modality_match_table,
+        task_type_match_table=task_type_match_table,
+    )
+
+    summary_feature_subcategories, feature_subcategory_match_table, feature_subcategory_manual_review_rows = compute_parent_gated_feature_subcategories(
+        feature_text_for_subcategories,
+        parent_feature_masks,
     )
 
 

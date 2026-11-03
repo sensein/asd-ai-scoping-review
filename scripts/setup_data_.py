@@ -48,7 +48,7 @@ DATA_SHEET = "final_data"
 # because BY is the 77th Excel column, and pandas slicing excludes the endpoint.
 
 N_RELEVANT_COLS = 77  # A:BY
-N_DATA_ROWS = 172    # rows 3-174 inclusive
+N_DATA_ROWS = 142    # rows 3-174 inclusive
 
 INVALID_VALUES = [
     "",
