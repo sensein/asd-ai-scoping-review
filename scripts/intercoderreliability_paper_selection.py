@@ -21,7 +21,7 @@ def main() -> None:
     VENUE_COL_INDEX = 3   # Column D
     YEAR_COL_INDEX = 4    # Column E
 
-    # 35 papers = approximately 20% of 172 final included papers
+    # 35 papers = approximately 20% of 142 final included papers
 
     YEAR_TARGETS = {
         "2013-2020": 11,

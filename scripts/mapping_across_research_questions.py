@@ -34,6 +34,7 @@ from codebook import (
     TASK_TYPE_PATTERNS,
 )
 from helper_functions_ import extract_accuracy_percent
+from setup_data_ import N_DATA_ROWS
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -52,7 +53,6 @@ OUTPUT_FILENAMES = [
 ]
 
 N_RELEVANT_COLUMNS = 77
-N_DATA_ROWS = 172
 
 COL_TITLE = 0
 COL_GAZE = 40
@@ -367,18 +367,20 @@ def extract_literal_assignment(
 
 def load_established_rules(script_dir: Path) -> tuple[dict[str, object], dict[str, str]]:
     rq2_path = script_dir / "rq2_.py"
+    rq3_path = script_dir / "rq3_.py"
     rq4_path = script_dir / "rq4_.py"
-    for path in [rq2_path, rq4_path]:
+    for path in [rq2_path, rq3_path, rq4_path]:
         if not path.is_file():
             raise FileNotFoundError(f"Required source script not found: {path}")
 
     rq2_tree = ast.parse(rq2_path.read_text(encoding="utf-8"), filename=str(rq2_path))
+    rq3_tree = ast.parse(rq3_path.read_text(encoding="utf-8"), filename=str(rq3_path))
     rq4_tree = ast.parse(rq4_path.read_text(encoding="utf-8"), filename=str(rq4_path))
 
     rules = {
         "task_broad": {**TASK_TYPE_PATTERNS, "not_given": NOT_GIVEN_TASK_PATTERN},
         "task_subcategory": extract_literal_assignment(
-            rq2_tree, "subcategory_patterns", "compute_task_type"
+            rq3_tree, "subcategory_patterns", "compute_task_type"
         ),
         "limitations": extract_literal_assignment(
             rq2_tree, "category_patterns", "rq_limitation_categories"
@@ -414,6 +416,7 @@ def load_established_rules(script_dir: Path) -> tuple[dict[str, object], dict[st
 
     hashes = {
         display_path(rq2_path): sha256_file(rq2_path),
+        display_path(rq3_path): sha256_file(rq3_path),
         display_path(rq4_path): sha256_file(rq4_path),
         display_path(script_dir / "codebook.py"): sha256_file(script_dir / "codebook.py"),
     }
@@ -913,7 +916,7 @@ def build_validation_table(
 
     comparisons = [
         (
-            reference_root / "rq2_results" / "RQ2_task_type_summary.csv",
+            reference_root / "rq3_results" / "task_type_summary.csv",
             category_counts(task_table, "task__"),
             "task_broad",
             "Task Type Category",
@@ -922,7 +925,7 @@ def build_validation_table(
             "Percentage",
         ),
         (
-            reference_root / "rq2_results" / "RQ2_task_type_subcategory_summary.csv",
+            reference_root / "rq3_results" / "task_type_subcategory_summary.csv",
             category_counts(task_table, "task_subcategory__"),
             "task_subcategory",
             "Task subcategory",
@@ -1307,7 +1310,7 @@ def build_markdown_report(
             f"The analysis used `{display_path(input_path)}` worksheet "
             f"`{sheet}` and read only Excel columns A:BY. As in the established "
             "analyses, rows 3-174 were retained and a study was valid when column A "
-            "(title) was non-missing, giving N=172."
+            "(title) was non-missing, giving N=142."
         ),
         "",
         (
@@ -1517,7 +1520,7 @@ def build_markdown_report(
                 "intersects row-level modality and category masks whose source totals "
                 "were validated. Percentages use the non-exclusive modality study count "
                 "as N. Consequently, modality Ns and category percentages are not "
-                "expected to sum to 172 or 100% across modalities/categories."
+                "expected to sum to 142 or 100% across modalities/categories."
             ),
             "",
             "## 5. Files generated",
